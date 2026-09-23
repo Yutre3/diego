@@ -1,0 +1,28 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.3"];
+  admin [shape=plaintext, label="Administrador"];
+  staff [shape=plaintext, label="Encargado de hotel"];
+  subgraph cluster_system {
+    label="Sistema Hotel Duerme Bien";
+    login [shape=ellipse, label="Iniciar sesión"];
+    rooms [shape=ellipse, label="Gestionar habitaciones"];
+    users [shape=ellipse, label="Gestionar usuarios"];
+    avail [shape=ellipse, label="Consultar disponibilidad"];
+    reserva [shape=ellipse, label="Gestionar reservas"];
+    guest [shape=ellipse, label="Registrar huésped"];
+    checkin [shape=ellipse, label="Realizar check-in"];
+    assign [shape=ellipse, label="Asignar habitación"];
+    cost [shape=ellipse, label="Calcular costo"];
+    checkout [shape=ellipse, label="Realizar check-out"];
+    free [shape=ellipse, label="Liberar habitación"];
+    reports [shape=ellipse, label="Generar informes"];
+  }
+  admin -> login [dir=none]; admin -> rooms [dir=none]; admin -> users [dir=none]; admin -> reports [dir=none];
+  staff -> login [dir=none]; staff -> avail [dir=none]; staff -> reserva [dir=none]; staff -> guest [dir=none]; staff -> checkin [dir=none]; staff -> checkout [dir=none];
+  reserva -> avail [style=dashed, label="<<include>>"];
+  checkin -> avail [style=dashed, label="<<include>>"];
+  checkin -> guest [style=dashed, label="<<include>>"];
+  checkin -> assign [style=dashed, label="<<include>>"];
+  checkout -> cost [style=dashed, label="<<include>>"];
+  checkout -> free [style=dashed, label="<<include>>"];
+}
