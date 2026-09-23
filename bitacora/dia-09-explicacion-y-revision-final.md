@@ -1,5 +1,12 @@
 # Día 9 - Explicación y revisión final
 
+## Registro del avance
+- **Fecha:** 23/09/2026
+- **Hora de registro:** 16:58:57 (Chile, UTC-03:00)
+- **Autor del commit:** Yutre3
+- **Commit de creación de esta jornada:** `dd9a45fe4b9e6e290b5d5a76af2f79645e5760d1`
+- **Estado:** Terminado
+
 ## Objetivo
 Completar la documentación para que el proyecto sea fácil de revisar y explicar durante una exposición.
 
