@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="920" viewBox="0 0 1200 920">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z" fill="#444"/>
+  </marker>
+  <style>
+    .t{font-family:Arial,sans-serif;fill:#222}.title{font-size:26px;font-weight:700}.label{font-size:16px}.small{font-size:13px}
+    .box{fill:#fff;stroke:#333;stroke-width:2}.uc{fill:#fff;stroke:#333;stroke-width:2}.rel{stroke:#555;stroke-width:1.8;fill:none}
+    .inc{stroke:#555;stroke-width:1.6;stroke-dasharray:7 5;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect x="0" y="0" width="1200" height="920" fill="white"/>
+<text x="600" y="36" text-anchor="middle" class="t title">Casos de uso - Hotel Duerme Bien</text>
+<rect x="285" y="70" width="880" height="790" rx="8" class="box"/>
+<text x="305" y="100" class="t label" font-weight="700">Sistema de Pasajeros</text>
+
+<!-- Actor Administrador -->
+<circle cx="115" cy="180" r="20" fill="white" stroke="#333" stroke-width="2"/>
+<line x1="115" y1="200" x2="115" y2="265" class="rel"/>
+<line x1="75" y1="220" x2="155" y2="220" class="rel"/>
+<line x1="115" y1="265" x2="80" y2="315" class="rel"/>
+<line x1="115" y1="265" x2="150" y2="315" class="rel"/>
+<text x="115" y="344" text-anchor="middle" class="t label">Administrador</text>
+
+<!-- Actor Encargado -->
+<circle cx="115" cy="515" r="20" fill="white" stroke="#333" stroke-width="2"/>
+<line x1="115" y1="535" x2="115" y2="600" class="rel"/>
+<line x1="75" y1="555" x2="155" y2="555" class="rel"/>
+<line x1="115" y1="600" x2="80" y2="650" class="rel"/>
+<line x1="115" y1="600" x2="150" y2="650" class="rel"/>
+<text x="115" y="680" text-anchor="middle" class="t label">Encargado de hotel</text>
+
+<!-- Use cases -->
+<ellipse cx="475" cy="155" rx="135" ry="38" class="uc"/><text x="475" y="160" text-anchor="middle" class="t label">Gestionar habitaciones</text>
+<ellipse cx="475" cy="245" rx="125" ry="38" class="uc"/><text x="475" y="250" text-anchor="middle" class="t label">Gestionar usuarios</text>
+<ellipse cx="890" cy="155" rx="120" ry="38" class="uc"/><text x="890" y="160" text-anchor="middle" class="t label">Generar informes</text>
+<ellipse cx="890" cy="245" rx="110" ry="38" class="uc"/><text x="890" y="250" text-anchor="middle" class="t label">Iniciar sesión</text>
+
+<ellipse cx="470" cy="390" rx="120" ry="38" class="uc"/><text x="470" y="395" text-anchor="middle" class="t label">Registrar huésped</text>
+<ellipse cx="470" cy="485" rx="120" ry="38" class="uc"/><text x="470" y="490" text-anchor="middle" class="t label">Gestionar reserva</text>
+<ellipse cx="470" cy="580" rx="120" ry="38" class="uc"/><text x="470" y="585" text-anchor="middle" class="t label">Realizar check-in</text>
+<ellipse cx="470" cy="675" rx="120" ry="38" class="uc"/><text x="470" y="680" text-anchor="middle" class="t label">Realizar check-out</text>
+
+<ellipse cx="875" cy="390" rx="130" ry="38" class="uc"/><text x="875" y="395" text-anchor="middle" class="t label">Consultar disponibilidad</text>
+<ellipse cx="875" cy="485" rx="120" ry="38" class="uc"/><text x="875" y="490" text-anchor="middle" class="t label">Asignar habitación</text>
+<ellipse cx="875" cy="580" rx="110" ry="38" class="uc"/><text x="875" y="585" text-anchor="middle" class="t label">Calcular costo</text>
+<ellipse cx="875" cy="675" rx="115" ry="38" class="uc"/><text x="875" y="680" text-anchor="middle" class="t label">Liberar habitación</text>
+
+<!-- Actor associations -->
+<line x1="155" y1="215" x2="340" y2="165" class="rel"/>
+<line x1="155" y1="235" x2="350" y2="245" class="rel"/>
+<line x1="155" y1="255" x2="770" y2="165" class="rel"/>
+<line x1="155" y1="275" x2="780" y2="245" class="rel"/>
+
+<line x1="155" y1="545" x2="350" y2="400" class="rel"/>
+<line x1="155" y1="555" x2="350" y2="485" class="rel"/>
+<line x1="155" y1="565" x2="350" y2="580" class="rel"/>
+<line x1="155" y1="575" x2="350" y2="675" class="rel"/>
+<line x1="155" y1="590" x2="745" y2="400" class="rel"/>
+<line x1="155" y1="605" x2="780" y2="245" class="rel"/>
+
+<!-- include relations -->
+<path d="M590 485 C670 450 720 420 745 400" class="inc"/>
+<text x="660" y="440" class="t small">&lt;&lt;include&gt;&gt;</text>
+<path d="M590 580 C675 545 710 505 755 485" class="inc"/>
+<text x="660" y="530" class="t small">&lt;&lt;include&gt;&gt;</text>
+<path d="M875 447 C875 430 875 420 875 428" class="inc"/>
+<text x="900" y="446" class="t small">&lt;&lt;include&gt;&gt;</text>
+<path d="M590 675 C690 650 730 610 765 585" class="inc"/>
+<text x="660" y="628" class="t small">&lt;&lt;include&gt;&gt;</text>
+<path d="M590 690 C690 705 735 700 760 680" class="inc"/>
+<text x="660" y="714" class="t small">&lt;&lt;include&gt;&gt;</text>
+
+<text x="315" y="825" class="t small">Nota: Iniciar sesión y la distribución exacta de permisos son propuestas derivadas de la gestión de usuarios.</text>
+</svg>
