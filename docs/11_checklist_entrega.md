@@ -1,22 +1,40 @@
 # Checklist antes de entregar
 
-- [x] Caso y alcance documentados.
+## Evaluación 1
+
+- [x] Propósito.
+- [x] Alcance.
+- [x] Público objetivo.
+- [x] Definiciones.
+- [x] Perspectiva del producto.
+- [x] Funciones generales.
+- [x] Clases de usuario.
+- [x] Entorno operativo identificado como propuesta cuando corresponde.
+- [x] Restricciones.
+- [x] Supuestos y dependencias.
 - [x] Requerimientos funcionales.
-- [x] Requerimientos no funcionales propuestos.
+- [x] Requerimientos no funcionales preliminares.
 - [x] Reglas de negocio.
-- [x] Actores.
+- [x] Entrevista simulada.
+- [x] Factibilidad técnica y de negocio.
+- [x] Requerimientos identificados para trazabilidad.
+
+## Evaluación 2
+
 - [x] Casos de uso.
-- [x] Diagrama de flujo documentado.
-- [x] Modelo de datos.
-- [x] Normalización.
-- [x] Script SQL.
-- [x] Mockups documentados.
-- [x] Kanban.
-- [x] Trazabilidad.
-- [x] Bitácora por jornadas.
-- [x] CHANGELOG.
-- [x] Guía de exposición.
-- [x] Explicación completa.
-- [ ] Reemplazar "Día 1, Día 2..." por fechas reales si el profesor exige fechas.
-- [ ] Incorporar comentarios reales de Evaluación 1 si existen.
-- [ ] Validar fórmula definitiva de costos con el profesor.
+- [x] Relaciones `<<include>>` revisadas.
+- [x] Diagrama de casos de uso.
+- [x] Diagrama de flujo.
+- [x] Modelo de base de datos.
+- [x] Normalización documentada.
+- [x] Mockups.
+- [x] Planificación Kanban.
+- [x] Matriz de trazabilidad.
+
+## Antes de cerrar la entrega
+
+- [ ] Incorporar retroalimentación real de la Evaluación 1 si el docente la entrega.
+- [ ] Confirmar la fórmula de cálculo de costos.
+- [ ] Confirmar los datos obligatorios del huésped.
+- [ ] Confirmar permisos exactos de administrador y encargado.
+- [ ] Revisar que cualquier cambio realizado después de esas validaciones también se refleje en la trazabilidad y los diagramas.
