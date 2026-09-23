@@ -9,11 +9,17 @@
 
 ---
 
+## Cómo está escrita esta bitácora
+
+La escribimos de forma simple, como para poder leerla después y acordarnos de qué hicimos en cada parte. Mantuvimos los nombres técnicos que vimos en clases, pero tratamos de explicar con palabras normales qué significa cada cosa.
+
+---
+
 # 1. Propósito de esta bitácora
 
-Esta bitácora fue creada para dejar documentado el proceso completo del proyecto, no solamente el resultado final.
+Hicimos esta bitácora para ir dejando anotado todo el proceso del proyecto y no solo entregar el resultado final.
 
-La idea es que, al revisar el repositorio, sea posible responder preguntas como:
+La idea es que, cuando revisemos el repositorio o tengamos que explicarlo, podamos mostrar cosas como:
 
 - ¿Qué problema se estaba resolviendo?
 - ¿Qué se hizo primero?
@@ -63,7 +69,7 @@ Desde las próximas jornadas, lo correcto es registrar cada avance el mismo día
 
 ### Qué se hizo
 
-Se creó el inicio del proyecto y se documentó que el trabajo corresponde al **Caso 6: Sistema de Pasajeros de Hotel - Duerme Bien**.
+Partimos creando el proyecto y dejando anotado que corresponde al **Caso 6: Sistema de Pasajeros de Hotel - Duerme Bien**.
 
 Se definió el problema general:
 
@@ -103,7 +109,7 @@ Se obtuvo un punto de partida claro para todo el proyecto.
 
 ### Qué se hizo
 
-Se creó una estructura general para separar el trabajo por áreas.
+Después ordenamos el repositorio por carpetas para no tener todos los archivos mezclados.
 
 El proyecto quedó organizado con carpetas para:
 
@@ -134,7 +140,7 @@ La idea era evitar tener todos los archivos mezclados y permitir que cualquier p
 
 ### Qué se hizo
 
-Se creó una primera bitácora general para describir cómo se fue construyendo el proyecto.
+También hicimos una primera bitácora para ir anotando cómo avanzábamos.
 
 La bitácora se pensó como evidencia del proceso de trabajo.
 
@@ -159,7 +165,7 @@ Convertir el enunciado general del caso en requerimientos claros.
 
 ## Trabajo realizado
 
-Se definieron requerimientos funcionales.
+Sacamos del caso los requerimientos funcionales principales.
 
 ### RF-01
 Registrar y actualizar habitaciones con sus características.
@@ -201,7 +207,7 @@ También se propusieron requerimientos no funcionales relacionados con:
 
 ## Resultado
 
-El problema original quedó transformado en una lista concreta de funciones.
+Con esto el caso quedó convertido en una lista clara de cosas que el sistema tiene que hacer.
 
 ## Archivo relacionado
 
@@ -228,7 +234,7 @@ Definir condiciones que el sistema debe respetar.
 
 ## Trabajo realizado
 
-Se documentaron reglas como:
+Anotamos reglas que el sistema debería respetar, por ejemplo:
 
 - una habitación ocupada no debe mostrarse como disponible;
 - al realizar check-in la habitación debe pasar a ocupada;
@@ -247,7 +253,7 @@ Ejemplos:
 
 ## Resultado
 
-Se evitó mezclar requisitos oficiales con decisiones de diseño propuestas.
+Así no mezclamos lo que realmente pide el caso con cosas que tuvimos que proponer nosotros.
 
 ## Archivo relacionado
 
@@ -320,7 +326,7 @@ Se documentó que:
 
 ## Resultado
 
-Se representó la relación entre usuarios y funciones.
+Con esto mostramos qué puede hacer cada tipo de usuario dentro del sistema.
 
 ## Archivo relacionado
 
@@ -358,7 +364,7 @@ Mostrar el orden de las operaciones.
 
 ## Resultado
 
-Se obtuvo una representación secuencial del funcionamiento general.
+Con eso nos quedó claro el orden general en que funciona el sistema.
 
 ## Archivo relacionado
 
@@ -408,7 +414,7 @@ Relaciona huéspedes con estadías.
 
 ## Resultado
 
-Se diseñó un modelo de datos organizado por entidades.
+Con esto dejamos organizada la información que tendría que guardar el sistema.
 
 ## Cómo explicarlo
 
@@ -439,7 +445,7 @@ Representar cómo podría verse la interfaz.
 
 ## Resultado
 
-Se obtuvo una propuesta visual previa a una implementación real.
+Con eso dejamos una idea visual de cómo podrían verse las pantallas antes de programar.
 
 ## Cómo explicarlo
 
@@ -739,7 +745,7 @@ Dejar el proyecto fácil de estudiar, revisar y exponer.
 
 ## Resultado
 
-El repositorio contiene tanto el contenido técnico como material para defenderlo oralmente.
+Al final dejamos tanto la parte técnica como una guía simple para poder explicarlo sin enredarnos.
 
 ---
 
