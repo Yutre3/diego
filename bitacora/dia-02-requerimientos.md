@@ -1,5 +1,15 @@
 # Día 2 - Requerimientos y reglas de negocio
 
+## Registro del avance
+- **Fecha de documentación en GitHub:** 23/09/2026
+- **Hora de registro:** 16:47:42 (Chile, UTC-03:00)
+- **Autor del commit:** Yutre3
+- **Commit de creación de esta jornada:** `c90c97bb50127e3ec05b7033ebee451f217c54e9`
+- **Tipo de registro:** reconstrucción documentada del proceso ya desarrollado
+- **Fecha/hora original de realización fuera de GitHub:** no registrada
+
+> La fecha y hora anteriores corresponden al registro real del commit en GitHub. No se inventaron fechas anteriores para simular trabajo realizado en otros días.
+
 ## Objetivo
 Organizar las funciones del caso como requerimientos verificables.
 
