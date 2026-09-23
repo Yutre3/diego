@@ -1,5 +1,15 @@
 # Día 6 - Mockups de interfaz
 
+## Registro del avance
+- **Fecha de documentación en GitHub:** 23/09/2026
+- **Hora de registro:** 16:52:36 (Chile, UTC-03:00)
+- **Autor del commit:** Yutre3
+- **Commit de creación de esta jornada:** `029780bedee50cae0e34e1fa13f113cad2307cf4`
+- **Tipo de registro:** reconstrucción documentada del proceso ya desarrollado
+- **Fecha/hora original de realización fuera de GitHub:** no registrada
+
+> La fecha y hora anteriores corresponden al registro real del commit en GitHub. No se inventaron fechas anteriores para simular trabajo realizado en otros días.
+
 ## Objetivo
 Diseñar cómo se verían las pantallas antes de programar.
 
