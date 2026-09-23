@@ -1,5 +1,15 @@
 # Día 5 - Modelo de datos y normalización
 
+## Registro del avance
+- **Fecha de documentación en GitHub:** 23/09/2026
+- **Hora de registro:** 16:52:34 (Chile, UTC-03:00)
+- **Autor del commit:** Yutre3
+- **Commit de creación de esta jornada:** `a38fe772fb43dcb2ec6e26db8ba5944bddd5c3e9`
+- **Tipo de registro:** reconstrucción documentada del proceso ya desarrollado
+- **Fecha/hora original de realización fuera de GitHub:** no registrada
+
+> La fecha y hora anteriores corresponden al registro real del commit en GitHub. No se inventaron fechas anteriores para simular trabajo realizado en otros días.
+
 ## Objetivo
 Definir cómo se almacenará la información del sistema.
 
