@@ -1,0 +1,10 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="white", pad="0.25"];
+  node [shape=record];
+  usuario [label="{USUARIO|PK id_usuario|nombre|username|password_hash|rol|activo}"];
+  habitacion [label="{HABITACION|PK id_habitacion|numero|capacidad|orientacion|estado|tarifa_noche}"];
+  huesped [label="{HUESPED|PK id_huesped|documento|nombre|apellido|telefono|email}"];
+  reserva [label="{RESERVA|PK id_reserva|FK id_habitacion|FK id_usuario_creador|fecha_entrada|fecha_salida|estado}"];
+  estadia [label="{ESTADIA|PK id_estadia|FK id_reserva|FK id_habitacion|FK id_usuario_registro|checkin|checkout|total_calculado|estado}"];
+  usuario -> reserva; usuario -> estadia; habitacion -> reserva; habitacion -> estadia; reserva -> estadia;
+}
