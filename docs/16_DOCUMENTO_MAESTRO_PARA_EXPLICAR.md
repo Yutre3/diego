@@ -2,7 +2,7 @@
 
 ## Sistema de Pasajeros de Hotel - Duerme Bien
 
-Este archivo reúne en un solo lugar lo necesario para revisar y explicar el trabajo sin tener que abrir todos los documentos a la vez.
+En este archivo juntamos lo principal del trabajo para poder repasarlo y explicarlo sin tener que abrir todos los archivos uno por uno.
 
 ---
 
@@ -110,7 +110,7 @@ Se definieron dos actores principales.
 
 ## 6. Casos de uso
 
-Se documentaron los siguientes casos:
+Los casos de uso que dejamos fueron:
 
 - iniciar sesión;
 - gestionar habitaciones;
@@ -160,7 +160,7 @@ El flujo general del sistema es:
 
 ## 8. Modelo de base de datos
 
-Se propusieron estas entidades:
+Para la base de datos separamos la información en estas entidades:
 
 - Usuario;
 - Habitación;
@@ -195,7 +195,7 @@ El modelo se organizó considerando:
 
 ## 10. Script SQL
 
-Se creó `database/schema.sql` como propuesta técnica para representar las tablas y relaciones del modelo.
+También dejamos un archivo `database/schema.sql` para mostrar cómo podría quedar la estructura de las tablas y sus relaciones.
 
 Incluye:
 
@@ -212,7 +212,7 @@ Incluye:
 
 ## 11. Mockups
 
-Se definieron las pantallas principales:
+Para los mockups pensamos en estas pantallas principales:
 
 - inicio de sesión;
 - panel principal;
@@ -229,7 +229,7 @@ Los mockups son prototipos visuales, no una aplicación terminada.
 
 ## 12. Kanban
 
-El proyecto se organizó en:
+Para ordenar las tareas usamos:
 
 - Pendiente;
 - En progreso;
@@ -255,7 +255,7 @@ Ejemplo:
 
 ## 14. Git y GitHub
 
-El repositorio se usa como evidencia del proceso.
+Usamos el repositorio para guardar el proyecto y también para dejar evidencia de los avances.
 
 Contiene:
 
