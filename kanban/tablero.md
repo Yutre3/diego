@@ -1,24 +1,25 @@
-# Tablero Kanban - Sistema Hotel Duerme Bien
+# Planificación Kanban
 
-## Pendiente
-- [ ] Incorporar retroalimentación específica de la Evaluación 1, si existe.
-- [ ] Validar con el docente la fórmula definitiva de cálculo de costos.
+El tablero organiza las actividades necesarias para completar y revisar el proyecto.
 
-## En progreso
-- [ ] Revisión final del equipo antes de entregar.
+| Por hacer | En proceso | Terminado |
+| --- | --- | --- |
+| Incorporar retroalimentación real de Evaluación 1 cuando sea entregada | Revisión final de coherencia entre documentos | Definir alcance del sistema |
+| Validar fórmula exacta de costos |  | Organizar requerimientos con estructura IEEE 830 adaptada |
+| Validar datos obligatorios del huésped |  | Identificar reglas de negocio y supuestos |
+| Validar permisos exactos de cada perfil |  | Identificar actores y casos de uso |
+| Ajustar documentos si el docente entrega nuevas indicaciones |  | Corregir relaciones `<<include>>` |
+|  |  | Elaborar flujo de check-in |
+|  |  | Diseñar modelo de datos |
+|  |  | Preparar mockups |
+|  |  | Crear matriz de trazabilidad |
+|  |  | Registrar la documentación en GitHub |
 
-## Terminado
-- [x] Definir alcance.
-- [x] Identificar actores.
-- [x] Documentar requerimientos.
-- [x] Proponer requerimientos no funcionales y supuestos.
-- [x] Elaborar casos de uso.
-- [x] Elaborar diagrama de flujo.
-- [x] Diseñar modelo de datos.
-- [x] Crear script SQL.
-- [x] Crear wireframes/mockups.
-- [x] Elaborar trazabilidad.
-- [x] Preparar documentación final.
+## Criterio para mover una tarea a Terminado
 
-## Criterio de movimiento
-Una tarea pasa a Terminado cuando el archivo correspondiente está creado, revisado y almacenado en el repositorio.
+Una tarea se considera terminada cuando:
+
+1. el archivo correspondiente existe en el repositorio;
+2. su contenido fue revisado contra el Caso 6;
+3. no presenta como oficial un dato que todavía sea un supuesto;
+4. los documentos relacionados mantienen los mismos identificadores y nombres.
