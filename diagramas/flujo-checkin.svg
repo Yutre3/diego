@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1250" viewBox="0 0 900 1250">
+<defs>
+  <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#444"/></marker>
+  <style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:26px;font-weight:700}.label{font-size:16px}.small{font-size:14px}.s{fill:white;stroke:#333;stroke-width:2}.l{fill:none;stroke:#444;stroke-width:2;marker-end:url(#a)}</style>
+</defs>
+<rect width="900" height="1250" fill="white"/>
+<text x="450" y="36" text-anchor="middle" class="t title">Flujo de check-in y asignación de habitación</text>
+
+<ellipse cx="450" cy="90" rx="95" ry="34" class="s"/><text x="450" y="96" text-anchor="middle" class="t label">Inicio</text>
+<rect x="315" y="150" width="270" height="58" rx="8" class="s"/><text x="450" y="185" text-anchor="middle" class="t label">Identificar huésped</text>
+<polygon points="450,250 600,320 450,390 300,320" class="s"/><text x="450" y="316" text-anchor="middle" class="t label">¿Huésped registrado?</text>
+<rect x="65" y="285" width="190" height="70" rx="8" class="s"/><text x="160" y="315" text-anchor="middle" class="t label">Registrar huésped</text><text x="160" y="337" text-anchor="middle" class="t small">si es necesario</text>
+<rect x="315" y="445" width="270" height="58" rx="8" class="s"/><text x="450" y="480" text-anchor="middle" class="t label">Consultar disponibilidad</text>
+<polygon points="450,545 610,615 450,685 290,615" class="s"/><text x="450" y="611" text-anchor="middle" class="t label">¿Hay habitación</text><text x="450" y="633" text-anchor="middle" class="t label">disponible?</text>
+<rect x="650" y="580" width="190" height="70" rx="8" class="s"/><text x="745" y="610" text-anchor="middle" class="t label">Informar que no</text><text x="745" y="633" text-anchor="middle" class="t label">hay disponibilidad</text>
+<rect x="315" y="735" width="270" height="58" rx="8" class="s"/><text x="450" y="770" text-anchor="middle" class="t label">Seleccionar habitación</text>
+<polygon points="450,835 610,905 450,975 290,905" class="s"/><text x="450" y="900" text-anchor="middle" class="t label">¿Capacidad suficiente?</text>
+<rect x="65" y="870" width="190" height="70" rx="8" class="s"/><text x="160" y="900" text-anchor="middle" class="t label">Volver a buscar</text><text x="160" y="923" text-anchor="middle" class="t label">otra habitación</text>
+<rect x="315" y="1015" width="270" height="58" rx="8" class="s"/><text x="450" y="1050" text-anchor="middle" class="t label">Registrar estadía</text>
+<rect x="315" y="1100" width="270" height="58" rx="8" class="s"/><text x="450" y="1135" text-anchor="middle" class="t label">Marcar habitación ocupada</text>
+<ellipse cx="450" cy="1210" rx="95" ry="30" class="s"/><text x="450" y="1216" text-anchor="middle" class="t label">Fin</text>
+
+<line x1="450" y1="124" x2="450" y2="150" class="l"/>
+<line x1="450" y1="208" x2="450" y2="250" class="l"/>
+<line x1="300" y1="320" x2="255" y2="320" class="l"/><text x="270" y="305" class="t small">No</text>
+<path d="M160 355 L160 420 L450 420 L450 445" class="l"/>
+<line x1="450" y1="390" x2="450" y2="445" class="l"/><text x="465" y="418" class="t small">Sí</text>
+<line x1="450" y1="503" x2="450" y2="545" class="l"/>
+<line x1="610" y1="615" x2="650" y2="615" class="l"/><text x="620" y="598" class="t small">No</text>
+<path d="M745 650 L745 705 L620 705 L620 474 L585 474" class="l"/>
+<line x1="450" y1="685" x2="450" y2="735" class="l"/><text x="465" y="713" class="t small">Sí</text>
+<line x1="450" y1="793" x2="450" y2="835" class="l"/>
+<line x1="290" y1="905" x2="255" y2="905" class="l"/><text x="265" y="888" class="t small">No</text>
+<path d="M160 940 L160 985 L250 985 L250 764 L315 764" class="l"/>
+<line x1="450" y1="975" x2="450" y2="1015" class="l"/><text x="465" y="998" class="t small">Sí</text>
+<line x1="450" y1="1073" x2="450" y2="1100" class="l"/>
+<line x1="450" y1="1158" x2="450" y2="1180" class="l"/>
+</svg>
