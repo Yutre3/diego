@@ -1,5 +1,15 @@
 # Día 1 - Comprensión del caso y definición del alcance
 
+## Registro del avance
+- **Fecha de documentación en GitHub:** 23/09/2026
+- **Hora de registro:** 16:47:40 (Chile, UTC-03:00)
+- **Autor del commit:** Yutre3
+- **Commit de creación de esta jornada:** `334d69bc12d47757da0f75c938c9dcef2089ecab`
+- **Tipo de registro:** reconstrucción documentada del proceso ya desarrollado
+- **Fecha/hora original de realización fuera de GitHub:** no registrada
+
+> La fecha y hora anteriores corresponden al registro real del commit en GitHub. No se inventaron fechas anteriores para simular trabajo realizado en otros días.
+
 ## Objetivo
 Comprender el Caso 6 y definir qué debe resolver el sistema.
 
