@@ -1,0 +1,22 @@
+# Checklist antes de entregar
+
+- [x] Caso y alcance documentados.
+- [x] Requerimientos funcionales.
+- [x] Requerimientos no funcionales propuestos.
+- [x] Reglas de negocio.
+- [x] Actores.
+- [x] Casos de uso.
+- [x] Diagrama de flujo documentado.
+- [x] Modelo de datos.
+- [x] Normalización.
+- [x] Script SQL.
+- [x] Mockups documentados.
+- [x] Kanban.
+- [x] Trazabilidad.
+- [x] Bitácora por jornadas.
+- [x] CHANGELOG.
+- [x] Guía de exposición.
+- [x] Explicación completa.
+- [ ] Reemplazar "Día 1, Día 2..." por fechas reales si el profesor exige fechas.
+- [ ] Incorporar comentarios reales de Evaluación 1 si existen.
+- [ ] Validar fórmula definitiva de costos con el profesor.
