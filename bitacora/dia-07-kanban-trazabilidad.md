@@ -1,5 +1,15 @@
 # Día 7 - Kanban y trazabilidad
 
+## Registro del avance
+- **Fecha de documentación en GitHub:** 23/09/2026
+- **Hora de registro:** 16:52:38 (Chile, UTC-03:00)
+- **Autor del commit:** Yutre3
+- **Commit de creación de esta jornada:** `ef5cd99613c44022a42e1ffcd7c2f3a6306ff1d7`
+- **Tipo de registro:** reconstrucción documentada del proceso ya desarrollado
+- **Fecha/hora original de realización fuera de GitHub:** no registrada
+
+> La fecha y hora anteriores corresponden al registro real del commit en GitHub. No se inventaron fechas anteriores para simular trabajo realizado en otros días.
+
 ## Objetivo
 Organizar las tareas y comprobar que el proyecto cubra los requerimientos.
 
