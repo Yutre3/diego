@@ -105,3 +105,13 @@ Así GitHub sirve como evidencia real de la evolución del trabajo.
 ## Nota de alcance
 
 Cuando el caso original no especifica un detalle concreto, se identifica como propuesta o supuesto de diseño. De esta forma no se presenta como requisito oficial algo que no estaba indicado por el docente.
+
+
+## Registro con fecha y hora
+
+Además de la bitácora por jornadas, el repositorio incluye:
+
+- `bitacora/registro-cronologico.md`: fecha, hora, actividad y commit de cada jornada registrada.
+- `bitacora/PLANTILLA_NUEVO_DIA.md`: formato para continuar documentando los próximos días con hora de inicio, hora de término, problemas, soluciones, archivos modificados y commit.
+
+Las fechas históricas no se inventaron: los registros existentes usan la fecha y hora reales guardadas por GitHub. Los próximos avances deben documentarse el mismo día en que se trabajen para que el historial represente de forma real el proceso.
