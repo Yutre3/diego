@@ -1,0 +1,25 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.25"];
+  node [shape=box, style="rounded"];
+  start [shape=oval, label="Inicio"];
+  login [shape=parallelogram, label="Ingresar usuario y contraseña"];
+  valid [shape=diamond, label="¿Credenciales válidas?"];
+  menu [label="Menú principal"];
+  action [shape=diamond, label="¿Qué operación realiza?"];
+  reserve [label="Gestionar reserva + consultar disponibilidad"];
+  ci [label="Check-in: registrar huésped + asignar habitación"];
+  co [label="Check-out: calcular costo + liberar habitación"];
+  save [shape=cylinder, label="Actualizar base de datos"];
+  again [shape=diamond, label="¿Realizar otra operación?"];
+  end [shape=oval, label="Fin"];
+  start -> login -> valid;
+  valid -> menu [label="Sí"];
+  menu -> action;
+  action -> reserve [label="Reserva"];
+  action -> ci [label="Check-in"];
+  action -> co [label="Check-out"];
+  reserve -> save; ci -> save; co -> save;
+  save -> again;
+  again -> menu [label="Sí"];
+  again -> end [label="No"];
+}
