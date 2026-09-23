@@ -2,13 +2,17 @@
 
 Proyecto de modelado y documentación UML basado en el **Caso 6: Sistema de Pasajeros de Hotel** entregado por INACAP.
 
+## Cómo pensamos este trabajo
+
+La idea fue ir haciendo el proyecto por partes y dejar cada avance guardado en el repositorio. Tratamos de usar los mismos conceptos que vimos en clases y de no agregar cosas que el caso no pidiera sin marcarlas como propuesta.
+
 ## Contexto
 
 El hotel Duerme Bien busca reemplazar sus planillas Excel por un sistema para gestionar habitaciones y el registro de pasajeros. El sistema considera huéspedes, asignación de habitaciones, ocupación, disponibilidad, costos, usuarios, reservas, check-in y check-out.
 
 ## Cómo se documentó el trabajo
 
-Este repositorio está organizado para mostrar **el proceso completo de desarrollo**, no solamente el resultado final.
+En este repositorio fuimos dejando el trabajo ordenado para que se pueda ver no solo el resultado final, sino también lo que fuimos haciendo en cada etapa.
 
 La idea indicada por el profesor se interpreta como trabajar con **commits**: cada jornada o avance importante debe quedar registrado en Git. Además del historial de commits, se mantiene una bitácora escrita para explicar qué se hizo, qué decisión se tomó, qué archivo se modificó y qué quedó pendiente.
 
