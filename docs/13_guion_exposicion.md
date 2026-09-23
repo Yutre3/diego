@@ -4,23 +4,23 @@ Este guion está pensado para explicar el proyecto sin memorizar palabras técni
 
 ## Inicio
 
-"Nuestro proyecto corresponde al Caso 6, Sistema de Pasajeros del Hotel Duerme Bien.
+"A nosotros nos tocó el Caso 6, que es el Sistema de Pasajeros del Hotel Duerme Bien.
 
-El problema principal es que el hotel trabaja con planillas Excel para manejar habitaciones y pasajeros. La idea del proyecto es diseñar un sistema que permita tener esa información organizada y realizar reservas, check-in, check-out, controlar disponibilidad y calcular costos."
+El problema principal es que el hotel trabaja con planillas Excel para manejar habitaciones y pasajeros. La idea fue diseñar un sistema para tener esa información más ordenada y realizar reservas, check-in, check-out, controlar disponibilidad y calcular costos."
 
 ## Parte 1 - Análisis del caso
 
-"Lo primero que hicimos fue analizar el caso y separar las funciones principales. Identificamos que el sistema debe manejar habitaciones, huéspedes, reservas, disponibilidad, costos, usuarios e informes."
+"Primero leímos el caso y fuimos sacando las funciones más importantes. Identificamos que el sistema debe manejar habitaciones, huéspedes, reservas, disponibilidad, costos, usuarios e informes."
 
 ## Parte 2 - Requerimientos
 
-"Después convertimos esas funciones en requerimientos. Por ejemplo, registrar habitaciones, registrar huéspedes, gestionar reservas, realizar check-in y realizar check-out.
+"Después esas funciones las pasamos a requerimientos. Por ejemplo, registrar habitaciones, registrar huéspedes, gestionar reservas, realizar check-in y realizar check-out.
 
 También separamos lo que viene directamente del caso de las cosas que nosotros propusimos, porque no queríamos presentar como requisito algo que el profesor no había indicado."
 
 ## Parte 3 - Casos de uso
 
-"Después identificamos los usuarios del sistema. Tenemos al Administrador y al Encargado de hotel.
+"Después vimos quiénes iban a usar el sistema. Tenemos al Administrador y al Encargado de hotel.
 
 El Administrador puede gestionar usuarios y habitaciones y consultar informes. El Encargado trabaja principalmente con huéspedes, reservas, disponibilidad, check-in y check-out.
 
@@ -34,7 +34,7 @@ El usuario inicia sesión, el sistema valida los datos, entra al menú y puede r
 
 ## Parte 5 - Base de datos
 
-"Para guardar la información diseñamos una base de datos con entidades como Usuario, Habitación, Huésped, Reserva y Estadía.
+"Después pensamos cómo guardar la información y armamos una base de datos con entidades como Usuario, Habitación, Huésped, Reserva y Estadía.
 
 Las separamos para no repetir información. Por ejemplo, los datos del huésped se guardan una sola vez y después se relacionan con sus reservas o estadías."
 
@@ -46,13 +46,13 @@ Esto nos permite mostrar cómo podría funcionar la interfaz antes de programar 
 
 ## Parte 7 - Kanban y trazabilidad
 
-"Para organizar el proyecto usamos un Kanban con tareas pendientes, en progreso y terminadas.
+"Para no perdernos con las tareas usamos un Kanban con tareas pendientes, en progreso y terminadas.
 
 Además hicimos una matriz de trazabilidad para comprobar que cada requerimiento esté relacionado con un caso de uso, datos y una pantalla cuando corresponde."
 
 ## Parte 8 - Repositorio
 
-"Todo el proceso está documentado en GitHub.
+"Todo lo que fuimos haciendo lo dejamos ordenado en GitHub.
 
 Tenemos una bitácora por jornadas y commits que permiten revisar los cambios. Así el repositorio no muestra solamente el resultado final, sino también cómo se fue construyendo el proyecto."
 
