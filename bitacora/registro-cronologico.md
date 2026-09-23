@@ -36,3 +36,5 @@ Cada jornada nueva debe registrar:
 - pendientes;
 - commit asociado;
 - explicación breve para la exposición.
+
+| Día 9 | 23/09/2026 | 16:58:57 | Explicación y revisión final | `dd9a45fe4b9e6e290b5d5a76af2f79645e5760d1` |
