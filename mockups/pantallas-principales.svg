@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1180" viewBox="0 0 1400 1180">
+<defs><style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:26px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:14px}.frame{fill:#fff;stroke:#333;stroke-width:2}.soft{fill:#f4f4f4;stroke:#777;stroke-width:1.5}.btn{fill:#e8e8e8;stroke:#555;stroke-width:1.5}</style></defs>
+<rect width="1400" height="1180" fill="white"/>
+<text x="700" y="38" text-anchor="middle" class="t title">Wireframes - Hotel Duerme Bien</text>
+
+<!-- Login -->
+<rect x="60" y="80" width="600" height="290" rx="10" class="frame"/>
+<text x="85" y="115" class="t h">1. Inicio de sesión</text>
+<text x="360" y="155" text-anchor="middle" class="t h">Hotel Duerme Bien</text>
+<rect x="190" y="180" width="340" height="42" rx="5" class="soft"/><text x="205" y="207" class="t f">Usuario</text>
+<rect x="190" y="240" width="340" height="42" rx="5" class="soft"/><text x="205" y="267" class="t f">Contraseña</text>
+<rect x="285" y="305" width="150" height="40" rx="5" class="btn"/><text x="360" y="331" text-anchor="middle" class="t f">Ingresar</text>
+
+<!-- Panel -->
+<rect x="740" y="80" width="600" height="290" rx="10" class="frame"/>
+<text x="765" y="115" class="t h">2. Panel principal</text>
+<rect x="770" y="140" width="540" height="42" class="soft"/><text x="790" y="166" class="t f">Inicio | Habitaciones | Huéspedes | Reservas | Informes</text>
+<rect x="780" y="205" width="150" height="105" class="soft"/><text x="855" y="240" text-anchor="middle" class="t h">Disponibles</text><text x="855" y="278" text-anchor="middle" class="t f">Resumen</text>
+<rect x="965" y="205" width="150" height="105" class="soft"/><text x="1040" y="240" text-anchor="middle" class="t h">Ocupadas</text><text x="1040" y="278" text-anchor="middle" class="t f">Resumen</text>
+<rect x="1150" y="205" width="150" height="105" class="soft"/><text x="1225" y="240" text-anchor="middle" class="t h">Reservas</text><text x="1225" y="278" text-anchor="middle" class="t f">Resumen</text>
+<rect x="890" y="325" width="140" height="30" class="btn"/><text x="960" y="346" text-anchor="middle" class="t f">Check-in</text>
+<rect x="1050" y="325" width="140" height="30" class="btn"/><text x="1120" y="346" text-anchor="middle" class="t f">Check-out</text>
+
+<!-- Reservas -->
+<rect x="60" y="410" width="600" height="320" rx="10" class="frame"/>
+<text x="85" y="445" class="t h">3. Reservas</text>
+<text x="90" y="485" class="t f">Fecha entrada</text><rect x="200" y="462" width="160" height="36" class="soft"/>
+<text x="385" y="485" class="t f">Fecha salida</text><rect x="475" y="462" width="150" height="36" class="soft"/>
+<rect x="90" y="520" width="180" height="36" class="btn"/><text x="180" y="544" text-anchor="middle" class="t f">Buscar disponibilidad</text>
+<rect x="90" y="575" width="535" height="85" class="soft"/><text x="110" y="603" class="t f">Habitaciones disponibles</text><text x="110" y="630" class="t f">N° | Capacidad | Orientación | Seleccionar</text>
+<rect x="90" y="675" width="250" height="36" class="soft"/><text x="105" y="699" class="t f">Huésped / pasajeros</text>
+<rect x="470" y="675" width="155" height="36" class="btn"/><text x="548" y="699" text-anchor="middle" class="t f">Guardar reserva</text>
+
+<!-- Check-in -->
+<rect x="740" y="410" width="600" height="320" rx="10" class="frame"/>
+<text x="765" y="445" class="t h">4. Check-in</text>
+<text x="770" y="485" class="t f">Buscar huésped o reserva</text><rect x="950" y="462" width="250" height="36" class="soft"/>
+<rect x="1210" y="462" width="100" height="36" class="btn"/><text x="1260" y="486" text-anchor="middle" class="t f">Buscar</text>
+<rect x="770" y="520" width="540" height="70" class="soft"/><text x="790" y="548" class="t f">Datos del huésped / reserva</text><text x="790" y="574" class="t f">Estado y fechas</text>
+<text x="770" y="625" class="t f">Habitación disponible</text><rect x="920" y="602" width="390" height="36" class="soft"/>
+<rect x="1120" y="665" width="190" height="40" class="btn"/><text x="1215" y="691" text-anchor="middle" class="t f">Confirmar check-in</text>
+
+<!-- Checkout -->
+<rect x="300" y="775" width="800" height="330" rx="10" class="frame"/>
+<text x="330" y="815" class="t h">5. Check-out</text>
+<text x="330" y="860" class="t f">Buscar estadía activa</text><rect x="480" y="837" width="360" height="36" class="soft"/><rect x="855" y="837" width="110" height="36" class="btn"/><text x="910" y="861" text-anchor="middle" class="t f">Buscar</text>
+<rect x="330" y="900" width="620" height="80" class="soft"/><text x="350" y="928" class="t f">Huésped | Habitación | Check-in | Estado</text><text x="350" y="956" class="t f">Resumen de la estadía</text>
+<text x="330" y="1025" class="t f">Costo calculado</text><rect x="460" y="1002" width="220" height="36" class="soft"/>
+<rect x="745" y="1000" width="205" height="42" class="btn"/><text x="848" y="1027" text-anchor="middle" class="t f">Confirmar check-out</text>
+<text x="330" y="1080" class="t f">Al confirmar, se registra la salida y la habitación queda liberada.</text>
+
+<text x="60" y="1150" class="t f">Wireframes de referencia. Los campos exactos y la fórmula de costos deben validarse antes de implementar.</text>
+</svg>
