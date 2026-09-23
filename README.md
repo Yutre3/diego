@@ -1,73 +1,44 @@
-# Sistema de Pasajeros de Hotel - Duerme Bien
+# Sistema de Pasajeros - Hotel Duerme Bien
 
-Proyecto de modelado y documentación UML basado en el **Caso 6: Sistema de Pasajeros de Hotel** entregado por INACAP.
+El hotel Duerme Bien actualmente utiliza planillas Excel para llevar el registro de pasajeros y habitaciones. En este trabajo se organiza una propuesta de sistema que permita controlar esa información de forma más ordenada y apoyar los procesos principales del hotel.
 
-## Cómo pensamos este trabajo
+## Objetivo
 
-La idea fue ir haciendo el proyecto por partes y dejar cada avance guardado en el repositorio. Tratamos de usar los mismos conceptos que vimos en clases y de no agregar cosas que el caso no pidiera sin marcarlas como propuesta.
+Administrar el registro de huéspedes y la asignación de habitaciones, manteniendo control sobre la ocupación, la disponibilidad, las reservas y los costos por pasajero.
 
-## Contexto
+## Funciones consideradas
 
-El hotel Duerme Bien busca reemplazar sus planillas Excel por un sistema para gestionar habitaciones y el registro de pasajeros. El sistema considera huéspedes, asignación de habitaciones, ocupación, disponibilidad, costos, usuarios, reservas, check-in y check-out.
+- Registrar habitaciones y sus características, como capacidad y orientación.
+- Registrar huéspedes y asignarlos a una habitación.
+- Consultar habitaciones disponibles y ocupadas.
+- Registrar y gestionar reservas.
+- Realizar check-in y asignar habitación.
+- Realizar check-out y liberar habitación.
+- Calcular automáticamente el costo por pasajero.
+- Gestionar usuarios con perfil de administrador o encargado del hotel.
+- Consultar informes de ocupación y reservas.
 
-## Cómo se documentó el trabajo
+## Trabajo realizado
 
-En este repositorio fuimos dejando el trabajo ordenado para que se pueda ver no solo el resultado final, sino también lo que fuimos haciendo en cada etapa.
+El repositorio está organizado según lo solicitado para las evaluaciones:
 
-La idea indicada por el profesor se interpreta como trabajar con **commits**: cada jornada o avance importante debe quedar registrado en Git. Además del historial de commits, se mantiene una bitácora escrita para explicar qué se hizo, qué decisión se tomó, qué archivo se modificó y qué quedó pendiente.
+### Evaluación 1 - Toma de requerimientos
+En [docs/01_requerimientos.md](docs/01_requerimientos.md) se encuentra la especificación siguiendo la estructura IEEE 830 adaptada: propósito, alcance, usuarios, descripción general, requerimientos funcionales y no funcionales, reglas de negocio, entrevista simulada, factibilidad y puntos pendientes de validar.
 
-> Importante: las jornadas iniciales fueron reconstruidas a partir del trabajo ya realizado. No se inventaron fechas antiguas. Desde ahora, cada nueva sesión de trabajo debe registrarse el mismo día con su propio commit.
+### Evaluación 2 - Modelado
+Se incluyen:
 
-## Bitácora diaria
-
-La carpeta `bitacora/` contiene el proceso por jornadas:
-
-1. Día 1 - Comprensión del caso y alcance.
-2. Día 2 - Requerimientos y reglas de negocio.
-3. Día 3 - Casos de uso.
-4. Día 4 - Diagrama de flujo.
-5. Día 5 - Modelo de datos y normalización.
-6. Día 6 - Mockups.
-7. Día 7 - Kanban y trazabilidad.
-8. Día 8 - Revisión y preparación de la exposición.
-
-Cada jornada incluye:
-- objetivo;
-- actividades realizadas;
-- decisiones;
-- archivos relacionados;
-- resultado;
-- pendientes;
-- una forma corta de explicarlo al profesor.
-
-## Orden general del proyecto
-
-1. Definición del caso y alcance.
-2. Requerimientos y reglas de negocio.
-3. Casos de uso.
-4. Diagrama de flujo.
-5. Modelo de datos y normalización.
-6. Mockups de interfaz.
-7. Planificación Kanban.
-8. Trazabilidad.
-9. Informe y preparación de la exposición.
+- [Casos de uso](docs/03_casos_de_uso.md)
+- [Diagrama de flujo](docs/04_diagrama_flujo.md)
+- [Modelo de datos](docs/05_modelo_datos.md)
+- [Mockups](docs/06_mockups.md)
+- [Matriz de trazabilidad](docs/07_trazabilidad.md)
+- [Planificación Kanban](kanban/tablero.md)
 
 ## Estructura
 
 ```text
-bitacora/
-  README.md
-  dia-01-alcance.md
-  dia-02-requerimientos.md
-  dia-03-casos-de-uso.md
-  dia-04-flujo.md
-  dia-05-base-de-datos.md
-  dia-06-mockups.md
-  dia-07-kanban-trazabilidad.md
-  dia-08-revision-exposicion.md
-
 docs/
-  00_bitacora_desarrollo.md
   01_requerimientos.md
   02_reglas_negocio.md
   03_casos_de_uso.md
@@ -76,46 +47,25 @@ docs/
   06_mockups.md
   07_trazabilidad.md
   08_fuentes_y_alcance.md
-  09_guia_exposicion.md
-  10_explicacion_completa.md
-  11_checklist_entrega.md
+  evaluacion-2-modelado.md
+
+diagramas/
+  casos-de-uso.svg
+  flujo-checkin.svg
+  modelo-datos.svg
+
+mockups/
+  pantallas-principales.svg
 
 database/
   schema.sql
 
-diagramas/
-  fuentes_dot/
-
 kanban/
   tablero.md
-
-CHANGELOG.md
 ```
 
-## Cómo se debe continuar desde ahora
+## Pendientes de validar
 
-Al terminar cada día de trabajo:
+El caso no define algunos detalles, por lo que no se presentan como requisitos oficiales. Antes de una implementación habría que confirmar, entre otros puntos, la fórmula exacta para calcular los costos, los datos obligatorios del huésped y las reglas específicas para cancelar o modificar reservas.
 
-1. actualizar o crear el archivo correspondiente en `bitacora/`;
-2. guardar los cambios del proyecto;
-3. hacer un commit con un mensaje concreto, por ejemplo:
-   - `Día 9: corregir casos de uso`
-   - `Día 10: ajustar modelo de datos`
-   - `Día 11: incorporar observaciones del profesor`
-4. subir el commit al repositorio.
-
-Así GitHub sirve como evidencia real de la evolución del trabajo.
-
-## Nota de alcance
-
-Cuando el caso original no especifica un detalle concreto, se identifica como propuesta o supuesto de diseño. De esta forma no se presenta como requisito oficial algo que no estaba indicado por el docente.
-
-
-## Registro con fecha y hora
-
-Además de la bitácora por jornadas, el repositorio incluye:
-
-- `bitacora/registro-cronologico.md`: fecha, hora, actividad y commit de cada jornada registrada.
-- `bitacora/PLANTILLA_NUEVO_DIA.md`: formato para continuar documentando los próximos días con hora de inicio, hora de término, problemas, soluciones, archivos modificados y commit.
-
-Las fechas históricas no se inventaron: los registros existentes usan la fecha y hora reales guardadas por GitHub. Los próximos avances deben documentarse el mismo día en que se trabajen para que el historial represente de forma real el proceso.
+También queda pendiente incorporar la retroalimentación real de la Evaluación 1 cuando sea entregada por el docente.
