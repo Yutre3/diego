@@ -1,69 +1,88 @@
 # Evaluación 2 - Requerimientos y modelado
 
-Esta parte reúne los elementos de modelado solicitados para continuar el trabajo realizado en la toma de requerimientos.
+Esta parte reúne los elementos solicitados para continuar el trabajo realizado en la toma de requerimientos.
 
 ## 1. Revisión de requerimientos
 
-Los requerimientos se mantienen organizados con identificadores RF y RNF en [01_requerimientos.md](01_requerimientos.md).
+Los requerimientos están organizados con identificadores RF y RNF en [01_requerimientos.md](01_requerimientos.md).
 
-No se ha incorporado una supuesta retroalimentación del docente porque todavía no se cuenta con observaciones concretas. Cuando exista, los cambios deben registrarse en los requerimientos y en la matriz de trazabilidad.
+No se inventó retroalimentación del docente. Cuando exista, los cambios deben registrarse en los requerimientos y en la trazabilidad.
 
 ## 2. Casos de uso
 
-Se identificaron dos actores principales:
+Actores principales:
 
 - Administrador.
 - Encargado de hotel.
 
-Los casos de uso se concentran en habitaciones, usuarios, huéspedes, disponibilidad, reservas, check-in, check-out, costos e informes.
+Archivos:
 
 - [Detalle de casos de uso](03_casos_de_uso.md)
-- [Diagrama de casos de uso](../diagramas/casos-de-uso.svg)
+- [Material de casos de uso aplicado paso a paso](13_casos_uso_material_aplicado.md)
+- [Diagrama oficial](../diagramas/casos-de-uso.svg)
+- [Ejemplo simple adaptado](../diagramas/casos-de-uso-checkin-checkout.svg)
+- [Ejemplo tipo ATM adaptado](../diagramas/casos-de-uso-estructura-atm-adaptada.svg)
 
 ## 3. Diagrama de flujo
 
-Se modeló el proceso de check-in y asignación de habitación, porque corresponde a uno de los procesos de negocio indicados para el caso.
+Se modeló el proceso de check-in y asignación de habitación.
 
-- [Descripción del flujo](04_diagrama_flujo.md)
-- [Diagrama de flujo](../diagramas/flujo-checkin.svg)
+- [Descripción](04_diagrama_flujo.md)
+- [Flujo completo de check-in](../diagramas/flujo-checkin.svg)
+- [Ejemplo de captura, decisión, retorno y registro en BD](../diagramas/flujo-validacion-ejemplo.svg)
 
 ## 4. Diagrama de base de datos
 
-El modelo separa Usuario, Habitacion, Huesped, Reserva y Estadia. Las relaciones de varios huéspedes con una reserva o una estadía se resuelven con tablas intermedias.
-
 - [Descripción del modelo](05_modelo_datos.md)
 - [Diagrama de datos](../diagramas/modelo-datos.svg)
+- [Normalización 1NF, 2NF y 3NF](09_normalizacion.md)
+- [Esquema visual de normalización](../diagramas/normalizacion-hotel.svg)
 - [SQL de referencia](../database/schema.sql)
 
-## 5. Mockups
+## 5. Interfaz
 
-Los mockups muestran una propuesta para las pantallas de inicio de sesión, panel principal, reservas, check-in y check-out.
+Se aplicó la secuencia del material:
 
-- [Descripción](06_mockups.md)
+1. Sketch.
+2. Wireframe.
+3. Mockup.
+4. Prototipo.
+
+- [Explicación de las etapas](06_mockups.md)
+- [Sketch](../sketch/sketch-hotel.svg)
+- [Wireframe](../wireframes/wireframe-hotel.svg)
+- [Mockup](../mockups/mockup-hotel.svg)
 - [Pantallas principales](../mockups/pantallas-principales.svg)
+- [Prototipo navegable](../prototipo/README.md)
 
 ## 6. Planificación Kanban
-
-La planificación mantiene visibles las tareas ya realizadas y los puntos que todavía dependen de validación o retroalimentación.
 
 - [Tablero Kanban](../kanban/tablero.md)
 
 ## 7. Trazabilidad
 
-Se relacionaron los requisitos con los casos de uso, datos y pantallas para facilitar futuras modificaciones.
-
 - [Matriz de trazabilidad](07_trazabilidad.md)
 
-## 8. Material complementario basado en los ejemplos de clases
+## 8. Diagrama de clases complementario
 
-Además de los entregables principales se agregó un [diagrama de clases](../diagramas/diagrama-clases.svg) para aplicar el formato visto en los ejemplos de UML: nombre, atributos, operaciones y relaciones. Se mantiene como material complementario y no como requisito obligatorio de la Evaluación 2.
+La pauta de Evaluación 2 no lo enumera como entrega obligatoria, pero se agregó para aplicar los ejemplos de clases.
 
-También se documentó la [normalización aplicada al hotel](09_normalizacion.md) con un ejemplo de separación de datos hasta 3NF.
+- [Construcción paso a paso](10_diagrama_clases.md)
+- [Diagrama simplificado](../diagramas/diagrama-clases.svg)
+- [Diagrama completo](../diagramas/diagrama-clases-completo.svg)
 
-## 9. Puntos que siguen pendientes
+## 9. Git, GitHub y VS Code
 
-- fórmula exacta de costos por pasajero;
+También se aplicó el material de control de versiones:
+
+- [Guía aplicada al repositorio](12_git_github_vscode.md)
+- rama `main`;
+- rama `dev`.
+
+## 10. Puntos pendientes
+
+- fórmula exacta de costos;
 - datos obligatorios del huésped;
-- permisos detallados de cada perfil;
+- permisos detallados por perfil;
 - estados y reglas definitivas de las reservas;
 - retroalimentación real de la Evaluación 1.
