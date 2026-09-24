@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="760" viewBox="0 0 1050 760">
+<defs><style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:27px;font-weight:700}.h{font-size:19px;font-weight:700}.f{font-size:14px}.card{fill:white;stroke:#d9e1e5;stroke-width:1.5}</style></defs>
+<rect width="1050" height="760" fill="#f6f8f9"/>
+<text x="525" y="42" text-anchor="middle" class="t title">Guía de estilo - Hotel Duerme Bien</text>
+<rect x="60" y="80" width="430" height="250" rx="12" class="card"/><text x="85" y="115" class="t h">Paleta</text>
+<rect x="85" y="145" width="120" height="55" rx="6" fill="#17324d"/><text x="220" y="178" class="t f">#17324D · principal</text>
+<rect x="85" y="215" width="120" height="55" rx="6" fill="#10293f"/><text x="220" y="248" class="t f">#10293F · navegación</text>
+<rect x="85" y="285" width="120" height="55" rx="6" fill="#1f7a8c"/><text x="220" y="318" class="t f">#1F7A8C · acción</text>
+<rect x="560" y="80" width="430" height="250" rx="12" class="card"/><text x="585" y="115" class="t h">Tipografía</text>
+<text x="585" y="165" class="t" font-size="30" font-weight="700">Título principal</text><text x="585" y="210" class="t h">Título de sección</text><text x="585" y="250" class="t" font-size="16">Texto normal de interfaz</text><text x="585" y="285" class="t" font-size="13" fill="#657784">Etiqueta secundaria</text>
+<rect x="60" y="380" width="430" height="280" rx="12" class="card"/><text x="85" y="415" class="t h">Componentes</text>
+<rect x="85" y="450" width="170" height="45" rx="8" fill="#1f7a8c"/><text x="170" y="478" text-anchor="middle" class="t f" fill="white">Acción principal</text>
+<rect x="85" y="520" width="330" height="45" rx="7" fill="#f7f9fa" stroke="#ccd6db"/><text x="100" y="548" class="t f" fill="#657784">Campo de formulario</text>
+<rect x="85" y="590" width="330" height="50" rx="9" fill="#f8fafb" stroke="#dfe6ea"/><text x="105" y="621" class="t f">Tarjeta / fila informativa</text>
+<rect x="560" y="380" width="430" height="280" rx="12" class="card"/><text x="585" y="415" class="t h">Reglas visuales</text>
+<text x="585" y="460" class="t f">• Alineación consistente</text><text x="585" y="495" class="t f">• Contraste alto entre fondo y texto</text><text x="585" y="530" class="t f">• Botones con etiquetas visibles</text><text x="585" y="565" class="t f">• Espaciado regular entre bloques</text><text x="585" y="600" class="t f">• Diseño adaptable a pantallas pequeñas</text><text x="585" y="635" class="t f">• Acciones principales fáciles de localizar</text>
+<text x="60" y="720" class="t f">Decisiones visuales del mockup y prototipo; no son requisitos originales del caso.</text>
+</svg>
