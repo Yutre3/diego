@@ -4,7 +4,7 @@ Este documento aplica otros contenidos del material de Sketch, Wireframe, Mockup
 
 ## Wireframe
 
-El material recomienda que el wireframe se concentre en estructura y jerarquía.
+El wireframe se concentra en estructura, funcionalidad y jerarquía de información.
 
 Aplicación en el hotel:
 
@@ -20,11 +20,35 @@ Archivos:
 - [Wireframe principal](../wireframes/wireframe-hotel.svg)
 - [Wireframe con retícula de 12 columnas](../wireframes/wireframe-grid-12.svg)
 
+## Elementos habituales de wireframe y aplicación al hotel
+
+El material menciona como elementos habituales:
+
+- logo;
+- campo de búsqueda;
+- cabeceras y títulos;
+- navegación global y local;
+- contenido del cuerpo;
+- botones de compartir;
+- información de contacto;
+- pie de página.
+
+Aplicación en este proyecto:
+
+- logo o nombre del hotel: sí;
+- búsqueda: se aplica en reservas, huéspedes y estadías;
+- títulos: sí;
+- navegación principal y local: sí;
+- contenido principal: sí;
+- botones de compartir: no se utilizan porque el sistema es interno;
+- información de contacto: no se considera necesaria en la interfaz operativa;
+- pie de página: puede agregarse en una versión final, pero no es esencial para el flujo principal.
+
 ## Rejilla / grid
 
 La retícula ayuda a ordenar los elementos y mantener alineación.
 
-En la versión de ejemplo se muestra una retícula de 12 columnas para que las tarjetas, menú y contenido mantengan proporciones coherentes.
+Se preparó una versión con 12 columnas para mostrar cómo pueden distribuirse tarjetas, menú y contenido.
 
 ## Mockup
 
@@ -33,11 +57,11 @@ El mockup agrega una apariencia visual más cercana al producto final.
 Aplicación:
 
 - paleta azul oscuro y turquesa;
-- fondo claro para facilitar lectura;
+- fondo claro;
 - tarjetas blancas;
 - botones con contraste;
 - bordes y espacios consistentes;
-- estructura basada en el wireframe.
+- estructura derivada del wireframe.
 
 Archivos:
 
@@ -57,8 +81,6 @@ Por eso:
 
 ## Esquema de color
 
-El material destaca que el color influye en la percepción de la aplicación.
-
 Paleta propuesta para este prototipo:
 
 | Uso | Color |
@@ -70,11 +92,11 @@ Paleta propuesta para este prototipo:
 | Tarjetas | #FFFFFF |
 | Texto | #1D2A32 |
 
-Esta paleta es una decisión de diseño del prototipo, no un requisito del Caso 6.
+Esta paleta es una decisión de diseño y no un requisito del Caso 6.
 
 ## Tipografía
 
-Se utiliza una familia genérica sans-serif para mantener lectura simple.
+Se utiliza una familia sans-serif genérica.
 
 Jerarquía:
 
@@ -84,11 +106,36 @@ Jerarquía:
 - texto normal;
 - etiquetas y estados.
 
-## Legibilidad y contraste
+## Guía de estilo
 
-Se mantiene texto oscuro sobre fondos claros y texto claro sobre fondos oscuros.
+El material explica que el mockup puede servir como base para un libro o guía de estilo.
 
-Los botones principales se diferencian del fondo y mantienen etiquetas de texto visibles.
+En este proyecto la guía visual define:
+
+- colores principales;
+- tipografía;
+- tamaño relativo de títulos;
+- estilo de botones;
+- estilo de campos;
+- tarjetas;
+- alineación;
+- espaciado;
+- comportamiento responsive.
+
+[Ver guía de estilo](../mockups/guia-estilo.svg)
+
+## Errores de diseño a evitar
+
+Tomando los puntos del material:
+
+- no agregar efectos visuales que no aporten valor;
+- no dejar elementos desalineados;
+- utilizar una rejilla;
+- considerar versión responsive;
+- mantener un esquema de color coherente;
+- asegurar contraste entre fondo y texto;
+- usar tamaños de letra legibles;
+- evitar un diseño tan poco habitual que dificulte entender la interfaz.
 
 ## Prototipo y experiencia de usuario
 
@@ -101,9 +148,19 @@ El prototipo permite probar:
 - cambio de disponibilidad después de check-in y check-out;
 - adaptación a pantallas pequeñas.
 
+## Pruebas de interacción
+
+El prototipo se utiliza para revisar:
+
+- si el usuario encuentra las funciones principales;
+- si las transiciones entre módulos son comprensibles;
+- si los formularios entregan retroalimentación;
+- si el diseño funciona en distintos tamaños;
+- si la cantidad de información en pantalla es manejable.
+
 ## Usabilidad
 
-El objetivo del prototipo es que las tareas principales sean fáciles de localizar:
+Las tareas principales se mantienen visibles:
 
 - reservas;
 - check-in;
@@ -114,7 +171,7 @@ El objetivo del prototipo es que las tareas principales sean fáciles de localiz
 
 ## Accesibilidad
 
-Se aplican medidas básicas en el prototipo:
+Se aplican medidas básicas:
 
 - etiquetas visibles en formularios;
 - contraste;
@@ -122,4 +179,10 @@ Se aplican medidas básicas en el prototipo:
 - estructura HTML con encabezado, navegación, contenido y secciones;
 - diseño adaptable.
 
-No se afirma cumplimiento de una norma específica de accesibilidad porque no se realizó una auditoría formal.
+No se afirma cumplimiento de una norma específica porque no se realizó una auditoría formal de accesibilidad.
+
+## Herramientas mencionadas en el material
+
+Las herramientas y recursos listados en la guía original se registran por separado:
+
+[Ver herramientas mencionadas](16_herramientas_interfaz.md)
