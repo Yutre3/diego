@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hotel Duerme Bien - Prototipo</title>
+  <style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#eef3f5;color:#1d2a32}header{height:88px;background:linear-gradient(90deg,#17324d,#245b6b);color:white;display:flex;align-items:center;justify-content:space-between;padding:0 32px}header h1{margin:0;font-size:24px}header p{margin:4px 0 0}.badge{background:#ffffff26;border:1px solid #ffffff55;padding:8px 14px;border-radius:20px}.layout{display:grid;grid-template-columns:230px 1fr;min-height:calc(100vh - 88px)}nav{background:#10293f;padding:24px 14px}nav button{width:100%;border:0;background:transparent;color:#dce9ee;text-align:left;padding:14px;border-radius:8px;margin-bottom:6px;cursor:pointer}nav button:hover,nav button.active{background:#1f7a8c;color:white}main{padding:32px;max-width:1200px}.page{display:none}.page.active{display:block}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:20px 0}.cards article,.panel{background:white;border:1px solid #dfe6ea;border-radius:12px;padding:22px}.cards strong{display:block;font-size:38px;color:#1f7a8c}.cards span{color:#667782}.panel{margin-top:18px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}label{display:flex;flex-direction:column;gap:7px;margin-bottom:14px;color:#52646f}input,select{padding:11px;border:1px solid #cbd6db;border-radius:7px;background:#fbfcfc}button{font:inherit}.panel button{background:#1f7a8c;color:white;border:0;border-radius:7px;padding:11px 16px;cursor:pointer}table{width:100%;border-collapse:collapse;background:white}th,td{padding:13px;border-bottom:1px solid #e1e7ea;text-align:left}.msg{font-weight:700}.ok{color:#267a43}.error{color:#b03838}ul{background:white;border-radius:10px;padding:20px 40px}@media(max-width:760px){.layout{grid-template-columns:1fr}nav{display:flex;overflow:auto;gap:6px}nav button{min-width:max-content}.cards,.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Hotel Duerme Bien</h1>
+      <p>Sistema de Pasajeros</p>
+    </div>
+    <span class="badge">Prototipo</span>
+  </header>
+
+  <div class="layout">
+    <nav id="menu">
+      <button data-page="inicio" class="active">Inicio</button>
+      <button data-page="habitaciones">Habitaciones</button>
+      <button data-page="huespedes">Huéspedes</button>
+      <button data-page="reservas">Reservas</button>
+      <button data-page="checkin">Check-in</button>
+      <button data-page="checkout">Check-out</button>
+      <button data-page="informes">Informes</button>
+    </nav>
+
+    <main>
+      <section id="inicio" class="page active">
+        <h2>Resumen</h2>
+        <div class="cards">
+          <article><strong id="disp">3</strong><span>Disponibles</span></article>
+          <article><strong id="ocup">1</strong><span>Ocupadas</span></article>
+          <article><strong id="res">1</strong><span>Reservas</span></article>
+        </div>
+        <div class="panel">
+          <h3>Estado general</h3>
+          <p>Utiliza el menú lateral para recorrer los módulos del sistema.</p>
+        </div>
+      </section>
+
+      <section id="habitaciones" class="page">
+        <h2>Habitaciones</h2>
+        <table>
+          <thead><tr><th>Número</th><th>Capacidad</th><th>Orientación</th><th>Estado</th></tr></thead>
+          <tbody id="tablaHabitaciones"></tbody>
+        </table>
+      </section>
+
+      <section id="huespedes" class="page">
+        <h2>Huéspedes</h2>
+        <div class="panel">
+          <label>Documento <input id="hDoc"></label>
+          <label>Nombre <input id="hNombre"></label>
+          <label>Apellido <input id="hApellido"></label>
+          <button id="guardarHuesped">Registrar huésped</button>
+          <p id="msgHuesped" class="msg"></p>
+        </div>
+      </section>
+
+      <section id="reservas" class="page">
+        <h2>Reservas</h2>
+        <div class="panel grid">
+          <label>Huésped <input id="rHuesped" placeholder="Nombre del huésped"></label>
+          <label>Habitación
+            <select id="rHabitacion"></select>
+          </label>
+          <label>Entrada <input id="rEntrada" type="date"></label>
+          <label>Salida <input id="rSalida" type="date"></label>
+          <button id="guardarReserva">Guardar reserva</button>
+        </div>
+        <p id="msgReserva" class="msg"></p>
+        <ul id="listaReservas"></ul>
+      </section>
+
+      <section id="checkin" class="page">
+        <h2>Check-in</h2>
+        <div class="panel">
+          <label>Huésped <input id="cHuesped"></label>
+          <label>Habitación <select id="cHabitacion"></select></label>
+          <button id="hacerCheckin">Confirmar check-in</button>
+          <p id="msgCheckin" class="msg"></p>
+        </div>
+      </section>
+
+      <section id="checkout" class="page">
+        <h2>Check-out</h2>
+        <div class="panel">
+          <label>Habitación ocupada <select id="oHabitacion"></select></label>
+          <label>Costo calculado <input value="Pendiente de regla definitiva" disabled></label>
+          <button id="hacerCheckout">Confirmar check-out</button>
+          <p id="msgCheckout" class="msg"></p>
+        </div>
+      </section>
+
+      <section id="informes" class="page">
+        <h2>Informes</h2>
+        <div class="panel">
+          <h3>Ocupación</h3>
+          <p id="informeOcupacion"></p>
+          <h3>Reservas registradas en esta sesión</h3>
+          <p id="informeReservas"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+const rooms=[
+{n:"201",cap:2,ori:"Norte",estado:"DISPONIBLE"},
+{n:"202",cap:2,ori:"Sur",estado:"OCUPADA"},
+{n:"305",cap:3,ori:"Sur",estado:"DISPONIBLE"},
+{n:"401",cap:1,ori:"Este",estado:"DISPONIBLE"}
+];
+const reservas=[];
+const $=id=>document.getElementById(id);
+
+function show(id){
+  document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));
+  document.querySelectorAll("#menu button").forEach(x=>x.classList.toggle("active",x.dataset.page===id));
+  $(id).classList.add("active");
+  render();
+}
+document.querySelectorAll("#menu button").forEach(b=>b.onclick=()=>show(b.dataset.page));
+
+function render(){
+  $("tablaHabitaciones").innerHTML=rooms.map(r=>`<tr><td>${r.n}</td><td>${r.cap}</td><td>${r.ori}</td><td>${r.estado}</td></tr>`).join("");
+  const libres=rooms.filter(r=>r.estado==="DISPONIBLE");
+  const ocupadas=rooms.filter(r=>r.estado==="OCUPADA");
+  $("disp").textContent=libres.length;
+  $("ocup").textContent=ocupadas.length;
+  $("res").textContent=reservas.length;
+  const opts=libres.map(r=>`<option value="${r.n}">${r.n} · cap. ${r.cap}</option>`).join("");
+  $("rHabitacion").innerHTML=opts;
+  $("cHabitacion").innerHTML=opts;
+  $("oHabitacion").innerHTML=ocupadas.map(r=>`<option value="${r.n}">${r.n}</option>`).join("");
+  $("listaReservas").innerHTML=reservas.map(r=>`<li>${r.huesped} · Hab. ${r.habitacion} · ${r.entrada} a ${r.salida}</li>`).join("");
+  $("informeOcupacion").textContent=`${ocupadas.length} habitación(es) ocupada(s) y ${libres.length} disponible(s).`;
+  $("informeReservas").textContent=`${reservas.length} reserva(s) registrada(s) en esta sesión.`;
+}
+
+$("guardarHuesped").onclick=()=>{
+  const vals=[$("hDoc").value,$("hNombre").value,$("hApellido").value];
+  $("msgHuesped").className="msg "+(vals.every(Boolean)?"ok":"error");
+  $("msgHuesped").textContent=vals.every(Boolean)?"Huésped registrado en la simulación.":"Complete documento, nombre y apellido.";
+};
+
+$("guardarReserva").onclick=()=>{
+  const h=$("rHuesped").value.trim(), hab=$("rHabitacion").value, e=$("rEntrada").value, s=$("rSalida").value;
+  if(!h||!hab||!e||!s||s<=e){$("msgReserva").className="msg error";$("msgReserva").textContent="Revise huésped, habitación y fechas.";return}
+  reservas.push({huesped:h,habitacion:hab,entrada:e,salida:s});
+  $("msgReserva").className="msg ok";$("msgReserva").textContent="Reserva registrada en la simulación.";render();
+};
+
+$("hacerCheckin").onclick=()=>{
+  const h=$("cHuesped").value.trim(), n=$("cHabitacion").value;
+  const r=rooms.find(x=>x.n===n);
+  if(!h||!r){$("msgCheckin").className="msg error";$("msgCheckin").textContent="Indique huésped y habitación disponible.";return}
+  r.estado="OCUPADA";$("msgCheckin").className="msg ok";$("msgCheckin").textContent=`Check-in simulado: ${h}, habitación ${n}.`;render();
+};
+
+$("hacerCheckout").onclick=()=>{
+  const n=$("oHabitacion").value, r=rooms.find(x=>x.n===n);
+  if(!r){$("msgCheckout").className="msg error";$("msgCheckout").textContent="No hay habitación ocupada seleccionada.";return}
+  r.estado="DISPONIBLE";$("msgCheckout").className="msg ok";$("msgCheckout").textContent=`Check-out simulado. Habitación ${n} liberada.`;render();
+};
+
+render();
+</script>
+</body>
+</html>
