@@ -27,7 +27,10 @@
 - [x] Diagrama de flujo.
 - [x] Modelo de base de datos.
 - [x] Normalización documentada.
-- [x] Mockups.
+- [x] Wireframe en escala de grises.
+- [x] Mockup visual.
+- [x] Normalización aplicada al caso del hotel.
+- [x] Diagrama de clases complementario basado en los ejemplos UML.
 - [x] Planificación Kanban.
 - [x] Matriz de trazabilidad.
 
