@@ -54,7 +54,13 @@ Se relacionaron los requisitos con los casos de uso, datos y pantallas para faci
 
 - [Matriz de trazabilidad](07_trazabilidad.md)
 
-## 8. Puntos que siguen pendientes
+## 8. Material complementario basado en los ejemplos de clases
+
+Además de los entregables principales se agregó un [diagrama de clases](../diagramas/diagrama-clases.svg) para aplicar el formato visto en los ejemplos de UML: nombre, atributos, operaciones y relaciones. Se mantiene como material complementario y no como requisito obligatorio de la Evaluación 2.
+
+También se documentó la [normalización aplicada al hotel](09_normalizacion.md) con un ejemplo de separación de datos hasta 3NF.
+
+## 9. Puntos que siguen pendientes
 
 - fórmula exacta de costos por pasajero;
 - datos obligatorios del huésped;
