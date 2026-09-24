@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1050" viewBox="0 0 760 1050">
+<defs>
+  <marker id="a" markerWidth="11" markerHeight="11" refX="9" refY="4" orient="auto"><path d="M0,0 L0,8 L10,4 z" fill="#222"/></marker>
+  <style>.t{font-family:Arial,sans-serif;fill:#222;font-size:23px}.s{font-family:Arial,sans-serif;fill:#333;font-size:18px}.ln{stroke:#222;stroke-width:5;fill:none;marker-end:url(#a)}.term{fill:white;stroke:#fa7777;stroke-width:5}.io{fill:white;stroke:#31aaa6;stroke-width:5}.proc{fill:white;stroke:#31aaa6;stroke-width:5}.dec{fill:white;stroke:#555;stroke-width:5}</style>
+</defs>
+<rect width="760" height="1050" fill="white"/>
+<rect x="250" y="35" width="260" height="80" rx="40" class="term"/>
+<text x="380" y="86" text-anchor="middle" class="t">Inicio</text>
+
+<path d="M380 115 L380 180" class="ln"/>
+<polygon points="225,180 545,180 510,280 190,280" class="io"/>
+<text x="368" y="225" text-anchor="middle" class="t">Captura de datos</text>
+<text x="368" y="258" text-anchor="middle" class="t">del huésped</text>
+
+<path d="M380 280 L380 350" class="ln"/>
+<polygon points="380,350 550,435 380,520 210,435" class="dec"/>
+<text x="380" y="427" text-anchor="middle" class="t">¿Error en la</text>
+<text x="380" y="460" text-anchor="middle" class="t">captura?</text>
+
+<path d="M550 435 L650 435 L650 230 L545 230" class="ln"/>
+<text x="665" y="345" class="s">Sí</text>
+
+<path d="M380 520 L380 610" class="ln"/>
+<text x="405" y="572" class="s">No</text>
+
+<rect x="185" y="610" width="390" height="100" class="proc"/>
+<text x="380" y="651" text-anchor="middle" class="t">Creación del huésped</text>
+<text x="380" y="685" text-anchor="middle" class="t">en la base de datos</text>
+
+<path d="M380 710 L380 790" class="ln"/>
+<rect x="185" y="790" width="390" height="90" class="proc"/>
+<text x="380" y="826" text-anchor="middle" class="t">Continuar con reserva</text>
+<text x="380" y="858" text-anchor="middle" class="t">o check-in</text>
+
+<path d="M380 880 L380 940" class="ln"/>
+<rect x="260" y="940" width="240" height="70" rx="35" class="term"/>
+<text x="380" y="985" text-anchor="middle" class="t">Fin</text>
+</svg>
