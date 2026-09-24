@@ -1,106 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
 <defs>
   <marker id="tri" markerWidth="12" markerHeight="12" refX="10" refY="5" orient="auto">
     <path d="M0,0 L0,10 L10,5 z" fill="white" stroke="#444" stroke-width="1.5"/>
   </marker>
   <style>
-    .t{font-family:Arial,sans-serif;fill:#222}.title{font-size:28px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:13px}
-    .b1{fill:#eef2ff;stroke:#5369b8;stroke-width:2}.b2{fill:#eef9f2;stroke:#538467;stroke-width:2}.b3{fill:#fff4e8;stroke:#ad7844;stroke-width:2}.b4{fill:#f5eefb;stroke:#80589e;stroke-width:2}
-    .sep{stroke:#555;stroke-width:1.3}.rel{stroke:#555;stroke-width:2;fill:none}.dash{stroke:#555;stroke-width:2;stroke-dasharray:7 5;fill:none}.inh{stroke:#555;stroke-width:2;fill:none;marker-end:url(#tri)}
+    .t{font-family:Arial,sans-serif;fill:#222}.title{font-size:28px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:14px}
+    .user{fill:#eef2ff;stroke:#5268b7;stroke-width:2}.entity{fill:#eef9f2;stroke:#4f8a63;stroke-width:2}.process{fill:#fff4e8;stroke:#b07946;stroke-width:2}
+    .sep{stroke:#555;stroke-width:1.3}.rel{stroke:#555;stroke-width:2;fill:none}.inh{stroke:#555;stroke-width:2;fill:none;marker-end:url(#tri)}
   </style>
 </defs>
-<rect width="1600" height="1200" fill="white"/>
-<text x="800" y="40" text-anchor="middle" class="t title">Diagrama de clases completo - Hotel Duerme Bien</text>
+<rect width="1500" height="980" fill="white"/>
+<text x="750" y="40" text-anchor="middle" class="t title">Diagrama de clases - Hotel Duerme Bien</text>
 
 <!-- Usuario -->
-<rect x="620" y="80" width="360" height="205" class="b1"/>
-<line x1="620" y1="122" x2="980" y2="122" class="sep"/><line x1="620" y1="212" x2="980" y2="212" class="sep"/>
-<text x="800" y="108" text-anchor="middle" class="t h">Usuario</text>
-<text x="640" y="148" class="t f">- idUsuario: int</text><text x="640" y="169" class="t f">- nombre: string</text><text x="640" y="190" class="t f">- username: string</text><text x="640" y="211" class="t f">- rol: string</text>
-<text x="640" y="239" class="t f">+ iniciarSesion(): boolean</text><text x="640" y="261" class="t f">+ cerrarSesion(): void</text>
+<rect x="570" y="80" width="360" height="200" class="user"/>
+<line x1="570" y1="122" x2="930" y2="122" class="sep"/>
+<line x1="570" y1="205" x2="930" y2="205" class="sep"/>
+<text x="750" y="108" text-anchor="middle" class="t h">Usuario</text>
+<text x="590" y="148" class="t f">- idUsuario: int</text>
+<text x="590" y="170" class="t f">- nombre: string</text>
+<text x="590" y="192" class="t f">- rol: string</text>
+<text x="590" y="234" class="t f">+ iniciarSesion(): boolean</text>
+<text x="590" y="258" class="t f">+ cerrarSesion(): void</text>
 
 <!-- Admin -->
-<rect x="250" y="360" width="330" height="175" class="b1"/>
-<line x1="250" y1="402" x2="580" y2="402" class="sep"/><line x1="250" y1="444" x2="580" y2="444" class="sep"/>
-<text x="415" y="388" text-anchor="middle" class="t h">Administrador</text>
-<text x="270" y="428" class="t f">- permisos: string</text>
-<text x="270" y="472" class="t f">+ gestionarUsuarios(): void</text><text x="270" y="494" class="t f">+ gestionarHabitaciones(): void</text><text x="270" y="516" class="t f">+ generarInforme(): void</text>
+<rect x="260" y="360" width="330" height="170" class="user"/>
+<line x1="260" y1="402" x2="590" y2="402" class="sep"/>
+<line x1="260" y1="445" x2="590" y2="445" class="sep"/>
+<text x="425" y="388" text-anchor="middle" class="t h">Administrador</text>
+<text x="280" y="430" class="t f">- permisos: string</text>
+<text x="280" y="474" class="t f">+ gestionarUsuarios(): void</text>
+<text x="280" y="497" class="t f">+ generarInformes(): void</text>
 
 <!-- Encargado -->
-<rect x="1020" y="350" width="340" height="190" class="b1"/>
-<line x1="1020" y1="392" x2="1360" y2="392" class="sep"/><line x1="1020" y1="434" x2="1360" y2="434" class="sep"/>
-<text x="1190" y="378" text-anchor="middle" class="t h">EncargadoHotel</text>
-<text x="1040" y="418" class="t f">- turno: string</text>
-<text x="1040" y="462" class="t f">+ registrarHuesped(): void</text><text x="1040" y="484" class="t f">+ gestionarReserva(): void</text><text x="1040" y="506" class="t f">+ realizarCheckIn(): void</text><text x="1040" y="528" class="t f">+ realizarCheckOut(): void</text>
+<rect x="910" y="360" width="330" height="170" class="user"/>
+<line x1="910" y1="402" x2="1240" y2="402" class="sep"/>
+<line x1="910" y1="445" x2="1240" y2="445" class="sep"/>
+<text x="1075" y="388" text-anchor="middle" class="t h">EncargadoHotel</text>
+<text x="930" y="430" class="t f">- turno: string</text>
+<text x="930" y="474" class="t f">+ realizarCheckIn(): void</text>
+<text x="930" y="497" class="t f">+ realizarCheckOut(): void</text>
 
-<path d="M415 360 L415 320 L725 320 L725 285" class="inh"/>
-<path d="M1190 350 L1190 320 L875 320 L875 285" class="inh"/>
+<!-- Inheritance only arrows -->
+<path d="M425 360 L425 320 L670 320 L670 280" class="inh"/>
+<path d="M1075 360 L1075 320 L830 320 L830 280" class="inh"/>
+<text x="750" y="310" text-anchor="middle" class="t f">Herencia / generalización</text>
 
-<!-- Huesped -->
-<rect x="45" y="675" width="285" height="205" class="b2"/>
-<line x1="45" y1="717" x2="330" y2="717" class="sep"/><line x1="45" y1="817" x2="330" y2="817" class="sep"/>
-<text x="188" y="703" text-anchor="middle" class="t h">Huesped</text>
-<text x="65" y="743" class="t f">- idHuesped: int</text><text x="65" y="764" class="t f">- documento: string</text><text x="65" y="785" class="t f">- nombre: string</text><text x="65" y="806" class="t f">- apellido: string</text>
-<text x="65" y="844" class="t f">+ actualizarDatos(): void</text><text x="65" y="866" class="t f">+ obtenerDatos(): object</text>
+<!-- Core classes row -->
+<rect x="70" y="650" width="300" height="210" class="entity"/>
+<line x1="70" y1="692" x2="370" y2="692" class="sep"/>
+<line x1="70" y1="795" x2="370" y2="795" class="sep"/>
+<text x="220" y="678" text-anchor="middle" class="t h">Huésped</text>
+<text x="90" y="720" class="t f">- idHuesped: int</text>
+<text x="90" y="743" class="t f">- documento: string</text>
+<text x="90" y="766" class="t f">- nombre: string</text>
+<text x="90" y="789" class="t f">- apellido: string</text>
+<text x="90" y="824" class="t f">+ actualizarDatos(): void</text>
 
-<!-- Habitacion -->
-<rect x="380" y="660" width="300" height="225" class="b2"/>
-<line x1="380" y1="702" x2="680" y2="702" class="sep"/><line x1="380" y1="825" x2="680" y2="825" class="sep"/>
-<text x="530" y="688" text-anchor="middle" class="t h">Habitacion</text>
-<text x="400" y="728" class="t f">- idHabitacion: int</text><text x="400" y="749" class="t f">- numero: string</text><text x="400" y="770" class="t f">- capacidad: int</text><text x="400" y="791" class="t f">- orientacion: string</text><text x="400" y="812" class="t f">- estado: string</text>
-<text x="400" y="850" class="t f">+ estaDisponible(): boolean</text><text x="400" y="872" class="t f">+ cambiarEstado(): void</text>
+<rect x="410" y="650" width="300" height="210" class="process"/>
+<line x1="410" y1="692" x2="710" y2="692" class="sep"/>
+<line x1="410" y1="795" x2="710" y2="795" class="sep"/>
+<text x="560" y="678" text-anchor="middle" class="t h">Reserva</text>
+<text x="430" y="720" class="t f">- idReserva: int</text>
+<text x="430" y="743" class="t f">- fechaEntrada: date</text>
+<text x="430" y="766" class="t f">- fechaSalida: date</text>
+<text x="430" y="789" class="t f">- estado: string</text>
+<text x="430" y="824" class="t f">+ crear(): void</text>
+<text x="430" y="847" class="t f">+ cancelar(): void</text>
 
-<!-- Reserva -->
-<rect x="730" y="655" width="290" height="230" class="b3"/>
-<line x1="730" y1="697" x2="1020" y2="697" class="sep"/><line x1="730" y1="820" x2="1020" y2="820" class="sep"/>
-<text x="875" y="683" text-anchor="middle" class="t h">Reserva</text>
-<text x="750" y="723" class="t f">- idReserva: int</text><text x="750" y="744" class="t f">- fechaEntrada: date</text><text x="750" y="765" class="t f">- fechaSalida: date</text><text x="750" y="786" class="t f">- estado: string</text>
-<text x="750" y="847" class="t f">+ crear(): void</text><text x="750" y="869" class="t f">+ modificar(): void</text><text x="750" y="891" class="t f">+ cancelar(): void</text>
+<rect x="750" y="650" width="300" height="210" class="entity"/>
+<line x1="750" y1="692" x2="1050" y2="692" class="sep"/>
+<line x1="750" y1="795" x2="1050" y2="795" class="sep"/>
+<text x="900" y="678" text-anchor="middle" class="t h">Habitación</text>
+<text x="770" y="720" class="t f">- idHabitacion: int</text>
+<text x="770" y="743" class="t f">- numero: string</text>
+<text x="770" y="766" class="t f">- capacidad: int</text>
+<text x="770" y="789" class="t f">- estado: string</text>
+<text x="770" y="824" class="t f">+ estaDisponible(): boolean</text>
+<text x="770" y="847" class="t f">+ cambiarEstado(): void</text>
 
-<!-- Estadia -->
-<rect x="1070" y="655" width="300" height="230" class="b3"/>
-<line x1="1070" y1="697" x2="1370" y2="697" class="sep"/><line x1="1070" y1="820" x2="1370" y2="820" class="sep"/>
-<text x="1220" y="683" text-anchor="middle" class="t h">Estadia</text>
-<text x="1090" y="723" class="t f">- idEstadia: int</text><text x="1090" y="744" class="t f">- checkIn: datetime</text><text x="1090" y="765" class="t f">- checkOut: datetime</text><text x="1090" y="786" class="t f">- totalCalculado: decimal</text>
-<text x="1090" y="847" class="t f">+ registrarCheckIn(): void</text><text x="1090" y="869" class="t f">+ calcularCosto(): decimal</text><text x="1090" y="891" class="t f">+ finalizarCheckOut(): void</text>
+<rect x="1090" y="650" width="320" height="210" class="process"/>
+<line x1="1090" y1="692" x2="1410" y2="692" class="sep"/>
+<line x1="1090" y1="795" x2="1410" y2="795" class="sep"/>
+<text x="1250" y="678" text-anchor="middle" class="t h">Estadía</text>
+<text x="1110" y="720" class="t f">- idEstadia: int</text>
+<text x="1110" y="743" class="t f">- checkIn: datetime</text>
+<text x="1110" y="766" class="t f">- checkOut: datetime</text>
+<text x="1110" y="789" class="t f">- totalCalculado: decimal</text>
+<text x="1110" y="824" class="t f">+ calcularCosto(): decimal</text>
+<text x="1110" y="847" class="t f">+ finalizar(): void</text>
 
-<!-- Informe -->
-<rect x="130" y="970" width="300" height="170" class="b4"/>
-<line x1="130" y1="1012" x2="430" y2="1012" class="sep"/><line x1="130" y1="1075" x2="430" y2="1075" class="sep"/>
-<text x="280" y="998" text-anchor="middle" class="t h">Informe</text>
-<text x="150" y="1038" class="t f">- tipo: string</text><text x="150" y="1059" class="t f">- fechaGeneracion: datetime</text>
-<text x="150" y="1102" class="t f">+ generarOcupacion(): void</text><text x="150" y="1124" class="t f">+ generarReservas(): void</text>
+<!-- Straight, non-crossing associations -->
+<line x1="370" y1="755" x2="410" y2="755" class="rel"/>
+<text x="374" y="738" class="t f">0..*</text>
+<text x="392" y="778" class="t f">1..*</text>
 
-<!-- Auth -->
-<rect x="500" y="955" width="340" height="190" class="b4"/>
-<line x1="500" y1="997" x2="840" y2="997" class="sep"/><line x1="500" y1="1039" x2="840" y2="1039" class="sep"/>
-<text x="670" y="983" text-anchor="middle" class="t h">SistemaAutenticacion</text>
-<text x="520" y="1023" class="t f">- estado: string</text>
-<text x="520" y="1066" class="t f">+ autenticarUsuario(): boolean</text><text x="520" y="1088" class="t f">+ autorizarUsuario(): boolean</text>
+<line x1="710" y1="755" x2="750" y2="755" class="rel"/>
+<text x="714" y="738" class="t f">0..*</text>
+<text x="736" y="778" class="t f">1</text>
 
-<!-- Crypto -->
-<rect x="900" y="970" width="300" height="170" class="b4"/>
-<line x1="900" y1="1012" x2="1200" y2="1012" class="sep"/><line x1="900" y1="1054" x2="1200" y2="1054" class="sep"/>
-<text x="1050" y="998" text-anchor="middle" class="t h">SistemaEncriptacion</text>
-<text x="920" y="1038" class="t f">- algoritmo: string</text>
-<text x="920" y="1081" class="t f">+ cifrarDatos(): string</text><text x="920" y="1103" class="t f">+ descifrarDatos(): string</text>
+<line x1="1050" y1="755" x2="1090" y2="755" class="rel"/>
+<text x="1054" y="738" class="t f">1</text>
+<text x="1070" y="778" class="t f">0..*</text>
 
-<!-- Validation -->
-<rect x="1260" y="955" width="300" height="190" class="b4"/>
-<line x1="1260" y1="997" x2="1560" y2="997" class="sep"/><line x1="1260" y1="1039" x2="1560" y2="1039" class="sep"/>
-<text x="1410" y="983" text-anchor="middle" class="t h">ValidacionEntrada</text>
-<text x="1280" y="1023" class="t f">- ultimoError: string</text>
-<text x="1280" y="1066" class="t f">+ validarTexto(): boolean</text><text x="1280" y="1088" class="t f">+ validarNumero(): boolean</text><text x="1280" y="1110" class="t f">+ validarFecha(): boolean</text>
-
-<!-- Associations -->
-<line x1="330" y1="775" x2="730" y2="775" class="rel"/><text x="355" y="760" class="t f">0..*</text><text x="690" y="760" class="t f">1..*</text>
-<line x1="680" y1="735" x2="730" y2="735" class="rel"/><text x="690" y="720" class="t f">1</text><text x="710" y="755" class="t f">0..*</text>
-<line x1="680" y1="845" x2="1070" y2="845" class="rel"/><text x="690" y="830" class="t f">1</text><text x="1030" y="830" class="t f">0..*</text>
-<line x1="1020" y1="780" x2="1070" y2="780" class="rel"/><text x="1025" y="765" class="t f">0..1</text><text x="1050" y="800" class="t f">1</text>
-<path d="M415 535 L415 610 L280 610 L280 970" class="rel"/><text x="295" y="950" class="t f">0..*</text>
-<path d="M800 285 L800 600 L670 600 L670 955" class="rel"/><text x="685" y="935" class="t f">usa</text>
-<line x1="840" y1="1045" x2="900" y2="1045" class="rel"/><text x="850" y="1030" class="t f">1 : 1</text>
-<path d="M1190 540 L1190 610 L1410 610 L1410 955" class="dash"/><text x="1420" y="935" class="t f">valida</text>
-
-<text x="45" y="1175" class="t f">Las clases de autenticación, encriptación y validación son complementarias, adaptadas desde la guía de clases.</text>
+<text x="750" y="915" text-anchor="middle" class="t f">Las asociaciones se muestran con líneas simples; las únicas flechas son las de herencia hacia Usuario.</text>
 </svg>
