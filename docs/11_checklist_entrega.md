@@ -22,10 +22,10 @@
 ## Evaluación 2
 
 - [x] Casos de uso.
-- [x] Relaciones include revisadas.
+- [x] Include y extend revisados.
 - [x] Diagrama de casos de uso.
 - [x] Ejemplo simple de casos de uso adaptado.
-- [x] Ejemplo amplio tipo ATM adaptado.
+- [x] Ejemplo tipo ATM adaptado.
 - [x] Diagrama de flujo.
 - [x] Ejemplo de proceso con decisión y retorno.
 - [x] Modelo de base de datos.
@@ -35,8 +35,13 @@
 - [x] Script SQL.
 - [x] Sketch.
 - [x] Wireframe.
-- [x] Mockup.
+- [x] Wireframe con retícula.
+- [x] Mockup escritorio.
+- [x] Mockup móvil.
+- [x] Guía de estilo.
 - [x] Prototipo navegable.
+- [x] Consideraciones UX y usabilidad.
+- [x] Consideraciones básicas de accesibilidad.
 - [x] Kanban.
 - [x] Matriz de trazabilidad.
 
@@ -44,11 +49,19 @@
 
 - [x] Diagrama de clases simplificado.
 - [x] Construcción de clases paso a paso.
-- [x] Relaciones UML.
+- [x] Asociación.
+- [x] Asociación dirigida.
+- [x] Asociación reflexiva revisada y descartada por falta de requisito.
+- [x] Multiplicidad.
+- [x] Agregación.
+- [x] Composición revisada y no forzada.
+- [x] Herencia / generalización.
+- [x] Realización revisada y no forzada.
 - [x] Cardinalidad.
 - [x] Diagrama de clases completo.
 - [x] Guía Git + GitHub + VS Code.
-- [x] Rama de desarrollo `dev`.
+- [x] Rama de desarrollo dev.
+- [x] Herramientas de interfaz registradas.
 - [x] Mapa que relaciona cada archivo del profesor con su aplicación.
 
 ## Antes de cerrar la entrega
