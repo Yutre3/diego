@@ -35,6 +35,17 @@ Se incluyen:
 - [Matriz de trazabilidad](docs/07_trazabilidad.md)
 - [Planificación Kanban](kanban/tablero.md)
 
+## Ejemplos de clases adaptados al Hotel Duerme Bien
+
+También se tomaron los formatos de ejemplo entregados en clases y se adaptaron al tema del proyecto:
+
+- [Caso de uso simple: Check-in / Check-out](diagramas/casos-de-uso-checkin-checkout.svg)
+- [Diagrama de flujo con decisiones y retorno](diagramas/flujo-checkin.svg)
+- [Diagrama de clases con atributos y operaciones](diagramas/diagrama-clases.svg)
+- [Normalización aplicada al hotel](docs/09_normalizacion.md)
+- [Wireframe en escala de grises](wireframes/wireframe-hotel.svg)
+- [Mockup visual de reservas](mockups/mockup-hotel.svg)
+
 ## Estructura
 
 ```text
