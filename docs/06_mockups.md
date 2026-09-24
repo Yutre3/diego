@@ -1,33 +1,48 @@
-# 06 - Wireframes / Mockups
+# 06 - Wireframe y mockup
 
-Los mockups se preparan para revisar la distribución de la información antes de programar la aplicación. No representan una interfaz terminada ni definen colores o estilo final.
+Para esta parte se siguió la diferencia trabajada en el material de clases entre **wireframe** y **mockup**.
 
-## Pantallas consideradas
+## Wireframe
 
-### 1. Inicio de sesión
+El wireframe se utiliza para ordenar la información y las funciones de la pantalla sin concentrarse todavía en colores o apariencia final.
 
-Permite identificar al usuario que utilizará el sistema. Esta pantalla corresponde a una propuesta derivada de la existencia de perfiles de administrador y encargado.
+En el proyecto del hotel se creó una propuesta en escala de grises con:
 
-### 2. Panel principal
+- encabezado;
+- navegación principal;
+- menú lateral;
+- resumen de habitaciones disponibles, ocupadas y reservas;
+- tabla de habitaciones/reservas del día;
+- acceso directo al check-in.
 
-Resume accesos a habitaciones, huéspedes, reservas, check-in, check-out e informes. También permite visualizar de forma rápida la ocupación y disponibilidad.
+[Ver wireframe](../wireframes/wireframe-hotel.svg)
 
-### 3. Reservas
+## Mockup
 
-Incluye búsqueda por fechas, consulta de disponibilidad, selección de habitación y asociación de huéspedes.
+El mockup toma la estructura anterior y le agrega una apariencia más cercana al producto final.
 
-### 4. Check-in
+Se preparó una pantalla de reservas con:
 
-Permite identificar al huésped o su reserva, revisar la habitación disponible y confirmar la asignación.
+- barra superior;
+- menú lateral;
+- búsqueda de disponibilidad por fechas;
+- listado de habitaciones;
+- formulario para crear una reserva;
+- botones y jerarquía visual.
 
-### 5. Check-out
+[Ver mockup](../mockups/mockup-hotel.svg)
 
-Muestra la estadía activa, el costo calculado y la acción para registrar la salida y liberar la habitación.
+## Pantallas necesarias para continuar
 
-## Mockup general
+A partir del mismo estilo se pueden diseñar las pantallas de:
 
-![Mockups de las pantallas principales](../mockups/pantallas-principales.svg)
+1. Inicio de sesión.
+2. Panel principal.
+3. Habitaciones.
+4. Huéspedes.
+5. Reservas.
+6. Check-in.
+7. Check-out.
+8. Informes.
 
-## Observaciones
-
-Los campos exactos del huésped, la fórmula de costos y algunos estados de reserva todavía deben validarse. Por eso el mockup utiliza información genérica y no presenta esos detalles como requisitos definitivos.
+Los campos que todavía dependen de validación, como la fórmula exacta de costos o los datos obligatorios del huésped, no se presentan como requisitos definitivos.
