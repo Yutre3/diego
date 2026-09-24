@@ -25,34 +25,38 @@ Archivos:
 
 ## 3. Diagrama de flujo
 
-Se modeló el proceso de check-in y asignación de habitación.
-
 - [Descripción](04_diagrama_flujo.md)
 - [Flujo completo de check-in](../diagramas/flujo-checkin.svg)
 - [Ejemplo de captura, decisión, retorno y registro en BD](../diagramas/flujo-validacion-ejemplo.svg)
 
-## 4. Diagrama de base de datos
+## 4. Diagrama de base de datos y normalización
 
 - [Descripción del modelo](05_modelo_datos.md)
 - [Diagrama de datos](../diagramas/modelo-datos.svg)
 - [Normalización 1NF, 2NF y 3NF](09_normalizacion.md)
-- [Esquema visual de normalización](../diagramas/normalizacion-hotel.svg)
+- [Esquema visual](../diagramas/normalizacion-hotel.svg)
 - [SQL de referencia](../database/schema.sql)
 
-## 5. Interfaz
+## 5. Prototipo de interfaz
 
-Se aplicó la secuencia del material:
+Se aplicó la secuencia completa del material:
 
 1. Sketch.
 2. Wireframe.
 3. Mockup.
 4. Prototipo.
 
-- [Explicación de las etapas](06_mockups.md)
+Archivos:
+
+- [Explicación](06_mockups.md)
 - [Sketch](../sketch/sketch-hotel.svg)
 - [Wireframe](../wireframes/wireframe-hotel.svg)
-- [Mockup](../mockups/mockup-hotel.svg)
+- [Wireframe con retícula](../wireframes/wireframe-grid-12.svg)
+- [Mockup escritorio](../mockups/mockup-hotel.svg)
+- [Mockup móvil](../mockups/mockup-hotel-mobile.svg)
 - [Pantallas principales](../mockups/pantallas-principales.svg)
+- [Guía de estilo](../mockups/guia-estilo.svg)
+- [UX, usabilidad y accesibilidad](14_guia_estilo_ux.md)
 - [Prototipo navegable](../prototipo/README.md)
 
 ## 6. Planificación Kanban
@@ -63,23 +67,24 @@ Se aplicó la secuencia del material:
 
 - [Matriz de trazabilidad](07_trazabilidad.md)
 
-## 8. Diagrama de clases complementario
-
-La pauta de Evaluación 2 no lo enumera como entrega obligatoria, pero se agregó para aplicar los ejemplos de clases.
+## 8. Material complementario: diagrama de clases
 
 - [Construcción paso a paso](10_diagrama_clases.md)
+- [Relaciones UML](15_relaciones_diagrama_clases.md)
 - [Diagrama simplificado](../diagramas/diagrama-clases.svg)
 - [Diagrama completo](../diagramas/diagrama-clases-completo.svg)
 
 ## 9. Git, GitHub y VS Code
 
-También se aplicó el material de control de versiones:
-
-- [Guía aplicada al repositorio](12_git_github_vscode.md)
+- [Guía aplicada](12_git_github_vscode.md)
 - rama `main`;
 - rama `dev`.
 
-## 10. Puntos pendientes
+## 10. Herramientas del material
+
+- [Listado de herramientas de interfaz](16_herramientas_interfaz.md)
+
+## 11. Puntos pendientes
 
 - fórmula exacta de costos;
 - datos obligatorios del huésped;
