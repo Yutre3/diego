@@ -1,34 +1,19 @@
-<!doctype html>
-<html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel principal · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Panel principal · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head>
 <body data-page="inicio">
-<header class="topbar">
-  <div class="brand"><h1>Hotel Duerme Bien</h1><small>Prototipo funcional · Sistema de Pasajeros</small></div>
-  <div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div>
-</header>
-<div class="layout">
-<nav class="sidebar">
+<header class="topbar"><div class="brand"><h1>Hotel Duerme Bien</h1><small>Sistema de Pasajeros · prototipo basado en Caso 6</small></div><div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div></header>
+<div class="layout"><nav class="sidebar">
 <a data-page="inicio" href="index.html">Inicio</a>
 <a data-page="habitaciones" href="habitaciones.html">Habitaciones</a>
 <a data-page="huespedes" href="huespedes.html">Huéspedes</a>
 <a data-page="reservas" href="reservas.html">Reservas</a>
 <a data-page="checkin" href="checkin.html">Check-in</a>
 <a data-page="checkout" href="checkout.html">Check-out</a>
+<a data-page="usuarios" href="usuarios.html">Usuarios</a>
 <a data-page="informes" href="informes.html">Informes</a>
-<a data-page="ayuda" href="ayuda.html">Ayuda / Demo</a>
-</nav><main>
-<div class="page-title"><div><h2>Panel principal</h2><p>Resumen de ocupación, huéspedes y reservas.</p></div></div>
-
-<section class="hero"><h2>Panel de control</h2><p>Desde aquí se accede a los procesos principales del Caso 6: habitaciones, huéspedes, reservas, check-in, check-out e informes.</p></section>
-<div class="cards">
-<article class="card metric"><strong id="mDisp">0</strong><span>Habitaciones disponibles</span></article>
-<article class="card metric"><strong id="mOcup">0</strong><span>Habitaciones ocupadas</span></article>
-<article class="card metric"><strong id="mRes">0</strong><span>Reservas</span></article>
-<article class="card metric"><strong id="mHue">0</strong><span>Huéspedes</span></article>
-</div>
-<section class="panel"><div class="page-title"><div><h3>Estado de habitaciones</h3><p>Información actual del prototipo.</p></div><a class="btn" href="checkin.html">Nuevo check-in</a></div>
-<table><thead><tr><th>Habitación</th><th>Capacidad</th><th>Orientación</th><th>Estado</th></tr></thead><tbody id="roomSummary"></tbody></table></section>
-
-<p class="footer-note">Prototipo académico. Los datos se guardan en el navegador mediante localStorage.</p>
-</main></div>
-<script src="app.js"></script></body></html>
+<a data-page="ayuda" href="ayuda.html">Material del profesor</a>
+</nav><main><div class="page-title"><div><h2>Panel principal</h2><p>Vista general de las funciones definidas en el Caso 6.</p></div></div>
+<div class="source-box"><h3>Base del material entregado</h3><p><strong>Definición de proyectos(1).docx:</strong> habitaciones y sus características, huéspedes, ocupación y disponibilidad, costos por pasajero, usuarios, informes de ocupación y reservas; además de check-in, check-out y reservas como procesos posibles de UA3.</p></div>
+<section class="hero"><h2>Funciones del Sistema de Pasajeros</h2><p>Esta portada reúne solamente las áreas que se desprenden del Caso 6. La navegación, colores y estados visuales corresponden a la etapa de prototipo indicada en el material de Sketch, Wireframe, Mockup y Prototipo.</p></section>
+<div class="cards"><article class="card metric"><strong id="mDisp">0</strong><span>Habitaciones disponibles</span></article><article class="card metric"><strong id="mOcup">0</strong><span>Habitaciones ocupadas</span></article><article class="card metric"><strong id="mRes">0</strong><span>Reservas</span></article><article class="card metric"><strong id="mHue">0</strong><span>Huéspedes registrados</span></article></div>
+<section class="panel"><h3>Ocupación y disponibilidad</h3><table><thead><tr><th>Habitación</th><th>Capacidad</th><th>Orientación</th><th>Estado</th></tr></thead><tbody id="roomSummary"></tbody></table></section><p class="footer-note">Los elementos no definidos literalmente por el Caso 6 se muestran como decisiones técnicas de demostración y no como requisitos oficiales.</p>
+</main></div><script src="app.js"></script></body></html>
