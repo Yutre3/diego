@@ -1,102 +1,52 @@
 # Prototipo funcional - Hotel Duerme Bien
 
-Este prototipo está construido a partir del **Caso 6: Sistema de Pasajeros de Hotel** y del material de **Sketch, Wireframe, Mockup y Prototipo** entregado en clases.
+Esta carpeta contiene la página funcional del proyecto.
 
-## Qué viene directamente del Caso 6
+## Diseño usado
 
-El caso define:
+El prototipo sigue directamente la misma estructura visual mostrada en las imágenes del repositorio.
 
-- registro de habitaciones;
-- características de habitación: capacidad y orientación;
-- registro de huéspedes con asignación a habitaciones;
-- control de ocupación y disponibilidad;
-- cálculo automático de costos por pasajero;
-- gestión de usuarios: administrador y encargados de hotel;
-- informes de ocupación y reservas;
-- proceso de check-in y asignación de habitaciones;
-- proceso de check-out y liberación de habitaciones;
-- proceso de registro y gestión de reservas.
+### Sketch
 
-## Qué se tomó del material de prototipos
+![Sketch](../entrega-final/07-sketch.svg)
 
-El material indica que el proceso puede pasar por:
+### Wireframe
 
-1. Sketch.
-2. Wireframe.
-3. Mockup.
-4. Prototipo.
+![Wireframe](../entrega-final/08-wireframe.svg)
 
-También señala que el prototipo debe poder utilizarse para probar navegación, interacción, botones y validaciones. Por eso esta versión contiene páginas navegables y formularios funcionales.
+### Mockup
 
-## Páginas del prototipo
+![Mockup](../entrega-final/09-mockup.svg)
 
-| Página | Base en el material |
+## URL
+
+**https://yutre3.github.io/diego/**
+
+No es una página separada del diseño anterior: esa URL abre el prototipo construido a partir de esas mismas imágenes.
+
+## Módulos
+
+| Módulo | Archivo |
 | --- | --- |
-| [login.html](login.html) | Los perfiles administrador/encargado vienen del Caso 6. El login es solo una decisión técnica de demostración. |
-| [index.html](index.html) | Resume ocupación, disponibilidad, reservas y huéspedes del Caso 6. |
-| [habitaciones.html](habitaciones.html) | Registro de habitaciones, capacidad, orientación y disponibilidad. |
-| [huespedes.html](huespedes.html) | Registro de huéspedes. El caso no define campos personales exactos. |
-| [reservas.html](reservas.html) | Proceso de registro y gestión de reservas. |
-| [checkin.html](checkin.html) | Proceso de check-in y asignación de habitación. |
-| [checkout.html](checkout.html) | Proceso de check-out, liberación y demostración del cálculo por pasajero. |
-| [usuarios.html](usuarios.html) | Gestión de usuarios administrador y encargados de hotel. |
-| [informes.html](informes.html) | Informes de ocupación y reservas. |
-| [ayuda.html](ayuda.html) | Relación visible entre el prototipo y los archivos entregados por el profesor. |
+| Acceso | [login.html](login.html) |
+| Inicio | [index.html](index.html) |
+| Habitaciones | [habitaciones.html](habitaciones.html) |
+| Huéspedes | [huespedes.html](huespedes.html) |
+| Reservas | [reservas.html](reservas.html) |
+| Check-in | [checkin.html](checkin.html) |
+| Check-out | [checkout.html](checkout.html) |
+| Usuarios | [usuarios.html](usuarios.html) |
+| Informes | [informes.html](informes.html) |
+| Material del profesor | [ayuda.html](ayuda.html) |
 
-## Decisiones técnicas que NO se presentan como requisitos del caso
+## Credenciales
 
-El Caso 6 no define:
+Administrador: `admin / admin123`
 
-- campos personales obligatorios del huésped;
-- fórmula o tarifa exacta para los costos;
-- identificador exacto de habitación;
-- campos exactos de una reserva;
-- estados completos de reservas;
-- permisos específicos de cada rol;
-- tecnología de implementación;
-- mecanismo de autenticación.
+Encargado: `encargado / hotel123`
 
-Cuando el prototipo necesita alguno de esos datos para funcionar, se muestra explícitamente como **dato de demostración** o **decisión técnica**, no como requisito oficial.
+## Base del Caso 6
 
-## Credenciales de demostración
+El prototipo trabaja con habitaciones, capacidad, orientación, huéspedes, ocupación, disponibilidad, reservas, check-in, check-out, costos por pasajero, usuarios e informes de ocupación/reservas.
 
-Administrador:
-
-```text
-usuario: admin
-clave: admin123
-```
-
-Encargado:
-
-```text
-usuario: encargado
-clave: hotel123
-```
-
-## Enlaces web preparados
-
-La rama `gh-pages` está preparada para publicar estas páginas.
-
-Dirección principal prevista:
-
-```text
-https://yutre3.github.io/diego/
-```
-
-Páginas:
-
-```text
-https://yutre3.github.io/diego/prototipo-web/login.html
-https://yutre3.github.io/diego/prototipo-web/index.html
-https://yutre3.github.io/diego/prototipo-web/habitaciones.html
-https://yutre3.github.io/diego/prototipo-web/huespedes.html
-https://yutre3.github.io/diego/prototipo-web/reservas.html
-https://yutre3.github.io/diego/prototipo-web/checkin.html
-https://yutre3.github.io/diego/prototipo-web/checkout.html
-https://yutre3.github.io/diego/prototipo-web/usuarios.html
-https://yutre3.github.io/diego/prototipo-web/informes.html
-https://yutre3.github.io/diego/prototipo-web/ayuda.html
-```
-
-Si GitHub Pages no está habilitado, debe seleccionarse la rama `gh-pages` como origen desde la configuración del repositorio.
+Cuando el Caso 6 no define un dato exacto, ese dato se mantiene como elemento de demostración y no como requisito oficial.
