@@ -1,106 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
-<defs>
-<style>
-.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:28px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:14px}.note{font-size:15px}
-.box{fill:#fff;stroke:#333;stroke-width:2}.head{fill:#f0f0f0;stroke:#333;stroke-width:2}.relbox{fill:#f8fbfd;stroke:#9aaab3;stroke-width:1.5}
-</style>
-</defs>
-<rect width="1400" height="1050" fill="white"/>
-<text x="700" y="38" text-anchor="middle" class="t title">Modelo de base de datos - Hotel Duerme Bien</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="980" viewBox="0 0 1450 980">
+<defs><style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:30px;font-weight:700}.h{font-size:19px;font-weight:700}.f{font-size:15px}.box{fill:#fff;stroke:#333;stroke-width:2}.head{fill:#f0f0f0;stroke:#333;stroke-width:2}.rel{stroke:#555;stroke-width:2.2;fill:none}.lbl{fill:white;stroke:#ddd;stroke-width:1}</style></defs>
+<rect width="1450" height="980" fill="white"/>
+<text x="725" y="42" text-anchor="middle" class="t title">Modelo de base de datos - Hotel Duerme Bien</text>
 
-<!-- Top entities -->
-<rect x="70" y="90" width="300" height="205" rx="7" class="box"/>
-<rect x="70" y="90" width="300" height="42" rx="7" class="head"/>
-<text x="220" y="117" text-anchor="middle" class="t h">Usuario</text>
-<text x="92" y="160" class="t f">PK id_usuario</text>
-<text x="92" y="185" class="t f">nombre</text>
-<text x="92" y="210" class="t f">username</text>
-<text x="92" y="235" class="t f">password_hash</text>
-<text x="92" y="260" class="t f">rol, activo</text>
+<!-- Usuario -->
+<rect x="70" y="310" width="260" height="210" rx="7" class="box"/><rect x="70" y="310" width="260" height="42" rx="7" class="head"/><text x="200" y="337" text-anchor="middle" class="t h">Usuario</text>
+<text x="92" y="382" class="t f">PK id_usuario</text><text x="92" y="410" class="t f">nombre</text><text x="92" y="438" class="t f">rol</text><text x="92" y="466" class="t f">activo</text>
 
-<rect x="550" y="90" width="300" height="230" rx="7" class="box"/>
-<rect x="550" y="90" width="300" height="42" rx="7" class="head"/>
-<text x="700" y="117" text-anchor="middle" class="t h">Habitación</text>
-<text x="572" y="160" class="t f">PK id_habitacion</text>
-<text x="572" y="185" class="t f">numero *</text>
-<text x="572" y="210" class="t f">capacidad</text>
-<text x="572" y="235" class="t f">orientacion</text>
-<text x="572" y="260" class="t f">estado *</text>
-<text x="572" y="285" class="t f">valor_pasajero *</text>
+<!-- Habitación -->
+<rect x="585" y="90" width="280" height="230" rx="7" class="box"/><rect x="585" y="90" width="280" height="42" rx="7" class="head"/><text x="725" y="117" text-anchor="middle" class="t h">Habitación</text>
+<text x="607" y="160" class="t f">PK id_habitacion</text><text x="607" y="188" class="t f">capacidad</text><text x="607" y="216" class="t f">orientacion</text><text x="607" y="244" class="t f">estado *</text><text x="607" y="272" class="t f">valor_pasajero *</text>
 
-<rect x="1030" y="90" width="300" height="230" rx="7" class="box"/>
-<rect x="1030" y="90" width="300" height="42" rx="7" class="head"/>
-<text x="1180" y="117" text-anchor="middle" class="t h">Huésped</text>
-<text x="1052" y="160" class="t f">PK id_huesped</text>
-<text x="1052" y="185" class="t f">documento *</text>
-<text x="1052" y="210" class="t f">nombre *</text>
-<text x="1052" y="235" class="t f">apellido *</text>
-<text x="1052" y="260" class="t f">telefono *</text>
-<text x="1052" y="285" class="t f">email *</text>
+<!-- Reserva -->
+<rect x="360" y="390" width="310" height="255" rx="7" class="box"/><rect x="360" y="390" width="310" height="42" rx="7" class="head"/><text x="515" y="417" text-anchor="middle" class="t h">Reserva</text>
+<text x="382" y="460" class="t f">PK id_reserva</text><text x="382" y="488" class="t f">FK id_habitacion</text><text x="382" y="516" class="t f">FK id_usuario</text><text x="382" y="544" class="t f">fecha_entrada *</text><text x="382" y="572" class="t f">fecha_salida *</text><text x="382" y="600" class="t f">estado *</text>
 
-<!-- Middle entities -->
-<rect x="230" y="400" width="360" height="255" rx="7" class="box"/>
-<rect x="230" y="400" width="360" height="42" rx="7" class="head"/>
-<text x="410" y="427" text-anchor="middle" class="t h">Reserva</text>
-<text x="252" y="470" class="t f">PK id_reserva</text>
-<text x="252" y="495" class="t f">FK id_habitacion</text>
-<text x="252" y="520" class="t f">FK id_usuario_creador</text>
-<text x="252" y="545" class="t f">fecha_entrada *</text>
-<text x="252" y="570" class="t f">fecha_salida *</text>
-<text x="252" y="595" class="t f">estado *</text>
-<text x="252" y="620" class="t f">fecha_creacion</text>
+<!-- Estadía -->
+<rect x="790" y="390" width="310" height="280" rx="7" class="box"/><rect x="790" y="390" width="310" height="42" rx="7" class="head"/><text x="945" y="417" text-anchor="middle" class="t h">Estadía</text>
+<text x="812" y="460" class="t f">PK id_estadia</text><text x="812" y="488" class="t f">FK id_habitacion</text><text x="812" y="516" class="t f">FK id_usuario</text><text x="812" y="544" class="t f">checkin</text><text x="812" y="572" class="t f">checkout</text><text x="812" y="600" class="t f">total_calculado</text><text x="812" y="628" class="t f">estado</text>
 
-<rect x="810" y="400" width="360" height="280" rx="7" class="box"/>
-<rect x="810" y="400" width="360" height="42" rx="7" class="head"/>
-<text x="990" y="427" text-anchor="middle" class="t h">Estadía</text>
-<text x="832" y="470" class="t f">PK id_estadia</text>
-<text x="832" y="495" class="t f">FK id_reserva (opcional)</text>
-<text x="832" y="520" class="t f">FK id_habitacion</text>
-<text x="832" y="545" class="t f">FK id_usuario_registro</text>
-<text x="832" y="570" class="t f">checkin</text>
-<text x="832" y="595" class="t f">checkout</text>
-<text x="832" y="620" class="t f">total_calculado</text>
-<text x="832" y="645" class="t f">estado</text>
+<!-- Huésped -->
+<rect x="585" y="760" width="280" height="180" rx="7" class="box"/><rect x="585" y="760" width="280" height="42" rx="7" class="head"/><text x="725" y="787" text-anchor="middle" class="t h">Huésped</text>
+<text x="607" y="830" class="t f">PK id_huesped</text><text x="607" y="858" class="t f">nombre *</text><text x="607" y="886" class="t f">otros datos *</text>
 
-<!-- Junctions -->
-<rect x="230" y="760" width="360" height="120" rx="7" class="box"/>
-<rect x="230" y="760" width="360" height="42" rx="7" class="head"/>
-<text x="410" y="787" text-anchor="middle" class="t h">Reserva_Huésped</text>
-<text x="252" y="830" class="t f">PK/FK id_reserva</text>
-<text x="252" y="855" class="t f">PK/FK id_huesped</text>
+<!-- relaciones limpias -->
+<line x1="645" y1="320" x2="560" y2="390" class="rel"/><rect x="565" y="337" width="64" height="25" rx="4" class="lbl"/><text x="597" y="355" text-anchor="middle" class="t f">1 : N</text>
+<line x1="805" y1="320" x2="900" y2="390" class="rel"/><rect x="820" y="337" width="64" height="25" rx="4" class="lbl"/><text x="852" y="355" text-anchor="middle" class="t f">1 : N</text>
 
-<rect x="810" y="760" width="360" height="120" rx="7" class="box"/>
-<rect x="810" y="760" width="360" height="42" rx="7" class="head"/>
-<text x="990" y="787" text-anchor="middle" class="t h">Estadía_Huésped</text>
-<text x="832" y="830" class="t f">PK/FK id_estadia</text>
-<text x="832" y="855" class="t f">PK/FK id_huesped</text>
+<line x1="330" y1="410" x2="360" y2="410" class="rel"/><rect x="320" y="370" width="64" height="25" rx="4" class="lbl"/><text x="352" y="388" text-anchor="middle" class="t f">1 : N</text>
 
-<!-- Relationship summary instead of crossing arrows -->
-<rect x="70" y="920" width="1260" height="90" rx="8" class="relbox"/>
-<text x="90" y="948" class="t note" font-weight="700">Relaciones principales</text>
-<text x="90" y="976" class="t note">Usuario 1 — N Reserva   |   Usuario 1 — N Estadía   |   Habitación 1 — N Reserva   |   Habitación 1 — N Estadía</text>
-<text x="90" y="1001" class="t note">Reserva N — N Huésped mediante Reserva_Huésped   |   Estadía N — N Huésped mediante Estadía_Huésped</text>
+<path d="M200 520 V700 H945 V670" class="rel"/><rect x="535" y="686" width="64" height="25" rx="4" class="lbl"/><text x="567" y="704" text-anchor="middle" class="t f">1 : N</text>
 
-<!-- Local, non-crossing relation guides -->
-<line x1="220" y1="295" x2="360" y2="400" stroke="#666" stroke-width="2"/>
-<text x="248" y="340" class="t f">1 : N</text>
+<line x1="650" y1="760" x2="560" y2="645" class="rel"/><rect x="565" y="686" width="64" height="25" rx="4" class="lbl"/><text x="597" y="704" text-anchor="middle" class="t f">1 : N</text>
+<line x1="800" y1="760" x2="900" y2="670" class="rel"/><rect x="815" y="700" width="64" height="25" rx="4" class="lbl"/><text x="847" y="718" text-anchor="middle" class="t f">1 : N</text>
 
-<line x1="650" y1="320" x2="500" y2="400" stroke="#666" stroke-width="2"/>
-<text x="558" y="350" class="t f">1 : N</text>
-
-<line x1="750" y1="320" x2="900" y2="400" stroke="#666" stroke-width="2"/>
-<text x="810" y="350" class="t f">1 : N</text>
-
-<line x1="410" y1="655" x2="410" y2="760" stroke="#666" stroke-width="2"/>
-<text x="425" y="715" class="t f">1 : N</text>
-
-<line x1="990" y1="680" x2="990" y2="760" stroke="#666" stroke-width="2"/>
-<text x="1005" y="725" class="t f">1 : N</text>
-
-<line x1="1180" y1="320" x2="1180" y2="900" stroke="#aaa" stroke-width="2" stroke-dasharray="7 6"/>
-<line x1="1180" y1="840" x2="1170" y2="840" stroke="#666" stroke-width="2"/>
-<line x1="1180" y1="820" x2="1170" y2="820" stroke="#666" stroke-width="2"/>
-<text x="1192" y="575" class="t f">Huésped se relaciona con ambas tablas puente</text>
-
-<text x="70" y="1035" class="t f">* Campo o valor propuesto que debe validarse porque el Caso 6 no lo define de forma exacta.</text>
+<text x="70" y="955" class="t f">* Campo propuesto o pendiente de validar porque el Caso 6 no lo define de forma exacta.</text>
 </svg>
