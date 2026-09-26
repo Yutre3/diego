@@ -18,6 +18,12 @@ El prototipo sigue directamente la misma estructura visual mostrada en las imág
 
 ![Mockup](../entrega-final/09-mockup.svg)
 
+## Archivos editables
+
+Todas las páginas HTML, el CSS y el JavaScript permanecen dentro de esta carpeta. El profesor puede abrir el código fuente y editarlo en GitHub si tiene permisos de escritura.
+
+[Ver guía completa de edición](../docs/20_paginas_editables.md)
+
 ## URL
 
 **https://yutre3.github.io/diego/**
