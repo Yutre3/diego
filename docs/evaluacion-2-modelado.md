@@ -57,7 +57,9 @@ Archivos:
 - [Pantallas principales](../mockups/pantallas-principales.svg)
 - [Guía de estilo](../mockups/guia-estilo.svg)
 - [UX, usabilidad y accesibilidad](14_guia_estilo_ux.md)
-- [Prototipo navegable](../prototipo/README.md)
+- [Prototipo navegable](../prototipo-web/README.md)
+- [Evaluación 1 visible en la interfaz](../prototipo-web/evaluacion1.html)
+- [Evaluación 2 visible en la interfaz](../prototipo-web/evaluacion2.html)
 
 ## 6. Planificación Kanban
 
