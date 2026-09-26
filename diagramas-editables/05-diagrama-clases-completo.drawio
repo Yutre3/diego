@@ -1,8 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" type="github">
-<diagram id="Clases-completo" name="Clases completo">
-<mxGraphModel dx="1250" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="900" math="0" shadow="0">
-<root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="usr" value="&lt;b&gt;Usuario&lt;/b&gt;&lt;hr&gt;- idUsuario: int&lt;br&gt;- rol: String&lt;hr&gt;+ iniciarSesion()&lt;br&gt;+ cerrarSesion()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="500" y="60" width="280" height="175" as="geometry"/></mxCell><mxCell id="adm" value="&lt;b&gt;Administrador&lt;/b&gt;&lt;hr&gt;- permisos: String *&lt;hr&gt;+ gestionarUsuarios()&lt;br&gt;+ generarInforme()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="180" y="300" width="260" height="160" as="geometry"/></mxCell><mxCell id="enc" value="&lt;b&gt;EncargadoHotel&lt;/b&gt;&lt;hr&gt;- turno: String *&lt;hr&gt;+ gestionarReserva()&lt;br&gt;+ realizarCheckInOut()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="840" y="300" width="260" height="160" as="geometry"/></mxCell><mxCell id="hue" value="&lt;b&gt;Huesped&lt;/b&gt;&lt;hr&gt;- idHuesped: int&lt;br&gt;- nombre: String&lt;hr&gt;+ registrar()&lt;br&gt;+ actualizar()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="40" y="590" width="250" height="190" as="geometry"/></mxCell><mxCell id="res" value="&lt;b&gt;Reserva&lt;/b&gt;&lt;hr&gt;- idReserva: int&lt;br&gt;- fechas: Date *&lt;hr&gt;+ crear()&lt;br&gt;+ modificar()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="330" y="590" width="250" height="190" as="geometry"/></mxCell><mxCell id="hab" value="&lt;b&gt;Habitacion&lt;/b&gt;&lt;hr&gt;- idHabitacion: int&lt;br&gt;- capacidad: int&lt;br&gt;- orientacion: String&lt;hr&gt;+ estaDisponible()&lt;br&gt;+ cambiarEstado()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="620" y="590" width="250" height="190" as="geometry"/></mxCell><mxCell id="est" value="&lt;b&gt;Estadia&lt;/b&gt;&lt;hr&gt;- idEstadia: int&lt;br&gt;- checkIn: DateTime&lt;br&gt;- total: decimal&lt;hr&gt;+ calcularCosto()&lt;br&gt;+ registrarCheckOut()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="910" y="590" width="260" height="205" as="geometry"/></mxCell><mxCell id="g1" value="herencia" style="endArrow=block;endFill=0;html=1;strokeWidth=2;" edge="1" parent="1" source="adm" target="usr"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="g2" value="herencia" style="endArrow=block;endFill=0;html=1;strokeWidth=2;" edge="1" parent="1" source="enc" target="usr"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="d1" value="0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="hue" target="res"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="d2" value="1" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="res" target="hab"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="d3" value="0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="hab" target="est"><mxGeometry relative="1" as="geometry"/></mxCell></root>
-</mxGraphModel>
-</diagram>
-</mxfile>
+<?xml version="1.0" encoding="UTF-8"?><mxfile host="app.diagrams.net" type="github"><diagram id="clases" name="Clases completo"><mxGraphModel dx="1500" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="980" math="0" shadow="0"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="usr" value="Usuario
+----------------
+- idUsuario: int
+- rol: String
+----------------
++ iniciarSesion()
++ cerrarSesion()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="600" y="60" width="280" height="170" as="geometry"/></mxCell><mxCell id="adm" value="Administrador
+----------------
+- permisos: String *
+----------------
++ gestionarUsuarios()
++ generarInforme()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="240" y="300" width="270" height="160" as="geometry"/></mxCell><mxCell id="enc" value="EncargadoHotel
+----------------
+- turno: String *
+----------------
++ gestionarReserva()
++ realizarCheckInOut()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="980" y="300" width="270" height="160" as="geometry"/></mxCell><mxCell id="inf" value="Informe
+----------------
+- tipo: String
+----------------
++ generarOcupacion()
++ generarReservas()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="60" y="580" width="240" height="150" as="geometry"/></mxCell><mxCell id="hue" value="Huesped
+----------------
+- idHuesped: int
+- nombre: String
+- datos: String *
+----------------
++ registrar()
++ actualizar()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="360" y="570" width="250" height="220" as="geometry"/></mxCell><mxCell id="res" value="Reserva
+----------------
+- idReserva: int
+- fechas: Date *
+- estado: String *
+----------------
++ crear()
++ modificar()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="650" y="570" width="250" height="220" as="geometry"/></mxCell><mxCell id="hab" value="Habitacion
+----------------
+- idHabitacion: int
+- capacidad: int
+- orientacion: String
+----------------
++ estaDisponible()
++ cambiarEstado()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="940" y="570" width="250" height="220" as="geometry"/></mxCell><mxCell id="est" value="Estadia
+----------------
+- idEstadia: int
+- checkIn: DateTime
+- total: decimal
+----------------
++ calcularCosto()
++ registrarCheckOut()" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1"><mxGeometry x="1230" y="570" width="250" height="220" as="geometry"/></mxCell><mxCell id="g1" value="herencia" style="endArrow=block;endFill=0;html=1;strokeWidth=2;" edge="1" parent="1" source="adm" target="usr"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="g2" value="herencia" style="endArrow=block;endFill=0;html=1;strokeWidth=2;" edge="1" parent="1" source="enc" target="usr"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="r1" value="genera" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="adm" target="inf"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="r2" value="0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="hue" target="res"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="r3" value="1" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="res" target="hab"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="r4" value="0..*" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="hab" target="est"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="r5" value="participa en" style="endArrow=none;html=1;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="hue" target="est"><mxGeometry relative="1" as="geometry"/></mxCell></root></mxGraphModel></diagram></mxfile>
