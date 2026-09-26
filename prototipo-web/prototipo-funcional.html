@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prototipo funcional - Hotel Duerme Bien</title>
+<link rel="stylesheet" href="prototipo-final.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1>Hotel Duerme Bien</h1>
+    <small>Prototipo funcional · Sistema de Pasajeros</small>
+  </div>
+  <div class="session">
+    <span>Administrador / Encargado</span>
+    <button id="resetDemo" class="ghost">Reiniciar demo</button>
+  </div>
+</header>
+
+<div class="app">
+  <aside class="sidebar">
+    <h3>Menú principal</h3>
+    <button class="nav-btn" data-view="inicio">Inicio</button>
+    <button class="nav-btn" data-view="habitaciones">Habitaciones</button>
+    <button class="nav-btn" data-view="huespedes">Huéspedes</button>
+    <button class="nav-btn active" data-view="reservas">Reservas</button>
+    <button class="nav-btn" data-view="checkin">Check-in</button>
+    <button class="nav-btn" data-view="checkout">Check-out</button>
+    <button class="nav-btn" data-view="informes">Informes</button>
+  </aside>
+
+  <main>
+    <section class="view" id="view-inicio">
+      <h2>Inicio</h2>
+      <p class="subtitle">Resumen general del sistema.</p>
+      <div class="stats">
+        <article><strong id="statDisponibles">0</strong><span>Disponibles</span></article>
+        <article><strong id="statOcupadas">0</strong><span>Ocupadas</span></article>
+        <article><strong id="statReservas">0</strong><span>Reservas</span></article>
+        <article><strong id="statHuespedes">0</strong><span>Huéspedes</span></article>
+      </div>
+      <div class="card">
+        <h3>Estado de habitaciones</h3>
+        <div id="homeRooms"></div>
+      </div>
+    </section>
+
+    <section class="view" id="view-habitaciones">
+      <h2>Habitaciones</h2>
+      <p class="subtitle">Registro y control de capacidad, orientación y disponibilidad.</p>
+      <div class="two-col">
+        <form id="roomForm" class="card">
+          <h3>Registrar habitación</h3>
+          <label>Número<input id="roomNumber" required></label>
+          <label>Capacidad<input id="roomCapacity" type="number" min="1" value="2" required></label>
+          <label>Orientación<select id="roomOrientation"><option>Norte</option><option>Sur</option><option>Este</option><option>Oeste</option></select></label>
+          <button>Guardar habitación</button>
+          <p class="message" id="roomMessage"></p>
+        </form>
+        <div class="card">
+          <h3>Habitaciones registradas</h3>
+          <div id="roomsList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-huespedes">
+      <h2>Huéspedes</h2>
+      <p class="subtitle">Registro de huéspedes para reservas y estadías.</p>
+      <div class="two-col">
+        <form id="guestForm" class="card">
+          <h3>Registrar huésped</h3>
+          <label>Nombre<input id="guestName" required placeholder="Ej: María González"></label>
+          <button>Guardar huésped</button>
+          <p class="message" id="guestMessage"></p>
+        </form>
+        <div class="card">
+          <h3>Huéspedes registrados</h3>
+          <div id="guestsList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view active" id="view-reservas">
+      <h2>Panel de reservas</h2>
+      <p class="subtitle">Consulta disponibilidad y registra una nueva reserva.</p>
+
+      <form id="availabilityForm" class="card availability">
+        <h3>Buscar disponibilidad</h3>
+        <div class="availability-row">
+          <label>Entrada<input id="searchEntry" type="date" required></label>
+          <label>Salida<input id="searchExit" type="date" required></label>
+          <button type="submit">Consultar</button>
+        </div>
+        <p class="message" id="availabilityMessage"></p>
+      </form>
+
+      <div class="reservation-grid">
+        <div class="card">
+          <h3>Habitaciones disponibles</h3>
+          <div id="availableRooms"></div>
+        </div>
+
+        <form id="reservationForm" class="card">
+          <h3>Nueva reserva</h3>
+          <label>Huésped
+            <select id="reservationGuest" required></select>
+          </label>
+          <label>Habitación
+            <input id="reservationRoomLabel" readonly placeholder="Seleccione una habitación">
+            <input id="reservationRoom" type="hidden">
+          </label>
+          <label>Entrada<input id="reservationEntry" type="date" required></label>
+          <label>Salida<input id="reservationExit" type="date" required></label>
+          <label>Cantidad de huéspedes<input id="reservationCount" type="number" min="1" value="1" required></label>
+          <button type="submit">Guardar reserva</button>
+          <p class="message" id="reservationMessage"></p>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Reservas registradas</h3>
+        <div id="reservationsList"></div>
+      </div>
+    </section>
+
+    <section class="view" id="view-checkin">
+      <h2>Check-in</h2>
+      <p class="subtitle">Asigna una habitación disponible y registra la ocupación.</p>
+      <div class="two-col">
+        <form id="checkinForm" class="card">
+          <h3>Registrar check-in</h3>
+          <label>Reserva<select id="checkinReservation"></select></label>
+          <button>Confirmar check-in</button>
+          <p class="message" id="checkinMessage"></p>
+        </form>
+        <div class="card">
+          <h3>Estadías activas</h3>
+          <div id="activeStays"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-checkout">
+      <h2>Check-out</h2>
+      <p class="subtitle">Calcula el costo demostrativo y libera la habitación.</p>
+      <div class="two-col">
+        <form id="checkoutForm" class="card">
+          <h3>Registrar check-out</h3>
+          <label>Estadía<select id="checkoutStay"></select></label>
+          <label>Costo por pasajero<input id="costPerGuest" type="number" min="0" value="30000"></label>
+          <label>Total<input id="checkoutTotal" readonly></label>
+          <button>Confirmar check-out</button>
+          <p class="message" id="checkoutMessage"></p>
+        </form>
+        <div class="card">
+          <h3>Historial</h3>
+          <div id="finishedStays"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-informes">
+      <h2>Informes</h2>
+      <p class="subtitle">Resumen de ocupación y reservas.</p>
+      <div class="stats">
+        <article><strong id="reportOccupied">0</strong><span>Ocupadas</span></article>
+        <article><strong id="reportAvailable">0</strong><span>Disponibles</span></article>
+        <article><strong id="reportReservations">0</strong><span>Reservas</span></article>
+      </div>
+      <div class="card">
+        <h3>Resumen de reservas</h3>
+        <div id="reportList"></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="prototipo-final.js"></script>
+</body>
+</html>
