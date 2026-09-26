@@ -1,5 +1,6 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ayuda y demostración · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head><body data-page="ayuda">
-<header class="topbar"><div class="brand"><h1>Hotel Duerme Bien</h1><small>Prototipo funcional · Sistema de Pasajeros</small></div><div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div></header>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Material del profesor · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="ayuda">
+<header class="topbar"><div class="brand"><h1>Hotel Duerme Bien</h1><small>Sistema de Pasajeros · prototipo basado en Caso 6</small></div><div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div></header>
 <div class="layout"><nav class="sidebar">
 <a data-page="inicio" href="index.html">Inicio</a>
 <a data-page="habitaciones" href="habitaciones.html">Habitaciones</a>
@@ -7,26 +8,17 @@
 <a data-page="reservas" href="reservas.html">Reservas</a>
 <a data-page="checkin" href="checkin.html">Check-in</a>
 <a data-page="checkout" href="checkout.html">Check-out</a>
+<a data-page="usuarios" href="usuarios.html">Usuarios</a>
 <a data-page="informes" href="informes.html">Informes</a>
-<a data-page="ayuda" href="ayuda.html">Ayuda / Demo</a>
-</nav><main><div class="page-title"><div><h2>Ayuda y demostración</h2><p>Página preparada para explicar el prototipo y responder preguntas del profesor.</p></div></div>
-<section class="hero"><h2>Cómo demostrar el prototipo</h2><p>El material de clases indica que un prototipo debe ser navegable y permitir probar interacción, botones y validación de formularios. Esta versión permite hacer exactamente eso.</p></section>
-<div class="grid-2">
-<section class="panel"><h3>Recorrido sugerido</h3><div class="steps">
-<div class="step">Entrar con usuario de demostración.</div>
-<div class="step">Registrar una habitación o revisar las existentes.</div>
-<div class="step">Registrar un huésped.</div>
-<div class="step">Crear una reserva.</div>
-<div class="step">Realizar el check-in.</div>
-<div class="step">Realizar el check-out.</div>
-<div class="step">Revisar el informe final.</div>
-</div></section>
-<section class="panel"><h3>Preguntas que podrían hacer</h3>
-<p><strong>¿Por qué es un prototipo y no un mockup?</strong><br>Porque se puede navegar y realizar acciones. El mockup es estático.</p>
-<p><strong>¿Dónde se guardan los datos?</strong><br>En localStorage del navegador, solo para la demostración.</p>
-<p><strong>¿Por qué el costo usa una tarifa de ejemplo?</strong><br>Porque el caso pide cálculo automático, pero no entrega una fórmula ni tarifa definitiva.</p>
-<p><strong>¿Qué valida la reserva?</strong><br>Que las fechas tengan orden correcto y que los pasajeros no superen la capacidad de la habitación.</p>
-<p><strong>¿Qué cambia con el check-in?</strong><br>Se crea una estadía y la habitación pasa a OCUPADA.</p>
-<p><strong>¿Qué cambia con el check-out?</strong><br>La estadía se finaliza y la habitación vuelve a DISPONIBLE.</p>
-</section></div>
-<section class="panel"><h3>Reiniciar demostración</h3><p>Restaura los datos iniciales del prototipo.</p><button class="danger" onclick="resetDemo()">Restablecer datos de prueba</button></section><p class="footer-note">Prototipo académico. Los datos se guardan en el navegador mediante localStorage.</p></main></div><script src="app.js"></script></body></html>
+<a data-page="ayuda" href="ayuda.html">Material del profesor</a>
+</nav><main><div class="page-title"><div><h2>Material del profesor</h2><p>Qué parte del prototipo proviene de cada archivo entregado.</p></div></div>
+<div class="source-box"><h3>Base del material entregado</h3><p>Esta página separa lo que viene del Caso 6 de las decisiones técnicas necesarias para que el prototipo funcione.</p></div>
+<section class="panel"><h3>Definición de proyectos(1).docx</h3><p>Base funcional del sistema: habitaciones con capacidad y orientación, huéspedes asignados, ocupación/disponibilidad, costo automático por pasajero, usuarios administrador/encargados, informes de ocupación/reservas y procesos de check-in, check-out y reservas.</p></section>
+<section class="panel"><h3>MOCKUP_COMPLETO(1).pdf</h3><p>Se aplicó la secuencia <strong>Sketch → Wireframe → Mockup → Prototipo</strong>. El prototipo es navegable y permite probar interacción, botones y validaciones. También se aplicó diseño responsive.</p></section>
+<section class="panel"><h3>CASOS_DE_USO_como_iniciar(1).pdf</h3><p>Se utilizaron actores por rol, nombres de casos de uso comenzando con verbos, límite de sistema y relaciones legibles.</p></section>
+<section class="panel"><h3>CASOS_DE_USO_extend_y_include(1).pdf</h3><p>Se mantuvo el modelo simple y se evitó usar include/extend para representar el orden de ejecución.</p></section>
+<section class="panel"><h3>MODELO_E_R_NORMALIZACION.pdf</h3><p>El modelo de datos y la normalización se organizaron con 1NF, 2NF y 3NF, buscando evitar redundancia, problemas de actualización y dependencias incorrectas.</p></section>
+<section class="panel"><h3>Diagramas de Clase(1).pdf y guía</h3><p>El diagrama complementario utiliza nombre de clase, atributos, operaciones, multiplicidad y relaciones UML. Se mantiene como complemento porque la Evaluación 2 no lo enumera como entrega obligatoria.</p></section>
+<section class="panel"><h3>Github_Git_VSCode.docx</h3><p>El repositorio mantiene historial de commits, ramas y documentación del trabajo realizado.</p></section>
+<section class="panel"><h3>Reiniciar demostración</h3><p>Restaura los datos de prueba sin cambiar los archivos del repositorio.</p><button class="danger" onclick="resetDemo()">Restablecer datos del prototipo</button></section><p class="footer-note">Los elementos no definidos literalmente por el Caso 6 se muestran como decisiones técnicas de demostración y no como requisitos oficiales.</p>
+</main></div><script src="app.js"></script></body></html>
