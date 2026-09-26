@@ -31,7 +31,8 @@ function msg(sel,text,ok){const el=qs(sel);if(!el)return;el.textContent=text;el.
 function badge(text){const cls=['DISPONIBLE','REGISTRADA','ACTIVA'].includes(text)?'ok':['OCUPADA'].includes(text)?'warn':'danger';return '<span class="badge '+cls+'">'+esc(text)+'</span>'}
 function fill(sel,arr,value,label){const el=qs(sel);if(!el)return;el.innerHTML=arr.length?arr.map(x=>'<option value="'+value(x)+'">'+esc(label(x))+'</option>').join(''):'<option value="">Sin opciones disponibles</option>'}
 function authGuard(){
-  if(document.body.dataset.page==='login') return;
+  const page=document.body.dataset.page;
+  if(['login','evaluacion1','evaluacion2','ayuda'].includes(page)) return;
   const s=session();
   if(!s){location.href='login.html';return}
   const who=qs('#who');if(who)who.textContent=s.nombre+' · '+s.rol;
