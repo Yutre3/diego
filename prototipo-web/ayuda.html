@@ -1,0 +1,32 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ayuda y demostración · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head><body data-page="ayuda">
+<header class="topbar"><div class="brand"><h1>Hotel Duerme Bien</h1><small>Prototipo funcional · Sistema de Pasajeros</small></div><div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div></header>
+<div class="layout"><nav class="sidebar">
+<a data-page="inicio" href="index.html">Inicio</a>
+<a data-page="habitaciones" href="habitaciones.html">Habitaciones</a>
+<a data-page="huespedes" href="huespedes.html">Huéspedes</a>
+<a data-page="reservas" href="reservas.html">Reservas</a>
+<a data-page="checkin" href="checkin.html">Check-in</a>
+<a data-page="checkout" href="checkout.html">Check-out</a>
+<a data-page="informes" href="informes.html">Informes</a>
+<a data-page="ayuda" href="ayuda.html">Ayuda / Demo</a>
+</nav><main><div class="page-title"><div><h2>Ayuda y demostración</h2><p>Página preparada para explicar el prototipo y responder preguntas del profesor.</p></div></div>
+<section class="hero"><h2>Cómo demostrar el prototipo</h2><p>El material de clases indica que un prototipo debe ser navegable y permitir probar interacción, botones y validación de formularios. Esta versión permite hacer exactamente eso.</p></section>
+<div class="grid-2">
+<section class="panel"><h3>Recorrido sugerido</h3><div class="steps">
+<div class="step">Entrar con usuario de demostración.</div>
+<div class="step">Registrar una habitación o revisar las existentes.</div>
+<div class="step">Registrar un huésped.</div>
+<div class="step">Crear una reserva.</div>
+<div class="step">Realizar el check-in.</div>
+<div class="step">Realizar el check-out.</div>
+<div class="step">Revisar el informe final.</div>
+</div></section>
+<section class="panel"><h3>Preguntas que podrían hacer</h3>
+<p><strong>¿Por qué es un prototipo y no un mockup?</strong><br>Porque se puede navegar y realizar acciones. El mockup es estático.</p>
+<p><strong>¿Dónde se guardan los datos?</strong><br>En localStorage del navegador, solo para la demostración.</p>
+<p><strong>¿Por qué el costo usa una tarifa de ejemplo?</strong><br>Porque el caso pide cálculo automático, pero no entrega una fórmula ni tarifa definitiva.</p>
+<p><strong>¿Qué valida la reserva?</strong><br>Que las fechas tengan orden correcto y que los pasajeros no superen la capacidad de la habitación.</p>
+<p><strong>¿Qué cambia con el check-in?</strong><br>Se crea una estadía y la habitación pasa a OCUPADA.</p>
+<p><strong>¿Qué cambia con el check-out?</strong><br>La estadía se finaliza y la habitación vuelve a DISPONIBLE.</p>
+</section></div>
+<section class="panel"><h3>Reiniciar demostración</h3><p>Restaura los datos iniciales del prototipo.</p><button class="danger" onclick="resetDemo()">Restablecer datos de prueba</button></section><p class="footer-note">Prototipo académico. Los datos se guardan en el navegador mediante localStorage.</p></main></div><script src="app.js"></script></body></html>
