@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+<style>
+.t{font-family:Arial,sans-serif;fill:#24343d}.w{fill:#fff}.small{font-size:14px;fill:#6d7c85}.h1{font-size:25px;font-weight:700}.h2{font-size:27px;font-weight:700}.h3{font-size:17px;font-weight:700}.nav{font-size:14px;fill:#d8e3e8}.btn{fill:#2b8798}.btnText{font-size:13px;fill:#fff}.line{stroke:#d7e0e5;stroke-width:1.5}.field{fill:#f8fafb;stroke:#ccd7dc;stroke-width:1.5}.card{fill:#fff;stroke:#d7e0e5;stroke-width:1.5}</style>
+</defs>
+<rect width="1400" height="900" fill="#eef3f5"/>
+<rect x="0" y="0" width="1400" height="92" fill="#23465f"/>
+<text x="48" y="42" class="t h1" fill="#fff">Hotel Duerme Bien</text>
+<text x="48" y="66" class="small" fill="#dce7eb">Prototipo funcional · Sistema de Pasajeros</text>
+<text x="1090" y="49" class="small" fill="#dce7eb">Administrador / Encargado</text>
+<rect x="1235" y="27" width="115" height="38" rx="19" fill="#ffffff22"/>
+<text x="1292" y="51" text-anchor="middle" class="btnText">Reiniciar demo</text>
+
+<rect x="0" y="92" width="235" height="808" fill="#10293f"/>
+<text x="28" y="135" class="t h3" fill="#fff">Menú principal</text>
+<text x="32" y="185" class="nav">Inicio</text>
+<text x="32" y="230" class="nav">Habitaciones</text>
+<text x="32" y="275" class="nav">Huéspedes</text>
+<rect x="18" y="300" width="198" height="42" rx="7" fill="#2b8798"/>
+<text x="32" y="326" class="nav" fill="#fff">Reservas</text>
+<text x="32" y="380" class="nav">Check-in</text>
+<text x="32" y="425" class="nav">Check-out</text>
+<text x="32" y="470" class="nav">Informes</text>
+
+<text x="285" y="145" class="t h2">Panel de reservas</text>
+<text x="285" y="173" class="small">Consulta disponibilidad y registra una nueva reserva.</text>
+
+<rect x="285" y="205" width="1060" height="140" rx="12" class="card"/>
+<text x="315" y="240" class="t h3">Buscar disponibilidad</text>
+<text x="315" y="275" class="small">Entrada</text>
+<rect x="315" y="287" width="220" height="42" rx="7" class="field"/>
+<text x="570" y="275" class="small">Salida</text>
+<rect x="570" y="287" width="220" height="42" rx="7" class="field"/>
+<rect x="1080" y="275" width="190" height="46" rx="7" class="btn"/>
+<text x="1175" y="304" text-anchor="middle" class="btnText">Consultar</text>
+
+<rect x="285" y="375" width="650" height="390" rx="12" class="card"/>
+<text x="315" y="410" class="t h3">Habitaciones disponibles</text>
+<rect x="315" y="438" width="590" height="88" rx="9" fill="#f9fbfc" stroke="#dde5e9"/>
+<text x="335" y="468" class="t h3">Habitación 201</text>
+<text x="335" y="494" class="small">Capacidad: 2 · Orientación: Norte</text>
+<rect x="750" y="456" width="125" height="38" rx="7" class="btn"/><text x="812" y="480" text-anchor="middle" class="btnText">Seleccionar</text>
+<rect x="315" y="545" width="590" height="88" rx="9" fill="#f9fbfc" stroke="#dde5e9"/>
+<text x="335" y="575" class="t h3">Habitación 305</text>
+<text x="335" y="601" class="small">Capacidad: 3 · Orientación: Sur</text>
+<rect x="750" y="563" width="125" height="38" rx="7" class="btn"/><text x="812" y="587" text-anchor="middle" class="btnText">Seleccionar</text>
+
+<rect x="965" y="375" width="380" height="390" rx="12" class="card"/>
+<text x="995" y="410" class="t h3">Nueva reserva</text>
+<text x="995" y="447" class="small">Huésped</text>
+<rect x="995" y="458" width="320" height="42" rx="7" class="field"/>
+<text x="995" y="530" class="small">Habitación</text>
+<rect x="995" y="541" width="320" height="42" rx="7" class="field"/>
+<text x="995" y="613" class="small">Entrada / Salida</text>
+<rect x="995" y="624" width="320" height="42" rx="7" class="field"/>
+<rect x="995" y="695" width="320" height="46" rx="7" class="btn"/><text x="1155" y="724" text-anchor="middle" class="btnText">Guardar reserva</text>
+
+<rect x="285" y="795" width="1060" height="70" rx="10" class="card"/>
+<text x="315" y="825" class="t h3">Flujo funcional</text>
+<text x="315" y="850" class="small">Consultar → seleccionar habitación → registrar reserva → check-in → check-out → informes</text>
+</svg>
