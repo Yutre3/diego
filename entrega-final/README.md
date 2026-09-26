@@ -1,12 +1,12 @@
 # Entrega final - Hotel Duerme Bien
 
-Aquí se dejó uno de cada elemento principal de la entrega.
+Esta carpeta reúne una versión principal de cada elemento de la entrega.
 
-## Prototipo funcional
+## Prototipo funcional basado en el Caso 6
 
-La versión funcional se encuentra en la carpeta [prototipo-web](../prototipo-web/README.md).
+La interfaz funcional se encuentra en [prototipo-web](../prototipo-web/README.md).
 
-Páginas principales:
+Páginas:
 
 - [Acceso](../prototipo-web/login.html)
 - [Inicio](../prototipo-web/index.html)
@@ -15,13 +15,13 @@ Páginas principales:
 - [Reservas](../prototipo-web/reservas.html)
 - [Check-in](../prototipo-web/checkin.html)
 - [Check-out](../prototipo-web/checkout.html)
+- [Usuarios](../prototipo-web/usuarios.html)
 - [Informes](../prototipo-web/informes.html)
-- [Ayuda / Demo](../prototipo-web/ayuda.html)
+- [Material del profesor](../prototipo-web/ayuda.html)
 
-Código:
+La relación entre los archivos entregados y el contenido del repositorio está documentada en:
 
-- [CSS](../prototipo-web/styles.css)
-- [JavaScript](../prototipo-web/app.js)
+[docs/18_trazabilidad_fuentes_profesor.md](../docs/18_trazabilidad_fuentes_profesor.md)
 
 ## 1. Requerimientos
 
@@ -43,7 +43,7 @@ Código:
 
 ![Normalización](05-normalizacion.svg)
 
-## 6. Diagrama de clases
+## 6. Diagrama de clases complementario
 
 ![Diagrama de clases](06-diagrama-clases.svg)
 
