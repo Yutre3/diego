@@ -53,27 +53,8 @@ Se dejó **una sola versión completa de cada tipo**, para que no haya diagramas
 
 ## 9. Prototipo funcional
 
-Este prototipo toma la maqueta anterior y permite usarla de forma interactiva.
+![Prototipo funcional](entrega-final/10-prototipo-funcional.svg)
 
 [Probar prototipo funcional](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html) · [Ver archivo HTML](prototipo-web/prototipo-funcional.html) · [Editar HTML](https://github.com/Yutre3/diego/edit/main/prototipo-web/prototipo-funcional.html)
 
-Funciones incluidas:
-
-- consultar disponibilidad por fecha;
-- seleccionar una habitación;
-- registrar huéspedes;
-- guardar reservas;
-- validar fechas y capacidad;
-- registrar check-in;
-- cambiar la habitación a ocupada;
-- registrar check-out;
-- calcular un costo demostrativo por pasajero;
-- liberar la habitación;
-- consultar informes de ocupación y reservas;
-- guardar los datos de la demostración en el navegador.
-
-Archivos editables:
-
-- [prototipo-funcional.html](prototipo-web/prototipo-funcional.html)
-- [prototipo-final.css](prototipo-web/prototipo-final.css)
-- [prototipo-final.js](prototipo-web/prototipo-final.js)
+Archivos: [HTML](prototipo-web/prototipo-funcional.html) · [CSS](prototipo-web/prototipo-final.css) · [JavaScript](prototipo-web/prototipo-final.js)
