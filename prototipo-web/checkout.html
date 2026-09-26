@@ -1,5 +1,6 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Check-out · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head><body data-page="checkout">
-<header class="topbar"><div class="brand"><h1>Hotel Duerme Bien</h1><small>Prototipo funcional · Sistema de Pasajeros</small></div><div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div></header>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Check-out y liberación · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="checkout">
+<header class="topbar"><div class="brand"><h1>Hotel Duerme Bien</h1><small>Sistema de Pasajeros · prototipo basado en Caso 6</small></div><div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div></header>
 <div class="layout"><nav class="sidebar">
 <a data-page="inicio" href="index.html">Inicio</a>
 <a data-page="habitaciones" href="habitaciones.html">Habitaciones</a>
@@ -7,14 +8,11 @@
 <a data-page="reservas" href="reservas.html">Reservas</a>
 <a data-page="checkin" href="checkin.html">Check-in</a>
 <a data-page="checkout" href="checkout.html">Check-out</a>
+<a data-page="usuarios" href="usuarios.html">Usuarios</a>
 <a data-page="informes" href="informes.html">Informes</a>
-<a data-page="ayuda" href="ayuda.html">Ayuda / Demo</a>
-</nav><main><div class="page-title"><div><h2>Check-out</h2><p>Finaliza una estadía, calcula un costo demostrativo y libera la habitación.</p></div></div>
-<div class="grid-2">
-<section class="panel"><h3>Registrar check-out</h3><form id="checkoutForm">
-<label>Estadía activa<select id="coEstadia" required></select></label>
-<div class="grid-2"><label>Noches<input id="coNoches" type="number" min="1" value="1" required></label><label>Tarifa demostrativa por pasajero/noche<input id="coTarifa" type="number" min="0" step="1000" value="30000" required></label></div>
-<label>Total calculado<input id="coTotal" readonly></label>
-<button type="submit">Confirmar check-out</button><p id="coMsg" class="msg"></p></form></section>
-<section class="panel"><h3>Importante</h3><div class="notice warn">El Caso 6 exige cálculo automático por pasajero, pero no entrega la fórmula ni la tarifa exacta. Por eso esta fórmula es solo para demostrar que el prototipo puede calcular automáticamente.</div><p>Al confirmar, la estadía queda finalizada y la habitación vuelve a DISPONIBLE.</p></section>
-</div><p class="footer-note">Prototipo académico. Los datos se guardan en el navegador mediante localStorage.</p></main></div><script src="app.js"></script></body></html>
+<a data-page="ayuda" href="ayuda.html">Material del profesor</a>
+</nav><main><div class="page-title"><div><h2>Check-out y liberación</h2><p>Proceso de salida, costo por pasajero y liberación de la habitación.</p></div></div>
+<div class="source-box"><h3>Base del material entregado</h3><p><strong>Caso 6:</strong> “Cálculo automático de costos por pasajero”.</p><p><strong>UA3:</strong> “Proceso de check-out y liberación de habitaciones”.</p><p class="small">El Caso 6 no entrega la fórmula ni la tarifa. Por eso el valor por pasajero se ingresa como dato de prueba y el prototipo calcula el total automáticamente solo para demostrar la interacción.</p></div>
+<div class="grid-2"><section class="panel"><h3>Registrar check-out</h3><form id="checkoutForm"><label>Estadía activa<select id="coEstadia" required></select></label><label>Costo por pasajero <span class="small">(valor de prueba, no tarifa oficial)</span><input id="coCostoPasajero" type="number" min="0" step="1000" value="30000" required></label><label>Total automático de demostración<input id="coTotal" readonly></label><button type="submit">Confirmar check-out</button><p id="coMsg" class="msg"></p></form></section>
+<section class="panel"><h3>Resultado</h3><div class="steps"><div class="step">Se selecciona una estadía activa.</div><div class="step">El prototipo realiza el cálculo demostrativo.</div><div class="step">Se registra la salida.</div><div class="step">La habitación vuelve a disponible.</div></div></section></div><p class="footer-note">Los elementos no definidos literalmente por el Caso 6 se muestran como decisiones técnicas de demostración y no como requisitos oficiales.</p>
+</main></div><script src="app.js"></script></body></html>
