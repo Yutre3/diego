@@ -1,50 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="900" viewBox="0 0 1300 900">
-<defs>
-  <filter id="rough"><feTurbulence baseFrequency="0.015" numOctaves="1" seed="4" type="fractalNoise"/><feDisplacementMap in="SourceGraphic" scale="1.5"/></filter>
-  <style>.t{font-family:'Comic Sans MS',cursive;fill:#3b3b3b}.title{font-size:28px;font-weight:700}.h{font-size:20px}.f{font-size:16px}.line{stroke:#555;stroke-width:3;fill:none;filter:url(#rough)}.box{fill:#fff;stroke:#555;stroke-width:3;filter:url(#rough)}</style>
-</defs>
-<rect width="1300" height="900" fill="#fffdf5"/>
-<text x="650" y="42" text-anchor="middle" class="t title">Sketch inicial - Hotel Duerme Bien</text>
-<rect x="70" y="80" width="1160" height="760" class="box"/>
-
-<rect x="95" y="105" width="210" height="100" class="box"/>
-<line x1="95" y1="105" x2="305" y2="205" class="line"/><line x1="305" y1="105" x2="95" y2="205" class="line"/>
-<text x="200" y="230" text-anchor="middle" class="t f">logo / nombre</text>
-
-<rect x="340" y="115" width="845" height="70" class="box"/>
-<text x="760" y="157" text-anchor="middle" class="t h">menú superior / usuario / salir</text>
-
-<rect x="95" y="275" width="260" height="500" class="box"/>
-<text x="225" y="310" text-anchor="middle" class="t h">menú</text>
-<text x="125" y="355" class="t f">- inicio</text>
-<text x="125" y="400" class="t f">- habitaciones</text>
-<text x="125" y="445" class="t f">- huéspedes</text>
-<text x="125" y="490" class="t f">- reservas</text>
-<text x="125" y="535" class="t f">- check-in</text>
-<text x="125" y="580" class="t f">- check-out</text>
-<text x="125" y="625" class="t f">- informes</text>
-
-<rect x="400" y="265" width="230" height="130" class="box"/>
-<rect x="665" y="265" width="230" height="130" class="box"/>
-<rect x="930" y="265" width="230" height="130" class="box"/>
-<text x="515" y="330" text-anchor="middle" class="t h">disponibles</text>
-<text x="780" y="330" text-anchor="middle" class="t h">ocupadas</text>
-<text x="1045" y="330" text-anchor="middle" class="t h">reservas</text>
-
-<rect x="400" y="445" width="760" height="265" class="box"/>
-<text x="430" y="485" class="t h">tabla / lista principal</text>
-<line x1="430" y1="525" x2="1125" y2="525" class="line"/>
-<line x1="610" y1="500" x2="610" y2="680" class="line"/>
-<line x1="800" y1="500" x2="800" y2="680" class="line"/>
-<line x1="970" y1="500" x2="970" y2="680" class="line"/>
-<text x="505" y="550" class="t f">hab.</text><text x="665" y="550" class="t f">huésped</text><text x="835" y="550" class="t f">estado</text><text x="995" y="550" class="t f">acción</text>
-
-<rect x="900" y="745" width="260" height="55" class="box"/>
-<text x="1030" y="780" text-anchor="middle" class="t h">nuevo check-in</text>
-
-<path d="M365 330 C385 320 395 315 405 310" class="line"/>
-<text x="300" y="300" class="t f" transform="rotate(-8 300 300)">accesos rápidos</text>
-<path d="M1135 420 C1180 410 1190 395 1200 365" class="line"/>
-<text x="1070" y="430" class="t f" transform="rotate(6 1070 430)">resumen visual</text>
-<text x="70" y="875" class="t f">Boceto inicial: primero se ordenan las ideas; después se pasa a wireframe, mockup y prototipo.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1350" height="920" viewBox="0 0 1350 920">
+<defs><filter id="rough"><feTurbulence baseFrequency="0.015" numOctaves="1" seed="4" type="fractalNoise"/><feDisplacementMap in="SourceGraphic" scale="1.5"/></filter><style>.t{font-family:'Comic Sans MS',cursive;fill:#3b3b3b}.title{font-size:28px;font-weight:700}.h{font-size:19px}.f{font-size:15px}.line{stroke:#555;stroke-width:3;fill:none;filter:url(#rough)}.box{fill:#fff;stroke:#555;stroke-width:3;filter:url(#rough)}</style></defs>
+<rect width="1350" height="920" fill="#fffdf5"/>
+<text x="675" y="38" text-anchor="middle" class="t title">Sketch - Pantalla de reservas</text>
+<rect x="60" y="70" width="1230" height="790" class="box"/>
+<rect x="85" y="95" width="1180" height="80" class="box"/><text x="120" y="142" class="t h">Hotel Duerme Bien</text><text x="1000" y="142" class="t f">usuario / reiniciar</text>
+<rect x="85" y="200" width="230" height="620" class="box"/><text x="115" y="235" class="t h">menú</text>
+<text x="115" y="280" class="t f">inicio</text><text x="115" y="320" class="t f">habitaciones</text><text x="115" y="360" class="t f">huéspedes</text><text x="115" y="400" class="t f">reservas</text><text x="115" y="440" class="t f">check-in</text><text x="115" y="480" class="t f">check-out</text><text x="115" y="520" class="t f">usuarios</text><text x="115" y="560" class="t f">informes</text>
+<text x="355" y="235" class="t h">Panel de reservas</text>
+<rect x="350" y="260" width="885" height="125" class="box"/><text x="380" y="295" class="t h">buscar disponibilidad</text><rect x="380" y="315" width="200" height="45" class="box"/><rect x="610" y="315" width="200" height="45" class="box"/><rect x="1000" y="310" width="180" height="50" class="box"/><text x="1090" y="342" text-anchor="middle" class="t f">consultar</text>
+<rect x="350" y="420" width="560" height="330" class="box"/><text x="380" y="455" class="t h">habitaciones disponibles</text><rect x="380" y="485" width="500" height="75" class="box"/><text x="400" y="525" class="t f">habitación 201 / seleccionar</text><rect x="380" y="585" width="500" height="75" class="box"/><text x="400" y="625" class="t f">habitación 305 / seleccionar</text>
+<rect x="940" y="420" width="295" height="330" class="box"/><text x="970" y="455" class="t h">nueva reserva</text><rect x="970" y="485" width="235" height="45" class="box"/><rect x="970" y="550" width="235" height="45" class="box"/><rect x="970" y="615" width="235" height="45" class="box"/><rect x="970" y="680" width="235" height="45" class="box"/><text x="1088" y="710" text-anchor="middle" class="t f">guardar</text>
+<text x="60" y="895" class="t f">Boceto inicial de la misma pantalla que después se desarrolla como wireframe, mockup y prototipo.</text>
 </svg>
