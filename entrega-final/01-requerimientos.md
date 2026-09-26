@@ -1,188 +1,166 @@
-# 01 - Toma de requerimientos
+# Evaluación 1 - Toma de requerimientos
+## Sistema de Pasajeros - Hotel Duerme Bien
+
+Este documento sigue la estructura IEEE 830 adaptada solicitada en el material del profesor. Se basa en el **Caso 6: Sistema de Pasajeros de Hotel**.
 
 ## 1. Introducción
 
 ### 1.1 Propósito
-
-Definir de forma ordenada qué debe hacer el Sistema de Pasajeros del Hotel Duerme Bien antes de diseñar o programar una solución. Este documento sirve como base para los casos de uso, el flujo de procesos, el modelo de datos, los mockups y la trazabilidad de la segunda evaluación.
+Definir de manera ordenada los requerimientos del sistema que reemplazará las planillas Excel utilizadas por el Hotel Duerme Bien para gestionar habitaciones y pasajeros.
 
 ### 1.2 Alcance
-
-El sistema debe apoyar la administración de habitaciones y huéspedes del hotel. El alcance entregado considera registro de habitaciones, registro de huéspedes, asignación de habitaciones, control de ocupación y disponibilidad, cálculo de costos por pasajero, gestión de usuarios, informes de ocupación y reservas.
-
-Además, se consideran como procesos principales el check-in, el check-out y la gestión de reservas.
-
-No se define en el caso una tecnología, lenguaje de programación, motor de base de datos ni fórmula exacta para calcular los costos.
+El sistema considera:
+- registro de habitaciones y sus características;
+- registro de huéspedes y asignación a habitaciones;
+- control de ocupación y disponibilidad;
+- cálculo automático de costos por pasajero;
+- gestión de usuarios administrador y encargados de hotel;
+- informes de ocupación y reservas;
+- registro y gestión de reservas;
+- check-in y asignación de habitaciones;
+- check-out y liberación de habitaciones.
 
 ### 1.3 Público objetivo
-
 - Administrador del hotel.
 - Encargados del hotel.
-- Equipo que desarrollará el sistema.
-- Docente que revisa el análisis y modelado del proyecto.
+- Equipo de desarrollo.
+- Docente que revisa el proyecto.
 
 ### 1.4 Definiciones
 
-| Término | Definición usada en el proyecto |
+| Término | Definición usada |
 | --- | --- |
-| Huésped o pasajero | Persona registrada para alojarse en el hotel. |
-| Habitación | Espacio disponible para alojar huéspedes, con características como capacidad y orientación. |
-| Reserva | Registro previo de una estadía para una fecha determinada. |
-| Check-in | Proceso de ingreso del huésped y asignación de habitación. |
-| Check-out | Proceso de salida del huésped y liberación de la habitación. |
-| Ocupación | Estado que indica que una habitación está siendo utilizada. |
-| Disponibilidad | Condición que permite determinar si una habitación puede ser asignada o reservada. |
-| Administrador | Usuario encargado de funciones de administración del sistema. |
-| Encargado de hotel | Usuario que realiza las operaciones habituales de atención y registro. |
+| Huésped / pasajero | Persona registrada para alojarse en el hotel. |
+| Habitación | Habitación registrada con características como capacidad y orientación. |
+| Reserva | Registro previo relacionado con una futura estadía. |
+| Check-in | Proceso de ingreso y asignación de habitación. |
+| Check-out | Proceso de salida y liberación de habitación. |
+| Ocupación | Situación en que una habitación está siendo utilizada. |
+| Disponibilidad | Situación que permite determinar si una habitación puede ser asignada o reservada. |
 
 ## 2. Descripción general
 
 ### 2.1 Perspectiva del producto
-
-El sistema surge para reemplazar el uso de planillas Excel en el registro de pasajeros y habitaciones. La idea es reunir en un solo lugar la información necesaria para consultar disponibilidad, registrar reservas y controlar entradas y salidas.
-
-El caso no indica integraciones con sistemas externos.
+El sistema busca reemplazar el uso de planillas Excel por una solución centralizada para gestionar habitaciones, pasajeros, reservas, ocupación y costos.
 
 ### 2.2 Funciones generales
-
-El sistema debe permitir:
-
-- mantener el registro de habitaciones y sus características;
-- mantener el registro de huéspedes;
-- asignar huéspedes a habitaciones;
-- consultar ocupación y disponibilidad;
-- registrar y gestionar reservas;
-- realizar check-in;
-- realizar check-out;
-- calcular costos por pasajero;
-- gestionar usuarios;
-- consultar informes de ocupación y reservas.
+Las funciones generales corresponden a las funciones clave y procesos UA3 definidos en el Caso 6.
 
 ### 2.3 Clases de usuario
+- **Administrador.**
+- **Encargado de hotel.**
 
-**Administrador**
-
-Se considera responsable de la administración general. Dentro del alcance se relaciona principalmente con la gestión de usuarios, habitaciones e informes.
-
-**Encargado de hotel**
-
-Se relaciona con las tareas operativas: huéspedes, disponibilidad, reservas, check-in y check-out.
-
-La separación exacta de permisos debe ser validada, ya que el caso solo identifica ambos tipos de usuario y no entrega una matriz detallada de permisos.
+El caso identifica ambos tipos de usuario, pero no entrega una matriz detallada de permisos.
 
 ### 2.4 Entorno operativo
-
-El caso no define un entorno tecnológico específico.
-
-Como propuesta para el trabajo académico, se considera una aplicación de uso interno conectada a una base de datos donde se almacene la información del hotel. Esta decisión debe considerarse una propuesta de diseño y no un requisito entregado en el enunciado.
+El Caso 6 no define sistema operativo, lenguaje de programación, motor de base de datos ni plataforma obligatoria. Para el prototipo se utiliza una interfaz web como decisión técnica de demostración.
 
 ### 2.5 Restricciones
+- La ocupación y disponibilidad deben mantenerse coherentes.
+- Las habitaciones deben registrar capacidad y orientación.
+- Deben considerarse los perfiles administrador y encargado de hotel.
+- La fórmula exacta del costo no puede declararse como definitiva porque no está especificada en el caso.
 
-- La información de ocupación y disponibilidad debe mantenerse coherente con los procesos de check-in y check-out.
-- Deben existir los perfiles de administrador y encargado de hotel.
-- El modelo debe permitir registrar las características de las habitaciones indicadas en el caso.
-- No se puede definir una fórmula definitiva de costos mientras el hotel no indique cómo se calcula.
-
-### 2.6 Supuestos y dependencias por validar
-
-Los siguientes puntos son necesarios para completar el modelo, pero no vienen definidos de forma expresa:
-
+### 2.6 Supuestos y dependencias pendientes
+El material no define:
 - datos personales obligatorios del huésped;
-- formato o identificador utilizado para cada habitación;
-- forma exacta de calcular el costo por pasajero;
-- reglas para modificar o cancelar reservas;
-- estados que puede tener una reserva;
-- permisos exactos de cada tipo de usuario.
+- fórmula o tarifa exacta del costo por pasajero;
+- estados exactos de una reserva;
+- reglas de modificación o cancelación;
+- permisos detallados de cada perfil.
 
-## 3. Requerimientos funcionales
+## 3. Requerimientos funcionales preliminares
 
-| ID | Requerimiento | Origen |
+| ID | Requerimiento | Fuente |
 | --- | --- | --- |
-| RF-01 | El sistema debe permitir registrar y actualizar habitaciones con sus características, incluyendo capacidad y orientación. | Caso |
-| RF-02 | El sistema debe permitir registrar huéspedes. | Caso |
-| RF-03 | El sistema debe permitir asignar huéspedes a habitaciones. | Caso |
-| RF-04 | El sistema debe permitir consultar y controlar la ocupación y disponibilidad de las habitaciones. | Caso |
-| RF-05 | El sistema debe permitir registrar y gestionar reservas. | Caso / proceso UA3 |
-| RF-06 | El sistema debe permitir realizar el check-in y registrar la asignación de habitación. | Caso / proceso UA3 |
-| RF-07 | El sistema debe permitir realizar el check-out y liberar la habitación utilizada. | Caso / proceso UA3 |
-| RF-08 | El sistema debe calcular automáticamente el costo por pasajero. | Caso |
-| RF-09 | El sistema debe permitir gestionar usuarios con perfil de administrador y encargado de hotel. | Caso |
-| RF-10 | El sistema debe permitir consultar informes de ocupación y reservas. | Caso |
-| RF-11 | El sistema debería identificar al usuario que accede para aplicar su perfil correspondiente. | Propuesta derivada de la gestión de usuarios |
+| RF-01 | Registrar habitaciones con capacidad y orientación. | Caso 6 |
+| RF-02 | Registrar huéspedes. | Caso 6 |
+| RF-03 | Asignar huéspedes a habitaciones. | Caso 6 |
+| RF-04 | Controlar ocupación y disponibilidad. | Caso 6 |
+| RF-05 | Registrar y gestionar reservas. | Caso 6 / UA3 |
+| RF-06 | Realizar check-in y asignar habitación. | Caso 6 / UA3 |
+| RF-07 | Realizar check-out y liberar habitación. | Caso 6 / UA3 |
+| RF-08 | Calcular automáticamente costos por pasajero. | Caso 6 |
+| RF-09 | Gestionar usuarios administrador y encargados de hotel. | Caso 6 |
+| RF-10 | Generar o consultar informes de ocupación y reservas. | Caso 6 |
 
 ## 4. Requerimientos no funcionales preliminares
 
-El caso no entrega requerimientos no funcionales explícitos. Para completar la especificación se proponen los siguientes y deben validarse antes de considerarlos definitivos.
+El Caso 6 no entrega requerimientos no funcionales explícitos. Los siguientes se mantienen como **propuestas a validar**, no como requerimientos textuales del caso.
 
-| ID | Requerimiento propuesto |
+| ID | Propuesta |
 | --- | --- |
-| RNF-01 | La interfaz debe estar en español y utilizar nombres comprensibles para el personal del hotel. |
-| RNF-02 | Las funciones disponibles deben respetar el perfil del usuario. |
-| RNF-03 | La información de huéspedes, reservas y estadías debe mantenerse almacenada de forma persistente. |
-| RNF-04 | El sistema debe validar los datos necesarios antes de guardar una operación. |
-| RNF-05 | Las contraseñas no deben almacenarse como texto visible si el sistema llega a implementarse. |
-| RNF-06 | La información mostrada sobre disponibilidad debe corresponder al estado registrado de las habitaciones y estadías. |
+| RNF-01 | La interfaz debería estar en español y ser comprensible para el personal del hotel. |
+| RNF-02 | Los formularios deberían validar los datos necesarios antes de guardar una operación. |
+| RNF-03 | Una implementación real debería conservar los datos de forma persistente. |
+| RNF-04 | La disponibilidad mostrada debería coincidir con las operaciones registradas. |
 
-## 5. Reglas de negocio iniciales
+## 5. Reglas de negocio conocidas
 
-Las reglas se detallan en [02_reglas_negocio.md](02_reglas_negocio.md). Las principales son:
-
-- una habitación no debe asignarse como disponible si se encuentra ocupada;
-- el check-in debe dejar registrada la ocupación de la habitación;
+Reglas directamente necesarias para cumplir el Caso 6:
+- una habitación ocupada no puede considerarse disponible;
+- el check-in debe dejar registrada la asignación y ocupación;
 - el check-out debe liberar la habitación;
-- la cantidad de huéspedes asignados no debe superar la capacidad registrada de la habitación;
-- el cálculo de costos debe hacerse automáticamente, pero su fórmula queda pendiente de validación;
-- las operaciones deben respetar el tipo de usuario definido para el sistema.
+- la asignación debe respetar la capacidad registrada;
+- el costo por pasajero debe calcularse automáticamente;
+- los informes deben construirse a partir de información de ocupación y reservas.
+
+La fórmula exacta del costo permanece pendiente.
 
 ## 6. Entrevista simulada
 
-Esta sección corresponde al ejercicio de toma de requerimientos solicitado para la evaluación. Se construye a partir de la información del Caso 6; no representa una entrevista real con personal del hotel.
+Esta entrevista es un ejercicio académico construido únicamente con la información del Caso 6.
 
-**Pregunta: ¿Cuál es el problema que se quiere resolver?**  
-Respuesta: El hotel utiliza planillas Excel y necesita un sistema para gestionar habitaciones y pasajeros de una forma más ordenada.
+**¿Cuál es el problema actual?**  
+El hotel utiliza planillas Excel y busca reemplazarlas por un sistema para gestionar habitaciones y pasajeros.
 
-**Pregunta: ¿Qué información de las habitaciones se necesita manejar?**  
-Respuesta: El caso menciona el registro de habitaciones y características como capacidad y orientación. Otros datos, como su identificador o tarifa, deben validarse.
+**¿Qué características de las habitaciones deben registrarse?**  
+Capacidad y orientación.
 
-**Pregunta: ¿Qué se necesita hacer con los huéspedes?**  
-Respuesta: Registrarlos y asignarlos a habitaciones. El caso no especifica los campos personales obligatorios.
+**¿Qué debe hacerse con los huéspedes?**  
+Registrarlos y asignarlos a habitaciones.
 
-**Pregunta: ¿Qué debe mostrar el sistema respecto de las habitaciones?**  
-Respuesta: Debe permitir controlar cuáles están ocupadas y cuáles se encuentran disponibles.
+**¿Qué debe controlarse?**  
+Ocupación y disponibilidad.
 
-**Pregunta: ¿Qué usuarios utilizarán el sistema?**  
-Respuesta: Administradores y encargados del hotel.
+**¿Qué procesos deben representarse?**  
+Reservas, check-in y check-out.
 
-**Pregunta: ¿Cuáles son los procesos principales?**  
-Respuesta: Registro y gestión de reservas, check-in con asignación de habitación y check-out con liberación de habitación.
+**¿Qué tipos de usuario existen?**  
+Administrador y encargados de hotel.
 
-**Pregunta: ¿Se necesita calcular el costo?**  
-Respuesta: Sí. El cálculo debe ser automático por pasajero, pero el caso no indica la fórmula ni la tarifa que debe aplicarse.
+**¿Qué informes se necesitan?**  
+Ocupación y reservas.
 
-**Pregunta: ¿Qué informes se necesitan?**  
-Respuesta: Informes relacionados con ocupación y reservas.
+**¿Cómo se calcula el costo?**  
+El caso indica que debe calcularse automáticamente por pasajero, pero no entrega la fórmula ni la tarifa.
 
 ## 7. Factibilidad inicial
 
 ### 7.1 Factibilidad técnica
-
-El alcance es técnicamente realizable con una aplicación y una base de datos relacional. Las funciones indicadas corresponden principalmente a registro, consulta, actualización y relación de datos.
-
-No se identifican en el caso integraciones externas obligatorias. Antes de implementar sería necesario definir la tecnología, la forma de autenticación y la regla de cálculo de costos.
+Las funciones solicitadas pueden representarse mediante una aplicación que registre y relacione habitaciones, huéspedes, reservas, usuarios y estadías. El caso no exige integraciones externas.
 
 ### 7.2 Factibilidad de negocio
+La solución responde al problema declarado: reemplazar planillas Excel y concentrar la información del hotel en un sistema.
 
-La propuesta responde directamente al problema indicado: reemplazar planillas Excel para concentrar en un sistema el registro de huéspedes, habitaciones, reservas y ocupación.
+## 8. Trazabilidad para Evaluación 2
 
-El beneficio esperado es disponer de información relacionada en un mismo lugar y reducir la dependencia de registros separados. El impacto real debe validarse con los usuarios del hotel.
+| Requerimiento | Caso de uso / proceso | Modelo de datos | Prototipo |
+| --- | --- | --- | --- |
+| RF-01 | Gestionar habitaciones | Habitacion | Habitaciones |
+| RF-02 | Registrar huésped | Huesped | Huéspedes |
+| RF-03 | Asignar habitación | Huesped / Habitacion / Estadia | Check-in |
+| RF-04 | Consultar disponibilidad | Habitacion / Reserva / Estadia | Inicio / Reservas |
+| RF-05 | Gestionar reserva | Reserva | Reservas |
+| RF-06 | Realizar check-in | Estadia / Habitacion | Check-in |
+| RF-07 | Realizar check-out | Estadia / Habitacion | Check-out |
+| RF-08 | Calcular costo | Estadia | Check-out |
+| RF-09 | Gestionar usuarios | Usuario | Usuarios |
+| RF-10 | Generar informes | Reserva / Estadia / Habitacion | Informes |
 
-## 8. Requerimientos pendientes de confirmar
-
-1. Fórmula y tarifa utilizada para el cálculo automático de costos.
-2. Datos obligatorios del huésped.
-3. Estados exactos de habitaciones y reservas.
-4. Reglas de modificación y cancelación de reservas.
-5. Permisos detallados del administrador y del encargado.
-6. Retroalimentación real de la Evaluación 1.
-
-Estos puntos se mantienen pendientes para no presentar como requisito oficial algo que no está definido en el caso.
+## 9. Pendientes que no deben inventarse
+1. Retroalimentación real de la Evaluación 1.
+2. Fórmula y tarifa exacta del costo.
+3. Datos obligatorios del huésped.
+4. Reglas exactas de modificación/cancelación de reservas.
+5. Permisos detallados de los perfiles.
