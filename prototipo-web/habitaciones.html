@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Habitaciones · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head>
+<body data-page="habitaciones">
+<header class="topbar">
+  <div class="brand"><h1>Hotel Duerme Bien</h1><small>Prototipo funcional · Sistema de Pasajeros</small></div>
+  <div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div>
+</header>
+<div class="layout">
+<nav class="sidebar">
+<a data-page="inicio" href="index.html">Inicio</a>
+<a data-page="habitaciones" href="habitaciones.html">Habitaciones</a>
+<a data-page="huespedes" href="huespedes.html">Huéspedes</a>
+<a data-page="reservas" href="reservas.html">Reservas</a>
+<a data-page="checkin" href="checkin.html">Check-in</a>
+<a data-page="checkout" href="checkout.html">Check-out</a>
+<a data-page="informes" href="informes.html">Informes</a>
+<a data-page="ayuda" href="ayuda.html">Ayuda / Demo</a>
+</nav><main>
+<div class="page-title"><div><h2>Habitaciones</h2><p>Registro, capacidad, orientación y estado.</p></div></div>
+
+<div class="grid-2">
+<section class="panel"><h3>Registrar habitación</h3><form id="roomForm">
+<label>Número<input id="numero" required placeholder="Ej: 204"></label>
+<label>Capacidad<input id="capacidad" type="number" min="1" max="10" required value="2"></label>
+<label>Orientación<select id="orientacion"><option>Norte</option><option>Sur</option><option>Este</option><option>Oeste</option></select></label>
+<button type="submit">Guardar habitación</button><p id="roomMsg" class="msg"></p></form></section>
+<section class="panel"><h3>Regla demostrada</h3><p>Una habitación ocupada no puede marcarse fuera de servicio ni quedar disponible hasta completar el check-out.</p><div class="notice">El estado cambia automáticamente durante check-in y check-out.</div></section>
+</div>
+<section class="panel"><h3>Listado</h3><table><thead><tr><th>Número</th><th>Capacidad</th><th>Orientación</th><th>Estado</th><th>Acción</th></tr></thead><tbody id="roomBody"></tbody></table></section>
+
+<p class="footer-note">Prototipo académico. Los datos se guardan en el navegador mediante localStorage.</p>
+</main></div>
+<script src="app.js"></script></body></html>
