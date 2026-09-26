@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#333"/></marker><style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:26px;font-weight:700}.f{font-size:19px}.s{font-size:15px}.uc{fill:white;stroke:#333;stroke-width:2}.line{stroke:#444;stroke-width:2;fill:none}.inc{stroke:#333;stroke-width:2;stroke-dasharray:8 6;fill:none;marker-end:url(#a)}</style></defs>
+<rect width="1000" height="620" fill="white"/><text x="500" y="40" text-anchor="middle" class="t title">Ejemplo simple adaptado - Hotel Duerme Bien</text>
+<circle cx="155" cy="205" r="22" fill="white" stroke="#333" stroke-width="2"/><line x1="155" y1="227" x2="155" y2="305" class="line"/><line x1="110" y1="255" x2="200" y2="255" class="line"/><line x1="155" y1="305" x2="120" y2="355" class="line"/><line x1="155" y1="305" x2="190" y2="355" class="line"/><text x="155" y="390" text-anchor="middle" class="t f">Encargado de hotel</text>
+<ellipse cx="600" cy="160" rx="170" ry="50" class="uc"/><text x="600" y="167" text-anchor="middle" class="t f">Registrar Check-in</text>
+<ellipse cx="600" cy="305" rx="170" ry="50" class="uc"/><text x="600" y="312" text-anchor="middle" class="t f">Registrar Check-out</text>
+<ellipse cx="600" cy="480" rx="175" ry="50" class="uc"/><text x="600" y="487" text-anchor="middle" class="t f">Calcular costo por pasajero</text>
+<line x1="200" y1="245" x2="430" y2="170" class="line"/><line x1="200" y1="270" x2="430" y2="305" class="line"/>
+<line x1="600" y1="355" x2="600" y2="430" class="inc"/><text x="620" y="397" class="t s">&lt;&lt;include&gt;&gt;</text>
+<text x="500" y="575" text-anchor="middle" class="t s">Misma estructura del ejemplo entregado: actor → Check-in / Check-out, y Check-out incluye el cálculo.</text>
+</svg>
