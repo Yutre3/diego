@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+  </marker>
+  <style>
+    .t{font-family:Arial,sans-serif;fill:#222}.title{font-size:28px;font-weight:700}.h{font-size:21px;font-weight:700}.f{font-size:16px}
+    .bad{fill:#fff3f3;stroke:#b65f5f;stroke-width:2}.mid{fill:#fffbe9;stroke:#b79d4f;stroke-width:2}.good{fill:#f1fff4;stroke:#4f8c60;stroke-width:2}
+    .arrow{stroke:#333;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="1500" height="900" fill="white"/>
+<text x="750" y="42" text-anchor="middle" class="t title">Normalización del sistema del Hotel Duerme Bien</text>
+
+<!-- 1NF -->
+<rect x="60" y="110" width="400" height="620" rx="12" class="bad"/>
+<text x="260" y="155" text-anchor="middle" class="t h">1NF - Campos atómicos</text>
+<text x="90" y="205" class="t f">Problema inicial:</text>
+<text x="90" y="235" class="t f">una tabla mezcla huésped, habitación,</text>
+<text x="90" y="262" class="t f">reserva, estadía y usuario.</text>
+
+<text x="90" y="320" class="t f" font-weight="700">Se corrige:</text>
+<text x="90" y="352" class="t f">• un valor por campo;</text>
+<text x="90" y="382" class="t f">• un huésped por registro;</text>
+<text x="90" y="412" class="t f">• sin listas dentro de una celda.</text>
+
+<rect x="100" y="470" width="320" height="150" rx="8" fill="white" stroke="#b65f5f"/>
+<text x="260" y="500" text-anchor="middle" class="t f" font-weight="700">Ejemplo</text>
+<text x="120" y="535" class="t f">Huésped(id, documento, nombre)</text>
+<text x="120" y="565" class="t f">Habitación(id, número, capacidad)</text>
+<text x="120" y="595" class="t f">Cada campo guarda un solo valor.</text>
+
+<!-- arrow 1 -->
+<line x1="460" y1="420" x2="545" y2="420" class="arrow"/>
+<text x="502" y="395" text-anchor="middle" class="t f">separar</text>
+
+<!-- 2NF -->
+<rect x="545" y="110" width="400" height="620" rx="12" class="mid"/>
+<text x="745" y="155" text-anchor="middle" class="t h">2NF - Dependencia de la PK</text>
+
+<text x="575" y="210" class="t f">Cada atributo depende de la clave</text>
+<text x="575" y="237" class="t f">primaria de su propia tabla.</text>
+
+<text x="575" y="300" class="t f" font-weight="700">Ejemplos:</text>
+<text x="575" y="332" class="t f">• capacidad → id_habitacion;</text>
+<text x="575" y="362" class="t f">• orientación → id_habitacion;</text>
+<text x="575" y="392" class="t f">• nombre → id_huesped;</text>
+<text x="575" y="422" class="t f">• fechas → id_reserva;</text>
+<text x="575" y="452" class="t f">• check-in → id_estadia.</text>
+
+<rect x="585" y="510" width="320" height="110" rx="8" fill="white" stroke="#b79d4f"/>
+<text x="745" y="543" text-anchor="middle" class="t f" font-weight="700">Resultado</text>
+<text x="605" y="578" class="t f">Los datos quedan en la entidad</text>
+<text x="605" y="604" class="t f">a la que realmente pertenecen.</text>
+
+<!-- arrow 2 -->
+<line x1="945" y1="420" x2="1030" y2="420" class="arrow"/>
+<text x="987" y="395" text-anchor="middle" class="t f">depurar</text>
+
+<!-- 3NF -->
+<rect x="1030" y="110" width="410" height="620" rx="12" class="good"/>
+<text x="1235" y="155" text-anchor="middle" class="t h">3NF - Modelo final</text>
+
+<text x="1060" y="205" class="t f">Entidades separadas:</text>
+<text x="1060" y="245" class="t f">• Usuario</text>
+<text x="1060" y="275" class="t f">• Habitación</text>
+<text x="1060" y="305" class="t f">• Huésped</text>
+<text x="1060" y="335" class="t f">• Reserva</text>
+<text x="1060" y="365" class="t f">• Estadía</text>
+<text x="1060" y="395" class="t f">• Reserva_Huésped</text>
+<text x="1060" y="425" class="t f">• Estadía_Huésped</text>
+
+<rect x="1070" y="485" width="330" height="150" rx="8" fill="white" stroke="#4f8c60"/>
+<text x="1235" y="518" text-anchor="middle" class="t f" font-weight="700">Beneficio</text>
+<text x="1090" y="553" class="t f">• menos datos repetidos;</text>
+<text x="1090" y="583" class="t f">• actualizaciones más simples;</text>
+<text x="1090" y="613" class="t f">• relaciones más claras.</text>
+
+<text x="750" y="800" text-anchor="middle" class="t h">Flujo de normalización: 1NF → 2NF → 3NF</text>
+<text x="750" y="840" text-anchor="middle" class="t f">Las flechas muestran solo el avance entre etapas; no representan relaciones entre tablas.</text>
+</svg>
