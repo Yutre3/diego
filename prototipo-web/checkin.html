@@ -1,0 +1,19 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Check-in · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head><body data-page="checkin">
+<header class="topbar"><div class="brand"><h1>Hotel Duerme Bien</h1><small>Prototipo funcional · Sistema de Pasajeros</small></div><div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div></header>
+<div class="layout"><nav class="sidebar">
+<a data-page="inicio" href="index.html">Inicio</a>
+<a data-page="habitaciones" href="habitaciones.html">Habitaciones</a>
+<a data-page="huespedes" href="huespedes.html">Huéspedes</a>
+<a data-page="reservas" href="reservas.html">Reservas</a>
+<a data-page="checkin" href="checkin.html">Check-in</a>
+<a data-page="checkout" href="checkout.html">Check-out</a>
+<a data-page="informes" href="informes.html">Informes</a>
+<a data-page="ayuda" href="ayuda.html">Ayuda / Demo</a>
+</nav><main><div class="page-title"><div><h2>Check-in</h2><p>Asigna una habitación y registra el inicio de una estadía.</p></div></div>
+<div class="grid-2">
+<section class="panel"><h3>Registrar check-in</h3><form id="checkinForm">
+<label>Reserva confirmada<select id="ciReserva" required></select></label>
+<button type="submit">Confirmar check-in</button><p id="ciMsg" class="msg"></p></form></section>
+<section class="panel"><h3>Qué ocurre al confirmar</h3>
+<div class="steps"><div class="step">Se toma una reserva confirmada.</div><div class="step">Se valida que la habitación siga disponible.</div><div class="step">Se crea una estadía activa.</div><div class="step">La habitación cambia a OCUPADA.</div></div>
+</section></div><p class="footer-note">Prototipo académico. Los datos se guardan en el navegador mediante localStorage.</p></main></div><script src="app.js"></script></body></html>
