@@ -70,13 +70,15 @@ Incluye:
 - reservas;
 - check-in;
 - check-out;
+- usuarios;
 - informes;
+- páginas de Evaluación 1 y Evaluación 2;
 - cambio de secciones desde el menú;
 - formularios de demostración;
 - validaciones simples;
 - actualización visual de estados dentro de la sesión.
 
-[Ver archivos del prototipo](../prototipo/README.md)
+[Ver archivos del prototipo](../prototipo-web/README.md)
 
 ## Diferencia entre las cuatro etapas
 
