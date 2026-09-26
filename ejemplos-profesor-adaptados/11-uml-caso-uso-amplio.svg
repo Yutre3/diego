@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="780" viewBox="0 0 1300 780">
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#333"/></marker><style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:26px;font-weight:700}.f{font-size:17px}.s{font-size:14px}.sys{fill:white;stroke:#333;stroke-width:2}.uc{fill:white;stroke:#333;stroke-width:2}.line{stroke:#444;stroke-width:2;fill:none}.dep{stroke:#333;stroke-width:2;stroke-dasharray:8 6;fill:none;marker-end:url(#a)}.actorbox{fill:white;stroke:#555;stroke-width:2}</style></defs>
+<rect width="1300" height="780" fill="white"/><text x="650" y="38" text-anchor="middle" class="t title">Ejemplo amplio adaptado al Hotel Duerme Bien</text>
+<rect x="220" y="75" width="790" height="640" class="sys"/><text x="615" y="110" text-anchor="middle" class="t f" font-weight="700">Hotel Duerme Bien</text>
+
+<!-- left actor -->
+<circle cx="75" cy="310" r="20" fill="white" stroke="#333" stroke-width="2"/><line x1="75" y1="330" x2="75" y2="395" class="line"/><line x1="40" y1="352" x2="110" y2="352" class="line"/><line x1="75" y1="395" x2="45" y2="440" class="line"/><line x1="75" y1="395" x2="105" y2="440" class="line"/><text x="75" y="470" text-anchor="middle" class="t f">Encargado</text>
+
+<ellipse cx="390" cy="365" rx="135" ry="52" class="uc"/><text x="390" y="359" text-anchor="middle" class="t f">Gestionar</text><text x="390" y="383" text-anchor="middle" class="t f">estadía</text>
+<line x1="110" y1="355" x2="255" y2="365" class="line"/>
+
+<ellipse cx="720" cy="180" rx="135" ry="45" class="uc"/><text x="720" y="186" text-anchor="middle" class="t f">Registrar reserva</text>
+<ellipse cx="720" cy="285" rx="135" ry="45" class="uc"/><text x="720" y="291" text-anchor="middle" class="t f">Realizar check-in</text>
+<ellipse cx="720" cy="390" rx="135" ry="45" class="uc"/><text x="720" y="396" text-anchor="middle" class="t f">Realizar check-out</text>
+<ellipse cx="720" cy="495" rx="150" ry="45" class="uc"/><text x="720" y="501" text-anchor="middle" class="t f">Consultar información</text>
+<ellipse cx="720" cy="620" rx="155" ry="45" class="uc"/><text x="720" y="626" text-anchor="middle" class="t f">Consultar disponibilidad</text>
+
+<!-- extend toward base -->
+<line x1="585" y1="190" x2="505" y2="330" class="dep"/><text x="535" y="235" class="t s">&lt;&lt;extend&gt;&gt;</text>
+<line x1="585" y1="290" x2="520" y2="350" class="dep"/><text x="530" y="300" class="t s">&lt;&lt;extend&gt;&gt;</text>
+<line x1="585" y1="390" x2="525" y2="380" class="dep"/><text x="535" y="410" class="t s">&lt;&lt;extend&gt;&gt;</text>
+<line x1="585" y1="490" x2="510" y2="400" class="dep"/><text x="520" y="475" class="t s">&lt;&lt;extend&gt;&gt;</text>
+<!-- include base to included -->
+<line x1="455" y1="410" x2="625" y2="585" class="dep"/><text x="505" y="515" class="t s">&lt;&lt;include&gt;&gt;</text>
+
+<!-- right external actor boxes analogous to source -->
+<rect x="1060" y="205" width="175" height="95" class="actorbox"/><text x="1148" y="238" text-anchor="middle" class="t s">&lt;&lt;actor&gt;&gt;</text><text x="1148" y="268" text-anchor="middle" class="t f">Administrador</text>
+<rect x="1060" y="420" width="175" height="95" class="actorbox"/><text x="1148" y="453" text-anchor="middle" class="t s">&lt;&lt;actor&gt;&gt;</text><text x="1148" y="483" text-anchor="middle" class="t f">Encargado</text>
+<line x1="855" y1="180" x2="1060" y2="245" class="line"/><line x1="855" y1="495" x2="1060" y2="265" class="line"/>
+<line x1="855" y1="285" x2="1060" y2="455" class="line"/><line x1="855" y1="390" x2="1060" y2="475" class="line"/><line x1="875" y1="620" x2="1060" y2="495" class="line"/>
+
+<text x="615" y="750" text-anchor="middle" class="t s">Ejemplo de estructura amplia siguiendo el modelo ATM. Es complementario: los extend se muestran como práctica de notación, no como diagrama oficial del Caso 6.</text>
+</svg>
