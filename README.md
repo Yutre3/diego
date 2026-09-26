@@ -1,5 +1,11 @@
 # Sistema de Pasajeros - Hotel Duerme Bien
 
+## URL del prototipo funcional
+
+**https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html**
+
+[ABRIR PROTOTIPO FUNCIONAL](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)
+
 Entrega final basada en el **Caso 6** y en los entregables indicados por el profesor. Se dejó una sola versión de cada elemento para evitar archivos repetidos.
 
 ## 1. Informe de toma de requerimientos
