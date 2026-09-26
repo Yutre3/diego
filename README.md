@@ -16,13 +16,13 @@ Entrega final basada en el **Caso 6** y en los entregables indicados por el prof
 
 ![Diagrama de flujo](entrega-final/03-diagrama-flujo.svg)
 
-[Ver imagen](entrega-final/03-diagrama-flujo.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F03-diagrama-proceso-checkin.drawio)
+[Ver imagen](entrega-final/03-diagrama-flujo.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F02-diagrama-flujo.drawio)
 
 ## 4. Modelo de base de datos
 
 ![Modelo de base de datos](entrega-final/04-modelo-base-datos.svg)
 
-[Ver imagen](entrega-final/04-modelo-base-datos.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F09-modelo-base-datos.drawio)
+[Ver imagen](entrega-final/04-modelo-base-datos.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F03-modelo-base-datos.drawio)
 
 ## 5. Prototipo de interfaz
 
@@ -30,19 +30,19 @@ Entrega final basada en el **Caso 6** y en los entregables indicados por el prof
 
 ![Sketch](entrega-final/05-sketch.svg)
 
-[Ver imagen](entrega-final/05-sketch.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F10-interfaz-sketch-wireframe-mockup.drawio)
+[Ver imagen](entrega-final/05-sketch.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F04-interfaz.drawio)
 
 ### 5.2 Wireframe
 
 ![Wireframe](entrega-final/06-wireframe.svg)
 
-[Ver imagen](entrega-final/06-wireframe.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F10-interfaz-sketch-wireframe-mockup.drawio)
+[Ver imagen](entrega-final/06-wireframe.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F04-interfaz.drawio)
 
 ### 5.3 Mockup
 
 ![Mockup](entrega-final/07-mockup.svg)
 
-[Ver imagen](entrega-final/07-mockup.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F10-interfaz-sketch-wireframe-mockup.drawio)
+[Ver imagen](entrega-final/07-mockup.svg) · [Editar en Draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F04-interfaz.drawio)
 
 ### 5.4 Prototipo funcional
 
