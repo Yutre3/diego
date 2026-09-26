@@ -18,6 +18,12 @@ La página funcional usa como referencia las mismas etapas visuales que están e
 
 ![Mockup del sistema](entrega-final/09-mockup.svg)
 
+## Evaluaciones completas visibles en la página
+
+- [Evaluación 1 - IEEE 830, entrevista, factibilidad y trazabilidad](prototipo-web/evaluacion1.html)
+- [Evaluación 2 - UML, flujo, base de datos, interfaz y Kanban](prototipo-web/evaluacion2.html)
+- [Checklist exacto de la pauta del profesor](docs/19_checklist_profesor.md)
+
 ## URL de la página funcional
 
 **https://yutre3.github.io/diego/**
@@ -34,6 +40,8 @@ Encargado: `encargado / hotel123`
 
 - [Acceso](prototipo-web/login.html)
 - [Inicio](prototipo-web/index.html)
+- [Evaluación 1](prototipo-web/evaluacion1.html)
+- [Evaluación 2](prototipo-web/evaluacion2.html)
 - [Habitaciones](prototipo-web/habitaciones.html)
 - [Huéspedes](prototipo-web/huespedes.html)
 - [Reservas](prototipo-web/reservas.html)
