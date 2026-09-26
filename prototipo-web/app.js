@@ -44,6 +44,8 @@ function nav(){
     if(e.key!=='Enter') return;
     const v=input.value.toLowerCase();
     const routes=[
+      [['evaluacion 1','evaluación 1','ieee','requerimiento'],'evaluacion1.html'],
+      [['evaluacion 2','evaluación 2','uml','modelado'],'evaluacion2.html'],
       [['habit'],'habitaciones.html'],[['huesp','pasaj'],'huespedes.html'],[['reserv'],'reservas.html'],
       [['check-in','checkin','entrada'],'checkin.html'],[['check-out','checkout','salida'],'checkout.html'],
       [['inform','ocup'],'informes.html'],[['usuario','rol'],'usuarios.html'],[['material','profesor','ayuda'],'ayuda.html']
