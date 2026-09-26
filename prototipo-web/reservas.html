@@ -1,35 +1,19 @@
-<!doctype html>
-<html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reservas · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reservas · Hotel Duerme Bien</title><link rel="stylesheet" href="styles.css"></head>
 <body data-page="reservas">
-<header class="topbar">
-  <div class="brand"><h1>Hotel Duerme Bien</h1><small>Prototipo funcional · Sistema de Pasajeros</small></div>
-  <div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div>
-</header>
-<div class="layout">
-<nav class="sidebar">
+<header class="topbar"><div class="brand"><h1>Hotel Duerme Bien</h1><small>Sistema de Pasajeros · prototipo basado en Caso 6</small></div><div class="top-actions"><input id="globalSearch" placeholder="Buscar módulo y presionar Enter"><span id="who"></span><button class="secondary" onclick="logout()">Salir</button></div></header>
+<div class="layout"><nav class="sidebar">
 <a data-page="inicio" href="index.html">Inicio</a>
 <a data-page="habitaciones" href="habitaciones.html">Habitaciones</a>
 <a data-page="huespedes" href="huespedes.html">Huéspedes</a>
 <a data-page="reservas" href="reservas.html">Reservas</a>
 <a data-page="checkin" href="checkin.html">Check-in</a>
 <a data-page="checkout" href="checkout.html">Check-out</a>
+<a data-page="usuarios" href="usuarios.html">Usuarios</a>
 <a data-page="informes" href="informes.html">Informes</a>
-<a data-page="ayuda" href="ayuda.html">Ayuda / Demo</a>
-</nav><main>
-<div class="page-title"><div><h2>Reservas</h2><p>Consulta disponibilidad y registra una reserva para un huésped.</p></div></div>
-
-<div class="grid-2">
-<section class="panel"><h3>Nueva reserva</h3><form id="reservationForm">
-<label>Huésped<select id="rHuesped" required></select></label>
-<label>Habitación disponible<select id="rHabitacion" required></select></label>
-<div class="grid-2"><label>Fecha entrada<input id="rEntrada" type="date" required></label><label>Fecha salida<input id="rSalida" type="date" required></label></div>
-<label>Cantidad de pasajeros<input id="rPasajeros" type="number" min="1" value="1" required></label>
-<button type="submit">Guardar reserva</button><p id="reservationMsg" class="msg"></p></form></section>
-<section class="panel"><h3>Validaciones del prototipo</h3><p>La salida debe ser posterior a la entrada y la cantidad de pasajeros no puede superar la capacidad de la habitación.</p><div class="notice warn">La lógica definitiva para solapamiento de fechas debe validarse con los requerimientos finales.</div></section>
-</div>
-<section class="panel"><h3>Reservas registradas</h3><table><thead><tr><th>ID</th><th>Huésped</th><th>Habitación</th><th>Fechas</th><th>Pasajeros</th><th>Estado</th></tr></thead><tbody id="reservationBody"></tbody></table></section>
-
-<p class="footer-note">Prototipo académico. Los datos se guardan en el navegador mediante localStorage.</p>
-</main></div>
-<script src="app.js"></script></body></html>
+<a data-page="ayuda" href="ayuda.html">Material del profesor</a>
+</nav><main><div class="page-title"><div><h2>Reservas</h2><p>Registro y gestión básica de reservas.</p></div></div>
+<div class="source-box"><h3>Base del material entregado</h3><p><strong>Caso 6:</strong> proceso de “registro y gestión de reservas” e “Informes de ocupación y reservas”.</p><p class="small">Las fechas y la cantidad de huéspedes son datos mínimos usados para hacer navegable la simulación. El Caso 6 no entrega el detalle completo de campos ni estados de una reserva.</p></div>
+<div class="grid-2"><section class="panel"><h3>Nueva reserva</h3><form id="reservationForm"><label>Huésped<select id="rHuesped" required></select></label><label>Habitación disponible<select id="rHabitacion" required></select></label><div class="grid-2"><label>Entrada <span class="small">(dato de prototipo)</span><input id="rEntrada" type="date" required></label><label>Salida <span class="small">(dato de prototipo)</span><input id="rSalida" type="date" required></label></div><label>Cantidad de huéspedes <span class="small">(para comprobar capacidad)</span><input id="rCantidad" type="number" min="1" value="1" required></label><button type="submit">Registrar reserva</button><p id="reservationMsg" class="msg"></p></form></section>
+<section class="panel"><h3>Relación con el caso</h3><p>La habitación se selecciona entre las disponibles y la cantidad no puede superar la capacidad registrada.</p><div class="notice warn">La lógica detallada de modificación, cancelación o solapamiento de fechas no está entregada en el Caso 6.</div></section></div>
+<section class="panel"><h3>Reservas registradas</h3><table><thead><tr><th>ID</th><th>Huésped</th><th>Habitación</th><th>Fechas</th><th>Cantidad</th><th>Estado de prototipo</th></tr></thead><tbody id="reservationBody"></tbody></table></section><p class="footer-note">Los elementos no definidos literalmente por el Caso 6 se muestran como decisiones técnicas de demostración y no como requisitos oficiales.</p>
+</main></div><script src="app.js"></script></body></html>
