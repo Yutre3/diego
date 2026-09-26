@@ -80,3 +80,23 @@ Los archivos SVG también son editables porque están guardados como código de 
 ## Importante sobre permisos
 
 Para editar directamente el repositorio, el profesor necesita permisos de escritura. Si solo tiene acceso público, puede verlo y descargarlo; para editar directamente debe agregarse como colaborador o trabajar mediante fork/Pull Request.
+
+
+# Diagramas editables visualmente
+
+Los diagramas principales también tienen archivo fuente `.drawio` dentro del repositorio.
+
+| Diagrama | Archivo fuente | Editar visualmente |
+| --- | --- | --- |
+| Casos de uso | [01-casos-de-uso.drawio](../diagramas-editables/01-casos-de-uso.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F01-casos-de-uso.drawio) |
+| Include / Extend | [02-include-extend.drawio](../diagramas-editables/02-include-extend.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F02-include-extend.drawio) |
+| Proceso de check-in | [03-diagrama-proceso-checkin.drawio](../diagramas-editables/03-diagrama-proceso-checkin.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F03-diagrama-proceso-checkin.drawio) |
+| Clase básico | [04-diagrama-clase-basico.drawio](../diagramas-editables/04-diagrama-clase-basico.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F04-diagrama-clase-basico.drawio) |
+| Clases completo | [05-diagrama-clases-completo.drawio](../diagramas-editables/05-diagrama-clases-completo.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F05-diagrama-clases-completo.drawio) |
+| Normalización | [06-normalizacion.drawio](../diagramas-editables/06-normalizacion.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F06-normalizacion.drawio) |
+| UML simple | [07-uml-simple.drawio](../diagramas-editables/07-uml-simple.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F07-uml-simple.drawio) |
+| UML amplio | [08-uml-amplio.drawio](../diagramas-editables/08-uml-amplio.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F08-uml-amplio.drawio) |
+| Modelo de datos | [09-modelo-base-datos.drawio](../diagramas-editables/09-modelo-base-datos.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F09-modelo-base-datos.drawio) |
+| Sketch / Wireframe / Mockup | [10-interfaz-sketch-wireframe-mockup.drawio](../diagramas-editables/10-interfaz-sketch-wireframe-mockup.drawio) | [Abrir en draw.io](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F10-interfaz-sketch-wireframe-mockup.drawio) |
+
+La carpeta completa está en [diagramas-editables](../diagramas-editables/README.md).
