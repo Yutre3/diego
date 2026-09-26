@@ -2,6 +2,14 @@
 
 Proyecto basado en el **Caso 6: Sistema de Pasajeros de Hotel**.
 
+# Páginas, imágenes y archivos editables
+
+Todo quedó guardado como código fuente dentro del repositorio para que el profesor pueda revisarlo y, si tiene permisos de escritura, editarlo directamente desde GitHub.
+
+- [Ver guía de páginas e imágenes editables](docs/20_paginas_editables.md)
+- [Ver código del prototipo](prototipo-web/README.md)
+- **Página publicada:** https://yutre3.github.io/diego/
+
 # Uno de cada ejemplo que envió el profesor
 
 Se creó una carpeta exclusiva donde **cada archivo que enviaste tiene su ejemplo adaptado al tema del Hotel Duerme Bien**:
