@@ -1,104 +1,85 @@
-# 17 - Cómo presentar y explicar el prototipo
+# 17 - Cómo presentar el prototipo
 
-## Por qué se creó
+## Base
 
-El material de Sketch, Wireframe, Mockup y Prototipo explica que el prototipo es la etapa que agrega interacción. A diferencia del mockup, debe permitir probar navegación, botones, formularios, estados y comportamiento.
+El prototipo se construyó usando dos fuentes principales del material entregado:
 
-Por eso el prototipo del Hotel Duerme Bien no es solamente una imagen.
+### Definición de proyectos(1).docx
 
-## Recorrido para mostrar al profesor
+Para el Caso 6 define:
 
-1. Entrar por `login.html`.
-2. Abrir Habitaciones y registrar una nueva.
-3. Abrir Huéspedes y registrar un pasajero.
-4. Crear una reserva.
-5. Realizar el check-in.
-6. Volver a Habitaciones para mostrar que cambió a OCUPADA.
-7. Realizar el check-out.
-8. Volver a Habitaciones para mostrar que quedó DISPONIBLE.
-9. Abrir Informes para mostrar el resultado.
-10. Abrir Ayuda / Demo para explicar las decisiones del prototipo.
+- habitaciones con capacidad y orientación;
+- huéspedes con asignación;
+- ocupación y disponibilidad;
+- costo automático por pasajero;
+- usuarios administrador y encargados;
+- informes de ocupación y reservas;
+- check-in;
+- check-out;
+- reservas.
 
-## Qué demuestra cada página
+### MOCKUP_COMPLETO(1).pdf
 
-### Login
+Indica la secuencia:
 
-Demuestra un acceso simulado para diferenciar administrador y encargado.
+1. Sketch.
+2. Wireframe.
+3. Mockup.
+4. Prototipo.
 
-### Inicio
+El material explica que el prototipo es navegable y sirve para probar interacción, botones y validación de formularios.
 
-Resume ocupación, disponibilidad, reservas y huéspedes.
+## Recorrido recomendado
 
-### Habitaciones
-
-Trabaja directamente con dos características indicadas en el Caso 6: capacidad y orientación. También permite demostrar el control de disponibilidad.
-
-### Huéspedes
-
-Permite registrar pasajeros que posteriormente pueden utilizarse en una reserva.
-
-### Reservas
-
-Relaciona huésped y habitación. Valida que la fecha de salida sea posterior a la entrada y que la cantidad de pasajeros respete la capacidad.
-
-### Check-in
-
-Toma una reserva confirmada, crea una estadía y cambia la habitación a OCUPADA.
-
-### Check-out
-
-Finaliza la estadía y devuelve la habitación a DISPONIBLE.
-
-El cálculo mostrado es demostrativo porque la fórmula oficial no aparece en el Caso 6.
-
-### Informes
-
-Muestra información de ocupación, reservas, huéspedes y estadías.
+1. Abrir el acceso de demostración.
+2. Entrar como Administrador o Encargado.
+3. Mostrar Habitaciones: capacidad, orientación y disponibilidad.
+4. Registrar un huésped.
+5. Registrar una reserva.
+6. Hacer un check-in y comprobar que la habitación pasa a OCUPADA.
+7. Hacer un check-out y comprobar que vuelve a DISPONIBLE.
+8. Mostrar el cálculo automático demostrativo por pasajero.
+9. Mostrar Usuarios: administrador y encargado.
+10. Abrir Informes y enseñar ocupación y reservas.
+11. Abrir Material del profesor para mostrar de dónde sale cada módulo.
 
 ## Preguntas posibles
 
-**¿Cuál es la diferencia entre mockup y prototipo?**
+**¿Por qué hay un login si el Caso 6 no dice “autenticación”?**
 
-El mockup representa principalmente la apariencia visual. El prototipo permite interacción y navegación.
+El Caso 6 sí pide gestión de usuarios administrador y encargados. El formulario de login se usa únicamente como mecanismo técnico para demostrar esos perfiles; no se presenta como requisito oficial.
 
-**¿Por qué usaste HTML, CSS y JavaScript?**
+**¿Por qué el huésped solo tiene nombre?**
 
-Porque el material indica que un prototipo web puede construirse como una aplicación prácticamente funcional con tecnologías web.
+Porque el caso no especifica documento, teléfono, correo ni otros campos obligatorios. Se usa el mínimo necesario para demostrar el registro sin inventar requerimientos.
 
-**¿El prototipo utiliza una base de datos real?**
+**¿Por qué una reserva tiene fechas?**
 
-No. Para esta etapa utiliza localStorage en el navegador. El modelo de base de datos real está definido por separado en la documentación.
+El caso pide registrar y gestionar reservas pero no entrega sus campos. Las fechas se utilizan como datos mínimos de demostración y están marcadas como tales.
 
-**¿Por qué el costo usa una tarifa de demostración?**
+**¿Por qué el costo usa un valor ingresado?**
 
-Porque el caso exige cálculo automático pero no entrega la fórmula ni tarifa exacta.
+El caso exige cálculo automático por pasajero pero no entrega una fórmula ni tarifa. El prototipo recibe un valor de prueba por pasajero y calcula el total automáticamente para demostrar la interacción sin afirmar que esa sea la regla real.
 
-**¿Qué requerimiento demuestra el check-in?**
+**¿Qué hace el check-in?**
 
-El proceso de check-in y asignación de habitación, además del control de ocupación.
+Asigna una habitación disponible y deja la habitación ocupada, siguiendo el proceso UA3 indicado.
 
-**¿Qué requerimiento demuestra el check-out?**
+**¿Qué hace el check-out?**
 
-El proceso de salida y liberación de habitación.
+Finaliza la estadía y libera la habitación, siguiendo el proceso UA3 indicado.
 
-**¿Qué pasa si se ingresan más pasajeros que la capacidad?**
+**¿Qué informes aparecen?**
 
-La reserva se rechaza y muestra un mensaje de validación.
+Solo ocupación y reservas, porque son los informes nombrados expresamente en el Caso 6.
 
-**¿Qué pasa después del check-in?**
+**¿Qué diferencia hay entre mockup y prototipo?**
 
-Se crea una estadía activa y la habitación pasa a estado OCUPADA.
+El mockup es una representación visual estática. El prototipo permite navegación e interacción.
 
-**¿Qué pasa después del check-out?**
+## Archivos
 
-La estadía queda FINALIZADA y la habitación vuelve a DISPONIBLE.
-
-## Archivos principales
-
-- `prototipo-web/styles.css`: apariencia visual y responsive.
-- `prototipo-web/app.js`: lógica, validaciones y localStorage.
-- Los archivos HTML: una página por módulo.
-
-## Estado de publicación
-
-Se preparó una rama `gh-pages` con un acceso inicial al prototipo. GitHub Pages necesita estar habilitado en la configuración del repositorio para que la dirección pública funcione.
+- `prototipo-web/styles.css`: interfaz responsive.
+- `prototipo-web/app.js`: interacción y validaciones.
+- `prototipo-web/*.html`: páginas navegables.
+- `docs/18_trazabilidad_fuentes_profesor.md`: relación completa con los materiales entregados.
