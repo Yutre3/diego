@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+  <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#333"/></marker>
+  <style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:28px;font-weight:700}.f{font-size:17px}.small{font-size:14px}.sys{fill:#fff;stroke:#333;stroke-width:2}.uc{fill:#fff;stroke:#333;stroke-width:2}.assoc{stroke:#444;stroke-width:2;fill:none}.inc{stroke:#333;stroke-width:2;stroke-dasharray:8 6;fill:none;marker-end:url(#arr)}</style>
+</defs>
+<rect width="1400" height="900" fill="white"/>
+<text x="700" y="38" text-anchor="middle" class="t title">Caso de uso - Sistema de Pasajeros Hotel Duerme Bien</text>
+<rect x="300" y="75" width="1030" height="770" rx="5" class="sys"/>
+<text x="325" y="110" class="t f" font-weight="700">Sistema de Pasajeros</text>
+
+<!-- Actores primarios a la izquierda -->
+<circle cx="120" cy="210" r="22" fill="white" stroke="#333" stroke-width="2"/><line x1="120" y1="232" x2="120" y2="300" class="assoc"/><line x1="80" y1="258" x2="160" y2="258" class="assoc"/><line x1="120" y1="300" x2="85" y2="350" class="assoc"/><line x1="120" y1="300" x2="155" y2="350" class="assoc"/><text x="120" y="382" text-anchor="middle" class="t f">Administrador</text>
+<circle cx="120" cy="545" r="22" fill="white" stroke="#333" stroke-width="2"/><line x1="120" y1="567" x2="120" y2="635" class="assoc"/><line x1="80" y1="593" x2="160" y2="593" class="assoc"/><line x1="120" y1="635" x2="85" y2="685" class="assoc"/><line x1="120" y1="635" x2="155" y2="685" class="assoc"/><text x="120" y="717" text-anchor="middle" class="t f">Encargado de hotel</text>
+
+<!-- Casos principales -->
+<ellipse cx="520" cy="170" rx="150" ry="42" class="uc"/><text x="520" y="176" text-anchor="middle" class="t f">Gestionar habitaciones</text>
+<ellipse cx="520" cy="275" rx="140" ry="42" class="uc"/><text x="520" y="281" text-anchor="middle" class="t f">Gestionar usuarios</text>
+<ellipse cx="520" cy="435" rx="135" ry="42" class="uc"/><text x="520" y="441" text-anchor="middle" class="t f">Registrar huésped</text>
+<ellipse cx="520" cy="540" rx="135" ry="42" class="uc"/><text x="520" y="546" text-anchor="middle" class="t f">Gestionar reserva</text>
+<ellipse cx="520" cy="645" rx="135" ry="42" class="uc"/><text x="520" y="651" text-anchor="middle" class="t f">Realizar check-in</text>
+<ellipse cx="520" cy="750" rx="135" ry="42" class="uc"/><text x="520" y="756" text-anchor="middle" class="t f">Realizar check-out</text>
+
+<!-- Funcionalidad incluida a la derecha -->
+<ellipse cx="1010" cy="435" rx="155" ry="42" class="uc"/><text x="1010" y="441" text-anchor="middle" class="t f">Consultar disponibilidad</text>
+<ellipse cx="1010" cy="540" rx="145" ry="42" class="uc"/><text x="1010" y="546" text-anchor="middle" class="t f">Asignar habitación</text>
+<ellipse cx="1010" cy="645" rx="125" ry="42" class="uc"/><text x="1010" y="651" text-anchor="middle" class="t f">Calcular costo</text>
+<ellipse cx="1010" cy="750" rx="135" ry="42" class="uc"/><text x="1010" y="756" text-anchor="middle" class="t f">Liberar habitación</text>
+
+<!-- asociaciones actor-caso sin flechas -->
+<line x1="160" y1="245" x2="370" y2="180" class="assoc"/><line x1="160" y1="265" x2="380" y2="275" class="assoc"/>
+<line x1="160" y1="575" x2="385" y2="445" class="assoc"/><line x1="160" y1="592" x2="385" y2="540" class="assoc"/><line x1="160" y1="610" x2="385" y2="645" class="assoc"/><line x1="160" y1="628" x2="385" y2="750" class="assoc"/>
+
+<!-- include: apunta al incluido -->
+<line x1="655" y1="540" x2="855" y2="450" class="inc"/><text x="748" y="475" class="t small">&lt;&lt;include&gt;&gt;</text>
+<line x1="655" y1="645" x2="865" y2="553" class="inc"/><text x="755" y="572" class="t small">&lt;&lt;include&gt;&gt;</text>
+<line x1="655" y1="750" x2="885" y2="660" class="inc"/><text x="765" y="682" class="t small">&lt;&lt;include&gt;&gt;</text>
+<line x1="655" y1="750" x2="875" y2="750" class="inc"/><text x="735" y="735" class="t small">&lt;&lt;include&gt;&gt;</text>
+
+<text x="320" y="830" class="t small">Adaptado siguiendo las pautas del archivo CASOS_DE_USO_como_iniciar: actores por rol, primarios a la izquierda, casos con verbo e incluidos a la derecha.</text>
+</svg>
