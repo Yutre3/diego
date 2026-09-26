@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" type="github">
+<diagram id="Normalizacion" name="Normalizacion">
+<mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="600" math="0" shadow="0">
+<root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="n1" value="1NF&lt;br&gt;&lt;br&gt;Campos atómicos&lt;br&gt;Un valor por campo&lt;br&gt;Sin listas en una celda" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2f2;" vertex="1" parent="1"><mxGeometry x="80" y="130" width="300" height="320" as="geometry"/></mxCell><mxCell id="n2" value="2NF&lt;br&gt;&lt;br&gt;Atributos no clave dependen de la PK&lt;br&gt;&lt;br&gt;capacidad → id_habitacion&lt;br&gt;nombre → id_huesped" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fffbe6;" vertex="1" parent="1"><mxGeometry x="450" y="130" width="300" height="320" as="geometry"/></mxCell><mxCell id="n3" value="3NF&lt;br&gt;&lt;br&gt;Separar entidades&lt;br&gt;&lt;br&gt;Usuario&lt;br&gt;Habitación&lt;br&gt;Huésped&lt;br&gt;Reserva&lt;br&gt;Estadía" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f1fff4;" vertex="1" parent="1"><mxGeometry x="820" y="130" width="300" height="320" as="geometry"/></mxCell><mxCell id="n12" value="separar" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="n1" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="n23" value="depurar" style="endArrow=block;html=1;rounded=0;strokeWidth=2;" edge="1" parent="1" source="n2" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell></root>
+</mxGraphModel>
+</diagram>
+</mxfile>
