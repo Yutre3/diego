@@ -30,6 +30,8 @@ No es una página separada del diseño anterior: esa URL abre el prototipo const
 | --- | --- |
 | Acceso | [login.html](login.html) |
 | Inicio | [index.html](index.html) |
+| Evaluación 1 completa | [evaluacion1.html](evaluacion1.html) |
+| Evaluación 2 completa | [evaluacion2.html](evaluacion2.html) |
 | Habitaciones | [habitaciones.html](habitaciones.html) |
 | Huéspedes | [huespedes.html](huespedes.html) |
 | Reservas | [reservas.html](reservas.html) |
@@ -50,3 +52,7 @@ Encargado: `encargado / hotel123`
 El prototipo trabaja con habitaciones, capacidad, orientación, huéspedes, ocupación, disponibilidad, reservas, check-in, check-out, costos por pasajero, usuarios e informes de ocupación/reservas.
 
 Cuando el Caso 6 no define un dato exacto, ese dato se mantiene como elemento de demostración y no como requisito oficial.
+
+## Comprobación contra la pauta
+
+[Ver checklist exacto del profesor](../docs/19_checklist_profesor.md)
