@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1100" viewBox="0 0 760 1100">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker><style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:25px;font-weight:700}.f{font-size:22px}.s{font-size:18px}.line{stroke:#222;stroke-width:4;fill:none;marker-end:url(#a)}.term{fill:#fff;stroke:#f17678;stroke-width:4}.io{fill:#fff;stroke:#2fb4b2;stroke-width:4}.dec{fill:#fff;stroke:#555;stroke-width:4}.proc{fill:#fff;stroke:#2fb4b2;stroke-width:4}</style></defs>
+<rect width="760" height="1100" fill="white"/>
+<text x="380" y="38" text-anchor="middle" class="t title">Proceso de registro de check-in</text>
+<rect x="240" y="70" width="280" height="75" rx="36" class="term"/><text x="380" y="117" text-anchor="middle" class="t f">Inicio</text>
+<line x1="380" y1="145" x2="380" y2="215" class="line"/>
+<polygon points="245,215 535,215 505,325 215,325" class="io"/><text x="375" y="260" text-anchor="middle" class="t f">Captura de datos</text><text x="375" y="290" text-anchor="middle" class="t f">del check-in</text>
+<line x1="380" y1="325" x2="380" y2="390" class="line"/>
+<polygon points="380,390 545,490 380,590 215,490" class="dec"/><text x="380" y="482" text-anchor="middle" class="t f">¿Error en la</text><text x="380" y="515" text-anchor="middle" class="t f">captura?</text>
+<!-- Yes loop -->
+<path d="M545 490 L660 490 L660 270 L535 270" class="line"/><text x="635" y="450" class="t s">Sí</text>
+<!-- No -->
+<line x1="380" y1="590" x2="380" y2="690" class="line"/><text x="400" y="645" class="t s">No</text>
+<rect x="205" y="690" width="350" height="120" class="proc"/><text x="380" y="738" text-anchor="middle" class="t f">Registrar check-in</text><text x="380" y="770" text-anchor="middle" class="t f">en la base de datos</text>
+<line x1="380" y1="810" x2="380" y2="900" class="line"/>
+<rect x="240" y="900" width="280" height="75" rx="36" class="term"/><text x="380" y="947" text-anchor="middle" class="t f">Fin</text>
+<text x="380" y="1030" text-anchor="middle" class="t s">Adaptado con la misma estructura del ejemplo de diagrama de procesos entregado.</text>
+</svg>
