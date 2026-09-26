@@ -13,7 +13,7 @@
     <small>Prototipo funcional · Sistema de Pasajeros</small>
   </div>
   <div class="session">
-    <span>Administrador / Encargado</span>
+    <span>Prototipo académico</span>
     <button id="resetDemo" class="ghost">Reiniciar demo</button>
   </div>
 </header>
@@ -27,13 +27,14 @@
     <button class="nav-btn active" data-view="reservas">Reservas</button>
     <button class="nav-btn" data-view="checkin">Check-in</button>
     <button class="nav-btn" data-view="checkout">Check-out</button>
+    <button class="nav-btn" data-view="usuarios">Usuarios</button>
     <button class="nav-btn" data-view="informes">Informes</button>
   </aside>
 
   <main>
     <section class="view" id="view-inicio">
       <h2>Inicio</h2>
-      <p class="subtitle">Resumen general del sistema.</p>
+      <p class="subtitle">Resumen de ocupación, disponibilidad, reservas y huéspedes.</p>
       <div class="stats">
         <article><strong id="statDisponibles">0</strong><span>Disponibles</span></article>
         <article><strong id="statOcupadas">0</strong><span>Ocupadas</span></article>
@@ -48,7 +49,7 @@
 
     <section class="view" id="view-habitaciones">
       <h2>Habitaciones</h2>
-      <p class="subtitle">Registro y control de capacidad, orientación y disponibilidad.</p>
+      <p class="subtitle">Registro de habitaciones con capacidad, orientación y estado.</p>
       <div class="two-col">
         <form id="roomForm" class="card">
           <h3>Registrar habitación</h3>
@@ -84,7 +85,7 @@
 
     <section class="view active" id="view-reservas">
       <h2>Panel de reservas</h2>
-      <p class="subtitle">Consulta disponibilidad y registra una nueva reserva.</p>
+      <p class="subtitle">Consulta disponibilidad, selecciona una habitación y registra una reserva.</p>
 
       <form id="availabilityForm" class="card availability">
         <h3>Buscar disponibilidad</h3>
@@ -104,9 +105,7 @@
 
         <form id="reservationForm" class="card">
           <h3>Nueva reserva</h3>
-          <label>Huésped
-            <select id="reservationGuest" required></select>
-          </label>
+          <label>Huésped<select id="reservationGuest" required></select></label>
           <label>Habitación
             <input id="reservationRoomLabel" readonly placeholder="Seleccione una habitación">
             <input id="reservationRoom" type="hidden">
@@ -127,7 +126,7 @@
 
     <section class="view" id="view-checkin">
       <h2>Check-in</h2>
-      <p class="subtitle">Asigna una habitación disponible y registra la ocupación.</p>
+      <p class="subtitle">Registra el ingreso y asigna la habitación reservada.</p>
       <div class="two-col">
         <form id="checkinForm" class="card">
           <h3>Registrar check-in</h3>
@@ -144,19 +143,38 @@
 
     <section class="view" id="view-checkout">
       <h2>Check-out</h2>
-      <p class="subtitle">Calcula el costo demostrativo y libera la habitación.</p>
+      <p class="subtitle">Registra la salida, calcula el costo demostrativo por pasajero y libera la habitación.</p>
       <div class="two-col">
         <form id="checkoutForm" class="card">
           <h3>Registrar check-out</h3>
           <label>Estadía<select id="checkoutStay"></select></label>
-          <label>Costo por pasajero<input id="costPerGuest" type="number" min="0" value="30000"></label>
-          <label>Total<input id="checkoutTotal" readonly></label>
+          <label>Valor demostrativo por pasajero<input id="costPerGuest" type="number" min="0" value="30000"></label>
+          <p class="hint">La tarifa exacta no está definida en el Caso 6; este valor solo demuestra el cálculo automático.</p>
+          <label>Total calculado<input id="checkoutTotal" readonly></label>
           <button>Confirmar check-out</button>
           <p class="message" id="checkoutMessage"></p>
         </form>
         <div class="card">
-          <h3>Historial</h3>
+          <h3>Historial de check-out</h3>
           <div id="finishedStays"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="view-usuarios">
+      <h2>Usuarios</h2>
+      <p class="subtitle">Gestión demostrativa de usuarios administrador y encargado de hotel.</p>
+      <div class="two-col">
+        <form id="userForm" class="card">
+          <h3>Registrar usuario</h3>
+          <label>Nombre<input id="userName" required></label>
+          <label>Perfil<select id="userRole"><option>Administrador</option><option>Encargado de hotel</option></select></label>
+          <button>Guardar usuario</button>
+          <p class="message" id="userMessage"></p>
+        </form>
+        <div class="card">
+          <h3>Usuarios registrados</h3>
+          <div id="usersList"></div>
         </div>
       </div>
     </section>
@@ -168,6 +186,7 @@
         <article><strong id="reportOccupied">0</strong><span>Ocupadas</span></article>
         <article><strong id="reportAvailable">0</strong><span>Disponibles</span></article>
         <article><strong id="reportReservations">0</strong><span>Reservas</span></article>
+        <article><strong id="reportOccupancy">0%</strong><span>Ocupación</span></article>
       </div>
       <div class="card">
         <h3>Resumen de reservas</h3>
