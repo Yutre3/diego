@@ -20,7 +20,17 @@ function seed(){
     estadias:[]
   }));
 }
-function db(){seed();return JSON.parse(localStorage.getItem(KEY))}
+function db(){
+  seed();
+  const data=JSON.parse(localStorage.getItem(KEY))||{};
+  data.habitaciones=Array.isArray(data.habitaciones)?data.habitaciones:[];
+  data.huespedes=Array.isArray(data.huespedes)?data.huespedes:[];
+  data.usuarios=Array.isArray(data.usuarios)?data.usuarios:[];
+  data.reservas=Array.isArray(data.reservas)?data.reservas:[];
+  data.estadias=Array.isArray(data.estadias)?data.estadias:[];
+  save(data);
+  return data;
+}
 function save(data){localStorage.setItem(KEY,JSON.stringify(data))}
 function esc(v=''){return String(v).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function message(id,text,ok=true){
