@@ -3,195 +3,235 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Prototipo funcional - Hotel Duerme Bien</title>
+<title>Hotel Duerme Bien · Prototipo funcional</title>
 <link rel="stylesheet" href="prototipo-final.css">
 </head>
 <body>
 <header class="topbar">
-  <div>
-    <h1>Hotel Duerme Bien</h1>
-    <small>Prototipo funcional · Sistema de Pasajeros</small>
+  <div class="brand">
+    <div class="brand-mark">DB</div>
+    <div>
+      <h1>Hotel Duerme Bien</h1>
+      <p>Sistema de Pasajeros · Prototipo funcional</p>
+    </div>
   </div>
-  <div class="session">
-    <span>Prototipo académico</span>
-    <button id="resetDemo" class="ghost">Reiniciar demo</button>
+  <div class="top-actions">
+    <span class="prototype-badge">Prototipo académico</span>
+    <button id="resetDemo" class="ghost" type="button">Reiniciar demostración</button>
   </div>
 </header>
 
-<div class="app">
+<div class="app-shell">
   <aside class="sidebar">
-    <h3>Menú principal</h3>
-    <button class="nav-btn" data-view="inicio">Inicio</button>
-    <button class="nav-btn" data-view="habitaciones">Habitaciones</button>
-    <button class="nav-btn" data-view="huespedes">Huéspedes</button>
-    <button class="nav-btn active" data-view="reservas">Reservas</button>
-    <button class="nav-btn" data-view="checkin">Check-in</button>
-    <button class="nav-btn" data-view="checkout">Check-out</button>
-    <button class="nav-btn" data-view="usuarios">Usuarios</button>
-    <button class="nav-btn" data-view="informes">Informes</button>
+    <div class="sidebar-title">
+      <span>GESTIÓN HOTELERA</span>
+      <small>Navegación principal</small>
+    </div>
+    <nav>
+      <button class="nav-btn active" data-view="inicio"><span>⌂</span>Inicio</button>
+      <button class="nav-btn" data-view="habitaciones"><span>▦</span>Habitaciones</button>
+      <button class="nav-btn" data-view="huespedes"><span>◎</span>Huéspedes</button>
+      <button class="nav-btn" data-view="reservas"><span>▤</span>Reservas</button>
+      <button class="nav-btn" data-view="checkin"><span>→</span>Check-in</button>
+      <button class="nav-btn" data-view="checkout"><span>←</span>Check-out</button>
+      <button class="nav-btn" data-view="usuarios"><span>♙</span>Usuarios</button>
+      <button class="nav-btn" data-view="informes"><span>≡</span>Informes</button>
+    </nav>
+    <div class="sidebar-note">
+      <strong>Caso 6</strong>
+      <span>Hotel Duerme Bien</span>
+    </div>
   </aside>
 
-  <main>
-    <section class="view" id="view-inicio">
-      <h2>Inicio</h2>
-      <p class="subtitle">Resumen de ocupación, disponibilidad, reservas y huéspedes.</p>
+  <main class="content">
+    <section class="view active" id="view-inicio">
+      <div class="page-heading">
+        <div>
+          <span class="eyebrow">RESUMEN OPERATIVO</span>
+          <h2>Inicio</h2>
+          <p>Estado general de habitaciones, reservas y huéspedes.</p>
+        </div>
+      </div>
+
       <div class="stats">
-        <article><strong id="statDisponibles">0</strong><span>Disponibles</span></article>
-        <article><strong id="statOcupadas">0</strong><span>Ocupadas</span></article>
-        <article><strong id="statReservas">0</strong><span>Reservas</span></article>
-        <article><strong id="statHuespedes">0</strong><span>Huéspedes</span></article>
+        <article class="stat-card"><span class="stat-label">Disponibles</span><strong id="statDisponibles">0</strong><small>habitaciones</small></article>
+        <article class="stat-card"><span class="stat-label">Ocupadas</span><strong id="statOcupadas">0</strong><small>habitaciones</small></article>
+        <article class="stat-card"><span class="stat-label">Reservas</span><strong id="statReservas">0</strong><small>registradas</small></article>
+        <article class="stat-card"><span class="stat-label">Huéspedes</span><strong id="statHuespedes">0</strong><small>registrados</small></article>
       </div>
-      <div class="card">
-        <h3>Estado de habitaciones</h3>
-        <div id="homeRooms"></div>
-      </div>
+
+      <section class="card">
+        <div class="card-heading">
+          <div><span class="eyebrow">OCUPACIÓN</span><h3>Estado de habitaciones</h3></div>
+        </div>
+        <div id="homeRooms" class="stack"></div>
+      </section>
     </section>
 
     <section class="view" id="view-habitaciones">
-      <h2>Habitaciones</h2>
-      <p class="subtitle">Registro de habitaciones con capacidad, orientación y estado.</p>
+      <div class="page-heading">
+        <div><span class="eyebrow">ADMINISTRACIÓN</span><h2>Habitaciones</h2><p>Registro de capacidad, orientación y disponibilidad.</p></div>
+      </div>
       <div class="two-col">
-        <form id="roomForm" class="card">
-          <h3>Registrar habitación</h3>
-          <label>Número<input id="roomNumber" required></label>
-          <label>Capacidad<input id="roomCapacity" type="number" min="1" value="2" required></label>
-          <label>Orientación<select id="roomOrientation"><option>Norte</option><option>Sur</option><option>Este</option><option>Oeste</option></select></label>
-          <button>Guardar habitación</button>
+        <form id="roomForm" class="card form-card">
+          <div class="card-heading"><div><span class="eyebrow">NUEVO REGISTRO</span><h3>Registrar habitación</h3></div></div>
+          <label>Número de habitación<input id="roomNumber" required placeholder="Ej: 401"></label>
+          <div class="form-grid">
+            <label>Capacidad<input id="roomCapacity" type="number" min="1" value="2" required></label>
+            <label>Orientación<select id="roomOrientation"><option>Norte</option><option>Sur</option><option>Este</option><option>Oeste</option></select></label>
+          </div>
+          <button class="primary-btn">Guardar habitación</button>
           <p class="message" id="roomMessage"></p>
         </form>
-        <div class="card">
-          <h3>Habitaciones registradas</h3>
-          <div id="roomsList"></div>
-        </div>
+        <section class="card">
+          <div class="card-heading"><div><span class="eyebrow">REGISTRO ACTUAL</span><h3>Habitaciones registradas</h3></div></div>
+          <div id="roomsList" class="stack"></div>
+        </section>
       </div>
     </section>
 
     <section class="view" id="view-huespedes">
-      <h2>Huéspedes</h2>
-      <p class="subtitle">Registro de huéspedes para reservas y estadías.</p>
+      <div class="page-heading">
+        <div><span class="eyebrow">PASAJEROS</span><h2>Huéspedes</h2><p>Registro de huéspedes para reservas y estadías.</p></div>
+      </div>
       <div class="two-col">
-        <form id="guestForm" class="card">
-          <h3>Registrar huésped</h3>
-          <label>Nombre<input id="guestName" required placeholder="Ej: María González"></label>
-          <button>Guardar huésped</button>
+        <form id="guestForm" class="card form-card">
+          <div class="card-heading"><div><span class="eyebrow">NUEVO REGISTRO</span><h3>Registrar huésped</h3></div></div>
+          <label>Nombre del huésped<input id="guestName" required placeholder="Ej: María González"></label>
+          <button class="primary-btn">Guardar huésped</button>
           <p class="message" id="guestMessage"></p>
         </form>
-        <div class="card">
-          <h3>Huéspedes registrados</h3>
-          <div id="guestsList"></div>
-        </div>
+        <section class="card">
+          <div class="card-heading"><div><span class="eyebrow">REGISTRO ACTUAL</span><h3>Huéspedes registrados</h3></div></div>
+          <div id="guestsList" class="stack"></div>
+        </section>
       </div>
     </section>
 
-    <section class="view active" id="view-reservas">
-      <h2>Panel de reservas</h2>
-      <p class="subtitle">Consulta disponibilidad, selecciona una habitación y registra una reserva.</p>
+    <section class="view" id="view-reservas">
+      <div class="page-heading">
+        <div><span class="eyebrow">RESERVAS</span><h2>Panel de reservas</h2><p>Consulta disponibilidad, selecciona una habitación y registra la reserva.</p></div>
+      </div>
 
-      <form id="availabilityForm" class="card availability">
-        <h3>Buscar disponibilidad</h3>
+      <div class="flow-steps" aria-label="Flujo de reserva">
+        <div class="flow-step active" id="step1"><span>1</span><div><strong>Consultar</strong><small>Definir fechas</small></div></div>
+        <div class="flow-line"></div>
+        <div class="flow-step" id="step2"><span>2</span><div><strong>Seleccionar</strong><small>Elegir habitación</small></div></div>
+        <div class="flow-line"></div>
+        <div class="flow-step" id="step3"><span>3</span><div><strong>Guardar</strong><small>Registrar reserva</small></div></div>
+      </div>
+
+      <form id="availabilityForm" class="card">
+        <div class="card-heading"><div><span class="eyebrow">PASO 1</span><h3>Buscar disponibilidad</h3></div></div>
         <div class="availability-row">
-          <label>Entrada<input id="searchEntry" type="date" required></label>
-          <label>Salida<input id="searchExit" type="date" required></label>
-          <button type="submit">Consultar</button>
+          <label>Fecha de entrada<input id="searchEntry" type="date" required></label>
+          <label>Fecha de salida<input id="searchExit" type="date" required></label>
+          <button type="submit" class="primary-btn">Consultar disponibilidad</button>
         </div>
         <p class="message" id="availabilityMessage"></p>
       </form>
 
       <div class="reservation-grid">
-        <div class="card">
-          <h3>Habitaciones disponibles</h3>
-          <div id="availableRooms"></div>
-        </div>
+        <section class="card">
+          <div class="card-heading"><div><span class="eyebrow">PASO 2</span><h3>Habitaciones disponibles</h3></div></div>
+          <div id="availableRooms" class="stack"></div>
+        </section>
 
-        <form id="reservationForm" class="card">
-          <h3>Nueva reserva</h3>
+        <form id="reservationForm" class="card form-card">
+          <div class="card-heading"><div><span class="eyebrow">PASO 3</span><h3>Nueva reserva</h3></div></div>
           <label>Huésped<select id="reservationGuest" required></select></label>
           <label>Habitación
             <input id="reservationRoomLabel" readonly placeholder="Seleccione una habitación">
             <input id="reservationRoom" type="hidden">
           </label>
-          <label>Entrada<input id="reservationEntry" type="date" required></label>
-          <label>Salida<input id="reservationExit" type="date" required></label>
+          <div class="form-grid">
+            <label>Entrada<input id="reservationEntry" type="date" required></label>
+            <label>Salida<input id="reservationExit" type="date" required></label>
+          </div>
           <label>Cantidad de huéspedes<input id="reservationCount" type="number" min="1" value="1" required></label>
-          <button type="submit">Guardar reserva</button>
+          <button type="submit" class="primary-btn">Guardar reserva</button>
           <p class="message" id="reservationMessage"></p>
         </form>
       </div>
 
-      <div class="card">
-        <h3>Reservas registradas</h3>
-        <div id="reservationsList"></div>
-      </div>
+      <section class="card">
+        <div class="card-heading"><div><span class="eyebrow">CONTROL</span><h3>Reservas registradas</h3></div></div>
+        <div id="reservationsList" class="stack"></div>
+      </section>
     </section>
 
     <section class="view" id="view-checkin">
-      <h2>Check-in</h2>
-      <p class="subtitle">Registra el ingreso y asigna la habitación reservada.</p>
+      <div class="page-heading">
+        <div><span class="eyebrow">INGRESO</span><h2>Check-in</h2><p>Registra el ingreso y ocupa la habitación asociada a la reserva.</p></div>
+      </div>
       <div class="two-col">
-        <form id="checkinForm" class="card">
-          <h3>Registrar check-in</h3>
+        <form id="checkinForm" class="card form-card">
+          <div class="card-heading"><div><span class="eyebrow">PROCESO</span><h3>Registrar check-in</h3></div></div>
           <label>Reserva<select id="checkinReservation"></select></label>
-          <button>Confirmar check-in</button>
+          <button class="primary-btn">Confirmar check-in</button>
           <p class="message" id="checkinMessage"></p>
         </form>
-        <div class="card">
-          <h3>Estadías activas</h3>
-          <div id="activeStays"></div>
-        </div>
+        <section class="card">
+          <div class="card-heading"><div><span class="eyebrow">OCUPACIÓN</span><h3>Estadías activas</h3></div></div>
+          <div id="activeStays" class="stack"></div>
+        </section>
       </div>
     </section>
 
     <section class="view" id="view-checkout">
-      <h2>Check-out</h2>
-      <p class="subtitle">Registra la salida, calcula el costo demostrativo por pasajero y libera la habitación.</p>
+      <div class="page-heading">
+        <div><span class="eyebrow">SALIDA</span><h2>Check-out</h2><p>Registra la salida, calcula el costo demostrativo y libera la habitación.</p></div>
+      </div>
       <div class="two-col">
-        <form id="checkoutForm" class="card">
-          <h3>Registrar check-out</h3>
+        <form id="checkoutForm" class="card form-card">
+          <div class="card-heading"><div><span class="eyebrow">PROCESO</span><h3>Registrar check-out</h3></div></div>
           <label>Estadía<select id="checkoutStay"></select></label>
           <label>Valor demostrativo por pasajero<input id="costPerGuest" type="number" min="0" value="30000"></label>
-          <p class="hint">La tarifa exacta no está definida en el Caso 6; este valor solo demuestra el cálculo automático.</p>
+          <div class="info-box">El Caso 6 exige cálculo automático por pasajero, pero no define una tarifa exacta. Este valor se usa solo para demostrar el funcionamiento.</div>
           <label>Total calculado<input id="checkoutTotal" readonly></label>
-          <button>Confirmar check-out</button>
+          <button class="primary-btn">Confirmar check-out</button>
           <p class="message" id="checkoutMessage"></p>
         </form>
-        <div class="card">
-          <h3>Historial de check-out</h3>
-          <div id="finishedStays"></div>
-        </div>
+        <section class="card">
+          <div class="card-heading"><div><span class="eyebrow">HISTORIAL</span><h3>Check-outs registrados</h3></div></div>
+          <div id="finishedStays" class="stack"></div>
+        </section>
       </div>
     </section>
 
     <section class="view" id="view-usuarios">
-      <h2>Usuarios</h2>
-      <p class="subtitle">Gestión demostrativa de usuarios administrador y encargado de hotel.</p>
+      <div class="page-heading">
+        <div><span class="eyebrow">ACCESO</span><h2>Usuarios</h2><p>Gestión demostrativa de los perfiles definidos en el Caso 6.</p></div>
+      </div>
       <div class="two-col">
-        <form id="userForm" class="card">
-          <h3>Registrar usuario</h3>
-          <label>Nombre<input id="userName" required></label>
+        <form id="userForm" class="card form-card">
+          <div class="card-heading"><div><span class="eyebrow">NUEVO USUARIO</span><h3>Registrar usuario</h3></div></div>
+          <label>Nombre<input id="userName" required placeholder="Ej: Encargado turno mañana"></label>
           <label>Perfil<select id="userRole"><option>Administrador</option><option>Encargado de hotel</option></select></label>
-          <button>Guardar usuario</button>
+          <button class="primary-btn">Guardar usuario</button>
           <p class="message" id="userMessage"></p>
         </form>
-        <div class="card">
-          <h3>Usuarios registrados</h3>
-          <div id="usersList"></div>
-        </div>
+        <section class="card">
+          <div class="card-heading"><div><span class="eyebrow">PERFILES</span><h3>Usuarios registrados</h3></div></div>
+          <div id="usersList" class="stack"></div>
+        </section>
       </div>
     </section>
 
     <section class="view" id="view-informes">
-      <h2>Informes</h2>
-      <p class="subtitle">Resumen de ocupación y reservas.</p>
+      <div class="page-heading">
+        <div><span class="eyebrow">REPORTES</span><h2>Informes</h2><p>Resumen de ocupación y reservas del prototipo.</p></div>
+      </div>
       <div class="stats">
-        <article><strong id="reportOccupied">0</strong><span>Ocupadas</span></article>
-        <article><strong id="reportAvailable">0</strong><span>Disponibles</span></article>
-        <article><strong id="reportReservations">0</strong><span>Reservas</span></article>
-        <article><strong id="reportOccupancy">0%</strong><span>Ocupación</span></article>
+        <article class="stat-card"><span class="stat-label">Ocupadas</span><strong id="reportOccupied">0</strong><small>habitaciones</small></article>
+        <article class="stat-card"><span class="stat-label">Disponibles</span><strong id="reportAvailable">0</strong><small>habitaciones</small></article>
+        <article class="stat-card"><span class="stat-label">Reservas</span><strong id="reportReservations">0</strong><small>registradas</small></article>
+        <article class="stat-card"><span class="stat-label">Ocupación</span><strong id="reportOccupancy">0%</strong><small>del total</small></article>
       </div>
-      <div class="card">
-        <h3>Resumen de reservas</h3>
-        <div id="reportList"></div>
-      </div>
+      <section class="card">
+        <div class="card-heading"><div><span class="eyebrow">DETALLE</span><h3>Resumen de reservas</h3></div></div>
+        <div id="reportList" class="stack"></div>
+      </section>
     </section>
   </main>
 </div>
