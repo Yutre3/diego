@@ -147,10 +147,10 @@ La solución responde al problema declarado: reemplazar planillas Excel y concen
 
 | Requerimiento | Caso de uso / proceso | Modelo de datos | Prototipo |
 | --- | --- | --- | --- |
-| RF-01 | Gestionar habitaciones | Habitacion | Habitaciones |
+| RF-01 | Registrar habitaciones | Habitacion | Habitaciones |
 | RF-02 | Registrar huésped | Huesped | Huéspedes |
-| RF-03 | Asignar habitación | Huesped / Habitacion / Estadia | Check-in |
-| RF-04 | Consultar disponibilidad | Habitacion / Reserva / Estadia | Inicio / Reservas |
+| RF-03 | Registrar huésped y asignar habitación | Huesped / Habitacion / Estadia | Check-in |
+| RF-04 | Controlar ocupación y disponibilidad | Habitacion / Reserva / Estadia | Inicio / Reservas |
 | RF-05 | Gestionar reserva | Reserva | Reservas |
 | RF-06 | Realizar check-in | Estadia / Habitacion | Check-in |
 | RF-07 | Realizar check-out | Estadia / Habitacion | Check-out |
