@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
-<defs>
-  <style>
-    .t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:14px}.small{font-size:13px}
-    .box{fill:#fff;stroke:#4f626c;stroke-width:2.1}.head{fill:#edf2f4;stroke:#4f626c;stroke-width:2.1}
-    .rel{stroke:#536a74;stroke-width:2.2;fill:none}.badge{fill:#fff;stroke:#d9e2e6;stroke-width:1}
-  </style>
-</defs>
-<rect width="1500" height="900" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="920" viewBox="0 0 1500 920">
+<defs><style>
+.t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:14px}.small{font-size:13px}
+.box{fill:#fff;stroke:#4f626c;stroke-width:2.1}.head{fill:#edf2f4;stroke:#4f626c;stroke-width:2.1}.rel{stroke:#536a74;stroke-width:2.2;fill:none}.badge{fill:#fff;stroke:#d9e2e6;stroke-width:1}
+</style></defs>
+<rect width="1500" height="920" fill="#fff"/>
 <text x="750" y="48" text-anchor="middle" class="t title">Modelo de base de datos</text>
 
+<!-- Huesped -->
 <rect x="90" y="150" width="300" height="190" rx="9" class="box"/>
 <rect x="90" y="150" width="300" height="46" rx="9" class="head"/>
 <text x="240" y="180" text-anchor="middle" class="t h">Huésped</text>
@@ -16,6 +14,7 @@
 <text x="120" y="269" class="t f">nombre</text>
 <text x="120" y="303" class="t f">otros_datos</text>
 
+<!-- Habitacion -->
 <rect x="600" y="135" width="300" height="220" rx="9" class="box"/>
 <rect x="600" y="135" width="300" height="46" rx="9" class="head"/>
 <text x="750" y="165" text-anchor="middle" class="t h">Habitación</text>
@@ -24,6 +23,7 @@
 <text x="630" y="288" class="t f">orientacion</text>
 <text x="630" y="322" class="t f">estado</text>
 
+<!-- Usuario -->
 <rect x="1110" y="150" width="300" height="190" rx="9" class="box"/>
 <rect x="1110" y="150" width="300" height="46" rx="9" class="head"/>
 <text x="1260" y="180" text-anchor="middle" class="t h">Usuario</text>
@@ -31,31 +31,36 @@
 <text x="1140" y="269" class="t f">nombre</text>
 <text x="1140" y="303" class="t f">rol</text>
 
-<rect x="295" y="535" width="390" height="275" rx="9" class="box"/>
-<rect x="295" y="535" width="390" height="46" rx="9" class="head"/>
-<text x="490" y="565" text-anchor="middle" class="t h">Reserva</text>
-<text x="325" y="620" class="t f">PK  id_reserva</text>
-<text x="325" y="653" class="t f">FK  id_huesped</text>
-<text x="325" y="686" class="t f">FK  id_habitacion</text>
-<text x="325" y="719" class="t f">fecha_entrada</text>
-<text x="325" y="752" class="t f">fecha_salida</text>
-<text x="325" y="785" class="t f">cantidad_pasajeros</text>
+<!-- Reserva -->
+<rect x="285" y="545" width="410" height="300" rx="9" class="box"/>
+<rect x="285" y="545" width="410" height="46" rx="9" class="head"/>
+<text x="490" y="575" text-anchor="middle" class="t h">Reserva</text>
+<text x="315" y="630" class="t f">PK  id_reserva</text>
+<text x="315" y="663" class="t f">FK  id_huesped</text>
+<text x="315" y="696" class="t f">FK  id_habitacion</text>
+<text x="315" y="729" class="t f">fecha_entrada</text>
+<text x="315" y="762" class="t f">fecha_salida</text>
+<text x="315" y="795" class="t f">cantidad_pasajeros</text>
+<text x="315" y="828" class="t f">estado</text>
 
-<rect x="850" y="555" width="360" height="235" rx="9" class="box"/>
-<rect x="850" y="555" width="360" height="46" rx="9" class="head"/>
-<text x="1030" y="585" text-anchor="middle" class="t h">Estadía</text>
-<text x="880" y="640" class="t f">PK  id_estadia</text>
-<text x="880" y="673" class="t f">FK  id_reserva</text>
-<text x="880" y="706" class="t f">checkin</text>
-<text x="880" y="739" class="t f">checkout</text>
-<text x="880" y="772" class="t f">costo_total</text>
+<!-- Estadia -->
+<rect x="850" y="565" width="370" height="265" rx="9" class="box"/>
+<rect x="850" y="565" width="370" height="46" rx="9" class="head"/>
+<text x="1035" y="595" text-anchor="middle" class="t h">Estadía</text>
+<text x="880" y="650" class="t f">PK  id_estadia</text>
+<text x="880" y="683" class="t f">FK  id_reserva</text>
+<text x="880" y="716" class="t f">checkin</text>
+<text x="880" y="749" class="t f">checkout</text>
+<text x="880" y="782" class="t f">costo_por_pasajero</text>
+<text x="880" y="815" class="t f">costo_total</text>
 
-<path d="M240 340 V440 H430 V535" class="rel"/>
-<rect x="270" y="416" width="72" height="27" rx="5" class="badge"/><text x="306" y="435" text-anchor="middle" class="t small">1 : N</text>
+<!-- Relaciones -->
+<path d="M240 340 V445 H430 V545" class="rel"/>
+<rect x="270" y="420" width="72" height="27" rx="5" class="badge"/><text x="306" y="439" text-anchor="middle" class="t small">1 : N</text>
 
-<path d="M750 355 V460 H550 V535" class="rel"/>
-<rect x="650" y="446" width="72" height="27" rx="5" class="badge"/><text x="686" y="465" text-anchor="middle" class="t small">1 : N</text>
+<path d="M750 355 V465 H550 V545" class="rel"/>
+<rect x="650" y="450" width="72" height="27" rx="5" class="badge"/><text x="686" y="469" text-anchor="middle" class="t small">1 : N</text>
 
-<path d="M685 670 H850" class="rel"/>
-<rect x="728" y="635" width="96" height="27" rx="5" class="badge"/><text x="776" y="654" text-anchor="middle" class="t small">1 : 0..1</text>
+<path d="M695 690 H850" class="rel"/>
+<rect x="725" y="655" width="96" height="27" rx="5" class="badge"/><text x="773" y="674" text-anchor="middle" class="t small">1 : 0..1</text>
 </svg>
