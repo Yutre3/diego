@@ -1,57 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
-<defs>
-<linearGradient id="head" x1="0" x2="1"><stop offset="0" stop-color="#203f5b"/><stop offset="1" stop-color="#2a6070"/></linearGradient>
-<style>
-.t{font-family:Arial,sans-serif}.title{font-size:24px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:14px}.small{font-size:12px}
-.card{fill:#fff;stroke:#d7e0e5;stroke-width:1.5}.field{fill:#f8fafb;stroke:#ccd7dc;stroke-width:1.4}.btn{fill:#2b8798}.nav{fill:#10293f}.muted{fill:#72818a}
-</style>
-</defs>
-<rect width="1400" height="900" fill="#eef3f5"/>
-<rect x="0" y="0" width="1400" height="88" fill="url(#head)"/>
-<text x="46" y="40" class="t title" fill="#fff">Hotel Duerme Bien</text>
-<text x="46" y="63" class="t f" fill="#dce7eb">Sistema de Pasajeros</text>
-<text x="1115" y="44" class="t f" fill="#dce7eb">Mockup</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs><style>
+.t{font-family:Arial,sans-serif;fill:#24313a}.title{font-size:31px;font-weight:700}.sub{font-size:15px;fill:#6f7c84}.h{font-size:18px;font-weight:700}.f{font-size:14px}.small{font-size:12px}
+.box{fill:#ffffff;stroke:#e3ddd4;stroke-width:2}.field{fill:#faf9f7;stroke:#e3ddd4;stroke-width:1.6}.thin{stroke:#e3ddd4;stroke-width:2;fill:none}.navtext{font-size:14px;fill:#d8e3e8}.btntext{font-size:13px;fill:#ffffff;font-weight:700}
+</style></defs>
+<rect width="1600" height="1000" fill="#f5f3ef"/>
+<text x="800" y="44" text-anchor="middle" class="t title">Mockup · Hotel Duerme Bien</text>
+<text x="800" y="72" text-anchor="middle" class="t sub">Diseño visual de la pantalla de reservas</text>
 
-<rect x="0" y="88" width="235" height="812" class="nav"/>
-<text x="30" y="135" class="t h" fill="#fff">Menú principal</text>
-<text x="34" y="185" class="t f" fill="#d8e3e8">Inicio</text>
-<text x="34" y="228" class="t f" fill="#d8e3e8">Habitaciones</text>
-<text x="34" y="271" class="t f" fill="#d8e3e8">Huéspedes</text>
-<rect x="18" y="294" width="199" height="42" rx="7" class="btn"/><text x="34" y="321" class="t f" fill="#fff">Reservas</text>
-<text x="34" y="370" class="t f" fill="#d8e3e8">Check-in</text>
-<text x="34" y="413" class="t f" fill="#d8e3e8">Check-out</text>
-<text x="34" y="456" class="t f" fill="#d8e3e8">Usuarios</text>
-<text x="34" y="499" class="t f" fill="#d8e3e8">Informes</text>
+<!-- marco -->
+<rect x="70" y="105" width="1460" height="825" rx="14" fill="#f5f3ef" stroke="#e3ddd4" stroke-width="2"/>
 
-<text x="280" y="138" class="t title" fill="#24343d">Panel de reservas</text>
-<text x="280" y="165" class="t f muted">Consulta disponibilidad, selecciona una habitación y registra una reserva.</text>
+<!-- top bar -->
+<rect x="95" y="130" width="1410" height="86" rx="10" fill="#112b3d" stroke="#e3ddd4" stroke-width="2"/>
+<rect x="125" y="148" width="48" height="48" rx="12" fill="#b88a4a" stroke="#e3ddd4" stroke-width="0"/>
+<text x="149" y="178" text-anchor="middle" class="t f" fill="#ffffff" font-weight="700">DB</text>
+<text x="195" y="165" class="t h" fill="#ffffff">Hotel Duerme Bien</text>
+<text x="195" y="188" class="t small" fill="#d9e4e9">Sistema de Pasajeros · Prototipo funcional</text>
+<rect x="1245" y="151" width="220" height="42" rx="9" fill="rgba(255,255,255,.08)" stroke="#e3ddd4" stroke-width="1.4"/>
+<text x="1355" y="177" text-anchor="middle" class="t small" fill="#ffffff">acción superior</text>
 
-<rect x="280" y="195" width="1070" height="135" rx="12" class="card"/>
-<text x="310" y="232" class="t h" fill="#24343d">Buscar disponibilidad</text>
-<text x="310" y="272" class="t f muted">Entrada</text>
-<rect x="310" y="282" width="230" height="42" rx="7" class="field"/>
-<text x="575" y="272" class="t f muted">Salida</text>
-<rect x="575" y="282" width="230" height="42" rx="7" class="field"/>
-<rect x="1110" y="278" width="185" height="46" rx="7" class="btn"/>
-<text x="1202" y="307" text-anchor="middle" class="t f" fill="#fff">Consultar</text>
+<!-- sidebar -->
+<rect x="95" y="238" width="250" height="667" rx="10" fill="#0b2030" stroke="#e3ddd4" stroke-width="2"/>
+<text x="125" y="278" class="t small" fill="#d8e3e8" font-weight="700">GESTIÓN HOTELERA</text>
+<rect x="115" y="315" width="210" height="42" rx="9" fill="transparent" stroke="none"/>
+  <text x="138" y="341" class="t navtext" fill="#d8e3e8" font-weight="400">Inicio</text><rect x="115" y="370" width="210" height="42" rx="9" fill="transparent" stroke="none"/>
+  <text x="138" y="396" class="t navtext" fill="#d8e3e8" font-weight="400">Habitaciones</text><rect x="115" y="425" width="210" height="42" rx="9" fill="transparent" stroke="none"/>
+  <text x="138" y="451" class="t navtext" fill="#d8e3e8" font-weight="400">Huéspedes</text><rect x="115" y="480" width="210" height="42" rx="9" fill="#ffffff" stroke="#e3ddd4"/>
+  <text x="138" y="506" class="t navtext" fill="#112b3d" font-weight="700">Reservas</text><rect x="115" y="535" width="210" height="42" rx="9" fill="transparent" stroke="none"/>
+  <text x="138" y="561" class="t navtext" fill="#d8e3e8" font-weight="400">Check-in</text><rect x="115" y="590" width="210" height="42" rx="9" fill="transparent" stroke="none"/>
+  <text x="138" y="616" class="t navtext" fill="#d8e3e8" font-weight="400">Check-out</text><rect x="115" y="645" width="210" height="42" rx="9" fill="transparent" stroke="none"/>
+  <text x="138" y="671" class="t navtext" fill="#d8e3e8" font-weight="400">Usuarios</text><rect x="115" y="700" width="210" height="42" rx="9" fill="transparent" stroke="none"/>
+  <text x="138" y="726" class="t navtext" fill="#d8e3e8" font-weight="400">Informes</text>
 
-<rect x="280" y="365" width="660" height="380" rx="12" class="card"/>
-<text x="310" y="402" class="t h" fill="#24343d">Habitaciones disponibles</text>
-<rect x="310" y="435" width="600" height="85" rx="9" fill="#f9fbfc" stroke="#dde5e9"/>
-<text x="332" y="468" class="t h" fill="#24343d">Habitación 201</text>
-<text x="332" y="495" class="t f muted">Capacidad: 2 · Orientación: Norte</text>
-<rect x="760" y="454" width="125" height="42" rx="7" class="btn"/><text x="822" y="480" text-anchor="middle" class="t f" fill="#fff">Seleccionar</text>
-<rect x="310" y="548" width="600" height="85" rx="9" fill="#f9fbfc" stroke="#dde5e9"/>
-<text x="332" y="581" class="t h" fill="#24343d">Habitación 305</text>
-<text x="332" y="608" class="t f muted">Capacidad: 3 · Orientación: Sur</text>
-<rect x="760" y="567" width="125" height="42" rx="7" class="btn"/><text x="822" y="593" text-anchor="middle" class="t f" fill="#fff">Seleccionar</text>
+<!-- content header -->
+<text x="395" y="278" class="t small" fill="#9a7441" font-weight="700">RESERVAS</text>
+<text x="395" y="315" class="t title" style="font-size:27px">Panel de reservas</text>
+<text x="395" y="342" class="t sub">Consulta disponibilidad, selecciona una habitación y registra la reserva.</text>
 
-<rect x="970" y="365" width="380" height="380" rx="12" class="card"/>
-<text x="1000" y="402" class="t h" fill="#24343d">Nueva reserva</text>
-<text x="1000" y="440" class="t f muted">Huésped</text><rect x="1000" y="450" width="320" height="40" rx="7" class="field"/>
-<text x="1000" y="520" class="t f muted">Habitación</text><rect x="1000" y="530" width="320" height="40" rx="7" class="field"/>
-<text x="1000" y="600" class="t f muted">Entrada / salida / cantidad</text><rect x="1000" y="610" width="320" height="40" rx="7" class="field"/>
-<rect x="1000" y="680" width="320" height="46" rx="7" class="btn"/><text x="1160" y="709" text-anchor="middle" class="t f" fill="#fff">Guardar reserva</text>
+<!-- flow steps -->
+<rect x="395" y="370" width="1080" height="80" rx="12" class="box"/>
+<circle cx="430" cy="410" r="19" fill="#b88a4a" stroke="#e3ddd4" stroke-width="1.5"/>
+  <text x="430" y="415" text-anchor="middle" class="t small" font-weight="700">1</text>
+  <text x="464" y="404" class="t f" font-weight="700">Consultar</text>
+  <text x="464" y="425" class="t small" fill="#6f7c84">Definir fechas</text>
+  <line x1="605" y1="410" x2="745" y2="410" class="thin"/><circle cx="780" cy="410" r="19" fill="#faf9f7" stroke="#e3ddd4" stroke-width="1.5"/>
+  <text x="780" y="415" text-anchor="middle" class="t small" font-weight="700">2</text>
+  <text x="814" y="404" class="t f" font-weight="700">Seleccionar</text>
+  <text x="814" y="425" class="t small" fill="#6f7c84">Elegir habitación</text>
+  <line x1="955" y1="410" x2="1095" y2="410" class="thin"/><circle cx="1130" cy="410" r="19" fill="#faf9f7" stroke="#e3ddd4" stroke-width="1.5"/>
+  <text x="1130" y="415" text-anchor="middle" class="t small" font-weight="700">3</text>
+  <text x="1164" y="404" class="t f" font-weight="700">Guardar</text>
+  <text x="1164" y="425" class="t small" fill="#6f7c84">Registrar reserva</text>
+  
 
-<text x="280" y="805" class="t small muted">Mockup: representación visual final antes de implementar la interacción.</text>
+<!-- search card -->
+<rect x="395" y="475" width="1080" height="150" rx="14" class="box"/>
+<text x="425" y="512" class="t small" fill="#9a7441" font-weight="700">PASO 1</text>
+<text x="425" y="540" class="t h">Buscar disponibilidad</text>
+<text x="425" y="575" class="t small" fill="#6f7c84">Fecha de entrada</text>
+<rect x="425" y="585" width="260" height="42" rx="9" class="field"/>
+<text x="720" y="575" class="t small" fill="#6f7c84">Fecha de salida</text>
+<rect x="720" y="585" width="260" height="42" rx="9" class="field"/>
+<rect x="1185" y="581" width="245" height="46" rx="9" fill="#2d7b80" stroke="#e3ddd4" stroke-width="0"/>
+<text x="1308" y="610" text-anchor="middle" class="t btntext">Consultar disponibilidad</text>
+
+<!-- left card -->
+<rect x="395" y="655" width="650" height="220" rx="14" class="box"/>
+<text x="425" y="693" class="t small" fill="#9a7441" font-weight="700">PASO 2</text>
+<text x="425" y="720" class="t h">Habitaciones disponibles</text>
+<rect x="425" y="744" width="590" height="58" rx="9" class="field"/>
+<text x="445" y="770" class="t f" font-weight="700">Habitación 201</text>
+<text x="445" y="790" class="t small" fill="#6f7c84">Capacidad 2 · Orientación Norte</text>
+<rect x="860" y="753" width="130" height="38" rx="8" fill="#2d7b80" stroke="#e3ddd4" stroke-width="0"/>
+<text x="925" y="777" text-anchor="middle" class="t btntext">Seleccionar</text>
+<rect x="425" y="814" width="590" height="42" rx="9" class="field"/>
+<text x="445" y="840" class="t f">Habitación 305 · Capacidad 3 · Este</text>
+
+<!-- right form -->
+<rect x="1075" y="655" width="400" height="220" rx="14" class="box"/>
+<text x="1105" y="693" class="t small" fill="#9a7441" font-weight="700">PASO 3</text>
+<text x="1105" y="720" class="t h">Nueva reserva</text>
+<rect x="1105" y="744" width="340" height="34" rx="7" class="field"/>
+<rect x="1105" y="790" width="160" height="34" rx="7" class="field"/>
+<rect x="1285" y="790" width="160" height="34" rx="7" class="field"/>
+<rect x="1105" y="836" width="340" height="38" rx="8" fill="#2d7b80" stroke="#e3ddd4" stroke-width="0"/>
+<text x="1275" y="861" text-anchor="middle" class="t btntext">Guardar reserva</text>
+
+<text x="95" y="965" class="t small" fill="#6f7c84">Mockup: apariencia visual coherente con el prototipo funcional.</text>
 </svg>
