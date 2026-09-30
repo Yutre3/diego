@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" type="github"><diagram id="casos" name="Casos de uso"><mxGraphModel dx="1600" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1120" math="0" shadow="0"><root>
+<mxfile host="app.diagrams.net" type="github"><diagram id="casos" name="Casos de uso">
+<mxGraphModel dx="1500" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="980" math="0" shadow="0"><root>
 <mxCell id="0"/><mxCell id="1" parent="0"/>
-<mxCell id="sys" value="Sistema de Pasajeros" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;verticalAlign=top;align=left;spacingTop=15;spacingLeft=15;" vertex="1" parent="1"><mxGeometry x="300" y="115" width="1220" height="900" as="geometry"/></mxCell>
-<mxCell id="adm" value="Administrador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="80" y="220" width="110" height="200" as="geometry"/></mxCell>
-<mxCell id="enc" value="Encargado de hotel" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="75" y="625" width="120" height="200" as="geometry"/></mxCell>
-<mxCell id="gh" value="Gestionar habitaciones&#xa;capacidad y orientación" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="385" y="182" width="350" height="96" as="geometry"/></mxCell>
-<mxCell id="gu" value="Gestionar usuarios" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="405" y="307" width="310" height="96" as="geometry"/></mxCell>
-<mxCell id="gi" value="Generar informes&#xa;ocupación y reservas" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="380" y="432" width="360" height="96" as="geometry"/></mxCell>
-<mxCell id="rh" value="Registrar huésped" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="410" y="577" width="300" height="96" as="geometry"/></mxCell>
-<mxCell id="gr" value="Gestionar reserva" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="410" y="697" width="300" height="96" as="geometry"/></mxCell>
-<mxCell id="ci" value="Realizar check-in" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="410" y="817" width="300" height="96" as="geometry"/></mxCell>
-<mxCell id="co" value="Realizar check-out" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="410" y="912" width="300" height="96" as="geometry"/></mxCell>
-<mxCell id="disp" value="Consultar disponibilidad" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="920" y="697" width="380" height="96" as="geometry"/></mxCell>
-<mxCell id="asig" value="Asignar habitación" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="955" y="817" width="310" height="96" as="geometry"/></mxCell>
-<mxCell id="cost" value="Calcular costo&#xa;por pasajero" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="855" y="916" width="290" height="88" as="geometry"/></mxCell>
-<mxCell id="lib" value="Liberar habitación" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="1170" y="916" width="300" height="88" as="geometry"/></mxCell>
-<mxCell id="a1" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="adm" target="gh"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="a2" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="adm" target="gu"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="a3" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="adm" target="gi"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="b1" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="enc" target="rh"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="b2" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="enc" target="gr"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="b3" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="enc" target="ci"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="b4" style="endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="enc" target="co"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="sys" value="Sistema de Pasajeros" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;verticalAlign=top;align=left;spacingTop=15;spacingLeft=15;" vertex="1" parent="1"><mxGeometry x="340" y="95" width="1080" height="820" as="geometry"/></mxCell>
+<mxCell id="generic" value="Usuario del hotel" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="105" y="420" width="100" height="180" as="geometry"/></mxCell>
+<mxCell id="admin" value="Administrador" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="30" y="150" width="100" height="170" as="geometry"/></mxCell>
+<mxCell id="enc" value="Encargado" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="30" y="680" width="100" height="170" as="geometry"/></mxCell>
+
+<mxCell id="gh" value="Gestionar habitaciones" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="445" y="144" width="330" height="92" as="geometry"/></mxCell>
+<mxCell id="rh" value="Registrar huésped" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="455" y="259" width="310" height="92" as="geometry"/></mxCell>
+<mxCell id="gr" value="Gestionar reservas" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="455" y="374" width="310" height="92" as="geometry"/></mxCell>
+<mxCell id="ci" value="Realizar check-in y asignar habitación" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="420" y="504" width="380" height="92" as="geometry"/></mxCell>
+<mxCell id="co" value="Realizar check-out y liberar habitación" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="420" y="634" width="380" height="92" as="geometry"/></mxCell>
+<mxCell id="gu" value="Gestionar usuarios" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="460" y="749" width="300" height="92" as="geometry"/></mxCell>
+<mxCell id="gi" value="Generar informes" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="470" y="843" width="280" height="84" as="geometry"/></mxCell>
+
+<mxCell id="disp" value="Consultar disponibilidad" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="935" y="374" width="350" height="92" as="geometry"/></mxCell>
+<mxCell id="cost" value="Calcular costo" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="975" y="634" width="270" height="92" as="geometry"/></mxCell>
+
+<mxCell id="g1" style="endArrow=block;endFill=0;html=1;strokeWidth=2;" edge="1" parent="1" source="admin" target="generic"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="g2" style="endArrow=block;endFill=0;html=1;strokeWidth=2;" edge="1" parent="1" source="enc" target="generic"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+<mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="generic" target="gh"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="generic" target="rh"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="a3" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="generic" target="gr"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="a4" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="generic" target="ci"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="a5" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="generic" target="co"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="a6" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="generic" target="gu"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="a7" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;strokeWidth=2;" edge="1" parent="1" source="generic" target="gi"><mxGeometry relative="1" as="geometry"/></mxCell>
+
 <mxCell id="i1" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;html=1;strokeWidth=2;" edge="1" parent="1" source="gr" target="disp"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="i2" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;html=1;strokeWidth=2;" edge="1" parent="1" source="ci" target="asig"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="i3" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;html=1;strokeWidth=2;" edge="1" parent="1" source="co" target="cost"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="i4" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;html=1;strokeWidth=2;" edge="1" parent="1" source="co" target="lib"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="i2" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;html=1;strokeWidth=2;" edge="1" parent="1" source="co" target="cost"><mxGeometry relative="1" as="geometry"/></mxCell>
 </root></mxGraphModel></diagram></mxfile>
