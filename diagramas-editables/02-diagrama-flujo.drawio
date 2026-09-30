@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net" type="github"><diagram id="flujo" name="Flujo check-in">
-<mxGraphModel dx="1200" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1120" math="0" shadow="0"><root>
+<mxGraphModel dx="1180" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1180" pageHeight="1080" math="0" shadow="0"><root>
 <mxCell id="0"/><mxCell id="1" parent="0"/>
-<mxCell id="start" value="Inicio" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="480" y="85" width="240" height="60" as="geometry"/></mxCell>
-<mxCell id="guest" value="Registrar o seleccionar huésped" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="420" y="195" width="360" height="76" as="geometry"/></mxCell>
-<mxCell id="avail" value="Consultar disponibilidad de habitaciones" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="435" y="320" width="330" height="74" as="geometry"/></mxCell>
-<mxCell id="decision" value="¿Hay habitación disponible?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="425" y="445" width="350" height="154" as="geometry"/></mxCell>
-<mxCell id="none" value="Informar que no hay disponibilidad" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="870" y="485" width="270" height="74" as="geometry"/></mxCell>
-<mxCell id="endNo" value="Fin" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="925" y="625" width="160" height="54" as="geometry"/></mxCell>
-<mxCell id="assign" value="Asignar habitación" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="455" y="655" width="290" height="70" as="geometry"/></mxCell>
-<mxCell id="checkin" value="Registrar check-in" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="445" y="780" width="310" height="70" as="geometry"/></mxCell>
-<mxCell id="occupy" value="Actualizar ocupación&#xa;habitación ocupada" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="420" y="905" width="360" height="76" as="geometry"/></mxCell>
-<mxCell id="endYes" value="Fin" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="520" y="1020" width="160" height="54" as="geometry"/></mxCell>
+<mxCell id="start" value="Inicio" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="470" y="85" width="240" height="58" as="geometry"/></mxCell>
+<mxCell id="guest" value="Registrar o seleccionar huésped" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="410" y="190" width="360" height="72" as="geometry"/></mxCell>
+<mxCell id="avail" value="Consultar disponibilidad de habitaciones" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="425" y="307" width="330" height="72" as="geometry"/></mxCell>
+<mxCell id="decision" value="¿Hay habitación disponible?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="425" y="430" width="330" height="146" as="geometry"/></mxCell>
+<mxCell id="none" value="Informar que no hay disponibilidad" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="60" y="466" width="240" height="74" as="geometry"/></mxCell>
+<mxCell id="endNo" value="Fin" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="105" y="615" width="150" height="52" as="geometry"/></mxCell>
+<mxCell id="assign" value="Asignar habitación" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="445" y="635" width="290" height="68" as="geometry"/></mxCell>
+<mxCell id="checkin" value="Registrar check-in" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="435" y="755" width="310" height="68" as="geometry"/></mxCell>
+<mxCell id="occupy" value="Actualizar ocupación&#xa;habitación ocupada" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="410" y="875" width="360" height="72" as="geometry"/></mxCell>
+<mxCell id="endYes" value="Fin" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="515" y="990" width="150" height="52" as="geometry"/></mxCell>
 
 <mxCell id="e1" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="start" target="guest"><mxGeometry relative="1" as="geometry"/></mxCell>
 <mxCell id="e2" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="guest" target="avail"><mxGeometry relative="1" as="geometry"/></mxCell>
 <mxCell id="e3" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="avail" target="decision"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e4" value="No" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="decision" target="none"><mxGeometry relative="1" as="geometry"/></mxCell>
+<mxCell id="e4" value="No" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="decision" target="none"><mxGeometry relative="1" as="geometry"/></mxCell>
 <mxCell id="e5" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="none" target="endNo"><mxGeometry relative="1" as="geometry"/></mxCell>
 <mxCell id="e6" value="Sí" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="decision" target="assign"><mxGeometry relative="1" as="geometry"/></mxCell>
 <mxCell id="e7" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="assign" target="checkin"><mxGeometry relative="1" as="geometry"/></mxCell>
