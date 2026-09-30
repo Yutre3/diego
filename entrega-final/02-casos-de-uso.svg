@@ -1,49 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
-<defs><style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="940" viewBox="0 0 1500 940">
+<defs>
+<marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><path d="M0,0 L0,7 L9,3.5 z" fill="#40515b"/></marker>
+<style>
 .t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.label{font-size:18px}.small{font-size:13px}
-.sys{fill:#fff;stroke:#63747d;stroke-width:2.2}.uc{fill:#fff;stroke:#2e747b;stroke-width:2.1}
-.actor{stroke:#4b5d66;stroke-width:2.1;fill:none}.assoc{stroke:#5c6f78;stroke-width:2;fill:none}
-.rolebox{fill:#f7f9fa;stroke:#dbe3e7;stroke-width:1.2}
-</style></defs>
-<rect width="1500" height="980" fill="#fff"/>
+.sys{fill:#fff;stroke:#667780;stroke-width:2.2}.uc{fill:#fff;stroke:#2f747a;stroke-width:2.1}
+.actor{stroke:#4c5d66;stroke-width:2.1;fill:none}.assoc{stroke:#657780;stroke-width:1.9;fill:none}
+.inc{stroke:#40515b;stroke-width:2;stroke-dasharray:9 6;fill:none;marker-end:url(#arr)}
+.note{fill:#f7f9fa;stroke:#dce4e8}
+</style>
+</defs>
+<rect width="1500" height="940" fill="#fff"/>
 <text x="750" y="48" text-anchor="middle" class="t title">Diagrama de casos de uso</text>
 
-<rect x="330" y="95" width="1100" height="820" rx="12" class="sys"/>
-<text x="360" y="135" class="t label" font-weight="700">Sistema de Pasajeros</text>
+<rect x="315" y="90" width="1110" height="790" rx="12" class="sys"/>
+<text x="345" y="130" class="t label" font-weight="700">Sistema de Pasajeros</text>
 
 <!-- Actor -->
-<circle cx="145" cy="430" r="24" class="actor"/>
-<line x1="145" y1="454" x2="145" y2="525" class="actor"/>
-<line x1="102" y1="482" x2="188" y2="482" class="actor"/>
-<line x1="145" y1="525" x2="110" y2="575" class="actor"/>
-<line x1="145" y1="525" x2="180" y2="575" class="actor"/>
-<text x="145" y="615" text-anchor="middle" class="t label">Personal del hotel</text>
-<rect x="55" y="635" width="180" height="58" rx="8" class="rolebox"/>
-<text x="145" y="659" text-anchor="middle" class="t small">Perfiles definidos:</text>
-<text x="145" y="681" text-anchor="middle" class="t small" font-weight="700">Administrador · Encargado</text>
+<circle cx="140" cy="390" r="24" class="actor"/>
+<line x1="140" y1="414" x2="140" y2="486" class="actor"/>
+<line x1="98" y1="442" x2="182" y2="442" class="actor"/>
+<line x1="140" y1="486" x2="106" y2="536" class="actor"/>
+<line x1="140" y1="486" x2="174" y2="536" class="actor"/>
+<text x="140" y="576" text-anchor="middle" class="t label">Personal del hotel</text>
+<rect x="45" y="600" width="190" height="58" rx="8" class="note"/>
+<text x="140" y="624" text-anchor="middle" class="t small">Perfiles del caso:</text>
+<text x="140" y="647" text-anchor="middle" class="t small" font-weight="700">Administrador · Encargado</text>
 
-<!-- Casos columna 1 -->
-<ellipse cx="600" cy="185" rx="165" ry="45" class="uc"/><text x="600" y="192" text-anchor="middle" class="t label">Registrar habitaciones</text>
-<ellipse cx="600" cy="300" rx="200" ry="45" class="uc"/><text x="600" y="307" text-anchor="middle" class="t label">Registrar huésped y asignar habitación</text>
-<ellipse cx="600" cy="415" rx="180" ry="45" class="uc"/><text x="600" y="422" text-anchor="middle" class="t label">Consultar ocupación y disponibilidad</text>
-<ellipse cx="600" cy="530" rx="155" ry="45" class="uc"/><text x="600" y="537" text-anchor="middle" class="t label">Gestionar reservas</text>
-<ellipse cx="600" cy="645" rx="195" ry="45" class="uc"/><text x="600" y="652" text-anchor="middle" class="t label">Realizar check-in y asignar habitación</text>
+<!-- Casos de uso -->
+<ellipse cx="585" cy="190" rx="155" ry="44" class="uc"/><text x="585" y="197" text-anchor="middle" class="t label">Registrar habitaciones</text>
+<ellipse cx="585" cy="300" rx="185" ry="44" class="uc"/><text x="585" y="307" text-anchor="middle" class="t label">Registrar huésped y asignar habitación</text>
+<ellipse cx="585" cy="410" rx="185" ry="44" class="uc"/><text x="585" y="417" text-anchor="middle" class="t label">Controlar ocupación y disponibilidad</text>
+<ellipse cx="585" cy="520" rx="145" ry="44" class="uc"/><text x="585" y="527" text-anchor="middle" class="t label">Gestionar reservas</text>
+<ellipse cx="585" cy="630" rx="175" ry="44" class="uc"/><text x="585" y="637" text-anchor="middle" class="t label">Realizar check-in</text>
+<ellipse cx="585" cy="740" rx="175" ry="44" class="uc"/><text x="585" y="747" text-anchor="middle" class="t label">Realizar check-out</text>
 
-<!-- Casos columna 2 -->
-<ellipse cx="1110" cy="240" rx="195" ry="45" class="uc"/><text x="1110" y="247" text-anchor="middle" class="t label">Realizar check-out y liberar habitación</text>
-<ellipse cx="1110" cy="385" rx="165" ry="45" class="uc"/><text x="1110" y="392" text-anchor="middle" class="t label">Calcular costo por pasajero</text>
-<ellipse cx="1110" cy="530" rx="150" ry="45" class="uc"/><text x="1110" y="537" text-anchor="middle" class="t label">Gestionar usuarios</text>
-<ellipse cx="1110" cy="675" rx="205" ry="45" class="uc"/><text x="1110" y="682" text-anchor="middle" class="t label">Generar informes de ocupación y reservas</text>
+<ellipse cx="1090" cy="245" rx="165" ry="44" class="uc"/><text x="1090" y="252" text-anchor="middle" class="t label">Calcular costo por pasajero</text>
+<ellipse cx="1090" cy="385" rx="145" ry="44" class="uc"/><text x="1090" y="392" text-anchor="middle" class="t label">Gestionar usuarios</text>
+<ellipse cx="1090" cy="525" rx="195" ry="44" class="uc"/><text x="1090" y="532" text-anchor="middle" class="t label">Generar informes de ocupación y reservas</text>
+<ellipse cx="1090" cy="665" rx="165" ry="44" class="uc"/><text x="1090" y="672" text-anchor="middle" class="t label">Consultar disponibilidad</text>
 
-<!-- Asociaciones sin cruces -->
-<path d="M188 482 H285 V185 H435" class="assoc"/>
-<path d="M188 492 H300 V300 H400" class="assoc"/>
-<path d="M188 502 H315 V415 H420" class="assoc"/>
-<path d="M188 512 H315 V530 H445" class="assoc"/>
-<path d="M188 522 H300 V645 H405" class="assoc"/>
+<!-- Asociaciones simples -->
+<line x1="182" y1="442" x2="430" y2="190" class="assoc"/>
+<line x1="182" y1="442" x2="400" y2="300" class="assoc"/>
+<line x1="182" y1="442" x2="400" y2="410" class="assoc"/>
+<line x1="182" y1="442" x2="440" y2="520" class="assoc"/>
+<line x1="182" y1="442" x2="410" y2="630" class="assoc"/>
+<line x1="182" y1="442" x2="410" y2="740" class="assoc"/>
+<line x1="182" y1="442" x2="925" y2="245" class="assoc"/>
+<line x1="182" y1="442" x2="945" y2="385" class="assoc"/>
+<line x1="182" y1="442" x2="895" y2="525" class="assoc"/>
 
-<path d="M188 532 H265 V760 H875 V240 H915" class="assoc"/>
-<path d="M188 542 H250 V790 H900 V385 H945" class="assoc"/>
-<path d="M188 552 H235 V820 H920 V530 H960" class="assoc"/>
-<path d="M188 562 H220 V850 H900 V675 H905" class="assoc"/>
+<!-- include mínimo -->
+<path d="M730 520 H850 V665 H925" class="inc"/>
+<text x="815" y="505" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
+<path d="M760 740 H850 V245 H925" class="inc"/>
+<text x="820" y="725" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
 </svg>
