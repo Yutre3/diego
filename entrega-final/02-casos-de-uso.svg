@@ -1,66 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
 <defs>
-<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker>
-<style>.t{font-family:Arial,sans-serif;fill:#222}.title{font-size:30px;font-weight:700}.f{font-size:19px}.s{font-size:15px}.sys{fill:#fff;stroke:#333;stroke-width:2.5}.uc{fill:#fff;stroke:#333;stroke-width:2.3}.assoc{stroke:#555;stroke-width:2.2;fill:none}.dep{stroke:#333;stroke-width:2.2;stroke-dasharray:9 7;fill:none;marker-end:url(#arrow)}.tag{fill:#fff;stroke:#ddd;stroke-width:1}</style>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#3b4650"/></marker>
+<style>
+.t{font-family:Arial,sans-serif;fill:#24343d}.title{font-size:28px;font-weight:700}.label{font-size:18px}.small{font-size:14px}
+.sys{fill:#fff;stroke:#60717b;stroke-width:2}.uc{fill:#fff;stroke:#3d6674;stroke-width:2}.assoc{stroke:#667984;stroke-width:2;fill:none}.dep{stroke:#3b4650;stroke-width:2;stroke-dasharray:8 6;fill:none;marker-end:url(#arrow)}.tag{fill:#fff;stroke:#d8e1e5;stroke-width:1}
+</style>
 </defs>
-<rect width="1500" height="980" fill="white"/>
-<text x="750" y="42" text-anchor="middle" class="t title">Diagrama completo de casos de uso - Hotel Duerme Bien</text>
-<rect x="300" y="80" width="1130" height="835" rx="8" class="sys"/>
-<text x="325" y="115" class="t f" font-weight="700">Sistema de Pasajeros</text>
+<rect width="1400" height="900" fill="#fff"/>
+<text x="700" y="42" text-anchor="middle" class="t title">Diagrama de casos de uso - Hotel Duerme Bien</text>
 
-<!-- actores -->
-<circle cx="125" cy="210" r="24" fill="white" stroke="#333" stroke-width="2.3"/><line x1="125" y1="234" x2="125" y2="310" class="assoc"/><line x1="80" y1="262" x2="170" y2="262" class="assoc"/><line x1="125" y1="310" x2="88" y2="365" class="assoc"/><line x1="125" y1="310" x2="162" y2="365" class="assoc"/><text x="125" y="400" text-anchor="middle" class="t f">Administrador</text>
-<circle cx="125" cy="585" r="24" fill="white" stroke="#333" stroke-width="2.3"/><line x1="125" y1="609" x2="125" y2="685" class="assoc"/><line x1="80" y1="637" x2="170" y2="637" class="assoc"/><line x1="125" y1="685" x2="88" y2="740" class="assoc"/><line x1="125" y1="685" x2="162" y2="740" class="assoc"/><text x="125" y="775" text-anchor="middle" class="t f">Encargado de hotel</text>
+<rect x="270" y="75" width="1060" height="765" rx="10" class="sys"/>
+<text x="300" y="112" class="t label" font-weight="700">Sistema de Pasajeros</text>
 
-<!-- casos principales -->
-<ellipse cx="560" cy="155" rx="160" ry="45" class="uc"/><text x="560" y="162" text-anchor="middle" class="t f">Gestionar habitaciones</text>
-<ellipse cx="560" cy="245" rx="150" ry="45" class="uc"/><text x="560" y="252" text-anchor="middle" class="t f">Gestionar usuarios</text>
-<ellipse cx="560" cy="335" rx="145" ry="45" class="uc"/><text x="560" y="342" text-anchor="middle" class="t f">Generar informes</text>
+<!-- Actores -->
+<g>
+  <circle cx="120" cy="205" r="22" fill="#fff" stroke="#46555f" stroke-width="2"/>
+  <line x1="120" y1="227" x2="120" y2="295" class="assoc"/>
+  <line x1="82" y1="252" x2="158" y2="252" class="assoc"/>
+  <line x1="120" y1="295" x2="88" y2="345" class="assoc"/>
+  <line x1="120" y1="295" x2="152" y2="345" class="assoc"/>
+  <text x="120" y="380" text-anchor="middle" class="t label">Administrador</text>
+</g>
+<g>
+  <circle cx="120" cy="555" r="22" fill="#fff" stroke="#46555f" stroke-width="2"/>
+  <line x1="120" y1="577" x2="120" y2="645" class="assoc"/>
+  <line x1="82" y1="602" x2="158" y2="602" class="assoc"/>
+  <line x1="120" y1="645" x2="88" y2="695" class="assoc"/>
+  <line x1="120" y1="645" x2="152" y2="695" class="assoc"/>
+  <text x="120" y="730" text-anchor="middle" class="t label">Encargado</text>
+</g>
 
-<ellipse cx="560" cy="470" rx="145" ry="45" class="uc"/><text x="560" y="477" text-anchor="middle" class="t f">Registrar huésped</text>
-<ellipse cx="560" cy="565" rx="145" ry="45" class="uc"/><text x="560" y="572" text-anchor="middle" class="t f">Gestionar reserva</text>
-<ellipse cx="560" cy="660" rx="145" ry="45" class="uc"/><text x="560" y="667" text-anchor="middle" class="t f">Realizar check-in</text>
-<ellipse cx="560" cy="780" rx="145" ry="45" class="uc"/><text x="560" y="787" text-anchor="middle" class="t f">Realizar check-out</text>
+<!-- Casos de uso principales -->
+<ellipse cx="520" cy="165" rx="145" ry="42" class="uc"/><text x="520" y="172" text-anchor="middle" class="t label">Gestionar habitaciones</text>
+<ellipse cx="520" cy="260" rx="135" ry="42" class="uc"/><text x="520" y="267" text-anchor="middle" class="t label">Gestionar usuarios</text>
+<ellipse cx="520" cy="355" rx="130" ry="42" class="uc"/><text x="520" y="362" text-anchor="middle" class="t label">Generar informes</text>
 
-<!-- incluidos / extendidos -->
-<ellipse cx="1110" cy="535" rx="175" ry="45" class="uc"/><text x="1110" y="542" text-anchor="middle" class="t f">Consultar disponibilidad</text>
-<ellipse cx="1110" cy="650" rx="155" ry="45" class="uc"/><text x="1110" y="657" text-anchor="middle" class="t f">Asignar habitación</text>
-<ellipse cx="1040" cy="770" rx="135" ry="45" class="uc"/><text x="1040" y="777" text-anchor="middle" class="t f">Calcular costo</text>
-<ellipse cx="1250" cy="850" rx="150" ry="45" class="uc"/><text x="1250" y="857" text-anchor="middle" class="t f">Liberar habitación</text>
+<ellipse cx="520" cy="475" rx="135" ry="42" class="uc"/><text x="520" y="482" text-anchor="middle" class="t label">Registrar huésped</text>
+<ellipse cx="520" cy="570" rx="135" ry="42" class="uc"/><text x="520" y="577" text-anchor="middle" class="t label">Gestionar reserva</text>
+<ellipse cx="520" cy="665" rx="135" ry="42" class="uc"/><text x="520" y="672" text-anchor="middle" class="t label">Realizar check-in</text>
+<ellipse cx="520" cy="760" rx="135" ry="42" class="uc"/><text x="520" y="767" text-anchor="middle" class="t label">Realizar check-out</text>
 
-<!-- asociaciones admin -->
-<line x1="170" y1="250" x2="400" y2="165" class="assoc"/>
-<line x1="170" y1="270" x2="410" y2="245" class="assoc"/>
-<line x1="170" y1="290" x2="415" y2="335" class="assoc"/>
+<!-- Casos incluidos -->
+<ellipse cx="1030" cy="570" rx="165" ry="42" class="uc"/><text x="1030" y="577" text-anchor="middle" class="t label">Consultar disponibilidad</text>
+<ellipse cx="1030" cy="665" rx="145" ry="42" class="uc"/><text x="1030" y="672" text-anchor="middle" class="t label">Asignar habitación</text>
+<ellipse cx="930" cy="760" rx="125" ry="42" class="uc"/><text x="930" y="767" text-anchor="middle" class="t label">Calcular costo</text>
+<ellipse cx="1180" cy="760" rx="135" ry="42" class="uc"/><text x="1180" y="767" text-anchor="middle" class="t label">Liberar habitación</text>
 
-<!-- asociaciones encargado -->
-<line x1="170" y1="620" x2="415" y2="480" class="assoc"/>
-<line x1="170" y1="635" x2="415" y2="565" class="assoc"/>
-<line x1="170" y1="650" x2="415" y2="660" class="assoc"/>
-<line x1="170" y1="665" x2="415" y2="780" class="assoc"/>
+<!-- Asociaciones -->
+<line x1="158" y1="245" x2="375" y2="175" class="assoc"/>
+<line x1="158" y1="260" x2="385" y2="260" class="assoc"/>
+<line x1="158" y1="278" x2="390" y2="345" class="assoc"/>
 
-<!-- include: reserva -> disponibilidad -->
-<path d="M705 565 H825 V535 H935" class="dep"/>
-<rect x="760" y="525" width="118" height="28" rx="5" class="tag"/><text x="819" y="545" text-anchor="middle" class="t s">&lt;&lt;include&gt;&gt;</text>
+<line x1="158" y1="600" x2="385" y2="485" class="assoc"/>
+<line x1="158" y1="610" x2="385" y2="570" class="assoc"/>
+<line x1="158" y1="620" x2="385" y2="665" class="assoc"/>
+<line x1="158" y1="630" x2="385" y2="760" class="assoc"/>
 
-<!-- include: check-in -> disponibilidad -->
-<path d="M705 645 H860 V560 H935" class="dep"/>
-<rect x="770" y="603" width="118" height="28" rx="5" class="tag"/><text x="829" y="623" text-anchor="middle" class="t s">&lt;&lt;include&gt;&gt;</text>
+<!-- Include, en corredores separados -->
+<path d="M655 570 H865" class="dep"/>
+<rect x="705" y="542" width="105" height="26" rx="5" class="tag"/><text x="758" y="560" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
 
-<!-- include: check-in -> asignar -->
-<path d="M705 675 H955" class="dep"/>
-<rect x="785" y="646" width="118" height="28" rx="5" class="tag"/><text x="844" y="666" text-anchor="middle" class="t s">&lt;&lt;include&gt;&gt;</text>
+<path d="M655 665 H885" class="dep"/>
+<rect x="710" y="637" width="105" height="26" rx="5" class="tag"/><text x="763" y="655" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
 
-<!-- extend: registrar huésped -> check-in -->
-<path d="M675 495 H760 V635 H705" class="dep"/>
-<rect x="700" y="545" width="118" height="28" rx="5" class="tag"/><text x="759" y="565" text-anchor="middle" class="t s">&lt;&lt;extend&gt;&gt;</text>
-<text x="760" y="590" text-anchor="middle" class="t s">si el huésped no existe</text>
+<path d="M655 745 H805" class="dep"/>
+<rect x="680" y="717" width="105" height="26" rx="5" class="tag"/><text x="733" y="735" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
 
-<!-- checkout includes -->
-<path d="M705 780 H905" class="dep"/>
-<rect x="760" y="751" width="118" height="28" rx="5" class="tag"/><text x="819" y="771" text-anchor="middle" class="t s">&lt;&lt;include&gt;&gt;</text>
-<path d="M690 810 V850 H1100" class="dep"/>
-<rect x="840" y="821" width="118" height="28" rx="5" class="tag"/><text x="899" y="841" text-anchor="middle" class="t s">&lt;&lt;include&gt;&gt;</text>
+<path d="M655 775 H1045" class="dep"/>
+<rect x="815" y="780" width="105" height="26" rx="5" class="tag"/><text x="868" y="798" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
 
-<text x="325" y="900" class="t s">Línea continua = asociación. Flecha discontinua = include/extend. Las flechas apuntan al caso incluido o al caso base, según la notación.</text>
+<text x="300" y="825" class="t small">Asociación: línea continua · Inclusión obligatoria: flecha discontinua &lt;&lt;include&gt;&gt;</text>
 </svg>
