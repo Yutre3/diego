@@ -1,73 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
 <defs>
-<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#3b4650"/></marker>
-<style>
-.t{font-family:Arial,sans-serif;fill:#24343d}.title{font-size:28px;font-weight:700}.label{font-size:18px}.small{font-size:14px}
-.sys{fill:#fff;stroke:#60717b;stroke-width:2}.uc{fill:#fff;stroke:#3d6674;stroke-width:2}.assoc{stroke:#667984;stroke-width:2;fill:none}.dep{stroke:#3b4650;stroke-width:2;stroke-dasharray:8 6;fill:none;marker-end:url(#arrow)}.tag{fill:#fff;stroke:#d8e1e5;stroke-width:1}
-</style>
+  <marker id="arrow" markerWidth="11" markerHeight="11" refX="10" refY="3.5" orient="auto"><path d="M0,0 L0,7 L10,3.5 z" fill="#42535d"/></marker>
+  <style>
+    .t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:32px;font-weight:700}.sub{font-size:16px;fill:#6d7b83}.label{font-size:19px}.small{font-size:14px}
+    .system{fill:#fff;stroke:#60727c;stroke-width:2.5}.uc{fill:#fff;stroke:#2f6f78;stroke-width:2.3}
+    .assoc{stroke:#5f727d;stroke-width:2.2;fill:none}.dep{stroke:#42535d;stroke-width:2.2;stroke-dasharray:10 7;fill:none;marker-end:url(#arrow)}
+    .tag{fill:#fff;stroke:#d9e1e5;stroke-width:1}.actor{stroke:#465861;stroke-width:2.2;fill:none}
+  </style>
 </defs>
-<rect width="1400" height="900" fill="#fff"/>
-<text x="700" y="42" text-anchor="middle" class="t title">Diagrama de casos de uso - Hotel Duerme Bien</text>
+<rect width="1600" height="1120" fill="#ffffff"/>
+<text x="800" y="48" text-anchor="middle" class="t title">Diagrama de casos de uso</text>
+<text x="800" y="77" text-anchor="middle" class="t sub">Sistema de Pasajeros · Hotel Duerme Bien</text>
 
-<rect x="270" y="75" width="1060" height="765" rx="10" class="sys"/>
-<text x="300" y="112" class="t label" font-weight="700">Sistema de Pasajeros</text>
+<rect x="300" y="115" width="1210" height="900" rx="14" class="system"/>
+<text x="330" y="155" class="t label" font-weight="700">Sistema de Pasajeros</text>
 
-<!-- Actores -->
-<g>
-  <circle cx="120" cy="205" r="22" fill="#fff" stroke="#46555f" stroke-width="2"/>
-  <line x1="120" y1="227" x2="120" y2="295" class="assoc"/>
-  <line x1="82" y1="252" x2="158" y2="252" class="assoc"/>
-  <line x1="120" y1="295" x2="88" y2="345" class="assoc"/>
-  <line x1="120" y1="295" x2="152" y2="345" class="assoc"/>
-  <text x="120" y="380" text-anchor="middle" class="t label">Administrador</text>
-</g>
-<g>
-  <circle cx="120" cy="555" r="22" fill="#fff" stroke="#46555f" stroke-width="2"/>
-  <line x1="120" y1="577" x2="120" y2="645" class="assoc"/>
-  <line x1="82" y1="602" x2="158" y2="602" class="assoc"/>
-  <line x1="120" y1="645" x2="88" y2="695" class="assoc"/>
-  <line x1="120" y1="645" x2="152" y2="695" class="assoc"/>
-  <text x="120" y="730" text-anchor="middle" class="t label">Encargado</text>
-</g>
+<!-- ACTOR ADMIN -->
+<circle cx="135" cy="260" r="26" class="actor"/>
+<line x1="135" y1="286" x2="135" y2="370" class="actor"/>
+<line x1="88" y1="320" x2="182" y2="320" class="actor"/>
+<line x1="135" y1="370" x2="96" y2="430" class="actor"/>
+<line x1="135" y1="370" x2="174" y2="430" class="actor"/>
+<text x="135" y="470" text-anchor="middle" class="t label">Administrador</text>
 
-<!-- Casos de uso principales -->
-<ellipse cx="520" cy="165" rx="145" ry="42" class="uc"/><text x="520" y="172" text-anchor="middle" class="t label">Gestionar habitaciones</text>
-<ellipse cx="520" cy="260" rx="135" ry="42" class="uc"/><text x="520" y="267" text-anchor="middle" class="t label">Gestionar usuarios</text>
-<ellipse cx="520" cy="355" rx="130" ry="42" class="uc"/><text x="520" y="362" text-anchor="middle" class="t label">Generar informes</text>
+<!-- ACTOR ENCARGADO -->
+<circle cx="135" cy="665" r="26" class="actor"/>
+<line x1="135" y1="691" x2="135" y2="775" class="actor"/>
+<line x1="88" y1="725" x2="182" y2="725" class="actor"/>
+<line x1="135" y1="775" x2="96" y2="835" class="actor"/>
+<line x1="135" y1="775" x2="174" y2="835" class="actor"/>
+<text x="135" y="875" text-anchor="middle" class="t label">Encargado de hotel</text>
 
-<ellipse cx="520" cy="475" rx="135" ry="42" class="uc"/><text x="520" y="482" text-anchor="middle" class="t label">Registrar huésped</text>
-<ellipse cx="520" cy="570" rx="135" ry="42" class="uc"/><text x="520" y="577" text-anchor="middle" class="t label">Gestionar reserva</text>
-<ellipse cx="520" cy="665" rx="135" ry="42" class="uc"/><text x="520" y="672" text-anchor="middle" class="t label">Realizar check-in</text>
-<ellipse cx="520" cy="760" rx="135" ry="42" class="uc"/><text x="520" y="767" text-anchor="middle" class="t label">Realizar check-out</text>
+<!-- ADMIN CASES -->
+<ellipse cx="585" cy="245" rx="165" ry="50" class="uc"/><text x="585" y="252" text-anchor="middle" class="t label">Gestionar habitaciones</text>
+<ellipse cx="585" cy="360" rx="155" ry="50" class="uc"/><text x="585" y="367" text-anchor="middle" class="t label">Gestionar usuarios</text>
+<ellipse cx="585" cy="475" rx="145" ry="50" class="uc"/><text x="585" y="482" text-anchor="middle" class="t label">Generar informes</text>
 
-<!-- Casos incluidos -->
-<ellipse cx="1030" cy="570" rx="165" ry="42" class="uc"/><text x="1030" y="577" text-anchor="middle" class="t label">Consultar disponibilidad</text>
-<ellipse cx="1030" cy="665" rx="145" ry="42" class="uc"/><text x="1030" y="672" text-anchor="middle" class="t label">Asignar habitación</text>
-<ellipse cx="930" cy="760" rx="125" ry="42" class="uc"/><text x="930" y="767" text-anchor="middle" class="t label">Calcular costo</text>
-<ellipse cx="1180" cy="760" rx="135" ry="42" class="uc"/><text x="1180" y="767" text-anchor="middle" class="t label">Liberar habitación</text>
+<!-- ENCARGADO CASES -->
+<ellipse cx="585" cy="620" rx="150" ry="50" class="uc"/><text x="585" y="627" text-anchor="middle" class="t label">Registrar huésped</text>
+<ellipse cx="585" cy="745" rx="150" ry="50" class="uc"/><text x="585" y="752" text-anchor="middle" class="t label">Gestionar reserva</text>
+<ellipse cx="585" cy="870" rx="150" ry="50" class="uc"/><text x="585" y="877" text-anchor="middle" class="t label">Realizar check-in</text>
+<ellipse cx="585" cy="955" rx="150" ry="50" class="uc"/><text x="585" y="962" text-anchor="middle" class="t label">Realizar check-out</text>
 
-<!-- Asociaciones -->
-<line x1="158" y1="245" x2="375" y2="175" class="assoc"/>
-<line x1="158" y1="260" x2="385" y2="260" class="assoc"/>
-<line x1="158" y1="278" x2="390" y2="345" class="assoc"/>
+<!-- INCLUDED CASES -->
+<ellipse cx="1115" cy="745" rx="180" ry="50" class="uc"/><text x="1115" y="752" text-anchor="middle" class="t label">Consultar disponibilidad</text>
+<ellipse cx="1115" cy="870" rx="155" ry="50" class="uc"/><text x="1115" y="877" text-anchor="middle" class="t label">Asignar habitación</text>
+<ellipse cx="1020" cy="970" rx="140" ry="46" class="uc"/><text x="1020" y="977" text-anchor="middle" class="t label">Calcular costo</text>
+<ellipse cx="1320" cy="970" rx="150" ry="46" class="uc"/><text x="1320" y="977" text-anchor="middle" class="t label">Liberar habitación</text>
 
-<line x1="158" y1="600" x2="385" y2="485" class="assoc"/>
-<line x1="158" y1="610" x2="385" y2="570" class="assoc"/>
-<line x1="158" y1="620" x2="385" y2="665" class="assoc"/>
-<line x1="158" y1="630" x2="385" y2="760" class="assoc"/>
+<!-- ASSOCIATIONS ADMIN -->
+<path d="M182 320 H280 V245 H420" class="assoc"/>
+<path d="M182 330 H300 V360 H430" class="assoc"/>
+<path d="M182 340 H280 V475 H440" class="assoc"/>
 
-<!-- Include, en corredores separados -->
-<path d="M655 570 H865" class="dep"/>
-<rect x="705" y="542" width="105" height="26" rx="5" class="tag"/><text x="758" y="560" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
+<!-- ASSOCIATIONS ENCARGADO -->
+<path d="M182 725 H300 V620 H435" class="assoc"/>
+<path d="M182 735 H320 V745 H435" class="assoc"/>
+<path d="M182 745 H300 V870 H435" class="assoc"/>
+<path d="M182 755 H280 V955 H435" class="assoc"/>
 
-<path d="M655 665 H885" class="dep"/>
-<rect x="710" y="637" width="105" height="26" rx="5" class="tag"/><text x="763" y="655" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
+<!-- INCLUDE RESERVA -->
+<path d="M735 745 H935" class="dep"/>
+<rect x="790" y="709" width="125" height="28" rx="6" class="tag"/>
+<text x="852" y="729" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
 
-<path d="M655 745 H805" class="dep"/>
-<rect x="680" y="717" width="105" height="26" rx="5" class="tag"/><text x="733" y="735" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
+<!-- INCLUDE CHECKIN -->
+<path d="M735 870 H960" class="dep"/>
+<rect x="800" y="834" width="125" height="28" rx="6" class="tag"/>
+<text x="862" y="854" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
 
-<path d="M655 775 H1045" class="dep"/>
-<rect x="815" y="780" width="105" height="26" rx="5" class="tag"/><text x="868" y="798" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
+<!-- INCLUDE CHECKOUT COST -->
+<path d="M735 945 H855 V970 H880" class="dep"/>
+<rect x="755" y="914" width="125" height="28" rx="6" class="tag"/>
+<text x="817" y="934" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
 
-<text x="300" y="825" class="t small">Asociación: línea continua · Inclusión obligatoria: flecha discontinua &lt;&lt;include&gt;&gt;</text>
+<!-- INCLUDE CHECKOUT RELEASE -->
+<path d="M735 970 H1170" class="dep"/>
+<rect x="930" y="934" width="125" height="28" rx="6" class="tag"/>
+<text x="992" y="954" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
+
+<rect x="325" y="1035" width="1160" height="54" rx="10" fill="#f7f9fa" stroke="#dce4e8"/>
+<text x="350" y="1068" class="t small">Línea continua: asociación actor–caso de uso · Flecha discontinua: relación &lt;&lt;include&gt;&gt; hacia la función necesaria.</text>
 </svg>
