@@ -39,6 +39,8 @@ Entrega final basada en el **Caso 6** y en la estructura trabajada en los archiv
 
 ## 5. Diseño de interfaz: Sketch → Wireframe → Mockup → Prototipo
 
+Las cuatro etapas usan la misma estructura de pantalla para mantener continuidad visual. El mockup y el prototipo comparten un tema hotelero sobrio, con navegación clara, tarjetas separadas y mayor espacio entre elementos.
+
 ### 5.1 Sketch
 
 ![Sketch](entrega-final/05-sketch.svg)
@@ -65,7 +67,7 @@ Entrega final basada en el **Caso 6** y en la estructura trabajada en los archiv
 
 Código editable: [HTML](prototipo-web/prototipo-funcional.html) · [CSS](prototipo-web/prototipo-final.css) · [JavaScript](prototipo-web/prototipo-final.js)
 
-El prototipo permite registrar habitaciones, huéspedes y usuarios; consultar disponibilidad; crear y cancelar reservas; realizar check-in y check-out; calcular un costo demostrativo por pasajero; liberar habitaciones y consultar informes de ocupación y reservas.
+El prototipo permite registrar habitaciones, huéspedes y usuarios; consultar disponibilidad; crear reservas; realizar check-in y check-out; calcular un costo demostrativo por pasajero; liberar habitaciones y consultar informes de ocupación y reservas.
 
 ## 6. Kanban
 
