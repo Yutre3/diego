@@ -53,7 +53,7 @@ Las funciones generales corresponden a las funciones clave y procesos UA3 defini
 El caso identifica ambos tipos de usuario, pero no entrega una matriz detallada de permisos.
 
 ### 2.4 Entorno operativo
-El Caso 6 no define sistema operativo, lenguaje de programación, motor de base de datos ni plataforma obligatoria. Para el prototipo se utiliza una interfaz web como decisión técnica de demostración.
+El Caso 6 no define sistema operativo, lenguaje de programación, motor de base de datos ni plataforma obligatoria. Para demostrar la solución se utiliza un prototipo web desarrollado con **HTML, CSS y JavaScript**. Esta es una decisión de prototipado y no un requisito impuesto por el Caso 6.
 
 ### 2.5 Restricciones
 - La ocupación y disponibilidad deben mantenerse coherentes.
@@ -164,3 +164,12 @@ La solución responde al problema declarado: reemplazar planillas Excel y concen
 3. Datos obligatorios del huésped.
 4. Reglas exactas de modificación/cancelación de reservas.
 5. Permisos detallados de los perfiles.
+
+
+## 10. Herramientas utilizadas en la entrega
+
+- Los diagramas siguen la notación explicada en los materiales de casos de uso, flujo y modelado.
+- Las fuentes `.drawio` se incluyen para que los diagramas puedan editarse visualmente; **Draw.io se usa como editor elegido para esta entrega**, no como herramienta obligatoria indicada por el Caso 6.
+- La interfaz sigue el proceso **Sketch → Wireframe → Mockup → Prototipo** trabajado en el material de diseño.
+- El prototipo funcional está construido con **HTML, CSS y JavaScript**.
+- El proyecto se aloja en **GitHub** y es compatible con el flujo de trabajo **Git + GitHub + VS Code** descrito en el material de clase.
