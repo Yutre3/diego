@@ -1,69 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
-<defs>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto">
-    <path d="M0,0 L0,7 L9,3.5 z" fill="#40515b"/>
-  </marker>
-  <marker id="triangle" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto">
-    <path d="M0,0 L12,6 L0,12 z" fill="#fff" stroke="#596a73" stroke-width="1.4"/>
-  </marker>
-  <style>
-    .t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.label{font-size:18px}.small{font-size:13px}
-    .sys{fill:#fff;stroke:#63747d;stroke-width:2.2}.uc{fill:#fff;stroke:#2e747b;stroke-width:2.1}
-    .actor{stroke:#4b5d66;stroke-width:2.1;fill:none}.assoc{stroke:#5c6f78;stroke-width:2;fill:none}
-    .inc{stroke:#40515b;stroke-width:2;stroke-dasharray:9 6;fill:none;marker-end:url(#arrow)}
-    .gen{stroke:#596a73;stroke-width:2;fill:none;marker-end:url(#triangle)}
-  </style>
-</defs>
+<defs><style>
+.t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.label{font-size:18px}.small{font-size:13px}
+.sys{fill:#fff;stroke:#63747d;stroke-width:2.2}.uc{fill:#fff;stroke:#2e747b;stroke-width:2.1}
+.actor{stroke:#4b5d66;stroke-width:2.1;fill:none}.assoc{stroke:#5c6f78;stroke-width:2;fill:none}
+.rolebox{fill:#f7f9fa;stroke:#dbe3e7;stroke-width:1.2}
+</style></defs>
 <rect width="1500" height="980" fill="#fff"/>
 <text x="750" y="48" text-anchor="middle" class="t title">Diagrama de casos de uso</text>
-<rect x="340" y="95" width="1080" height="820" rx="12" class="sys"/>
-<text x="370" y="135" class="t label" font-weight="700">Sistema de Pasajeros</text>
 
-<circle cx="155" cy="445" r="23" class="actor"/>
-<line x1="155" y1="468" x2="155" y2="535" class="actor"/>
-<line x1="115" y1="495" x2="195" y2="495" class="actor"/>
-<line x1="155" y1="535" x2="122" y2="582" class="actor"/>
-<line x1="155" y1="535" x2="188" y2="582" class="actor"/>
-<text x="155" y="618" text-anchor="middle" class="t label">Usuario del hotel</text>
+<rect x="330" y="95" width="1100" height="820" rx="12" class="sys"/>
+<text x="360" y="135" class="t label" font-weight="700">Sistema de Pasajeros</text>
 
-<circle cx="80" cy="175" r="20" class="actor"/>
-<line x1="80" y1="195" x2="80" y2="250" class="actor"/>
-<line x1="47" y1="216" x2="113" y2="216" class="actor"/>
-<line x1="80" y1="250" x2="52" y2="292" class="actor"/>
-<line x1="80" y1="250" x2="108" y2="292" class="actor"/>
-<text x="80" y="325" text-anchor="middle" class="t label">Administrador</text>
+<!-- Actor -->
+<circle cx="145" cy="430" r="24" class="actor"/>
+<line x1="145" y1="454" x2="145" y2="525" class="actor"/>
+<line x1="102" y1="482" x2="188" y2="482" class="actor"/>
+<line x1="145" y1="525" x2="110" y2="575" class="actor"/>
+<line x1="145" y1="525" x2="180" y2="575" class="actor"/>
+<text x="145" y="615" text-anchor="middle" class="t label">Personal del hotel</text>
+<rect x="55" y="635" width="180" height="58" rx="8" class="rolebox"/>
+<text x="145" y="659" text-anchor="middle" class="t small">Perfiles definidos:</text>
+<text x="145" y="681" text-anchor="middle" class="t small" font-weight="700">Administrador · Encargado</text>
 
-<circle cx="80" cy="705" r="20" class="actor"/>
-<line x1="80" y1="725" x2="80" y2="780" class="actor"/>
-<line x1="47" y1="746" x2="113" y2="746" class="actor"/>
-<line x1="80" y1="780" x2="52" y2="822" class="actor"/>
-<line x1="80" y1="780" x2="108" y2="822" class="actor"/>
-<text x="80" y="855" text-anchor="middle" class="t label">Encargado</text>
+<!-- Casos columna 1 -->
+<ellipse cx="600" cy="185" rx="165" ry="45" class="uc"/><text x="600" y="192" text-anchor="middle" class="t label">Registrar habitaciones</text>
+<ellipse cx="600" cy="300" rx="200" ry="45" class="uc"/><text x="600" y="307" text-anchor="middle" class="t label">Registrar huésped y asignar habitación</text>
+<ellipse cx="600" cy="415" rx="180" ry="45" class="uc"/><text x="600" y="422" text-anchor="middle" class="t label">Consultar ocupación y disponibilidad</text>
+<ellipse cx="600" cy="530" rx="155" ry="45" class="uc"/><text x="600" y="537" text-anchor="middle" class="t label">Gestionar reservas</text>
+<ellipse cx="600" cy="645" rx="195" ry="45" class="uc"/><text x="600" y="652" text-anchor="middle" class="t label">Realizar check-in y asignar habitación</text>
 
-<path d="M115 300 L145 420" class="gen"/>
-<path d="M115 700 L145 600" class="gen"/>
+<!-- Casos columna 2 -->
+<ellipse cx="1110" cy="240" rx="195" ry="45" class="uc"/><text x="1110" y="247" text-anchor="middle" class="t label">Realizar check-out y liberar habitación</text>
+<ellipse cx="1110" cy="385" rx="165" ry="45" class="uc"/><text x="1110" y="392" text-anchor="middle" class="t label">Calcular costo por pasajero</text>
+<ellipse cx="1110" cy="530" rx="150" ry="45" class="uc"/><text x="1110" y="537" text-anchor="middle" class="t label">Gestionar usuarios</text>
+<ellipse cx="1110" cy="675" rx="205" ry="45" class="uc"/><text x="1110" y="682" text-anchor="middle" class="t label">Generar informes de ocupación y reservas</text>
 
-<ellipse cx="610" cy="190" rx="165" ry="46" class="uc"/><text x="610" y="197" text-anchor="middle" class="t label">Gestionar habitaciones</text>
-<ellipse cx="610" cy="305" rx="155" ry="46" class="uc"/><text x="610" y="312" text-anchor="middle" class="t label">Registrar huésped</text>
-<ellipse cx="610" cy="420" rx="155" ry="46" class="uc"/><text x="610" y="427" text-anchor="middle" class="t label">Gestionar reservas</text>
-<ellipse cx="610" cy="550" rx="190" ry="46" class="uc"/><text x="610" y="557" text-anchor="middle" class="t label">Realizar check-in y asignar habitación</text>
-<ellipse cx="610" cy="680" rx="190" ry="46" class="uc"/><text x="610" y="687" text-anchor="middle" class="t label">Realizar check-out y liberar habitación</text>
-<ellipse cx="610" cy="795" rx="150" ry="46" class="uc"/><text x="610" y="802" text-anchor="middle" class="t label">Gestionar usuarios</text>
-<ellipse cx="610" cy="885" rx="140" ry="42" class="uc"/><text x="610" y="892" text-anchor="middle" class="t label">Generar informes</text>
+<!-- Asociaciones sin cruces -->
+<path d="M188 482 H285 V185 H435" class="assoc"/>
+<path d="M188 492 H300 V300 H400" class="assoc"/>
+<path d="M188 502 H315 V415 H420" class="assoc"/>
+<path d="M188 512 H315 V530 H445" class="assoc"/>
+<path d="M188 522 H300 V645 H405" class="assoc"/>
 
-<ellipse cx="1110" cy="420" rx="175" ry="46" class="uc"/><text x="1110" y="427" text-anchor="middle" class="t label">Consultar disponibilidad</text>
-<ellipse cx="1110" cy="680" rx="135" ry="46" class="uc"/><text x="1110" y="687" text-anchor="middle" class="t label">Calcular costo</text>
-
-<path d="M195 495 H300 V190 H445" class="assoc"/>
-<path d="M195 505 H315 V305 H455" class="assoc"/>
-<path d="M195 515 H330 V420 H455" class="assoc"/>
-<path d="M195 525 H330 V550 H420" class="assoc"/>
-<path d="M195 535 H315 V680 H420" class="assoc"/>
-<path d="M195 545 H300 V795 H460" class="assoc"/>
-<path d="M195 555 H285 V885 H470" class="assoc"/>
-
-<path d="M765 420 H935" class="inc"/>
-<text x="850" y="405" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
-<path d="M800 680 H975" class="inc"/>
-<text x="885" y="665" text-anchor="middle" class="t small">&lt;&lt;include&gt;&gt;</text>
+<path d="M188 532 H265 V760 H875 V240 H915" class="assoc"/>
+<path d="M188 542 H250 V790 H900 V385 H945" class="assoc"/>
+<path d="M188 552 H235 V820 H920 V530 H960" class="assoc"/>
+<path d="M188 562 H220 V850 H900 V675 H905" class="assoc"/>
 </svg>
