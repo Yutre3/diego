@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hotel Duerme Bien · Prototipo funcional</title>
+<title>Hotel Duerme Bien · Sistema de Pasajeros</title>
 <link rel="stylesheet" href="prototipo-final.css">
 </head>
 <body>
@@ -12,12 +12,11 @@
     <div class="brand-mark">DB</div>
     <div>
       <h1>Hotel Duerme Bien</h1>
-      <p>Sistema de Pasajeros · Prototipo funcional</p>
+      <p>Sistema de Pasajeros</p>
     </div>
   </div>
   <div class="top-actions">
-    <span class="prototype-badge">Prototipo académico</span>
-    <button id="resetDemo" class="ghost" type="button">Reiniciar demostración</button>
+    <button id="resetDemo" class="ghost" type="button">Reiniciar datos</button>
   </div>
 </header>
 
@@ -37,10 +36,6 @@
       <button class="nav-btn" data-view="usuarios"><span>♙</span>Usuarios</button>
       <button class="nav-btn" data-view="informes"><span>≡</span>Informes</button>
     </nav>
-    <div class="sidebar-note">
-      <strong>Caso 6</strong>
-      <span>Hotel Duerme Bien</span>
-    </div>
   </aside>
 
   <main class="content">
@@ -187,7 +182,7 @@
           <div class="card-heading"><div><span class="eyebrow">PROCESO</span><h3>Registrar check-out</h3></div></div>
           <label>Estadía<select id="checkoutStay"></select></label>
           <label>Valor demostrativo por pasajero<input id="costPerGuest" type="number" min="0" value="30000"></label>
-          <div class="info-box">El Caso 6 exige cálculo automático por pasajero, pero no define una tarifa exacta. Este valor se usa solo para demostrar el funcionamiento.</div>
+          <div class="info-box">Valor de demostración: la tarifa exacta no está definida.</div>
           <label>Total calculado<input id="checkoutTotal" readonly></label>
           <button class="primary-btn">Confirmar check-out</button>
           <p class="message" id="checkoutMessage"></p>
@@ -201,7 +196,7 @@
 
     <section class="view" id="view-usuarios">
       <div class="page-heading">
-        <div><span class="eyebrow">ACCESO</span><h2>Usuarios</h2><p>Gestión demostrativa de los perfiles definidos en el Caso 6.</p></div>
+        <div><span class="eyebrow">ACCESO</span><h2>Usuarios</h2><p>Gestión de perfiles del sistema.</p></div>
       </div>
       <div class="two-col">
         <form id="userForm" class="card form-card">
