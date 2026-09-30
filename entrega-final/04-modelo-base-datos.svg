@@ -1,52 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
-<defs><style>
-.t{font-family:Arial,sans-serif;fill:#24343d}.title{font-size:28px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:15px}
-.box{fill:#fff;stroke:#465863;stroke-width:2}.head{fill:#eef3f5;stroke:#465863;stroke-width:2}.rel{stroke:#536773;stroke-width:2.2;fill:none}.badge{fill:#fff;stroke:#d6e0e4}
-</style></defs>
-<rect width="1400" height="900" fill="#fff"/>
-<text x="700" y="42" text-anchor="middle" class="t title">Modelo de base de datos - Hotel Duerme Bien</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050">
+<defs>
+  <style>
+    .t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:32px;font-weight:700}.sub{font-size:16px;fill:#6e7c84}.h{font-size:19px;font-weight:700}.f{font-size:15px}.small{font-size:14px}
+    .box{fill:#fff;stroke:#4c606b;stroke-width:2.2}.head{fill:#eef3f5;stroke:#4c606b;stroke-width:2.2}.rel{stroke:#526873;stroke-width:2.4;fill:none}
+    .badge{fill:#fff;stroke:#d9e2e6;stroke-width:1}.note{fill:#f8fafb;stroke:#dce4e8}
+  </style>
+</defs>
+<rect width="1600" height="1050" fill="#fff"/>
+<text x="800" y="48" text-anchor="middle" class="t title">Modelo de base de datos</text>
+<text x="800" y="77" text-anchor="middle" class="t sub">Entidades principales del Sistema de Pasajeros</text>
 
-<!-- Usuario, separado -->
-<rect x="80" y="130" width="250" height="190" rx="8" class="box"/><rect x="80" y="130" width="250" height="42" rx="8" class="head"/>
-<text x="205" y="158" text-anchor="middle" class="t h">Usuario</text>
-<text x="105" y="205" class="t f">PK id_usuario</text><text x="105" y="235" class="t f">nombre</text><text x="105" y="265" class="t f">rol</text><text x="105" y="295" class="t f">activo *</text>
+<!-- HUESPED -->
+<rect x="120" y="170" width="300" height="205" rx="10" class="box"/>
+<rect x="120" y="170" width="300" height="48" rx="10" class="head"/>
+<text x="270" y="201" text-anchor="middle" class="t h">Huésped</text>
+<text x="150" y="255" class="t f">PK  id_huesped</text>
+<text x="150" y="288" class="t f">nombre *</text>
+<text x="150" y="321" class="t f">otros_datos *</text>
 
-<!-- Huesped -->
-<rect x="575" y="100" width="250" height="175" rx="8" class="box"/><rect x="575" y="100" width="250" height="42" rx="8" class="head"/>
-<text x="700" y="128" text-anchor="middle" class="t h">Huésped</text>
-<text x="600" y="175" class="t f">PK id_huesped</text><text x="600" y="205" class="t f">nombre *</text><text x="600" y="235" class="t f">otros_datos *</text>
+<!-- HABITACION -->
+<rect x="650" y="145" width="300" height="235" rx="10" class="box"/>
+<rect x="650" y="145" width="300" height="48" rx="10" class="head"/>
+<text x="800" y="176" text-anchor="middle" class="t h">Habitación</text>
+<text x="680" y="230" class="t f">PK  id_habitacion</text>
+<text x="680" y="263" class="t f">capacidad</text>
+<text x="680" y="296" class="t f">orientacion</text>
+<text x="680" y="329" class="t f">estado *</text>
 
-<!-- Habitacion -->
-<rect x="1070" y="100" width="250" height="205" rx="8" class="box"/><rect x="1070" y="100" width="250" height="42" rx="8" class="head"/>
-<text x="1195" y="128" text-anchor="middle" class="t h">Habitación</text>
-<text x="1095" y="175" class="t f">PK id_habitacion</text><text x="1095" y="205" class="t f">capacidad</text><text x="1095" y="235" class="t f">orientación</text><text x="1095" y="265" class="t f">estado *</text>
+<!-- USUARIO -->
+<rect x="1180" y="170" width="300" height="205" rx="10" class="box"/>
+<rect x="1180" y="170" width="300" height="48" rx="10" class="head"/>
+<text x="1330" y="201" text-anchor="middle" class="t h">Usuario</text>
+<text x="1210" y="255" class="t f">PK  id_usuario</text>
+<text x="1210" y="288" class="t f">nombre</text>
+<text x="1210" y="321" class="t f">rol</text>
 
-<!-- Reserva -->
-<rect x="410" y="500" width="330" height="255" rx="8" class="box"/><rect x="410" y="500" width="330" height="42" rx="8" class="head"/>
-<text x="575" y="528" text-anchor="middle" class="t h">Reserva</text>
-<text x="435" y="575" class="t f">PK id_reserva</text><text x="435" y="605" class="t f">FK id_huesped</text><text x="435" y="635" class="t f">FK id_habitacion</text><text x="435" y="665" class="t f">fecha_entrada *</text><text x="435" y="695" class="t f">fecha_salida *</text><text x="435" y="725" class="t f">estado *</text>
+<!-- RESERVA -->
+<rect x="310" y="615" width="380" height="300" rx="10" class="box"/>
+<rect x="310" y="615" width="380" height="48" rx="10" class="head"/>
+<text x="500" y="646" text-anchor="middle" class="t h">Reserva</text>
+<text x="340" y="700" class="t f">PK  id_reserva</text>
+<text x="340" y="733" class="t f">FK  id_huesped</text>
+<text x="340" y="766" class="t f">FK  id_habitacion</text>
+<text x="340" y="799" class="t f">fecha_entrada *</text>
+<text x="340" y="832" class="t f">fecha_salida *</text>
+<text x="340" y="865" class="t f">cantidad_pasajeros *</text>
+<text x="340" y="898" class="t f">estado *</text>
 
-<!-- Estadia -->
-<rect x="880" y="500" width="330" height="285" rx="8" class="box"/><rect x="880" y="500" width="330" height="42" rx="8" class="head"/>
-<text x="1045" y="528" text-anchor="middle" class="t h">Estadía</text>
-<text x="905" y="575" class="t f">PK id_estadia</text><text x="905" y="605" class="t f">FK id_huesped</text><text x="905" y="635" class="t f">FK id_habitacion</text><text x="905" y="665" class="t f">checkin</text><text x="905" y="695" class="t f">checkout</text><text x="905" y="725" class="t f">cantidad_pasajeros *</text><text x="905" y="755" class="t f">costo_total *</text>
+<!-- ESTADIA -->
+<rect x="900" y="630" width="380" height="270" rx="10" class="box"/>
+<rect x="900" y="630" width="380" height="48" rx="10" class="head"/>
+<text x="1090" y="661" text-anchor="middle" class="t h">Estadía</text>
+<text x="930" y="715" class="t f">PK  id_estadia</text>
+<text x="930" y="748" class="t f">FK  id_reserva</text>
+<text x="930" y="781" class="t f">checkin</text>
+<text x="930" y="814" class="t f">checkout</text>
+<text x="930" y="847" class="t f">costo_total *</text>
 
-<!-- Relaciones sin cruces -->
-<path d="M650 275 V390 H575 V500" class="rel"/>
-<rect x="560" y="376" width="70" height="26" rx="5" class="badge"/><text x="595" y="394" text-anchor="middle" class="t f">1 : N</text>
+<!-- RELATIONS -->
+<path d="M270 375 V500 H450 V615" class="rel"/>
+<rect x="290" y="474" width="76" height="28" rx="6" class="badge"/>
+<text x="328" y="494" text-anchor="middle" class="t small">1 : N</text>
 
-<path d="M750 275 V390 H1045 V500" class="rel"/>
-<rect x="850" y="376" width="70" height="26" rx="5" class="badge"/><text x="885" y="394" text-anchor="middle" class="t f">1 : N</text>
+<path d="M800 380 V520 H550 V615" class="rel"/>
+<rect x="700" y="506" width="76" height="28" rx="6" class="badge"/>
+<text x="738" y="526" text-anchor="middle" class="t small">1 : N</text>
 
-<path d="M1140 305 V420 H690 V500" class="rel"/>
-<rect x="1030" y="407" width="70" height="26" rx="5" class="badge"/><text x="1065" y="425" text-anchor="middle" class="t f">1 : N</text>
+<path d="M690 770 H900" class="rel"/>
+<rect x="755" y="736" width="96" height="28" rx="6" class="badge"/>
+<text x="803" y="756" text-anchor="middle" class="t small">1 : 0..1</text>
 
-<path d="M1240 305 V450 H1120 V500" class="rel"/>
-<rect x="1160" y="438" width="70" height="26" rx="5" class="badge"/><text x="1195" y="456" text-anchor="middle" class="t f">1 : N</text>
+<!-- USUARIO contextual note -->
+<path d="M1330 375 V500 H1180" class="rel"/>
+<rect x="1210" y="463" width="190" height="34" rx="7" class="note"/>
+<text x="1305" y="485" text-anchor="middle" class="t small">perfiles del sistema</text>
 
-<!-- Usuario administra registros, sin forzar FK no definida -->
-<path d="M205 320 V400 H410" class="rel"/>
-<text x="230" y="385" class="t f">gestiona</text>
-
-<text x="80" y="850" class="t f">* Campo de diseño del prototipo pendiente de validación porque el Caso 6 no lo define de forma exacta.</text>
+<rect x="120" y="965" width="1360" height="55" rx="10" class="note"/>
+<text x="145" y="999" class="t small">* Campos de diseño necesarios para el prototipo y pendientes de validación cuando el Caso 6 no define su detalle exacto.</text>
 </svg>
