@@ -1,79 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1020" viewBox="0 0 1600 1020">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
 <defs>
-  <style>
-    .t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:31px;font-weight:700}.sub{font-size:15px;fill:#6e7c84}.h{font-size:19px;font-weight:700}.f{font-size:15px}.small{font-size:13px}
-    .box{fill:#fff;stroke:#4c606b;stroke-width:2.2}.head{fill:#eef3f5;stroke:#4c606b;stroke-width:2.2}.rel{stroke:#526873;stroke-width:2.3;fill:none}
-    .badge{fill:#fff;stroke:#d9e2e6;stroke-width:1}.note{fill:#f8fafb;stroke:#dce4e8;stroke-width:1.2}
-  </style>
+<style>
+.t{font-family:Arial,sans-serif;fill:#25343c}.title{font-size:31px;font-weight:700}.sub{font-size:15px;fill:#6d7b83}.h{font-size:18px;font-weight:700}.f{font-size:14px}.small{font-size:13px}
+.box{fill:#fff;stroke:#4f626c;stroke-width:2.1}.head{fill:#eef3f5;stroke:#4f626c;stroke-width:2.1}.rel{stroke:#536a74;stroke-width:2.2;fill:none}.badge{fill:#fff;stroke:#d9e2e6}.note{fill:#f8fafb;stroke:#dde5e9}
+</style>
 </defs>
-<rect width="1600" height="1020" fill="#fff"/>
-<text x="800" y="46" text-anchor="middle" class="t title">Modelo de base de datos</text>
-<text x="800" y="73" text-anchor="middle" class="t sub">Sistema de Pasajeros · Hotel Duerme Bien</text>
+<rect width="1500" height="980" fill="#fff"/>
+<text x="750" y="44" text-anchor="middle" class="t title">Modelo de base de datos</text>
+<text x="750" y="72" text-anchor="middle" class="t sub">Sistema de Pasajeros · Hotel Duerme Bien</text>
 
-<rect x="90" y="150" width="300" height="205" rx="8" class="box"/>
-<rect x="90" y="150" width="300" height="48" rx="8" class="head"/>
-<text x="240" y="181" text-anchor="middle" class="t h">Huésped</text>
-<text x="120" y="235" class="t f">PK  id_huesped</text>
-<text x="120" y="268" class="t f">nombre *</text>
-<text x="120" y="301" class="t f">otros_datos *</text>
+<rect x="90" y="145" width="300" height="190" rx="9" class="box"/><rect x="90" y="145" width="300" height="46" rx="9" class="head"/><text x="240" y="175" text-anchor="middle" class="t h">Huésped</text><text x="120" y="228" class="t f">PK  id_huesped</text><text x="120" y="260" class="t f">nombre</text><text x="120" y="292" class="t f">otros_datos *</text>
+<rect x="600" y="130" width="300" height="220" rx="9" class="box"/><rect x="600" y="130" width="300" height="46" rx="9" class="head"/><text x="750" y="160" text-anchor="middle" class="t h">Habitación</text><text x="630" y="213" class="t f">PK  id_habitacion</text><text x="630" y="245" class="t f">capacidad</text><text x="630" y="277" class="t f">orientación</text><text x="630" y="309" class="t f">estado *</text>
+<rect x="1110" y="145" width="300" height="190" rx="9" class="box"/><rect x="1110" y="145" width="300" height="46" rx="9" class="head"/><text x="1260" y="175" text-anchor="middle" class="t h">Usuario</text><text x="1140" y="228" class="t f">PK  id_usuario</text><text x="1140" y="260" class="t f">nombre</text><text x="1140" y="292" class="t f">rol</text>
 
-<rect x="480" y="150" width="300" height="235" rx="8" class="box"/>
-<rect x="480" y="150" width="300" height="48" rx="8" class="head"/>
-<text x="630" y="181" text-anchor="middle" class="t h">Habitación</text>
-<text x="510" y="235" class="t f">PK  id_habitacion</text>
-<text x="510" y="268" class="t f">capacidad</text>
-<text x="510" y="301" class="t f">orientacion</text>
-<text x="510" y="334" class="t f">estado *</text>
+<rect x="260" y="560" width="380" height="300" rx="9" class="box"/><rect x="260" y="560" width="380" height="46" rx="9" class="head"/><text x="450" y="590" text-anchor="middle" class="t h">Reserva</text><text x="290" y="642" class="t f">PK  id_reserva</text><text x="290" y="674" class="t f">FK  id_huesped</text><text x="290" y="706" class="t f">FK  id_habitacion</text><text x="290" y="738" class="t f">fecha_entrada *</text><text x="290" y="770" class="t f">fecha_salida *</text><text x="290" y="802" class="t f">cantidad_pasajeros *</text><text x="290" y="834" class="t f">estado *</text>
+<rect x="850" y="590" width="380" height="250" rx="9" class="box"/><rect x="850" y="590" width="380" height="46" rx="9" class="head"/><text x="1040" y="620" text-anchor="middle" class="t h">Estadía</text><text x="880" y="672" class="t f">PK  id_estadia</text><text x="880" y="704" class="t f">FK  id_reserva</text><text x="880" y="736" class="t f">checkin</text><text x="880" y="768" class="t f">checkout</text><text x="880" y="800" class="t f">costo_total *</text>
 
-<rect x="1170" y="150" width="300" height="205" rx="8" class="box"/>
-<rect x="1170" y="150" width="300" height="48" rx="8" class="head"/>
-<text x="1320" y="181" text-anchor="middle" class="t h">Usuario</text>
-<text x="1200" y="235" class="t f">PK  id_usuario</text>
-<text x="1200" y="268" class="t f">nombre</text>
-<text x="1200" y="301" class="t f">rol</text>
+<path d="M240 335 V450 H400 V560" class="rel"/><rect x="265" y="424" width="72" height="27" rx="5" class="badge"/><text x="301" y="443" text-anchor="middle" class="t small">1 : N</text>
+<path d="M750 350 V470 H500 V560" class="rel"/><rect x="640" y="444" width="72" height="27" rx="5" class="badge"/><text x="676" y="463" text-anchor="middle" class="t small">1 : N</text>
+<path d="M640 710 H850" class="rel"/><rect x="700" y="676" width="92" height="27" rx="5" class="badge"/><text x="746" y="695" text-anchor="middle" class="t small">1 : 0..1</text>
 
-<rect x="250" y="610" width="390" height="300" rx="8" class="box"/>
-<rect x="250" y="610" width="390" height="48" rx="8" class="head"/>
-<text x="445" y="641" text-anchor="middle" class="t h">Reserva</text>
-<text x="280" y="695" class="t f">PK  id_reserva</text>
-<text x="280" y="728" class="t f">FK  id_huesped</text>
-<text x="280" y="761" class="t f">FK  id_habitacion</text>
-<text x="280" y="794" class="t f">fecha_entrada *</text>
-<text x="280" y="827" class="t f">fecha_salida *</text>
-<text x="280" y="860" class="t f">cantidad_pasajeros *</text>
-<text x="280" y="893" class="t f">estado *</text>
-
-<rect x="790" y="610" width="410" height="300" rx="8" class="box"/>
-<rect x="790" y="610" width="410" height="48" rx="8" class="head"/>
-<text x="995" y="641" text-anchor="middle" class="t h">Estadía</text>
-<text x="820" y="695" class="t f">PK  id_estadia</text>
-<text x="820" y="728" class="t f">FK  id_huesped</text>
-<text x="820" y="761" class="t f">FK  id_habitacion</text>
-<text x="820" y="794" class="t f">FK  id_reserva *</text>
-<text x="820" y="827" class="t f">checkin</text>
-<text x="820" y="860" class="t f">checkout</text>
-<text x="820" y="893" class="t f">costo_total *</text>
-
-<path d="M240 355 V490 H380 V610" class="rel"/>
-<rect x="260" y="470" width="76" height="28" rx="6" class="badge"/><text x="298" y="490" text-anchor="middle" class="t small">1 : N</text>
-
-<path d="M630 385 V510 H510 V610" class="rel"/>
-<rect x="565" y="492" width="76" height="28" rx="6" class="badge"/><text x="603" y="512" text-anchor="middle" class="t small">1 : N</text>
-
-<path d="M300 355 V450 H860 V610" class="rel"/>
-<rect x="660" y="432" width="76" height="28" rx="6" class="badge"/><text x="698" y="452" text-anchor="middle" class="t small">1 : N</text>
-
-<path d="M700 385 V470 H1010 V610" class="rel"/>
-<rect x="820" y="452" width="76" height="28" rx="6" class="badge"/><text x="858" y="472" text-anchor="middle" class="t small">1 : N</text>
-
-<path d="M640 760 H790" class="rel"/>
-<rect x="672" y="726" width="115" height="28" rx="6" class="badge"/><text x="730" y="746" text-anchor="middle" class="t small">0..1 : 0..1</text>
-
-<rect x="1170" y="430" width="300" height="112" rx="8" class="note"/>
-<text x="1200" y="464" class="t small" font-weight="700">Cuentas de acceso</text>
-<text x="1200" y="494" class="t small">El Caso 6 exige usuarios</text>
-<text x="1200" y="518" class="t small">Administrador y Encargado.</text>
-
-<rect x="90" y="950" width="1380" height="46" rx="8" class="note"/>
-<text x="115" y="979" class="t small">* Campos cuyo detalle exacto no está definido en el Caso 6.</text>
+<rect x="1040" y="395" width="440" height="86" rx="9" class="note"/><text x="1260" y="425" text-anchor="middle" class="t small">Usuario almacena los perfiles Administrador y Encargado.</text><text x="1260" y="450" text-anchor="middle" class="t small">No se agrega una FK a Reserva/Estadía porque el Caso 6</text><text x="1260" y="473" text-anchor="middle" class="t small">no indica qué operaciones deben guardar al usuario responsable.</text>
+<rect x="90" y="900" width="1320" height="50" rx="9" class="note"/><text x="115" y="931" class="t small">* Campos de diseño necesarios para el prototipo cuando el Caso 6 no define su detalle exacto.</text>
 </svg>
