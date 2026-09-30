@@ -1,55 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1120" viewBox="0 0 1200 1120">
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1080" viewBox="0 0 1180 1080">
 <defs>
 <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3.5" orient="auto"><path d="M0,0 L0,7 L9,3.5 z" fill="#33454f"/></marker>
 <style>
 .t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.label{font-size:18px}.small{font-size:14px}
-.line{stroke:#33454f;stroke-width:2.6;fill:none;marker-end:url(#arrow)}
-.term{fill:#fff;stroke:#9b5e5e;stroke-width:2.3}.proc{fill:#fff;stroke:#2e747b;stroke-width:2.3}.dec{fill:#fff;stroke:#63747d;stroke-width:2.3}
+.line{stroke:#33454f;stroke-width:2.4;fill:none;marker-end:url(#arrow)}
+.term{fill:#fff;stroke:#9b5e5e;stroke-width:2.2}.proc{fill:#fff;stroke:#2e747b;stroke-width:2.2}.dec{fill:#fff;stroke:#63747d;stroke-width:2.2}
 </style></defs>
-<rect width="1200" height="1120" fill="#fff"/>
-<text x="600" y="48" text-anchor="middle" class="t title">Diagrama de flujo · Check-in</text>
+<rect width="1180" height="1080" fill="#fff"/>
+<text x="590" y="48" text-anchor="middle" class="t title">Diagrama de flujo · Check-in</text>
 
-<rect x="480" y="85" width="240" height="60" rx="30" class="term"/><text x="600" y="123" text-anchor="middle" class="t label">Inicio</text>
-<line x1="600" y1="145" x2="600" y2="195" class="line"/>
+<rect x="470" y="85" width="240" height="58" rx="29" class="term"/>
+<text x="590" y="122" text-anchor="middle" class="t label">Inicio</text>
+<line x1="590" y1="143" x2="590" y2="190" class="line"/>
 
-<rect x="420" y="195" width="360" height="76" rx="9" class="proc"/>
-<text x="600" y="228" text-anchor="middle" class="t label">Registrar o seleccionar huésped</text>
-<text x="600" y="252" text-anchor="middle" class="t small">para iniciar el ingreso</text>
-<line x1="600" y1="271" x2="600" y2="320" class="line"/>
+<rect x="410" y="190" width="360" height="72" rx="9" class="proc"/>
+<text x="590" y="221" text-anchor="middle" class="t label">Registrar o seleccionar huésped</text>
+<text x="590" y="245" text-anchor="middle" class="t small">para iniciar el ingreso</text>
+<line x1="590" y1="262" x2="590" y2="307" class="line"/>
 
-<rect x="435" y="320" width="330" height="74" rx="9" class="proc"/>
-<text x="600" y="352" text-anchor="middle" class="t label">Consultar disponibilidad</text>
-<text x="600" y="376" text-anchor="middle" class="t small">de habitaciones</text>
-<line x1="600" y1="394" x2="600" y2="445" class="line"/>
+<rect x="425" y="307" width="330" height="72" rx="9" class="proc"/>
+<text x="590" y="338" text-anchor="middle" class="t label">Consultar disponibilidad</text>
+<text x="590" y="362" text-anchor="middle" class="t small">de habitaciones</text>
+<line x1="590" y1="379" x2="590" y2="430" class="line"/>
 
-<polygon points="600,445 775,522 600,599 425,522" class="dec"/>
-<text x="600" y="516" text-anchor="middle" class="t label">¿Hay habitación</text>
-<text x="600" y="541" text-anchor="middle" class="t label">disponible?</text>
+<polygon points="590,430 755,503 590,576 425,503" class="dec"/>
+<text x="590" y="497" text-anchor="middle" class="t label">¿Hay habitación</text>
+<text x="590" y="522" text-anchor="middle" class="t label">disponible?</text>
 
-<!-- No -->
-<line x1="775" y1="522" x2="870" y2="522" class="line"/>
-<text x="810" y="502" class="t small">No</text>
-<rect x="870" y="485" width="270" height="74" rx="9" class="proc"/>
-<text x="1005" y="516" text-anchor="middle" class="t small">Informar que no hay</text>
-<text x="1005" y="540" text-anchor="middle" class="t small">disponibilidad</text>
-<line x1="1005" y1="559" x2="1005" y2="625" class="line"/>
-<rect x="925" y="625" width="160" height="54" rx="27" class="term"/><text x="1005" y="660" text-anchor="middle" class="t label">Fin</text>
+<!-- Rama No, a la izquierda -->
+<line x1="425" y1="503" x2="300" y2="503" class="line"/>
+<text x="355" y="484" class="t small">No</text>
+<rect x="60" y="466" width="240" height="74" rx="9" class="proc"/>
+<text x="180" y="497" text-anchor="middle" class="t small">Informar que no hay</text>
+<text x="180" y="521" text-anchor="middle" class="t small">disponibilidad</text>
+<line x1="180" y1="540" x2="180" y2="615" class="line"/>
+<rect x="105" y="615" width="150" height="52" rx="26" class="term"/>
+<text x="180" y="649" text-anchor="middle" class="t label">Fin</text>
 
-<!-- Sí -->
-<line x1="600" y1="599" x2="600" y2="655" class="line"/>
-<text x="625" y="630" class="t small">Sí</text>
-<rect x="455" y="655" width="290" height="70" rx="9" class="proc"/>
-<text x="600" y="698" text-anchor="middle" class="t label">Asignar habitación</text>
-<line x1="600" y1="725" x2="600" y2="780" class="line"/>
+<!-- Rama Sí, completamente vertical -->
+<line x1="590" y1="576" x2="590" y2="635" class="line"/>
+<text x="615" y="610" class="t small">Sí</text>
 
-<rect x="445" y="780" width="310" height="70" rx="9" class="proc"/>
-<text x="600" y="823" text-anchor="middle" class="t label">Registrar check-in</text>
-<line x1="600" y1="850" x2="600" y2="905" class="line"/>
+<rect x="445" y="635" width="290" height="68" rx="9" class="proc"/>
+<text x="590" y="677" text-anchor="middle" class="t label">Asignar habitación</text>
+<line x1="590" y1="703" x2="590" y2="755" class="line"/>
 
-<rect x="420" y="905" width="360" height="76" rx="9" class="proc"/>
-<text x="600" y="937" text-anchor="middle" class="t label">Actualizar ocupación</text>
-<text x="600" y="962" text-anchor="middle" class="t small">habitación ocupada</text>
-<line x1="600" y1="981" x2="600" y2="1025" class="line"/>
+<rect x="435" y="755" width="310" height="68" rx="9" class="proc"/>
+<text x="590" y="797" text-anchor="middle" class="t label">Registrar check-in</text>
+<line x1="590" y1="823" x2="590" y2="875" class="line"/>
 
-<rect x="520" y="1020" width="160" height="54" rx="27" class="term"/><text x="600" y="1055" text-anchor="middle" class="t label">Fin</text>
+<rect x="410" y="875" width="360" height="72" rx="9" class="proc"/>
+<text x="590" y="906" text-anchor="middle" class="t label">Actualizar ocupación</text>
+<text x="590" y="930" text-anchor="middle" class="t small">habitación ocupada</text>
+<line x1="590" y1="947" x2="590" y2="990" class="line"/>
+
+<rect x="515" y="990" width="150" height="52" rx="26" class="term"/>
+<text x="590" y="1024" text-anchor="middle" class="t label">Fin</text>
 </svg>
