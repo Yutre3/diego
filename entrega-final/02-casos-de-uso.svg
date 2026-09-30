@@ -1,47 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="940" viewBox="0 0 1500 940">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
 <defs><style>
 .t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.label{font-size:18px}.small{font-size:13px}
-.sys{fill:#fff;stroke:#63747d;stroke-width:2.2}.uc{fill:#fff;stroke:#2e747b;stroke-width:2.1}
-.actor{stroke:#4b5d66;stroke-width:2.1;fill:none}.assoc{stroke:#667983;stroke-width:1.9;fill:none}.role{fill:#f7f9fa;stroke:#d9e2e6;stroke-width:1.2}
+.sys{fill:#fff;stroke:#63747d;stroke-width:2}.uc{fill:#fff;stroke:#2e747b;stroke-width:2}
+.actor{stroke:#4b5d66;stroke-width:2;fill:none}.assoc{stroke:#5f727b;stroke-width:1.8;fill:none}
+.note{fill:#f7f9fa;stroke:#dbe3e7;stroke-width:1.1}
 </style></defs>
-<rect width="1500" height="940" fill="#fff"/>
-<text x="750" y="46" text-anchor="middle" class="t title">Diagrama de casos de uso</text>
+<rect width="1400" height="980" fill="#fff"/>
+<text x="700" y="48" text-anchor="middle" class="t title">Diagrama de casos de uso</text>
 
-<rect x="340" y="90" width="1100" height="790" rx="12" class="sys"/>
-<text x="370" y="130" class="t label" font-weight="700">Sistema de Pasajeros</text>
+<rect x="360" y="90" width="960" height="820" rx="12" class="sys"/>
+<text x="390" y="130" class="t label" font-weight="700">Sistema de Pasajeros</text>
 
 <!-- Actor -->
-<circle cx="150" cy="400" r="24" class="actor"/>
-<line x1="150" y1="424" x2="150" y2="495" class="actor"/>
-<line x1="108" y1="452" x2="192" y2="452" class="actor"/>
-<line x1="150" y1="495" x2="116" y2="545" class="actor"/>
-<line x1="150" y1="495" x2="184" y2="545" class="actor"/>
-<text x="150" y="585" text-anchor="middle" class="t label">Personal del hotel</text>
-<rect x="62" y="610" width="176" height="58" rx="8" class="role"/>
-<text x="150" y="634" text-anchor="middle" class="t small">Perfiles:</text>
-<text x="150" y="656" text-anchor="middle" class="t small" font-weight="700">Administrador · Encargado</text>
+<circle cx="135" cy="410" r="24" class="actor"/>
+<line x1="135" y1="434" x2="135" y2="505" class="actor"/>
+<line x1="95" y1="462" x2="175" y2="462" class="actor"/>
+<line x1="135" y1="505" x2="102" y2="555" class="actor"/>
+<line x1="135" y1="505" x2="168" y2="555" class="actor"/>
+<text x="135" y="595" text-anchor="middle" class="t label">Personal del hotel</text>
+<rect x="47" y="620" width="176" height="58" rx="8" class="note"/>
+<text x="135" y="644" text-anchor="middle" class="t small">Perfiles:</text>
+<text x="135" y="666" text-anchor="middle" class="t small" font-weight="700">Administrador · Encargado</text>
 
-<!-- Use cases -->
-<ellipse cx="590" cy="190" rx="165" ry="44" class="uc"/><text x="590" y="197" text-anchor="middle" class="t label">Registrar habitaciones</text>
-<ellipse cx="590" cy="320" rx="200" ry="44" class="uc"/><text x="590" y="327" text-anchor="middle" class="t label">Registrar huésped y asignar habitación</text>
-<ellipse cx="590" cy="450" rx="180" ry="44" class="uc"/><text x="590" y="457" text-anchor="middle" class="t label">Controlar ocupación y disponibilidad</text>
-<ellipse cx="590" cy="580" rx="160" ry="44" class="uc"/><text x="590" y="587" text-anchor="middle" class="t label">Gestionar reservas</text>
-<ellipse cx="590" cy="710" rx="190" ry="44" class="uc"/><text x="590" y="717" text-anchor="middle" class="t label">Realizar check-in y asignar habitación</text>
+<!-- Casos en una sola columna -->
+<ellipse cx="790" cy="175" rx="170" ry="42" class="uc"/><text x="790" y="182" text-anchor="middle" class="t label">Registrar habitaciones</text>
+<ellipse cx="790" cy="260" rx="205" ry="42" class="uc"/><text x="790" y="267" text-anchor="middle" class="t label">Registrar huésped y asignar habitación</text>
+<ellipse cx="790" cy="345" rx="200" ry="42" class="uc"/><text x="790" y="352" text-anchor="middle" class="t label">Controlar ocupación y disponibilidad</text>
+<ellipse cx="790" cy="430" rx="160" ry="42" class="uc"/><text x="790" y="437" text-anchor="middle" class="t label">Gestionar reservas</text>
+<ellipse cx="790" cy="515" rx="155" ry="42" class="uc"/><text x="790" y="522" text-anchor="middle" class="t label">Realizar check-in</text>
+<ellipse cx="790" cy="600" rx="155" ry="42" class="uc"/><text x="790" y="607" text-anchor="middle" class="t label">Realizar check-out</text>
+<ellipse cx="790" cy="685" rx="175" ry="42" class="uc"/><text x="790" y="692" text-anchor="middle" class="t label">Calcular costo por pasajero</text>
+<ellipse cx="790" cy="770" rx="150" ry="42" class="uc"/><text x="790" y="777" text-anchor="middle" class="t label">Gestionar usuarios</text>
+<ellipse cx="790" cy="855" rx="220" ry="42" class="uc"/><text x="790" y="862" text-anchor="middle" class="t label">Generar informes de ocupación y reservas</text>
 
-<ellipse cx="1110" cy="220" rx="195" ry="44" class="uc"/><text x="1110" y="227" text-anchor="middle" class="t label">Realizar check-out y liberar habitación</text>
-<ellipse cx="1110" cy="365" rx="165" ry="44" class="uc"/><text x="1110" y="372" text-anchor="middle" class="t label">Calcular costo por pasajero</text>
-<ellipse cx="1110" cy="510" rx="150" ry="44" class="uc"/><text x="1110" y="517" text-anchor="middle" class="t label">Gestionar usuarios</text>
-<ellipse cx="1110" cy="655" rx="205" ry="44" class="uc"/><text x="1110" y="662" text-anchor="middle" class="t label">Generar informes de ocupación y reservas</text>
-
-<!-- Associations: direct fan -->
-<line x1="192" y1="452" x2="425" y2="190" class="assoc"/>
-<line x1="192" y1="452" x2="390" y2="320" class="assoc"/>
-<line x1="192" y1="452" x2="410" y2="450" class="assoc"/>
-<line x1="192" y1="452" x2="430" y2="580" class="assoc"/>
-<line x1="192" y1="452" x2="400" y2="710" class="assoc"/>
-
-<line x1="192" y1="452" x2="915" y2="220" class="assoc"/>
-<line x1="192" y1="452" x2="945" y2="365" class="assoc"/>
-<line x1="192" y1="452" x2="960" y2="510" class="assoc"/>
-<line x1="192" y1="452" x2="905" y2="655" class="assoc"/>
+<!-- Asociaciones en corredores separados para evitar cruces -->
+<path d="M175 462 H300 V175 H620" class="assoc"/>
+<path d="M175 462 H315 V260 H585" class="assoc"/>
+<path d="M175 462 H330 V345 H590" class="assoc"/>
+<path d="M175 462 H345 V430 H630" class="assoc"/>
+<path d="M175 462 H360 V515 H635" class="assoc"/>
+<path d="M175 462 H345 V600 H635" class="assoc"/>
+<path d="M175 462 H330 V685 H615" class="assoc"/>
+<path d="M175 462 H315 V770 H640" class="assoc"/>
+<path d="M175 462 H300 V855 H570" class="assoc"/>
 </svg>
