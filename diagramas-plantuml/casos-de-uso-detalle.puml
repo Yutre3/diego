@@ -1,43 +1,49 @@
 @startuml
-' Hotel Duerme Bien · Comportamientos reutilizados y opción sin reserva
+' Hotel Duerme Bien - Dependencias obligatorias y alternativa sin reserva
 left to right direction
-skinparam backgroundColor #FFFFFF
+skinparam backgroundColor White
 skinparam shadowing false
-skinparam packageStyle rectangle
 skinparam defaultFontName Arial
-skinparam ArrowColor #647E8B
-skinparam UsecaseBackgroundColor #F3FAFC
-skinparam UsecaseBorderColor #397D8F
-skinparam ActorBorderColor #397D8F
-skinparam RectangleBorderColor #869DAA
+skinparam packageStyle rectangle
 skinparam linetype ortho
-skinparam nodesep 65
-skinparam ranksep 80
-
-title Hotel Duerme Bien - Relaciones entre casos de uso
+skinparam nodesep 80
+skinparam ranksep 100
+skinparam ActorBorderColor #397D8F
+skinparam UsecaseBackgroundColor #F4FAFC
+skinparam UsecaseBorderColor #397D8F
+skinparam RectangleBorderColor #869DAA
+skinparam ArrowColor #647E8B
+title Hotel Duerme Bien - Relaciones include y extend
 actor "Encargado de hotel" as Enc
-rectangle "Sistema de Pasajeros - Operaciones" {
- usecase "Realizar check-in" as CI
- usecase "Consultar disponibilidad" as DISP
- usecase "Asignar habitación" as ASIG
- usecase "Ingreso directo\n(sin reserva)" as DIRECTO
- usecase "Realizar check-out" as CO
- usecase "Calcular costo\npor pasajero" as COSTO
- usecase "Liberar habitación" as LIB
+rectangle "Sistema de Pasajeros" {
+ usecase "Crear reserva" as Crear
+ usecase "Realizar check-in" as Checkin
+ usecase "Realizar check-out" as Checkout
+ usecase "Consultar disponibilidad" as Disponible
+ usecase "Identificar o registrar huésped" as Identificar
+ usecase "Asignar habitación" as Asignar
+ usecase "Ingreso sin reserva" as Directo
+ usecase "Calcular costo por pasajero" as Calcular
+ usecase "Liberar habitación" as Liberar
 }
-Enc -- CI
-Enc -- CO
-CI ..> DISP : <<include>>
-CI ..> ASIG : <<include>>
-DIRECTO ..> CI : <<extend>>\n[si no existe reserva]
-CO ..> COSTO : <<include>>
-CO ..> LIB : <<include>>
-note bottom of CI
-El check-in requiere una habitación disponible,
-identificar al huésped y asignar habitación.
+Enc -- Crear
+Enc -- Checkin
+Enc -- Checkout
+
+Crear ..> Disponible : <<include>>
+Checkin ..> Disponible : <<include>>
+Checkin ..> Identificar : <<include>>
+Checkin ..> Asignar : <<include>>
+Directo ..> Checkin : <<extend>>\n[sin reserva previa]
+Checkout ..> Calcular : <<include>>
+Checkout ..> Liberar : <<include>>
+
+note bottom of Crear
+  Crear una reserva requiere verificar disponibilidad.
+  Modificarla también necesita validar nuevos datos.
 end note
-note bottom of CO
-El check-out calcula los costos y libera la habitación.
-La fórmula exacta aún debe validarse.
+note bottom of Directo
+  El ingreso sin reserva es una alternativa
+  prevista en el caso de estudio.
 end note
 @enduml
