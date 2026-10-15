@@ -1,0 +1,59 @@
+@startuml
+' Hotel Duerme Bien - Procesos principales y errores relevantes
+skinparam backgroundColor White
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam ArrowColor #647E8B
+skinparam ActivityBorderColor #397D8F
+skinparam ActivityBackgroundColor #F3FAFC
+skinparam ActivityFontColor #254455
+skinparam DiamondBorderColor #587E91
+skinparam DiamondBackgroundColor #FFFDF4
+skinparam DefaultTextAlignment center
+title Hotel Duerme Bien - Flujo general del sistema
+start
+:Seleccionar usuario / iniciar sesión;
+if (¿Acceso autorizado?) then (Sí)
+  repeat
+    :Menú de operaciones;
+    if (¿Gestionar reserva?) then (Sí)
+      :Ingresar habitación y fechas;
+      :Consultar disponibilidad;
+      if (¿Fechas y capacidad válidas?) then (Sí)
+        :Crear o actualizar reserva;
+      else (No)
+        :Informar conflicto y corregir datos;
+      endif
+    elseif (¿Realizar check-in?) then (Sí)
+      :Buscar reserva o elegir ingreso directo;
+      :Identificar o registrar huéspedes;
+      :Comprobar disponibilidad y capacidad;
+      if (¿Habitación disponible?) then (Sí)
+        :Asignar habitación y abrir estadía;
+        :Marcar habitación ocupada;
+      else (No)
+        :Mostrar conflicto y elegir otra habitación;
+      endif
+    elseif (¿Realizar check-out?) then (Sí)
+      :Seleccionar estadía activa;
+      :Calcular costo por pasajero y total;
+      if (¿Salida confirmada?) then (Sí)
+        :Cerrar estadía y registrar salida;
+        :Liberar habitación;
+      else (No)
+        :Mantener estadía activa y revisar datos;
+      endif
+    else (Administración)
+      :Gestionar habitaciones, usuarios o informes;
+      note right
+        Estas operaciones dependen del perfil.
+        La matriz exacta de permisos es propuesta.
+      end note
+    endif
+  repeat while (¿Otra operación?) is (Sí) not (No)
+  :Cerrar sesión;
+else (No)
+  :Mostrar acceso denegado;
+endif
+stop
+@enduml
