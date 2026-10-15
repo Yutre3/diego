@@ -1,78 +1,85 @@
-# Sistema de Pasajeros — Hotel Duerme Bien
+# Hotel Duerme Bien
 
-**Caso 6 · Entrega de modelado y prototipo**
+**Sistema de Pasajeros · Caso 6**
+
+Proyecto de análisis, diseño y prototipo para administrar habitaciones, huéspedes, reservas, check-in y check-out.
 
 ## 1. Informe de requerimientos
 
-[Leer informe de requerimientos](entrega-final/01-requerimientos.md)
+[Ver informe completo](entrega-final/01-requerimientos.md)
 
 ## 2. Diagrama de casos de uso
 
-### Casos de uso generales
+### Vista general
 
-![Diagrama de casos de uso general](entrega-final/02-casos-de-uso.svg)
+<p align="center">
+  <a href="entrega-final/02-casos-de-uso.svg"><img src="entrega-final/02-casos-de-uso.svg" alt="Casos de uso generales: Encargado y Administrador" width="820"></a>
+</p>
 
-### Casos de uso detallados — include y extend
+### Relaciones «include» y «extend»
 
-![Diagrama de relaciones entre casos de uso](entrega-final/02-casos-de-uso-detalle.svg)
+<p align="center">
+  <a href="entrega-final/02-casos-de-uso-detalle.svg"><img src="entrega-final/02-casos-de-uso-detalle.svg" alt="Casos de uso detallados y sus relaciones UML" width="820"></a>
+</p>
 
-## 3. Diagrama de flujo
+## 3. Diagramas de flujo
 
-### Flujo general
+### Flujo general del sistema
 
-![Flujo general del sistema](entrega-final/03-flujo-general.svg)
+<p align="center">
+  <a href="entrega-final/03-flujo-general.svg"><img src="entrega-final/03-flujo-general.svg" alt="Flujo general de reservas, check-in, check-out y administración" width="820"></a>
+</p>
 
 ### Flujo de check-in
 
-![Flujo de check-in](entrega-final/03-diagrama-flujo.svg)
+<p align="center">
+  <a href="entrega-final/03-diagrama-flujo.svg"><img src="entrega-final/03-diagrama-flujo.svg" alt="Flujo del proceso de check-in" width="820"></a>
+</p>
 
 ## 4. Modelo de base de datos
 
-![Modelo de base de datos](entrega-final/04-modelo-base-datos.svg)
+<p align="center">
+  <a href="entrega-final/04-modelo-base-datos.svg"><img src="entrega-final/04-modelo-base-datos.svg" alt="Modelo de datos con entidades, claves y relaciones" width="820"></a>
+</p>
 
 ## 5. Sketch
 
-![Sketch](entrega-final/05-sketch.svg)
+<p align="center">
+  <a href="entrega-final/05-sketch.svg"><img src="entrega-final/05-sketch.svg" alt="Sketch de la interfaz del hotel" width="820"></a>
+</p>
 
 ## 6. Wireframe
 
-![Wireframe](entrega-final/06-wireframe.svg)
+<p align="center">
+  <a href="entrega-final/06-wireframe.svg"><img src="entrega-final/06-wireframe.svg" alt="Wireframe de la interfaz del hotel" width="820"></a>
+</p>
 
 ## 7. Mockup
 
-![Mockup](entrega-final/07-mockup.svg)
+<p align="center">
+  <a href="entrega-final/07-mockup.svg"><img src="entrega-final/07-mockup.svg" alt="Mockup de la interfaz del hotel" width="820"></a>
+</p>
 
 ## 8. Prototipo funcional
 
-![Vista del prototipo](entrega-final/08-prototipo-funcional.svg)
+<p align="center">
+  <a href="https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html"><img src="entrega-final/08-prototipo-funcional.svg" alt="Vista del prototipo web del Hotel Duerme Bien" width="820"></a>
+</p>
 
-[Abrir prototipo funcional](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)
+*Haz clic en la imagen para abrir el prototipo interactivo.*
 
 ## 9. Kanban
 
-| Por hacer / pendiente de validación | En revisión | Terminado |
-| --- | --- | --- |
-| Incorporar retroalimentación real de Evaluación 1 cuando sea entregada | Revisar coherencia final entre requerimientos, diagramas y prototipo | Informe IEEE 830 adaptado |
-| Validar fórmula exacta del costo por pasajero |  | Diagrama de casos de uso |
-| Validar datos obligatorios del huésped |  | Diagrama de flujo de check-in |
-| Validar permisos detallados por perfil |  | Diagrama de base de datos |
-| Confirmar reglas exactas para modificar/cancelar reservas |  | Sketch |
-|  |  | Wireframe |
-|  |  | Mockup |
-|  |  | Prototipo funcional navegable |
-|  |  | Funciones de habitaciones, huéspedes y reservas |
-|  |  | Funciones de check-in y check-out |
-|  |  | Gestión de usuarios en el prototipo |
-|  |  | Informes de ocupación y reservas |
+[Ver planificación del proyecto](entrega-final/09-kanban.md)
 
 ## 10. Demo
 
-[Abrir demo en Figma](https://www.figma.com/proto/7kS6Wuh6nwt2lcl4bB1w50/Hotel-Duerme-Bien?node-id=6-180&starting-point-node-id=6%3A180&scaling=contain)
+[Abrir demo del diseño en Figma](https://www.figma.com/proto/7kS6Wuh6nwt2lcl4bB1w50/Hotel-Duerme-Bien?node-id=6-180&starting-point-node-id=6%3A180&scaling=contain)
 
 ## 11. Informe y defensa
 
-[Ver documento para explicar el proyecto](docs/16_DOCUMENTO_MAESTRO_PARA_EXPLICAR.md)
+[Ver material para presentar el proyecto](docs/16_DOCUMENTO_MAESTRO_PARA_EXPLICAR.md)
 
 ---
 
-*Los diagramas representan el diseño académico del sistema. Los permisos detallados y la fórmula definitiva del costo deben validarse.*
+*Este repositorio presenta el modelado académico del sistema. La fórmula definitiva de costos y los permisos detallados de usuario quedan sujetos a validación.*
