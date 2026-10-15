@@ -1,0 +1,60 @@
+@startuml
+' Hotel Duerme Bien · Diagrama general de casos de uso
+left to right direction
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam defaultFontName Arial
+skinparam ArrowColor #647E8B
+skinparam ActorBorderColor #397D8F
+skinparam ActorFontColor #244758
+skinparam UsecaseBackgroundColor #F4FAFC
+skinparam UsecaseBorderColor #397D8F
+skinparam UsecaseFontColor #254455
+skinparam RectangleBorderColor #869DAA
+skinparam RectangleBackgroundColor #FFFFFF
+skinparam linetype ortho
+skinparam nodesep 65
+skinparam ranksep 85
+hide stereotype
+
+title Hotel Duerme Bien - Casos de uso
+actor "Encargado de hotel" as Enc
+actor "Administrador" as Admin
+
+rectangle "Sistema de Pasajeros" {
+  package "Operación diaria" {
+    usecase "Iniciar sesión" as LOGIN
+    usecase "Consultar ocupación\ny disponibilidad" as DISP
+    usecase "Gestionar reservas" as RES
+    usecase "Registrar huésped" as HUES
+    usecase "Realizar check-in" as CI
+    usecase "Realizar check-out" as CO
+  }
+  package "Administración" {
+    usecase "Gestionar habitaciones" as HAB
+    usecase "Gestionar usuarios" as USU
+    usecase "Generar informes de\nocupación y reservas" as INF
+  }
+}
+
+Enc -- LOGIN
+Enc -- DISP
+Enc -- RES
+Enc -- HUES
+Enc -- CI
+Enc -- CO
+Admin -- HAB
+Admin -- USU
+Admin -- INF
+Admin --|> Enc
+
+note bottom of RES
+  Gestionar reservas: crear, modificar y cancelar.
+  La disponibilidad se valida cuando corresponde.
+end note
+note bottom of CI
+  Detalle de <<include>> y <<extend>>
+  en el diagrama complementario.
+end note
+@enduml
