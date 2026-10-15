@@ -1,0 +1,82 @@
+@startuml
+' Hotel Duerme Bien - Modelo relacional propuesto (7 entidades)
+hide circle
+skinparam backgroundColor White
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam linetype ortho
+skinparam EntityBorderColor #397D8F
+skinparam EntityBackgroundColor #F5FAFC
+skinparam ArrowColor #647E8B
+skinparam nodesep 78
+skinparam ranksep 90
+title Hotel Duerme Bien - Modelo de base de datos
+entity "USUARIO" as USUARIO {
+  * id_usuario : int <<PK>>
+  --
+  nombre : varchar
+  rol : varchar
+  activo : boolean
+}
+entity "HABITACION" as HABITACION {
+  * id_habitacion : int <<PK>>
+  --
+  numero : varchar <<UNIQUE>>
+  capacidad : int
+  orientacion : varchar
+  tarifa_noche : decimal <<PROPUESTA>>
+}
+entity "HUESPED" as HUESPED {
+  * id_huesped : int <<PK>>
+  --
+  documento : varchar <<UNIQUE>>
+  nombre : varchar
+  apellido : varchar
+}
+entity "RESERVA" as RESERVA {
+  * id_reserva : int <<PK>>
+  --
+  id_habitacion : int <<FK>>
+  id_usuario : int <<FK, PROPUESTA>>
+  fecha_entrada : date
+  fecha_salida : date
+  cantidad_pasajeros : int <<PROPUESTA>>
+  estado : varchar
+}
+entity "ESTADIA" as ESTADIA {
+  * id_estadia : int <<PK>>
+  --
+  id_habitacion : int <<FK>>
+  id_reserva : int <<FK, NULL, UNIQUE>>
+  checkin : datetime
+  checkout : datetime <<NULL>>
+  estado : varchar
+  costo_total : decimal <<PROPUESTA>>
+}
+entity "RESERVA_HUESPED" as RH {
+  * id_reserva : int <<PK, FK>>
+  * id_huesped : int <<PK, FK>>
+}
+entity "ESTADIA_HUESPED" as EH {
+  * id_estadia : int <<PK, FK>>
+  * id_huesped : int <<PK, FK>>
+  --
+  costo_individual : decimal <<PROPUESTA>>
+}
+USUARIO ||--o{ RESERVA : registra
+HABITACION ||--o{ RESERVA : recibe
+HABITACION ||--o{ ESTADIA : aloja
+RESERVA |o--o| ESTADIA : origina
+RESERVA ||--o{ RH : contiene
+HUESPED ||--o{ RH : participa
+ESTADIA ||--|{ EH : contiene
+HUESPED ||--o{ EH : participa
+note bottom of ESTADIA
+  Check-in sin reserva: id_reserva puede ser NULL.
+  La habitación se libera al cerrar la estadía.
+end note
+note bottom of EH
+  Los importes son propuestos y su
+  fórmula exacta debe validarse.
+end note
+@enduml
