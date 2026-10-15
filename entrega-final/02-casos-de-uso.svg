@@ -1,46 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1400" viewBox="0 0 1500 1400" role="img" aria-labelledby="uml-title uml-desc">
+<title id="uml-title">Diagrama de casos de uso — Hotel Duerme Bien</title>
+<desc id="uml-desc">Casos de uso divididos en operación del hotel y administración, con nueve óvalos distribuidos uniformemente y asociaciones claras entre cada actor y las funcionalidades de su perfil.</desc>
 <defs><style>
-.t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.label{font-size:18px}.small{font-size:13px}
-.sys{fill:#fff;stroke:#63747d;stroke-width:2}.uc{fill:#fff;stroke:#2e747b;stroke-width:2}
-.actor{stroke:#4b5d66;stroke-width:2;fill:none}.assoc{stroke:#5f727b;stroke-width:1.8;fill:none}
-.note{fill:#f7f9fa;stroke:#dbe3e7;stroke-width:1.1}
+  .heading{font:700 32px Arial,Helvetica,sans-serif;fill:#183c4c}
+  .subtitle{font:17px Arial,Helvetica,sans-serif;fill:#647985}
+  .boundary{fill:#fff;stroke:#637c88;stroke-width:2}
+  .system-title{font:700 22px Arial,Helvetica,sans-serif;fill:#244959}
+  .group-heading{font:700 16px Arial,Helvetica,sans-serif;letter-spacing:1.1px;fill:#497585}
+  .group-line{stroke:#e2ebef;stroke-width:1.5}
+  .actor-name{font:700 20px Arial,Helvetica,sans-serif;fill:#2a4553}
+  .stick{stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+  .operation{fill:#f6fbfd;stroke:#397e8e}
+  .administration{fill:#fafbfd;stroke:#697e94}
+  .case{stroke-width:2.3}
+  .case-name{font:19px Arial,Helvetica,sans-serif;fill:#243e4b}
+  .assoc-enc{stroke:#598fa0}
+  .assoc-admin{stroke:#8496ac}
+  .association{stroke-width:2.3;fill:none;stroke-linecap:round}
+  .helper{font:15px Arial,Helvetica,sans-serif;fill:#58717d}
 </style></defs>
-<rect width="1400" height="980" fill="#fff"/>
-<text x="700" y="48" text-anchor="middle" class="t title">Diagrama de casos de uso</text>
-
-<rect x="360" y="90" width="960" height="820" rx="12" class="sys"/>
-<text x="390" y="130" class="t label" font-weight="700">Sistema de Pasajeros</text>
-
-<!-- Actor -->
-<circle cx="135" cy="410" r="24" class="actor"/>
-<line x1="135" y1="434" x2="135" y2="505" class="actor"/>
-<line x1="95" y1="462" x2="175" y2="462" class="actor"/>
-<line x1="135" y1="505" x2="102" y2="555" class="actor"/>
-<line x1="135" y1="505" x2="168" y2="555" class="actor"/>
-<text x="135" y="595" text-anchor="middle" class="t label">Personal del hotel</text>
-<rect x="47" y="620" width="176" height="58" rx="8" class="note"/>
-<text x="135" y="644" text-anchor="middle" class="t small">Perfiles:</text>
-<text x="135" y="666" text-anchor="middle" class="t small" font-weight="700">Administrador · Encargado</text>
-
-<!-- Casos en una sola columna -->
-<ellipse cx="790" cy="175" rx="170" ry="42" class="uc"/><text x="790" y="182" text-anchor="middle" class="t label">Registrar habitaciones</text>
-<ellipse cx="790" cy="260" rx="205" ry="42" class="uc"/><text x="790" y="267" text-anchor="middle" class="t label">Registrar huésped y asignar habitación</text>
-<ellipse cx="790" cy="345" rx="200" ry="42" class="uc"/><text x="790" y="352" text-anchor="middle" class="t label">Controlar ocupación y disponibilidad</text>
-<ellipse cx="790" cy="430" rx="160" ry="42" class="uc"/><text x="790" y="437" text-anchor="middle" class="t label">Gestionar reservas</text>
-<ellipse cx="790" cy="515" rx="155" ry="42" class="uc"/><text x="790" y="522" text-anchor="middle" class="t label">Realizar check-in</text>
-<ellipse cx="790" cy="600" rx="155" ry="42" class="uc"/><text x="790" y="607" text-anchor="middle" class="t label">Realizar check-out</text>
-<ellipse cx="790" cy="685" rx="175" ry="42" class="uc"/><text x="790" y="692" text-anchor="middle" class="t label">Calcular costo por pasajero</text>
-<ellipse cx="790" cy="770" rx="150" ry="42" class="uc"/><text x="790" y="777" text-anchor="middle" class="t label">Gestionar usuarios</text>
-<ellipse cx="790" cy="855" rx="220" ry="42" class="uc"/><text x="790" y="862" text-anchor="middle" class="t label">Generar informes de ocupación y reservas</text>
-
-<!-- Asociaciones en corredores separados para evitar cruces -->
-<path d="M175 462 H300 V175 H620" class="assoc"/>
-<path d="M175 462 H315 V260 H585" class="assoc"/>
-<path d="M175 462 H330 V345 H590" class="assoc"/>
-<path d="M175 462 H345 V430 H630" class="assoc"/>
-<path d="M175 462 H360 V515 H635" class="assoc"/>
-<path d="M175 462 H345 V600 H635" class="assoc"/>
-<path d="M175 462 H330 V685 H615" class="assoc"/>
-<path d="M175 462 H315 V770 H640" class="assoc"/>
-<path d="M175 462 H300 V855 H570" class="assoc"/>
-</svg>
+<rect width="1500" height="1400" fill="#ffffff"/>
+<text x="750" y="58" class="heading" text-anchor="middle">Diagrama de casos de uso</text>
+<text x="750" y="87" class="subtitle" text-anchor="middle">Hotel Duerme Bien · Sistema de pasajeros</text>
+<rect x="460" y="126" width="990" height="1222" rx="14" class="boundary"/>
+<text x="494" y="166" class="system-title">Sistema de Pasajeros</text>
+<text x="500" y="205" class="group-heading">OPERACIÓN DEL HOTEL</text>
+<path d="M500 217 H1415" class="group-line"/>
+<text x="500" y="973" class="group-heading">ADMINISTRACIÓN</text>
+<path d="M500 987 H1415" class="group-line"/>
+<path class="association assoc-enc" d="M244 475 L758 250"/><path class="association assoc-enc" d="M244 490 L758 370"/><path class="association assoc-enc" d="M244 505 L758 490"/><path class="association assoc-enc" d="M244 520 L758 610"/><path class="association assoc-enc" d="M244 535 L758 730"/><path class="association assoc-enc" d="M244 550 L758 850"/><path class="association assoc-admin" d="M244 1110 L758 1035"/><path class="association assoc-admin" d="M244 1125 L758 1140"/><path class="association assoc-admin" d="M244 1140 L758 1245"/><ellipse class="case operation" cx="1039" cy="250" rx="281" ry="39"/><text class="case-name" x="1039" y="257" text-anchor="middle">Registrar huésped y asignar habitación</text><ellipse class="case operation" cx="1039" cy="370" rx="281" ry="39"/><text class="case-name" x="1039" y="377" text-anchor="middle">Controlar ocupación y disponibilidad</text><ellipse class="case operation" cx="1039" cy="490" rx="281" ry="39"/><text class="case-name" x="1039" y="497" text-anchor="middle">Gestionar reservas</text><ellipse class="case operation" cx="1039" cy="610" rx="281" ry="39"/><text class="case-name" x="1039" y="617" text-anchor="middle">Realizar check-in</text><ellipse class="case operation" cx="1039" cy="730" rx="281" ry="39"/><text class="case-name" x="1039" y="737" text-anchor="middle">Realizar check-out</text><ellipse class="case operation" cx="1039" cy="850" rx="281" ry="39"/><text class="case-name" x="1039" y="857" text-anchor="middle">Calcular costo por pasajero</text><ellipse class="case administration" cx="1039" cy="1035" rx="281" ry="39"/><text class="case-name" x="1039" y="1042" text-anchor="middle">Registrar habitaciones</text><ellipse class="case administration" cx="1039" cy="1140" rx="281" ry="39"/><text class="case-name" x="1039" y="1147" text-anchor="middle">Gestionar usuarios</text><ellipse class="case administration" cx="1039" cy="1245" rx="281" ry="39"/><text class="case-name" x="1039" y="1252" text-anchor="middle">Generar informes de ocupación y reservas</text><g class="stick" stroke="#598fa0"><circle cx="187" cy="460" r="21"/><path d="M187 481 V555 M147 509 H227 M187 555 L155 603 M187 555 L219 603"/></g><text class="actor-name" x="187" y="637" text-anchor="middle">Encargado</text><g class="stick" stroke="#8496ac"><circle cx="187" cy="1080" r="21"/><path d="M187 1101 V1175 M147 1129 H227 M187 1175 L155 1223 M187 1175 L219 1223"/></g><text class="actor-name" x="187" y="1257" text-anchor="middle">Administrador</text><text x="187" y="1311" text-anchor="middle" class="helper">El administrador también puede</text><text x="187" y="1332" text-anchor="middle" class="helper">realizar tareas del encargado.</text><text x="499" y="1375" class="helper">Línea continua: asociación entre el actor y el caso de uso</text></svg>
