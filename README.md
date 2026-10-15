@@ -4,6 +4,8 @@
 
 ## Entrega
 
+Los diagramas UML están disponibles como SVG en esta página y como archivos PlantUML editables en [diagramas-plantuml/](diagramas-plantuml/). La vista general muestra funciones y perfiles; la vista detallada explica dependencias obligatorias y el ingreso sin reserva. Las propuestas de permisos y costos deben validarse con el cliente.
+
 ### 1. Informe de requerimientos
 [Ver informe](entrega-final/01-requerimientos.md)
 
@@ -23,6 +25,14 @@
 [Editar versión general en diagrams.net](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F01-casos-de-uso.drawio) · [Guía de PlantUML](docs/diagramas-plantuml.md)
 
 ### 3. Diagrama de flujo
+### Flujo general de operaciones
+
+![Flujo general de operaciones](entrega-final/03-flujo-general.svg)
+
+[Ver flujo completo](entrega-final/03-flujo-general.svg) · [Fuente PlantUML](diagramas-plantuml/flujo-general.puml)
+
+### Flujo de check-in (detalle)
+
 ![Diagrama de flujo](entrega-final/03-diagrama-flujo.svg)
 
 [Ver imagen](entrega-final/03-diagrama-flujo.svg) · [Editar](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F02-diagrama-flujo.drawio)
@@ -30,7 +40,7 @@
 ### 4. Modelo de base de datos
 ![Modelo de base de datos](entrega-final/04-modelo-base-datos.svg)
 
-[Ver imagen](entrega-final/04-modelo-base-datos.svg) · [Editar](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F03-modelo-base-datos.drawio)
+[Ver imagen](entrega-final/04-modelo-base-datos.svg) · [PlantUML del modelo](diagramas-plantuml/modelo-base-datos.puml) · [Editar](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F03-modelo-base-datos.drawio)
 
 ### 5. Sketch
 ![Sketch](entrega-final/05-sketch.svg)
