@@ -2,124 +2,108 @@
 
 **Caso 6 · Entrega de modelado y prototipo**
 
-Este repositorio presenta **todos los entregables directamente en esta página**, con las versiones actualizadas de los diagramas. Cada imagen se puede abrir en tamaño completo; los archivos fuente siguen disponibles para editarlos.
-
-**[Demo interactiva del sistema](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)** · **[Demo de diseño en Figma](https://www.figma.com/proto/7kS6Wuh6nwt2lcl4bB1w50/Hotel-Duerme-Bien?node-id=6-180&starting-point-node-id=6%3A180&scaling=contain)** · **[Ver fuentes PlantUML](diagramas-plantuml/)** · **[Ver informe de requerimientos](entrega-final/01-requerimientos.md)**
+Todos los entregables se muestran aquí, con las imágenes y diagramas actualizados. **Cada apartado tiene un único enlace para abrir su contenido.** Los archivos editables permanecen guardados en el repositorio.
 
 ## 1. Informe de requerimientos
 
-[Leer el informe completo](entrega-final/01-requerimientos.md)
+El informe reúne el alcance, los requerimientos, los procesos y las reglas del Hotel Duerme Bien.
 
-El sistema abarca habitaciones, huéspedes, reservas, disponibilidad, check-in, check-out, costos por pasajero, perfiles e informes. Los permisos detallados y la fórmula de cobro exacta continúan pendientes de validación.
+[Ver informe de requerimientos](entrega-final/01-requerimientos.md)
 
-## 2. Diagrama de casos de uso
+## 2. Diagramas de casos de uso
 
-### 2.1 Vista general — Encargado y administrador
+### 2.1. Vista general — Encargado y administrador
 
-![Diagrama general de casos de uso](entrega-final/02-casos-de-uso.svg)
+![Casos de uso generales](entrega-final/02-casos-de-uso.svg)
 
-[Ver imagen completa](entrega-final/02-casos-de-uso.svg) · [Fuente PlantUML](diagramas-plantuml/casos-de-uso.puml) · [Editar en diagrams.net](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F01-casos-de-uso.drawio)
+[Ver diagrama general](entrega-final/02-casos-de-uso.svg)
 
-### 2.2 Vista detallada — Relaciones include y extend
+### 2.2. Vista detallada — Include y extend
 
-![Relaciones de casos de uso](entrega-final/02-casos-de-uso-detalle.svg)
+![Casos de uso detallados](entrega-final/02-casos-de-uso-detalle.svg)
 
-[Ver imagen completa](entrega-final/02-casos-de-uso-detalle.svg) · [Fuente PlantUML](diagramas-plantuml/casos-de-uso-detalle.puml)
+[Ver diagrama detallado](entrega-final/02-casos-de-uso-detalle.svg)
 
 ## 3. Diagramas de flujo
 
-### 3.1 Flujo general — Reservas, entrada, salida y administración
+### 3.1. Flujo general — Operaciones del hotel
 
 ![Flujo general del sistema](entrega-final/03-flujo-general.svg)
 
-[Ver imagen completa](entrega-final/03-flujo-general.svg) · [Fuente PlantUML](diagramas-plantuml/flujo-general.puml)
+[Ver flujo general](entrega-final/03-flujo-general.svg)
 
-### 3.2 Flujo detallado — Check-in
+### 3.2. Flujo de check-in
 
 ![Flujo de check-in](entrega-final/03-diagrama-flujo.svg)
 
-[Ver imagen completa](entrega-final/03-diagrama-flujo.svg) · [Editar en diagrams.net](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F02-diagrama-flujo.drawio)
+[Ver flujo de check-in](entrega-final/03-diagrama-flujo.svg)
 
 ## 4. Modelo de base de datos
 
-![Modelo relacional del Hotel Duerme Bien](entrega-final/04-modelo-base-datos.svg)
+Incluye habitaciones, huéspedes, reservas, estadías y usuarios, con sus claves y relaciones.
 
-[Ver imagen completa](entrega-final/04-modelo-base-datos.svg) · [Fuente PlantUML](diagramas-plantuml/modelo-base-datos.puml) · [Editar en diagrams.net](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F03-modelo-base-datos.drawio)
+![Modelo de base de datos](entrega-final/04-modelo-base-datos.svg)
 
-El modelo contiene tablas para usuarios, habitaciones, huéspedes, reservas y estadías, más las relaciones para asociar varios huéspedes. Los elementos propuestos están señalados y requieren validación.
+[Ver modelo de base de datos](entrega-final/04-modelo-base-datos.svg)
 
-## 5. Sketch — Boceto inicial de las pantallas
+## 5. Sketch — Boceto inicial
 
-![Sketch de la interfaz](entrega-final/05-sketch.svg)
+![Sketch del sistema](entrega-final/05-sketch.svg)
 
-[Ver imagen completa](entrega-final/05-sketch.svg) · [Editar interfaz](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F04-interfaz.drawio)
+[Ver sketch](entrega-final/05-sketch.svg)
 
-## 6. Wireframe — Estructura de la interfaz
+## 6. Wireframe — Estructura de pantallas
 
-![Wireframe de la interfaz](entrega-final/06-wireframe.svg)
+![Wireframe del sistema](entrega-final/06-wireframe.svg)
 
-[Ver imagen completa](entrega-final/06-wireframe.svg)
+[Ver wireframe](entrega-final/06-wireframe.svg)
 
 ## 7. Mockup — Diseño visual
 
-![Mockup de la interfaz](entrega-final/07-mockup.svg)
+![Mockup del sistema](entrega-final/07-mockup.svg)
 
-[Ver imagen completa](entrega-final/07-mockup.svg)
+[Ver mockup](entrega-final/07-mockup.svg)
 
-## 8. Prototipo funcional
+## 8. Prototipo funcional — Vista de referencia
 
 ![Vista del prototipo funcional](entrega-final/08-prototipo-funcional.svg)
 
-**[Abrir y probar el prototipo en el navegador](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)**
+[Ver imagen del prototipo](entrega-final/08-prototipo-funcional.svg)
 
-La imagen es una vista de referencia; el enlace permite acceder al prototipo navegable.
+## 9. Kanban — Planificación
 
-## 9. Kanban — Planificación del trabajo
+El tablero contiene las tareas terminadas, las que están en revisión y las pendientes de validar.
 
-El tablero conserva las tareas terminadas, en revisión y pendientes de confirmación.
+[Ver tablero Kanban](entrega-final/09-kanban.md)
 
-Este tablero contiene solamente tareas relacionadas con los entregables solicitados para el Caso 6.
+## 10. Demo — Probar el sistema
 
-| Por hacer / pendiente de validación | En revisión | Terminado |
-| --- | --- | --- |
-| Incorporar retroalimentación real de Evaluación 1 cuando sea entregada | Revisar coherencia final entre requerimientos, diagramas y prototipo | Informe IEEE 830 adaptado |
-| Validar fórmula exacta del costo por pasajero |  | Diagrama de casos de uso |
-| Validar datos obligatorios del huésped |  | Diagrama de flujo de check-in |
-| Validar permisos detallados por perfil |  | Diagrama de base de datos |
-| Confirmar reglas exactas para modificar/cancelar reservas |  | Sketch |
-|  |  | Wireframe |
-|  |  | Mockup |
-|  |  | Prototipo funcional navegable |
-|  |  | Funciones de habitaciones, huéspedes y reservas |
-|  |  | Funciones de check-in y check-out |
-|  |  | Gestión de usuarios en el prototipo |
-|  |  | Informes de ocupación y reservas |
+### 10.1. Demo interactiva
 
+Permite navegar por la aplicación de demostración y probar sus pantallas.
 
+[Abrir demo interactiva](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)
 
-[Ver el archivo Kanban completo](entrega-final/09-kanban.md)
+### 10.2. Demo de diseño en Figma
 
+Permite recorrer la propuesta visual de las pantallas.
 
-## 10. Demo — Presentación y prueba del hotel
+[Abrir demo en Figma](https://www.figma.com/proto/7kS6Wuh6nwt2lcl4bB1w50/Hotel-Duerme-Bien?node-id=6-180&starting-point-node-id=6%3A180&scaling=contain)
 
-Puedes abrir las dos demostraciones del proyecto:
+## 11. Informe y defensa — Preparación de la exposición
 
-- **[Abrir demo interactiva en el navegador](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)**: interfaz de prueba del Hotel Duerme Bien, con navegación por habitaciones, huéspedes, reservas, check-in, check-out, usuarios e informes.
-- **[Abrir demo de diseño en Figma](https://www.figma.com/proto/7kS6Wuh6nwt2lcl4bB1w50/Hotel-Duerme-Bien?node-id=6-180&starting-point-node-id=6%3A180&scaling=contain)**: prototipo visual de las pantallas preparado para presentar el diseño.
+### 11.1. Guion de exposición
 
-La demo web y el prototipo en Figma son recursos distintos: uno permite probar la interfaz web y el otro permite recorrer el diseño visual. El prototipo web es académico y no reemplaza un sistema hotelero de producción.
+[Ver guion para presentar](docs/13_guion_exposicion.md)
 
-## 11. Informe y defensa — Material para presentar al profesor
+### 11.2. Preguntas del profesor
 
-- **[Informe de requerimientos](entrega-final/01-requerimientos.md)**: alcance, funciones del sistema y reglas del hotel.
-- **[Guion de exposición](docs/13_guion_exposicion.md)**: explicación del proyecto para presentar oralmente.
-- **[Preguntas que podría hacer el profesor](docs/14_preguntas_profesor.md)**: conceptos y respuestas para estudiar.
-- **[Documento maestro para explicar el proyecto](docs/16_DOCUMENTO_MAESTRO_PARA_EXPLICAR.md)**: repaso conjunto de los entregables.
+[Ver preguntas para estudiar](docs/14_preguntas_profesor.md)
 
-Estos materiales ayudan a estudiar la entrega y a explicar qué representa cada diagrama.
+### 11.3. Documento maestro
+
+[Ver documento completo para explicar el proyecto](docs/16_DOCUMENTO_MAESTRO_PARA_EXPLICAR.md)
 
 ---
 
-**Archivos editables:** [PlantUML](diagramas-plantuml/) · [diagrams.net](diagramas-editables/) · [Guía de diagramas](docs/diagramas-plantuml.md)
-
-*El material gráfico presenta el diseño y modelado académico. No debe interpretarse como garantía de implementación completa de todas las funciones del sistema.*
+**Nota:** Los diagramas representan el diseño del sistema. Los permisos detallados, los datos obligatorios del huésped y la fórmula definitiva del costo requieren validación. La demo es un prototipo académico, no un sistema hotelero de producción.
