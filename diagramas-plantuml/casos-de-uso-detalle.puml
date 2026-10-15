@@ -1,0 +1,43 @@
+@startuml
+' Hotel Duerme Bien · Comportamientos reutilizados y opción sin reserva
+left to right direction
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam defaultFontName Arial
+skinparam ArrowColor #647E8B
+skinparam UsecaseBackgroundColor #F3FAFC
+skinparam UsecaseBorderColor #397D8F
+skinparam ActorBorderColor #397D8F
+skinparam RectangleBorderColor #869DAA
+skinparam linetype ortho
+skinparam nodesep 65
+skinparam ranksep 80
+
+title Hotel Duerme Bien - Relaciones entre casos de uso
+actor "Encargado de hotel" as Enc
+rectangle "Sistema de Pasajeros - Operaciones" {
+ usecase "Realizar check-in" as CI
+ usecase "Consultar disponibilidad" as DISP
+ usecase "Asignar habitación" as ASIG
+ usecase "Ingreso directo\n(sin reserva)" as DIRECTO
+ usecase "Realizar check-out" as CO
+ usecase "Calcular costo\npor pasajero" as COSTO
+ usecase "Liberar habitación" as LIB
+}
+Enc -- CI
+Enc -- CO
+CI ..> DISP : <<include>>
+CI ..> ASIG : <<include>>
+DIRECTO ..> CI : <<extend>>\n[si no existe reserva]
+CO ..> COSTO : <<include>>
+CO ..> LIB : <<include>>
+note bottom of CI
+El check-in requiere una habitación disponible,
+identificar al huésped y asignar habitación.
+end note
+note bottom of CO
+El check-out calcula los costos y libera la habitación.
+La fórmula exacta aún debe validarse.
+end note
+@enduml
