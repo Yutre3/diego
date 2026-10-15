@@ -1,68 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
-<defs><style>
-.t{font-family:Arial,sans-serif;fill:#26343d}.title{font-size:30px;font-weight:700}.h{font-size:18px;font-weight:700}.f{font-size:14px}.small{font-size:13px}
-.box{fill:#fff;stroke:#4f626c;stroke-width:2}.head{fill:#edf2f4;stroke:#4f626c;stroke-width:2}.rel{stroke:#536a74;stroke-width:2.2;fill:none}.badge{fill:#fff;stroke:#d9e2e6;stroke-width:1}
-</style></defs>
-<rect width="1500" height="900" fill="#fff"/>
-<text x="750" y="48" text-anchor="middle" class="t title">Modelo de base de datos</text>
-
-<!-- Reserva al centro -->
-<rect x="550" y="275" width="400" height="285" rx="9" class="box"/>
-<rect x="550" y="275" width="400" height="46" rx="9" class="head"/>
-<text x="750" y="305" text-anchor="middle" class="t h">Reserva</text>
-<text x="580" y="360" class="t f">PK  id_reserva</text>
-<text x="580" y="393" class="t f">FK  id_huesped</text>
-<text x="580" y="426" class="t f">FK  id_habitacion</text>
-<text x="580" y="459" class="t f">fecha_entrada</text>
-<text x="580" y="492" class="t f">fecha_salida</text>
-<text x="580" y="525" class="t f">estado</text>
-
-<!-- Huésped a la izquierda -->
-<rect x="90" y="310" width="300" height="185" rx="9" class="box"/>
-<rect x="90" y="310" width="300" height="46" rx="9" class="head"/>
-<text x="240" y="340" text-anchor="middle" class="t h">Huésped</text>
-<text x="120" y="395" class="t f">PK  id_huesped</text>
-<text x="120" y="429" class="t f">nombre</text>
-<text x="120" y="463" class="t f">otros_datos</text>
-
-<!-- Habitación a la derecha -->
-<rect x="1110" y="292" width="300" height="220" rx="9" class="box"/>
-<rect x="1110" y="292" width="300" height="46" rx="9" class="head"/>
-<text x="1260" y="322" text-anchor="middle" class="t h">Habitación</text>
-<text x="1140" y="377" class="t f">PK  id_habitacion</text>
-<text x="1140" y="411" class="t f">capacidad</text>
-<text x="1140" y="445" class="t f">orientacion</text>
-<text x="1140" y="479" class="t f">estado</text>
-
-<!-- Estadía debajo -->
-<rect x="550" y="640" width="400" height="220" rx="9" class="box"/>
-<rect x="550" y="640" width="400" height="46" rx="9" class="head"/>
-<text x="750" y="670" text-anchor="middle" class="t h">Estadía</text>
-<text x="580" y="725" class="t f">PK  id_estadia</text>
-<text x="580" y="758" class="t f">FK  id_reserva</text>
-<text x="580" y="791" class="t f">checkin</text>
-<text x="580" y="824" class="t f">checkout</text>
-<text x="780" y="791" class="t f">cantidad_pasajeros</text>
-<text x="780" y="824" class="t f">costo_total</text>
-
-<!-- Usuario arriba, sin forzar relación no definida -->
-<rect x="550" y="80" width="400" height="145" rx="9" class="box"/>
-<rect x="550" y="80" width="400" height="46" rx="9" class="head"/>
-<text x="750" y="110" text-anchor="middle" class="t h">Usuario</text>
-<text x="580" y="165" class="t f">PK  id_usuario</text>
-<text x="730" y="165" class="t f">nombre</text>
-<text x="850" y="165" class="t f">rol</text>
-
-<!-- Relaciones rectas -->
-<line x1="390" y1="402" x2="550" y2="402" class="rel"/>
-<rect x="445" y="368" width="70" height="27" rx="5" class="badge"/>
-<text x="480" y="387" text-anchor="middle" class="t small">1 : N</text>
-
-<line x1="950" y1="402" x2="1110" y2="402" class="rel"/>
-<rect x="985" y="368" width="70" height="27" rx="5" class="badge"/>
-<text x="1020" y="387" text-anchor="middle" class="t small">N : 1</text>
-
-<line x1="750" y1="560" x2="750" y2="640" class="rel"/>
-<rect x="705" y="586" width="90" height="27" rx="5" class="badge"/>
-<text x="750" y="605" text-anchor="middle" class="t small">1 : 0..1</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1570" viewBox="0 0 2100 1570" role="img" aria-labelledby="title description">
+<title id="title">Modelo entidad-relación — Hotel Duerme Bien</title>
+<desc id="description">Diagrama de siete tablas con claves primarias y foráneas, relaciones con cardinalidades, reservas y estadías separadas, tablas puente para múltiples huéspedes y costos individuales propuestos.</desc>
+<defs>
+<style>
+ .page{fill:#ffffff}.heading{font:700 37px Arial,Helvetica,sans-serif;fill:#203d4c}.sub{font:19px Arial,Helvetica,sans-serif;fill:#617783}
+ .section{font:700 17px Arial,Helvetica,sans-serif;letter-spacing:1.25px;fill:#4e7d88}
+ .shadow{fill:#eaf1f4;opacity:.45}.card{fill:#fff;stroke:#8299a4;stroke-width:2}
+ .head-core{fill:#e5f0f4}.head-process{fill:#e5f2ef}.head-bridge{fill:#eef0f9}
+ .card-title{font:700 24px Arial,Helvetica,sans-serif;fill:#254658}.field{font:20px Arial,Helvetica,sans-serif;fill:#2b4350}
+ .key{font:700 15px Arial,Helvetica,sans-serif;text-anchor:middle}.tag-pk{fill:#d6eaf4}.tag-fk{fill:#e0f1e8}.tag-unique{fill:#f0ecfa}.tag-text{fill:#254658}
+ .route{fill:none;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}
+ .cardinality{fill:#fff;stroke:#d8e5ea;stroke-width:1.2}.number{font:700 16px Arial,Helvetica,sans-serif;fill:#345361;text-anchor:middle}
+ .footer{font:18px Arial,Helvetica,sans-serif;fill:#4b6471}.footer-strong{font:700 18px Arial,Helvetica,sans-serif;fill:#365a69}
+</style>
+</defs>
+<rect class="page" width="2100" height="1570"/>
+<text class="heading" x="1050" y="61" text-anchor="middle">Modelo de base de datos</text>
+<text class="sub" x="1050" y="96" text-anchor="middle">Hotel Duerme Bien · Entidades, claves y relaciones</text>
+<text class="section" x="80" y="186">DATOS PRINCIPALES</text>
+<text class="section" x="455" y="613">OPERACIONES DEL HOTEL</text>
+<text class="section" x="455" y="1113">PASAJEROS ASOCIADOS A CADA OPERACIÓN</text>
+<polyline class="route" stroke="#648ba0" points="270,475 270,798 455,798"/><polyline class="route" stroke="#317f89" points="923,475 923,550 705,550 705,650"/><polyline class="route" stroke="#317f89" points="1163,475 1163,580 1380,580 1380,650"/><polyline class="route" stroke="#788a96" points="955,830 1130,830"/><polyline class="route" stroke="#648ba0" points="705,1010 705,1150"/><polyline class="route" stroke="#317f89" points="1380,1010 1380,1150"/><polyline class="route" stroke="#648ba0" points="1790,475 1790,1250 1630,1250"/><polyline class="route" stroke="#648ba0" points="1900,475 1900,1425 705,1425 705,1340"/><rect class="shadow" x="85" y="231" width="380" height="250" rx="12"/><rect class="card" x="80" y="225" width="380" height="250" rx="12"/><path d="M92 225 H448 Q460 225 460 237 V274 H80 V237 Q80 225 92 225 Z" class="head-core"/><path d="M80 274 H460" stroke="#cbdce4" stroke-width="1.5"/><text class="card-title" x="104" y="259">USUARIO</text><rect x="102" y="291" width="52" height="28" rx="7" class="tag-pk"/><text class="key tag-text" x="128" y="310">PK</text><text class="field" x="195" y="311">id_usuario</text><text class="field" x="195" y="347">nombre</text><text class="field" x="195" y="383">rol: Administrador / Encargado</text><text class="field" x="195" y="419">activo</text><rect class="shadow" x="855" y="231" width="380" height="250" rx="12"/><rect class="card" x="850" y="225" width="380" height="250" rx="12"/><path d="M862 225 H1218 Q1230 225 1230 237 V274 H850 V237 Q850 225 862 225 Z" class="head-core"/><path d="M850 274 H1230" stroke="#cbdce4" stroke-width="1.5"/><text class="card-title" x="874" y="259">HABITACIÓN</text><rect x="872" y="291" width="52" height="28" rx="7" class="tag-pk"/><text class="key tag-text" x="898" y="310">PK</text><text class="field" x="965" y="311">id_habitacion</text><rect x="872" y="327" width="53" height="28" rx="7" class="tag-unique"/><text class="key tag-text" x="898.5" y="346">UQ</text><text class="field" x="965" y="347">numero</text><text class="field" x="965" y="383">capacidad</text><text class="field" x="965" y="419">orientacion</text><text class="field" x="965" y="455">tarifa_noche *</text><rect class="shadow" x="1640" y="231" width="385" height="250" rx="12"/><rect class="card" x="1635" y="225" width="385" height="250" rx="12"/><path d="M1647 225 H2008 Q2020 225 2020 237 V274 H1635 V237 Q1635 225 1647 225 Z" class="head-core"/><path d="M1635 274 H2020" stroke="#cbdce4" stroke-width="1.5"/><text class="card-title" x="1659" y="259">HUÉSPED</text><rect x="1657" y="291" width="52" height="28" rx="7" class="tag-pk"/><text class="key tag-text" x="1683" y="310">PK</text><text class="field" x="1750" y="311">id_huesped</text><rect x="1657" y="327" width="53" height="28" rx="7" class="tag-unique"/><text class="key tag-text" x="1683.5" y="346">UQ</text><text class="field" x="1750" y="347">documento</text><text class="field" x="1750" y="383">nombre</text><text class="field" x="1750" y="419">apellido</text><rect class="shadow" x="460" y="656" width="500" height="360" rx="12"/><rect class="card" x="455" y="650" width="500" height="360" rx="12"/><path d="M467 650 H943 Q955 650 955 662 V699 H455 V662 Q455 650 467 650 Z" class="head-process"/><path d="M455 699 H955" stroke="#cbdce4" stroke-width="1.5"/><text class="card-title" x="479" y="684">RESERVA</text><rect x="477" y="716" width="52" height="28" rx="7" class="tag-pk"/><text class="key tag-text" x="503" y="735">PK</text><text class="field" x="570" y="736">id_reserva</text><rect x="477" y="755" width="52" height="28" rx="7" class="tag-fk"/><text class="key tag-text" x="503" y="774">FK</text><text class="field" x="570" y="775">id_habitacion</text><rect x="477" y="794" width="52" height="28" rx="7" class="tag-fk"/><text class="key tag-text" x="503" y="813">FK</text><text class="field" x="570" y="814">id_usuario *</text><text class="field" x="570" y="853">fecha_entrada</text><text class="field" x="570" y="892">fecha_salida</text><text class="field" x="570" y="931">cantidad_pasajeros *</text><text class="field" x="570" y="970">estado</text><rect class="shadow" x="1135" y="656" width="500" height="360" rx="12"/><rect class="card" x="1130" y="650" width="500" height="360" rx="12"/><path d="M1142 650 H1618 Q1630 650 1630 662 V699 H1130 V662 Q1130 650 1142 650 Z" class="head-process"/><path d="M1130 699 H1630" stroke="#cbdce4" stroke-width="1.5"/><text class="card-title" x="1154" y="684">ESTADÍA</text><rect x="1152" y="716" width="52" height="28" rx="7" class="tag-pk"/><text class="key tag-text" x="1178" y="735">PK</text><text class="field" x="1245" y="736">id_estadia</text><rect x="1152" y="755" width="52" height="28" rx="7" class="tag-fk"/><text class="key tag-text" x="1178" y="774">FK</text><text class="field" x="1245" y="775">id_habitacion</text><rect x="1152" y="794" width="52" height="28" rx="7" class="tag-fk"/><text class="key tag-text" x="1178" y="813">FK</text><text class="field" x="1245" y="814">id_reserva (opcional, UNIQUE)</text><text class="field" x="1245" y="853">checkin</text><text class="field" x="1245" y="892">checkout (opcional)</text><text class="field" x="1245" y="931">estado</text><text class="field" x="1245" y="970">costo_total (calculado) *</text><rect class="shadow" x="460" y="1156" width="500" height="190" rx="12"/><rect class="card" x="455" y="1150" width="500" height="190" rx="12"/><path d="M467 1150 H943 Q955 1150 955 1162 V1199 H455 V1162 Q455 1150 467 1150 Z" class="head-bridge"/><path d="M455 1199 H955" stroke="#cbdce4" stroke-width="1.5"/><text class="card-title" x="479" y="1184">RESERVA_HUÉSPED *</text><rect x="477" y="1216" width="73" height="28" rx="7" class="tag-fk"/><text class="key tag-text" x="513.5" y="1235">PK/FK</text><text class="field" x="570" y="1236">id_reserva</text><rect x="477" y="1255" width="73" height="28" rx="7" class="tag-fk"/><text class="key tag-text" x="513.5" y="1274">PK/FK</text><text class="field" x="570" y="1275">id_huesped</text><rect class="shadow" x="1135" y="1156" width="500" height="190" rx="12"/><rect class="card" x="1130" y="1150" width="500" height="190" rx="12"/><path d="M1142 1150 H1618 Q1630 1150 1630 1162 V1199 H1130 V1162 Q1130 1150 1142 1150 Z" class="head-bridge"/><path d="M1130 1199 H1630" stroke="#cbdce4" stroke-width="1.5"/><text class="card-title" x="1154" y="1184">ESTADÍA_HUÉSPED *</text><rect x="1152" y="1216" width="73" height="28" rx="7" class="tag-fk"/><text class="key tag-text" x="1188.5" y="1235">PK/FK</text><text class="field" x="1245" y="1236">id_estadia</text><rect x="1152" y="1255" width="73" height="28" rx="7" class="tag-fk"/><text class="key tag-text" x="1188.5" y="1274">PK/FK</text><text class="field" x="1245" y="1275">id_huesped</text><text class="field" x="1245" y="1314">costo_individual *</text><rect class="cardinality" x="264" y="487" width="42" height="29" rx="6"/><text class="number" x="285" y="507">1</text><rect class="cardinality" x="378.5" y="761" width="73" height="29" rx="6"/><text class="number" x="415" y="781">0..*</text><rect class="cardinality" x="917" y="484" width="42" height="29" rx="6"/><text class="number" x="938" y="504">1</text><rect class="cardinality" x="668.5" y="606" width="73" height="29" rx="6"/><text class="number" x="705" y="626">0..*</text><rect class="cardinality" x="1155" y="486" width="42" height="29" rx="6"/><text class="number" x="1176" y="506">1</text><rect class="cardinality" x="1343.5" y="605" width="73" height="29" rx="6"/><text class="number" x="1380" y="625">0..*</text><rect class="cardinality" x="956.5" y="788" width="73" height="29" rx="6"/><text class="number" x="993" y="808">0..1</text><rect class="cardinality" x="1056.5" y="788" width="73" height="29" rx="6"/><text class="number" x="1093" y="808">0..1</text><rect class="cardinality" x="700" y="1020" width="42" height="29" rx="6"/><text class="number" x="721" y="1040">1</text><rect class="cardinality" x="668.5" y="1108" width="73" height="29" rx="6"/><text class="number" x="705" y="1128">0..*</text><rect class="cardinality" x="1374" y="1020" width="42" height="29" rx="6"/><text class="number" x="1395" y="1040">1</text><rect class="cardinality" x="1343.5" y="1108" width="73" height="29" rx="6"/><text class="number" x="1380" y="1128">1..*</text><rect class="cardinality" x="1786" y="488" width="42" height="29" rx="6"/><text class="number" x="1807" y="508">1</text><rect class="cardinality" x="1630.5" y="1208" width="73" height="29" rx="6"/><text class="number" x="1667" y="1228">0..*</text><rect class="cardinality" x="1897" y="490" width="42" height="29" rx="6"/><text class="number" x="1918" y="510">1</text><rect class="cardinality" x="668.5" y="1381" width="73" height="29" rx="6"/><text class="number" x="705" y="1401">0..*</text><path d="M75 1472 H2025" stroke="#dbe6ea" stroke-width="1.7"/>
+<text class="footer-strong" x="85" y="1506">PK</text><text class="footer" x="131" y="1506">Clave primaria</text>
+<text class="footer-strong" x="410" y="1506">FK</text><text class="footer" x="455" y="1506">Clave foránea</text>
+<text class="footer-strong" x="725" y="1506">UQ</text><text class="footer" x="770" y="1506">Valor único</text>
+<text class="footer-strong" x="1040" y="1506">*</text><text class="footer" x="1064" y="1506">Campos y tablas complementarios propuestos</text>
+<text class="footer" x="85" y="1542">Disponibilidad: se obtiene a partir de reservas y estadías; el cálculo exacto del costo por pasajero queda pendiente de validación.</text>
 </svg>
