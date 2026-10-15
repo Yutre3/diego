@@ -1,62 +1,106 @@
-# Sistema de Pasajeros - Hotel Duerme Bien
+# Sistema de Pasajeros — Hotel Duerme Bien
 
-**Prototipo funcional:** https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html
+**Caso 6 · Entrega de modelado y prototipo**
 
-## Entrega
+Este repositorio presenta **todos los entregables directamente en esta página**, con las versiones actualizadas de los diagramas. Cada imagen se puede abrir en tamaño completo; los archivos fuente siguen disponibles para editarlos.
 
-Los diagramas UML están disponibles como SVG en esta página y como archivos PlantUML editables en [diagramas-plantuml/](diagramas-plantuml/). La vista general muestra funciones y perfiles; la vista detallada explica dependencias obligatorias y el ingreso sin reserva. Las propuestas de permisos y costos deben validarse con el cliente.
+**[Abrir prototipo funcional](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)** · **[Ver fuentes PlantUML](diagramas-plantuml/)** · **[Ver informe de requerimientos](entrega-final/01-requerimientos.md)**
 
-### 1. Informe de requerimientos
-[Ver informe](entrega-final/01-requerimientos.md)
+## 1. Informe de requerimientos
 
-### 2. Diagrama de casos de uso
-### Vista general: funciones y perfiles
+[Leer el informe completo](entrega-final/01-requerimientos.md)
 
-![Diagrama de casos de uso](entrega-final/02-casos-de-uso.svg)
+El sistema abarca habitaciones, huéspedes, reservas, disponibilidad, check-in, check-out, costos por pasajero, perfiles e informes. Los permisos detallados y la fórmula de cobro exacta continúan pendientes de validación.
 
-[Ver imagen general](entrega-final/02-casos-de-uso.svg) · [Código PlantUML](diagramas-plantuml/casos-de-uso.puml) · [Abrir en PlantUML](https://www.plantuml.com/plantuml/uml/XPNBSjem58RtVeepTD5DoQA5X7GO9bn2mamcPCBm00VvOAi8oIF9IMcQ1-gwY-wR5-kHRH83ISfAb-zSzEkNENCUhS_NAle8byQJWb5ETaqmaAJXxnyOIKmihX4IqcHHGKmWq1aN1hapaQAb1s_0oYJr44jBmakZ8xUIEaCEXGMALM9DhkEXKSR2Xt7ngn4knTZSIvt04fMZsax6iPZGp6yKGKYDEb5r8AObvigFZVRNo7tthKHLs-zRQ-whkiUja_FEeBuflB43OsEo5VBbz6JK6UyZ8Ni5V6wrJjgT6Z1tn7hGuE2GhN5_F7m5VBTS1TKBjbkjThk6t6vLsCdKEJuTzVklOl-LNqbDVfCH6EjJKzlG9YP76HpNwrlKgx3OQKUfP1CuJvPCY8yYBptVqw6HcZ2iUmQ3gD0urm9jmbSVrjCGr01qmCjReX-lfPREMuPiiLciHD6p5Q0nutrYWtAE6tJuZQnn3NY8O6iUQ4mpjgwGJxyr6nJP8UK-S3E5tD2OQ2bu1novW1MbhgONa-jTR6YqOxSnQ4IUbIcZ3ITrcT5o8PMCCIw2HvFPpMxi1RdmC3ZMigZs3bq1tfxFThbRIeeJMqZpfrykepBXvVmGH2L_C2TI4gkcBBiUJjwbJEvBRChOOrsa5wr5AS73M_sdk92UAQEfFCDbV_0McxkS1JSbDv_DzxdmKR4WzTAmMO91eXTbORChrUHwN3Jz64Ni4MWsgokg9eNarJYeMWqBuQenYxCTJQFYm0N1xJzFGe_Far1nE_dPAvmPQJOgB8ptPWrcMTtVuUL-1M49xITOcrWk9JkTZoDG2r9eZpZa2lTym-Q3Emn343bgVXR2M4x7I4n74UaOGktz1eeB7v57nQ-17q6tAxLGUKoz7bViTkcxvz1UZob-YVmmu-qdNPXrfcXDseShgbKuur7uJ_W7)
+## 2. Diagrama de casos de uso
 
-### Vista detallada: include y extend
+### 2.1 Vista general — Encargado y administrador
+
+![Diagrama general de casos de uso](entrega-final/02-casos-de-uso.svg)
+
+[Ver imagen completa](entrega-final/02-casos-de-uso.svg) · [Fuente PlantUML](diagramas-plantuml/casos-de-uso.puml) · [Editar en diagrams.net](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F01-casos-de-uso.drawio)
+
+### 2.2 Vista detallada — Relaciones include y extend
 
 ![Relaciones de casos de uso](entrega-final/02-casos-de-uso-detalle.svg)
 
-[Ver detalle](entrega-final/02-casos-de-uso-detalle.svg) · [Código PlantUML](diagramas-plantuml/casos-de-uso-detalle.puml) · [Abrir en PlantUML](https://www.plantuml.com/plantuml/uml/VLJBRXCn5DtxAwx20f18XLHeKrHLdKmQY5IHge4LOd4plfcOUEp1zlG1ueDOTu74almOrzD9SHiWgncVa_iuvuoFVK0NcagBn_361j8mQiXL14D51dxzWDnMjNK1AtuFreEZ9YYjlg3abskmTQ7MDmQyCWnvSXSeD2q210jEbSi0KZagWh96-9KoDJgiO8x5gdIsCJAtsZfuD6v_2SClkS6bCYKiK7jAa9h_YoNDmhKcYANHb3ebI5fWeyFOcl0MUPFCATG9dZbdBxk-Uo_sJmR317plgK1Fmwq1TyVPEFyBqJf9hYFj7koF1kaMMH6i-p_bVBF1FTfWxs2KPGbDAqFXkYPWBvOs0OoLB7iDUo-JGuTc5Gy7puK8Ah1GszxskRN6WeqX3-oj8-25s5H9q7WhCCuElHDJe2lPZ7Y-Z5LwW1xuMDo93xsPye4gZ9mpzFY971VgmxGcrxNemLV1TLlHe7TE63Fae5XIiUehqnRD9mabjyQpZSoHojVMg3d7Jg9icQF9x2pXPbwLXfbBdAk0RI9RMZQRl4ve4rDoHcqNIIkU9AbzsjKzFydVJVyzgMt2xQWf9qTTD3fohEUo_BrmIczLwCYpUpLFrPnrsHxtT38KtmHB2_r-56FpD1Nv17PsZjgruHKS7YfJw4RIqT46YPi-GBfTMfXP4QIhG4Oozi4hJWxGLVHj8y57aNViEE_3FhSGZ_W0C9m9cDiGR0LsqOwjxspbqfyRHPojnc2wxvsfcfu99Jb_Qg4uQO0Qbitwkwz9ylM2syRk25u1OjUjrjC_hTadZdDh2sZEOkjClB1qgprel5_p566nld5LvDCLPny1rpzvJ9eJN61CdlEKz3xcftXj_WO0)
+[Ver imagen completa](entrega-final/02-casos-de-uso-detalle.svg) · [Fuente PlantUML](diagramas-plantuml/casos-de-uso-detalle.puml)
 
-[Editar versión general en diagrams.net](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F01-casos-de-uso.drawio) · [Guía de PlantUML](docs/diagramas-plantuml.md)
+## 3. Diagramas de flujo
 
-### 3. Diagrama de flujo
-### Flujo general de operaciones
+### 3.1 Flujo general — Reservas, entrada, salida y administración
 
-![Flujo general de operaciones](entrega-final/03-flujo-general.svg)
+![Flujo general del sistema](entrega-final/03-flujo-general.svg)
 
-[Ver flujo completo](entrega-final/03-flujo-general.svg) · [Fuente PlantUML](diagramas-plantuml/flujo-general.puml)
+[Ver imagen completa](entrega-final/03-flujo-general.svg) · [Fuente PlantUML](diagramas-plantuml/flujo-general.puml)
 
-### Flujo de check-in (detalle)
+### 3.2 Flujo detallado — Check-in
 
-![Diagrama de flujo](entrega-final/03-diagrama-flujo.svg)
+![Flujo de check-in](entrega-final/03-diagrama-flujo.svg)
 
-[Ver imagen](entrega-final/03-diagrama-flujo.svg) · [Editar](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F02-diagrama-flujo.drawio)
+[Ver imagen completa](entrega-final/03-diagrama-flujo.svg) · [Editar en diagrams.net](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F02-diagrama-flujo.drawio)
 
-### 4. Modelo de base de datos
-![Modelo de base de datos](entrega-final/04-modelo-base-datos.svg)
+## 4. Modelo de base de datos
 
-[Ver imagen](entrega-final/04-modelo-base-datos.svg) · [PlantUML del modelo](diagramas-plantuml/modelo-base-datos.puml) · [Editar](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F03-modelo-base-datos.drawio)
+![Modelo relacional del Hotel Duerme Bien](entrega-final/04-modelo-base-datos.svg)
 
-### 5. Sketch
-![Sketch](entrega-final/05-sketch.svg)
+[Ver imagen completa](entrega-final/04-modelo-base-datos.svg) · [Fuente PlantUML](diagramas-plantuml/modelo-base-datos.puml) · [Editar en diagrams.net](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F03-modelo-base-datos.drawio)
 
-[Editar interfaz](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F04-interfaz.drawio)
+El modelo contiene tablas para usuarios, habitaciones, huéspedes, reservas y estadías, más las relaciones para asociar varios huéspedes. Los elementos propuestos están señalados y requieren validación.
 
-### 6. Wireframe
-![Wireframe](entrega-final/06-wireframe.svg)
+## 5. Sketch — Boceto inicial de las pantallas
 
-### 7. Mockup
-![Mockup](entrega-final/07-mockup.svg)
+![Sketch de la interfaz](entrega-final/05-sketch.svg)
 
-### 8. Prototipo funcional
-![Prototipo funcional](entrega-final/08-prototipo-funcional.svg)
+[Ver imagen completa](entrega-final/05-sketch.svg) · [Editar interfaz](https://app.diagrams.net/?mode=github#HYutre3%2Fdiego%2Fmain%2Fdiagramas-editables%2F04-interfaz.drawio)
 
-[ABRIR PROTOTIPO](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)
+## 6. Wireframe — Estructura de la interfaz
 
-### 9. Kanban
-[Ver Kanban](entrega-final/09-kanban.md)
+![Wireframe de la interfaz](entrega-final/06-wireframe.svg)
+
+[Ver imagen completa](entrega-final/06-wireframe.svg)
+
+## 7. Mockup — Diseño visual
+
+![Mockup de la interfaz](entrega-final/07-mockup.svg)
+
+[Ver imagen completa](entrega-final/07-mockup.svg)
+
+## 8. Prototipo funcional
+
+![Vista del prototipo funcional](entrega-final/08-prototipo-funcional.svg)
+
+**[Abrir y probar el prototipo en el navegador](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)**
+
+La imagen es una vista de referencia; el enlace permite acceder al prototipo navegable.
+
+## 9. Kanban — Planificación del trabajo
+
+El tablero conserva las tareas terminadas, en revisión y pendientes de confirmación.
+
+Este tablero contiene solamente tareas relacionadas con los entregables solicitados para el Caso 6.
+
+| Por hacer / pendiente de validación | En revisión | Terminado |
+| --- | --- | --- |
+| Incorporar retroalimentación real de Evaluación 1 cuando sea entregada | Revisar coherencia final entre requerimientos, diagramas y prototipo | Informe IEEE 830 adaptado |
+| Validar fórmula exacta del costo por pasajero |  | Diagrama de casos de uso |
+| Validar datos obligatorios del huésped |  | Diagrama de flujo de check-in |
+| Validar permisos detallados por perfil |  | Diagrama de base de datos |
+| Confirmar reglas exactas para modificar/cancelar reservas |  | Sketch |
+|  |  | Wireframe |
+|  |  | Mockup |
+|  |  | Prototipo funcional navegable |
+|  |  | Funciones de habitaciones, huéspedes y reservas |
+|  |  | Funciones de check-in y check-out |
+|  |  | Gestión de usuarios en el prototipo |
+|  |  | Informes de ocupación y reservas |
+
+
+
+[Ver el archivo Kanban completo](entrega-final/09-kanban.md)
+
+---
+
+**Archivos editables:** [PlantUML](diagramas-plantuml/) · [diagrams.net](diagramas-editables/) · [Guía de diagramas](docs/diagramas-plantuml.md)
+
+*El material gráfico presenta el diseño y modelado académico. No debe interpretarse como garantía de implementación completa de todas las funciones del sistema.*
