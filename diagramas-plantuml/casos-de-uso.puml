@@ -1,58 +1,52 @@
 @startuml
-' Hotel Duerme Bien - Casos de uso principales
+' Un único diagrama completo del Hotel Duerme Bien
 left to right direction
 skinparam backgroundColor White
 skinparam shadowing false
 skinparam defaultFontName Arial
 skinparam packageStyle rectangle
 skinparam linetype ortho
-skinparam nodesep 72
-skinparam ranksep 100
-skinparam ActorBorderColor #397D8F
-skinparam ActorFontColor #244758
-skinparam UsecaseBackgroundColor #F4FAFC
-skinparam UsecaseBorderColor #397D8F
-skinparam UsecaseFontColor #254455
-skinparam RectangleBorderColor #869DAA
-skinparam ArrowColor #647E8B
-title Hotel Duerme Bien - Diagrama general de casos de uso
-actor "Encargado de hotel" as Enc
-actor "Administrador" as Admin
-
+skinparam nodesep 70
+skinparam ranksep 85
+skinparam UsecaseBackgroundColor #F1FAF9
+skinparam UsecaseBorderColor #437E90
+skinparam RectangleBorderColor #8CA6B2
+skinparam ArrowColor #648A96
+title Hotel Duerme Bien - Diagrama completo de casos de uso
+actor "Encargado" as E
+actor "Administrador" as A
 rectangle "Sistema de Pasajeros" {
-  package "Operación del hotel" {
-    usecase "Iniciar sesión" as Login
-    usecase "Consultar ocupación\ny disponibilidad" as Disponibilidad
-    usecase "Gestionar reservas" as Reservas
-    usecase "Registrar y consultar huéspedes" as Huespedes
-    usecase "Realizar check-in" as Checkin
-    usecase "Realizar check-out" as Checkout
-  }
-  package "Administración" {
-    usecase "Gestionar habitaciones" as Habitaciones
-    usecase "Gestionar usuarios y roles" as Usuarios
-    usecase "Consultar informes de\nocupación y reservas" as Informes
-  }
+ usecase "Iniciar sesión" as U1
+ usecase "Registrar y consultar huéspedes" as U2
+ usecase "Gestionar reservas" as U3
+ usecase "Realizar check-in" as U4
+ usecase "Realizar check-out" as U5
+ usecase "Consultar disponibilidad" as U6
+ usecase "Asignar habitación" as U7
+ usecase "Ingreso sin reserva" as U8
+ usecase "Calcular costo por pasajero" as U9
+ usecase "Liberar habitación" as U10
+ usecase "Gestionar habitaciones" as U11
+ usecase "Gestionar usuarios y roles" as U12
+ usecase "Generar informes de ocupación y reservas" as U13
 }
-Enc -- Login
-Enc -- Disponibilidad
-Enc -- Reservas
-Enc -- Huespedes
-Enc -- Checkin
-Enc -- Checkout
-
-Admin -- Habitaciones
-Admin -- Usuarios
-Admin -- Informes
-Admin --|> Enc
-
-note right of Admin
-  El administrador hereda las operaciones del encargado.
-  Permisos detallados propuestos; sujetos a validación.
-end note
-note bottom of Reservas
-  Crear, modificar y cancelar reservas.
-  Para detalles «include» y «extend»,
-  consultar el segundo diagrama.
+E -- U1
+E -- U2
+E -- U3
+E -- U4
+E -- U5
+A -- U11
+A -- U12
+A -- U13
+A --|> E
+U3 ..> U6 : <<include>>
+U4 ..> U6 : <<include>>
+U4 ..> U7 : <<include>>
+U8 ..> U4 : <<extend>>\n[sin reserva previa]
+U5 ..> U9 : <<include>>
+U5 ..> U10 : <<include>>
+note bottom of A
+Los permisos concretos de cada rol
+deben validarse con el hotel.
 end note
 @enduml
