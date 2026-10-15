@@ -4,7 +4,7 @@
 
 Este repositorio presenta **todos los entregables directamente en esta página**, con las versiones actualizadas de los diagramas. Cada imagen se puede abrir en tamaño completo; los archivos fuente siguen disponibles para editarlos.
 
-**[Abrir prototipo funcional](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)** · **[Ver fuentes PlantUML](diagramas-plantuml/)** · **[Ver informe de requerimientos](entrega-final/01-requerimientos.md)**
+**[Demo interactiva del sistema](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)** · **[Demo de diseño en Figma](https://www.figma.com/proto/7kS6Wuh6nwt2lcl4bB1w50/Hotel-Duerme-Bien?node-id=6-180&starting-point-node-id=6%3A180&scaling=contain)** · **[Ver fuentes PlantUML](diagramas-plantuml/)** · **[Ver informe de requerimientos](entrega-final/01-requerimientos.md)**
 
 ## 1. Informe de requerimientos
 
@@ -98,6 +98,25 @@ Este tablero contiene solamente tareas relacionadas con los entregables solicita
 
 
 [Ver el archivo Kanban completo](entrega-final/09-kanban.md)
+
+
+## 10. Demo — Presentación y prueba del hotel
+
+Puedes abrir las dos demostraciones del proyecto:
+
+- **[Abrir demo interactiva en el navegador](https://yutre3.github.io/diego/prototipo-web/prototipo-funcional.html)**: interfaz de prueba del Hotel Duerme Bien, con navegación por habitaciones, huéspedes, reservas, check-in, check-out, usuarios e informes.
+- **[Abrir demo de diseño en Figma](https://www.figma.com/proto/7kS6Wuh6nwt2lcl4bB1w50/Hotel-Duerme-Bien?node-id=6-180&starting-point-node-id=6%3A180&scaling=contain)**: prototipo visual de las pantallas preparado para presentar el diseño.
+
+La demo web y el prototipo en Figma son recursos distintos: uno permite probar la interfaz web y el otro permite recorrer el diseño visual. El prototipo web es académico y no reemplaza un sistema hotelero de producción.
+
+## 11. Informe y defensa — Material para presentar al profesor
+
+- **[Informe de requerimientos](entrega-final/01-requerimientos.md)**: alcance, funciones del sistema y reglas del hotel.
+- **[Guion de exposición](docs/13_guion_exposicion.md)**: explicación del proyecto para presentar oralmente.
+- **[Preguntas que podría hacer el profesor](docs/14_preguntas_profesor.md)**: conceptos y respuestas para estudiar.
+- **[Documento maestro para explicar el proyecto](docs/16_DOCUMENTO_MAESTRO_PARA_EXPLICAR.md)**: repaso conjunto de los entregables.
+
+Estos materiales ayudan a estudiar la entrega y a explicar qué representa cada diagrama.
 
 ---
 
